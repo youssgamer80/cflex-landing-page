@@ -4,7 +4,7 @@
     <p>
       Revenez plus tard pour plus d'informations.
     </p>
-    <h3>C'Flex pour aller plius vite</h3>
+    <h3>C'Flex pour aller plus vite</h3>
    
   </div>
 </template>
