@@ -6,7 +6,7 @@
     </nav>
     <router-view/>
   </div>
-</template>
+</template>./components/HomePage.vue
 
 <style>
 #app {
