@@ -23,9 +23,14 @@ Déplacer vous  avec Flexibilité </h1> -->
           </div>
         </div>
       </section>
-     
-  
-      <!-- le footer -->
+    
+     <section class="mx-auto  flex justify-center  px-6 pt-8 m-8 ">
+        <CardItem iconvalue="calendar-days" title="Set a better deadline tasks" subtitle="You can make you duty deadline better and more orderly" />
+        <CardItem  iconvalue="calendar-days" title="Manage the task so easiluy" subtitle="You can make you duty deadline better and more orderly" />
+        <CardItem  iconvalue="bell" title="Wouldn't miss notifications" subtitle="Of course you will always get the task and schedule notifications" />
+     </section>
+
+      <!-- le footer 
       <footer class="py-16 bg-white lg:py-24 dark:bg-gray-800">
         <div class="px-4 mx-auto max-w-screen-xl lg:px-12">
           <div class="grid gap-12 lg:grid-cols-6 lg:gap-24">
@@ -101,17 +106,23 @@ Déplacer vous  avec Flexibilité </h1> -->
           <hr class="my-8 border-gray-200 dark:border-gray-700 lg:my-12"><span
             class="block text-center text-gray-600 dark:text-gray-400 font-">©
            
-            <!-- --> <a href="https://maitrica.com">Maitrica™</a>. Tous les droits sont réservés.
+            <a href="https://maitrica.com">Maitrica™</a>. Tous les droits sont réservés.
           </span>
         </div>
-      </footer>
+      </footer>-->
     </div>
 </div>
 
 </template>
 <script>
+
+import CardItem from './CardItem.vue'
 export default {
   name :"HeroSection",
+  components:{
+    CardItem
   }
+  }
+ 
   
 </script>
