@@ -14,7 +14,14 @@
 Déplacer vous  avec Flexibilité </h1> -->
               <p class="text-gray-500 dark:text-gray-400 font-normal text-lg lg:text-xl mb-6 lg:mb-8">
                 Avec C'Flex vous avez les différentes gares des taxis communaux, les horaires de chargement et les points d’arrêt,  les itinéraires possibles, les moyens de transport possibles (Taxi, Bus, Gbaka...) entre entres votre position et votre destination ainsi que les coûts respectifs.</p>
-              <div class="items-center lg:flex"><a class="block w-full sm:w-auto sm:inline-block mb-3 sm:mb-0 text-white bg-orange-800 hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 font-medium rounded-xl text-base px-6 py-2.5 text-center inline-block mr-4" href="/pro/">Télécharger l'application</a><a class="block w-full sm:w-auto sm:inline-block text-orange-600 bg-white-100 hover:bg-gray-100 hover:text-gray-600 border border-orange-600 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white border dark:border-gray-600 font-semibold rounded-xl text-base px-6 py-2.5 text-center inline-flex justify-center items-center" href="/pro/#pricing">Devenir chauffeur</a></div>
+              <div class="items-center lg:flex">
+                <button type="button" class="text-white bg-gradient-to-br from-orange-400 to-orange-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Pink to Orange</button>
+
+                <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-orange-400 to-orange-500 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+  <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+      Pink to orange
+  </span>
+</button></div>
             </div>
             <div>
               <img class="w-full dark:hidden" src="assets/HeroImage.svg" alt="Data app">
