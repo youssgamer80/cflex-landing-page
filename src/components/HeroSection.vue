@@ -31,9 +31,9 @@ Déplacer vous  avec Flexibilité </h1> -->
         </div>
       </section>
     
-     <section class="mx-auto  flex justify-center  px-6 pt-8 m-8 ">
+     <section class="mx-auto  flex justify-center px-6 pt-8 m-8 ">
         <CardItem iconvalue="calendar-days" title="Set a better deadline tasks" subtitle="You can make you duty deadline better and more orderly" />
-        <CardItem  iconvalue="calendar-days" title="Manage the task so easiluy" subtitle="You can make you duty deadline better and more orderly" />
+        <CardItem  iconvalue="layer-group" title="Manage the task so easiluy" subtitle="You can make you duty deadline better and more orderly" />
         <CardItem  iconvalue="bell" title="Wouldn't miss notifications" subtitle="Of course you will always get the task and schedule notifications" />
      </section>
 
