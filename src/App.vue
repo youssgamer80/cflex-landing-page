@@ -5,38 +5,6 @@
     <nav class="flex justify-between items-center px-3 mx-auto w-full max-w-8xl lg:px-4">
       <div class="container flex flex-wrap justify-between items-center mx-auto">
         <router-link to="/" class="flex">
-
-          <!-- <svg class="mr-3 h-8" id="graphics" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 841.89 566.93">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill: url(#linear-gradient);
-                }
-
-                .cls-2 {
-                  fill: url(#linear-gradient-2);
-                }
-              </style>
-              <linearGradient id="linear-gradient" x1="420.95" y1="87.03" x2="420.95" y2="447.1"
-                gradientUnits="userSpaceOnUse">
-                <stop offset="0.09" stop-color="#bdbdbd" />
-                <stop offset="0.3" stop-color="#cfcfcf" />
-                <stop offset="0.49" stop-color="#dadada" />
-                <stop offset="0.72" stop-color="#dadada" />
-                <stop offset="1" stop-color="#bdbdbd" />
-              </linearGradient>
-              <linearGradient id="linear-gradient-2" x1="-1919.37" y1="85.83" x2="-1919.37" y2="447.55"
-                gradientTransform="matrix(-1, 0, 0, 1, -1498.43, 0)" gradientUnits="userSpaceOnUse">
-                <stop offset="0" stop-color="#00d7fb" />
-                <stop offset="1" stop-color="#1488d4" />
-              </linearGradient>
-            </defs>
-            <path class="cls-1"
-              d="M146.13,451.82h60.66c16.33,0,15.85-14.34,12-20.07a45.34,45.34,0,0,1-5.9-38.68l31.3-103.54a50.53,50.53,0,0,1,48.34-36H549.38a50.53,50.53,0,0,1,48.34,36L629,393.07a45.37,45.37,0,0,1-5.91,38.68c-3.88,5.73-4.35,20.07,12,20.07h60.65c53.7,0,92.15-51.66,76.75-103.1L711.64,145.26a88.67,88.67,0,0,0-84.83-63.2S487.32,186.24,421.18,186.24,215.08,82.06,215.08,82.06a88.66,88.66,0,0,0-84.83,63.2L69.39,348.72C54,400.16,92.44,451.82,146.13,451.82Z" />
-            <path class="cls-2"
-              d="M421,176c11.71,0,19.41-19.94,31.61-48.83C471.65,82,504,82.06,533.39,82.06h93.42c66.87,0,84.83,63.2,84.83,63.2-19.81-47.82-90.84-58.23-120,11.52C567.65,214.1,489.3,392,489.3,392,474,428.62,453,448.42,421,448.42s-53-19.8-68.36-56.43c0,0-78.36-177.89-102.33-235.21-29.17-69.75-100.2-59.34-120-11.52,0,0,18-63.2,84.83-63.2H308.5c29.39,0,61.74-.11,80.83,45.08C401.53,156,409.23,176,421,176Z" />
-          </svg> -->
       <img src="./assets/logo.png" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
         </router-link>
         <div class="flex md:order-2">
@@ -83,7 +51,7 @@
                 aria-current="page">Acceuil</router-link>
             </li>
             <li>
-              <router-link to="/fonctionality"
+              <router-link to="/features"
                 class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                 Fonctionnalités</router-link>
             </li>
@@ -108,7 +76,7 @@
 
     <!-- <nav>
       <router-link to="/"><img src="./assets/logo.png" alt=""> Home</router-link>
-       <router-link to="/fonctionality">Fonctionnalités</router-link>
+       <router-link to="/features">Fonctionnalités</router-link>
       <router-link to="/about">À propos</router-link>
       <router-link to="/about-app">À propos de l'appli</router-link>
     </nav> -->
