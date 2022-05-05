@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="bg-white dark:bg-gray-900">
    <HeroSection/>
    <FeaturesSection/>
    <AdvantageSection/>
-   <UserPaging/>
+   <!-- <UserPaging/> -->
   </div>
 </template>
 
@@ -11,7 +11,7 @@
 import HeroSection from '@/components/HeroSection.vue'
 import FeaturesSection from '@/components/FeaturesSection.vue'
 import AdvantageSection from '@/components/AdvantageSection.vue'
-import UserPaging from '@/components/UserPaging.vue'
+// import UserPaging from '@/components/UserPaging.vue'
 export default {
   name: 'HomePage',
   props: {
@@ -21,7 +21,7 @@ export default {
     HeroSection,
     FeaturesSection,
     AdvantageSection,
-    UserPaging
+    // UserPaging
   }
 }
 </script>

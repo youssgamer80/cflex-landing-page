@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col mr-5">
+    <div class="flex flex-col md:mr-5 mb-10">
         <div class="mb-6 rounded-full bg-slate-50 w-20 p-4 text-center ">
            <font-awesome-icon  class="text-orange-500 text-5xl" :icon="iconvalue"/>
            

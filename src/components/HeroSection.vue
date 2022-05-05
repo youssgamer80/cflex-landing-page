@@ -2,9 +2,9 @@
 <template>
   <!-- This example requires Tailwind CSS v2.0+ -->
   <div>
-    <div class="bg-white dark:bg-gray-800">
+    <div class="bg-white dark:bg-white-900">
       <section
-        class="py-16 lg:pt-0 pb-36 lg:pb-28 bg-white dark:bg-gray-900"
+        class="py-10 lg:pt-0 pb-36 bg-white dark:bg-gray-900"
         id="figma"
       >
         <div class="max-w-screen-xl px-4 lg:px-12 mx-auto">

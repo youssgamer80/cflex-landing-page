@@ -1,8 +1,8 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <!-- This example requires Tailwind CSS v2.0+ -->
-  <div class="bg-white dark:bg-gray-800">
-      <section class="md:flex justify-center px-6 pt-8">
+  <div class="max-w-screen-xl px-4 lg:px-12 mx-auto bg-white dark:bg-gray-800 p-20 ">
+      <section class="md:flex">
         <CardItem
           iconvalue="calendar-days"
           title="Set a better deadline tasks"
