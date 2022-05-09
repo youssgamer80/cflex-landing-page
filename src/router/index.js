@@ -25,6 +25,14 @@ const routes = [
     // this generates a separate chunk (features.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "features" */ '../views/FeaturesView.vue')
+  },
+  {
+    path: '/newDemande',
+    name: 'newDemande',
+    // route level code-splitting
+    // this generates a separate chunk (features.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "features" */ '../views/DemandeView.vue')
   }
 ]
 

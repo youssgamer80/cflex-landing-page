@@ -33,18 +33,16 @@ Déplacer vous  avec Flexibilité </h1> -->
               <div class="items-center lg:flex">
                 <button
                   type="button"
-                  class="text-white bg-gradient-to-br from-orange-400 to-orange-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
-                >
-                  Pink to Orange
+                  class="text-white bg-gradient-to-br from-orange-400 to-orange-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2" data-modal-toggle="popup-modal">
+                  Faire une demande
                 </button>
-
                 <button
                   class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-orange-400 to-orange-500 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800"
                 >
                   <span
                     class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
                   >
-                    Pink to orange
+                    Suivre ma demande
                   </span>
                 </button>
               </div>
@@ -65,10 +63,16 @@ Déplacer vous  avec Flexibilité </h1> -->
         </div>
       </section>
     </div>
+    <ModalComponent />
   </div>
-</template>
+  </template>
+
 <script>
+import ModalComponent from '@/components/ModalComponent.vue'
 export default {
   name: "HeroSection",
-};
+  components: {
+    ModalComponent,
+}
+}
 </script>
