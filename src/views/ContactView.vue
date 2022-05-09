@@ -3,16 +3,6 @@
     <h1>page des contacts</h1>
 
 
-
-
-
-
-
-
-
-
-
-
 <!-- importation du footer -->
      <div>
     <FooterComponent/>
@@ -20,9 +10,14 @@
     </div>
   </div>
 
-
-  
 </template>
+
+
+
+
+
+
+
 
 
 
@@ -36,3 +31,4 @@ export default {
   }
 }
 </script>
+

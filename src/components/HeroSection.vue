@@ -68,6 +68,8 @@ Déplacer vous  avec Flexibilité </h1> -->
   </template>
 
 <script>
+
+  
 import ModalComponent from '@/components/ModalComponent.vue'
 export default {
   name: "HeroSection",

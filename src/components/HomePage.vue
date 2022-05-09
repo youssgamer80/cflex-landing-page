@@ -3,8 +3,7 @@
    <HeroSection/>
    <FeaturesSection/>
    <AdvantageSection/>
-   <!-- <FooterComponent/> -->
-   <!-- <UserPaging/> -->
+  <UserPaging/> 
   </div>
 </template>
 
@@ -12,8 +11,9 @@
 import HeroSection from '@/components/HeroSection.vue'
 import FeaturesSection from '@/components/FeaturesSection.vue'
 import AdvantageSection from '@/components/AdvantageSection.vue'
-// import FooterComponent from './FooterComponent.vue'
-// import UserPaging from '@/components/UserPaging.vue'
+
+import UserPaging from '@/components/UserPaging.vue'
+
 export default {
   name: 'HomePage',
   props: {
@@ -23,7 +23,8 @@ export default {
     HeroSection,
     FeaturesSection,
     AdvantageSection,
-    // FooterComponent
+    UserPaging,
+   
   }
 }
 </script>
