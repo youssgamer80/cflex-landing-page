@@ -41,7 +41,33 @@ const routes = [
     // this generates a separate chunk (features.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "features" */ '../views/StatusDemandeView.vue')
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    // route level code-splitting
+    // this generates a separate chunk (features.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "features" */ '../views/ContactView.vue')
+  },
+  {
+    path: '/aproposstructure',
+    name: 'aproposstructure',
+    // route level code-splitting
+    // this generates a separate chunk (features.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "features" */ '../views/AproposView.vue')
   }
+  // {
+  //   path: '/newDemande',
+  //   name: 'newDemande',
+  //   // route level code-splitting
+  //   // this generates a separate chunk (features.[hash].js) for this route
+  //   // which is lazy-loaded when the route is visited.
+  //   component: () => import(/* webpackChunkName: "features" */ '../views/DemandeView.vue')
+  // }
+
+
 ]
 
 const router = new VueRouter({
