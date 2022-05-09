@@ -75,7 +75,7 @@
     </nav> -->
     <router-view />
      <!--  -->
-      <footer class="py-16 bg-white lg:py-24 dark:bg-gray-900">
+      <footer class="py-12 bg-white xl:py-24 dark:bg-gray-800">
     <div class="px-4 mx-auto max-w-screen-xl lg:px-12">
       <div class="grid gap-12 lg:grid-cols-6 lg:gap-24">
         <div class="col-span-2">
