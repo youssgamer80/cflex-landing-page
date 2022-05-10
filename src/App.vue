@@ -272,6 +272,7 @@
       <router-link to="/about-app">À propos de l'appli</router-link>
     </nav> -->
     <router-view />
+    <FooterComponent/>
   </div>
 </template>
  ./components/HomePage.vue
@@ -282,3 +283,13 @@ nav a.router-link-exact-active {
   color: #fb5a00;
 }
 </style>
+<script>
+import FooterComponent from '@/components/FooterComponent.vue'
+
+export default {
+  name: 'App',
+  components: {
+    FooterComponent
+  }
+}
+</script>

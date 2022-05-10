@@ -11,8 +11,7 @@
                  <h3 class="mb-4 text-xl font-bold md:text-3xl">CFLEX</h3>
                     <div class="grid grid-cols-1 gap-0 text-gray-600 md:grid-cols-2 md:gap-16"> -->
             <div>
-                <h5 class="mt-10 mb-3 font-semibold text-gray-900">Qu est ce CFLEX mobile ?</h5>
-                <p> .</p>
+              
                 <h5 class="mt-10 mb-3 font-semibold text-gray-900">Can I try it for Free?</h5>
                 <p>Absolutely, you can try out tails for free; however, if you wish to access all the components and export the page you'll need to upgrade your account.</p>
                 <h5 class="mt-10 mb-3 font-semibold text-gray-900">Where do I go to upgrade my account?</h5>
@@ -20,11 +19,7 @@
                     You can upgrade your account by visiting <a href="https://devdojo.com/pro" class="text-indigo-500 underline">The Pro Upgrade Page</a>. You will also gain access to many other applications and sections of the site.
                     <a href="https://help.hellonext.co/faq/startup-eligibility/" target="_blank">here</a>.
                 </p>
-                <h5 class="mt-10 mb-3 font-semibold text-gray-900">How long will I have access to Tails</h5>
-                <p>
-                    You will have unlimited access to all your pre-built pages; however, if you want to be able to download and export your pages, you'll need a pro account.
-                    <a href="https://paddle.com" target="_blank">Paddle</a> for processing payments.
-                </p>
+                
             </div>
             
         </div>
@@ -45,11 +40,7 @@
                      You will also gain access to many other applications and sections of the site.
                     <a href="https://help.hellonext.co/faq/startup-eligibility/" target="_blank">here</a>.
                 </p>
-                <h5 class="mt-10 mb-3 font-semibold text-gray-900">How long will I have access to Tails</h5>
-                <p>
-                    You will have unlimited access to all your pre-built pages; however, if you want to be able to download and export your pages, you'll need a pro account.
-                     for processing payments.
-                </p>
+                
             </div>
             
         </div>

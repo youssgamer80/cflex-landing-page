@@ -1,5 +1,5 @@
 <template>
-  <div class="AproposStructure">
+  <div class="aproposstructure">
    
 
     <section class="py-24 bg-white">
@@ -9,7 +9,7 @@
              
              
              <div class="flex items-center space-x-4">
-    <img class="h-14 w-14 rounded-full" src="../assets/logo.png" alt="">
+    <img class="h-14 w-15 rounded-full" src="../assets/logo.png" alt="">
     <div class="space-y-1 font-medium dark:text-white">
         <div>CFLEX</div>
        
@@ -22,7 +22,7 @@
                 <h5 class="mt-10 mb-3 font-semibold text-gray-900">Information</h5>
  
                 <h5 class="mt-10 mb-3 font-semibold text-gray-900"></h5>
-                <p>CFLEX est partenariat  avec la mairie du PLATEAU </p>
+                <p>CFLEX est partenariat  avec la mairie du PLATEAU  et Orange CI</p>
                 <!-- <h5 class="mt-10 mb-3 font-semibold text-gray-900">Where do I go to upgrade my account?</h5>
                 <p>
                     . You will also gain access to many other applications and sections of the site.
