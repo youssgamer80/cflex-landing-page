@@ -33,7 +33,7 @@
            
             <img
               src="./assets/logo.png"
-              class="h-16 w-16"
+              class="h-15 w-16"
               alt="Flowbite Logo"
             />
           </router-link>
@@ -93,10 +93,10 @@
                 text-center
                 ml-3
               "
-              data-modal-toggle="popup-modal"
+              
             >
-              <span class="hidden lg:inline">À propos de l'appli</span>
-              <span class="lg:hidden">Appli</span>
+              <span class="hidden lg:inline text-white">À propos de l'appli</span>
+              <span class="hidden:lg text-white">Appli</span>
             </router-link>
             <button
               data-collapse-toggle="mobile-menu-4"
@@ -131,7 +131,7 @@
                 ></path>
               </svg>
               <svg
-                class="hidden w-6 h-6"
+                class=" w-6 h-6"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"

@@ -24,18 +24,20 @@ Déplacer vous  avec Flexibilité </h1> -->
               <p
                 class="text-gray-500 dark:text-gray-400 font-normal text-lg lg:text-xl mb-6 lg:mb-8"
               >
-                Avec C'Flex vous avez les différentes gares des taxis communaux,
+                Avec C'Flex ,vous avez les différentes gares des taxis communaux,
                 les horaires de chargement et les points d’arrêt, les
                 itinéraires possibles, les moyens de transport possibles (Taxi,
                 Bus, Gbaka...) entre entres votre position et votre destination
                 ainsi que les coûts respectifs.
               </p>
               <div class="items-center lg:flex">
+               <!-- <router-link to=""> -->
                 <button
                   type="button"
                   class="text-white bg-gradient-to-br from-orange-400 to-orange-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2" data-modal-toggle="popup-modal">
                   Faire une demande
                 </button>
+               <!-- </router-link> -->
                 <router-link to="/statusDemande"
                   class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-orange-400 to-orange-500 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800"
                 >
@@ -43,6 +45,16 @@ Déplacer vous  avec Flexibilité </h1> -->
                     class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
                   >
                     Suivre ma demande
+                  </span>
+                </router-link>
+
+                <router-link to="/connexionDemande"
+                  class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-orange-400 to-orange-500 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800"
+                >
+                  <span
+                    class="relative px-5 py-2.5 transition-all ease-in duration-75 dark:bg-gray-900 text-white rounded-md group-hover:bg-opacity-0 hover:text-slate-400"
+                  >
+                    voir mes demandes
                   </span>
                 </router-link>
               </div>
@@ -63,18 +75,17 @@ Déplacer vous  avec Flexibilité </h1> -->
         </div>
       </section>
     </div>
-    <ModalComponent />
+   <ModalComponent/>
   </div>
   </template>
 
-<script>
 
-  
+<script>
 import ModalComponent from '@/components/ModalComponent.vue'
-export default {
+export default{
   name: "HeroSection",
   components: {
-    ModalComponent,
+  ModalComponent
 }
 }
 </script>

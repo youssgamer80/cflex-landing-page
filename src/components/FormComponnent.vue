@@ -4,7 +4,7 @@
 
  <div class="max-w-screen-xl px-4 lg:px-12 mx-auto">
           
-         <form>
+         <form >
     <div class="grid gap-6 mb-6 lg:grid-cols-2">
         <div>
             <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nom</label>
@@ -26,7 +26,7 @@
     </div>
    
    
-<div class="rounded-xl bg-gradient-to-r bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700 p-2 sm:p-6 dark:bg-gray-900">
+<div class="rounded-xl bg-gradient-to-r bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700 p-2 sm:p-6">
 <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300" for="large_size">Selectionner votre CNI</label>
 <input class="block w-full text-lg text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="large_size" type="file">
 <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300" for="large_size">Certicat de residence</label>

@@ -109,12 +109,12 @@ Déplacer vous  avec Flexibilité </h1> -->
           <div class="">
             <img
               class="w-full h-30 dark:hidden"
-              src="assets/sect3_bottom.svg"
+              src="assets/Img.png"
               alt="Data app"
             />
             <img
               class="w-full hidden dark:block"
-              src="assets/sect3_bottom.svg"
+              src="assets/assets/Img.png"
               alt="Data app dark"
             />
           </div>

@@ -1,9 +1,6 @@
 <template>
   <div>
-   <!-- <HeroSection/>
-   <FeaturesSection/>
-   <AdvantageSection/>
-   <UserPaging/> -->
+
    <FooterComponent/>
   </div>
 </template>
