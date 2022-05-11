@@ -1,24 +1,21 @@
 <template>
   <div class="home">
-    <HomePage/>
-    
- 
-  <div>
-  <FooterComponent/> 
+    <FooterComponent/>
+    <!-- <FooterComponent/> -->
   </div>
-   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HomePage from '@/components/HomePage.vue'
+
 import FooterComponent from '@/components/FooterComponent.vue'
+
 
 export default {
   name: 'HomeView',
   components: {
-    HomePage,
+    
     FooterComponent,
   }
+    
 }
 </script>

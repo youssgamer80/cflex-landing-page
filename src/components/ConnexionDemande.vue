@@ -21,26 +21,32 @@
       <label for="email" class="text-sm font-medium text-gray-900 block mb-2"></label>
       <input type="text" name="text" id="text"
          class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-         placeholder="" required>
+         placeholder="numero" required>
    </div>
    <div>
       <label for="password" class="text-sm font-medium text-gray-900 block mb-2"></label>
       <input type="text" name="motdepasse" id="date" placeholder="mot de passe"
-         class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+         class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5"
          required>
    </div>
    <div class="flex items-start">
       
       <div class="text-sm ml-3 items-center">
-           <router-link to="/aproposstructure"
+           <router-link to="/pageprofile"
                   
                 >
-           <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-3 w-full sm:w-auto text-center">Allez</button>
+           <button type="submit" class="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-base px-5 py-3 w-full sm:w-auto text-center">Allez</button>
            </router-link>
       </div>
-<div class="ml-3 text-sm font-medium text-blue-700 dark:text-blue-800">
-     <router-link to="/">
-    Si tu veux t enregistrer pour la 1 ere fois</router-link>
+
+
+      <div class="text-sm ml-3 items-center grid grid-flow-col">
+       <div class="ml-3 text-sm font-medium text-orange-700 dark:text-orange-800">
+     <router-link to="/" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+     <div class="text-sm font-medium text-gray-500">
+       </div>
+    Si tu veux t enregistrer pour la 1 ere fois <a href="#" class="text-orange-600 hover:underline dark:text-orange-500">cliquez ici</a></router-link>
+  </div>
   </div>
    </div>
 

@@ -1,7 +1,7 @@
 <template>
   <div class="aproposstructure">
    
-
+ <NavBarComponent/> 
     <section class="py-24 bg-white dark:bg-slate-800 dark:text-white">
     <div class="px-8 mx-auto max-w-7xl lg:px-16">
         <h2 class="mb-4 text-xl font-bold md:text-3xl ">CFLEX </h2>
@@ -96,5 +96,21 @@
         </div>
     </div>-->
 </section> 
+<FooterComponent/>
   </div>
 </template>
+
+
+
+<script>
+ import FooterComponent from '@/components/FooterComponent.vue'
+ import NavBarComponent from '@/components/NavBarComponent.vue'
+
+export default {
+  name:"AproposStructure",
+  components:{
+ FooterComponent,
+ NavBarComponent
+  }
+};
+</script>

@@ -1,5 +1,6 @@
 <template>
   <div class="ContactView">
+     <NavBarComponent/> 
     <section class="py-24 bg-white dark:bg-slate-800 dark:text-white">
 
 <div class="mx-auto max-w-7xl lg:px-16 block text-center dark:text-white">
@@ -16,11 +17,25 @@
     </div>
 
 
-  
+
     </section>
+      <FooterComponent/>
   </div>
 
 </template>
+
+<script>
+import FooterComponent from '@/components/FooterComponent.vue'
+import NavBarComponent from '@/components/NavBarComponent.vue'
+
+export default {
+  name: 'App',
+  components: {
+    FooterComponent,
+    NavBarComponent
+  }
+}
+</script>
 
 
 

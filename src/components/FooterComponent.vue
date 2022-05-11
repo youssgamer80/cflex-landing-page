@@ -219,8 +219,7 @@
                   font-normal
                   text-gray-600
                   dark:text-gray-400 dark:hover:text-white
-                  hover:underline
-                "
+                  hover:underline "
                 >Politique de confidentialité</a
               >
             </li>
@@ -259,7 +258,8 @@
 </template> 
 
 <script>
-export default {
+export default{
+  
   name:"FooterComponent",
 };
 </script>

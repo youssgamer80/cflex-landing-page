@@ -18,11 +18,8 @@ export default {
     msg: String
   },
    components: {
-    // HeroSection,
-    // FeaturesSection,
-    // AdvantageSection,
-    // UserPaging,
-    FooterComponent
+   
+    FooterComponent,
   }
 }
 </script>

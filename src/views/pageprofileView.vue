@@ -13,7 +13,7 @@ export default {
   name: 'pageprofileView',
   components: {
    
-    PageProfile
+    PageProfile,
 }
 }
 </script>

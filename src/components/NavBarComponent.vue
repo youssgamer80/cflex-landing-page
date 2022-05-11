@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+    <div id="app">
     <header
       class="
         flex
@@ -30,10 +30,10 @@
           class="container flex flex-wrap justify-between items-center mx-auto"
         >
           <router-link to="/" class="flex">
-            <!-- modification de la dimension de l icon -->
+           
             <img
-              src="./assets/logo.png"
-              class="h-16 w-16"
+              src="../assets/logo.png"
+              class="h-15 w-16"
               alt="Flowbite Logo"
             />
           </router-link>
@@ -79,7 +79,7 @@
               </svg>
             </button>
             <router-link
-              to="/about-app"
+              to="/aproposstructure"
               class="
                 text-white
                 bg-orange-700
@@ -93,10 +93,10 @@
                 text-center
                 ml-3
               "
-              data-modal-toggle="popup-modal"
+              
             >
-              <span class="hidden lg:inline">À propos de l'appli</span>
-              <span class="lg:hidden">Application</span>
+              <span class="hidden lg:inline text-white">À propos de l'appli</span>
+              <span class="hidden:lg text-white">Appli</span>
             </router-link>
             <button
               data-collapse-toggle="mobile-menu-4"
@@ -117,7 +117,7 @@
               aria-controls="mobile-menu-4"
               aria-expanded="false"
             >
-              <span class="sr-only">main menu</span>
+              <span class="sr-only"> main menu</span>
               <svg
                 class="w-6 h-6"
                 fill="currentColor"
@@ -131,7 +131,7 @@
                 ></path>
               </svg>
               <svg
-                class="hidden w-6 h-6"
+                class=" w-6 h-6"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -207,7 +207,7 @@
               </li>
               <li>
                 <router-link
-                  to="/about"
+                  to="/aproposstructure"
                   class="
                     block
                     py-2
@@ -231,10 +231,19 @@
                 >
               </li>
               <li>
-                <button
-                  type="button"
-                  data-modal-toggle="walletModal"
+                
+
+
+                 <router-link
+                  to="/contact"
                   class="
+                    block
+                    py-2
+                    pr-4
+                    pl-3
+                    text-gray-700
+                    border-b border-gray-100
+                    hover:bg-gray-50
                     md:hover:bg-transparent
                     md:border-0
                     md:hover:text-orange-700
@@ -244,11 +253,9 @@
                     dark:hover:bg-gray-700
                     dark:hover:text-white
                     md:dark:hover:bg-transparent
-                    dark:border-gray-700
-                  "
+                    dark:border-gray-700 "
+                  >Contact</router-link
                 >
-                  Contacter nous
-                </button>
               </li>
             </ul>
           </div>
@@ -256,7 +263,10 @@
       </nav>
       
     </header>
+
+    
     <router-view />
+    <!-- <FooterComponent/> -->
   </div>
 </template>
 

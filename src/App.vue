@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <header
+    <!-- <header
       class="
         flex
         sticky
@@ -253,8 +253,7 @@
                     dark:hover:bg-gray-700
                     dark:hover:text-white
                     md:dark:hover:bg-transparent
-                    dark:border-gray-700
-                  "
+                    dark:border-gray-700 "
                   >Contact</router-link
                 >
               </li>
@@ -263,7 +262,7 @@
         </div>
       </nav>
       
-    </header>
+    </header> -->
 
     <!-- <nav>
       <router-link to="/"><img src="./assets/logo.png" alt=""> Home</router-link>
@@ -272,10 +271,10 @@
       <router-link to="/about-app">À propos de l'appli</router-link>
     </nav> -->
     <router-view />
-    <FooterComponent/>
+    <!-- <FooterComponent/> -->
   </div>
 </template>
- ./components/HomePage.vue
+
 
 <style>
 
@@ -284,12 +283,12 @@ nav a.router-link-exact-active {
 }
 </style>
 <script>
-import FooterComponent from '@/components/FooterComponent.vue'
+// import FooterComponent from '@/components/FooterComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    FooterComponent
+    // FooterComponent
   }
 }
 </script>

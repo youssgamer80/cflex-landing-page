@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>je suis dans le dashboard</h1>
+  <div class="PageProfile">
+  
     <!--  -->
 
     <body class="bg-gray-50">
@@ -259,9 +259,9 @@
                           -mt-5
                           w-5
                           h-5
-                          bg-fuchsia-600
                           rounded-full
                           border border-white
+                          dark:bg-gray-800
                         "
                       >
                         <svg
@@ -10171,7 +10171,7 @@
       </svg>
     </body>
 
-    <!--  -->
+
   </div>
 </template>
 
@@ -10180,14 +10180,6 @@
 
 
 <script>
-
-
-
-
-
-
-
-
 
 export default {
   name: "PageProfile",

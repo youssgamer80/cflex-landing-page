@@ -3,10 +3,8 @@
   <!-- This example requires Tailwind CSS v2.0+ -->
   <div>
     <div class="bg-white dark:bg-white-900">
-      <section
-        class="py-10 lg:pt-0 pb-36 bg-white dark:bg-gray-900"
-        id="figma"
-      >
+      <section class="py-10 lg:pt-0 pb-36 bg-white dark:bg-gray-900"
+        id="figma" >
         <div class="max-w-screen-xl px-4 lg:px-12 mx-auto">
           <div
             class="grid grid-cols-1 lg:grid-cols-2 gap-6 xl:gap-8 items-center"
@@ -20,7 +18,7 @@
               </h1>
               <!-- <h1
                 class="font-bold lg:font-extrabold text-2xl lg:text-4xl lg:leading-snug text-gray-900 dark:text-white mb-4">
-Déplacer vous  avec Flexibilité </h1> -->
+                 Déplacer vous  avec Flexibilité </h1> -->
               <p
                 class="text-gray-500 dark:text-gray-400 font-normal text-lg lg:text-xl mb-6 lg:mb-8"
               >
@@ -37,6 +35,8 @@ Déplacer vous  avec Flexibilité </h1> -->
                   class="text-white bg-gradient-to-br from-orange-400 to-orange-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2" data-modal-toggle="popup-modal">
                   Faire une demande
                 </button>
+
+                
                <!-- </router-link> -->
                 <router-link to="/statusDemande"
                   class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-orange-400 to-orange-500 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800"
@@ -77,15 +77,21 @@ Déplacer vous  avec Flexibilité </h1> -->
     </div>
    <ModalComponent/>
   </div>
+  
   </template>
 
 
 <script>
+
 import ModalComponent from '@/components/ModalComponent.vue'
+
 export default{
-  name: "HeroSection",
-  components: {
-  ModalComponent
-}
-}
+
+  name: 'HeroSection',
+   components: {
+    
+   ModalComponent
+   
+  },
+};
 </script>

@@ -100,10 +100,7 @@ Déplacer vous  avec Flexibilité </h1> -->
                 lg:mb-8
               "
             >
-              The best feature makes you better, with the latest technology to
-              meet your needs. Of course, with such features as organizing
-              schedules and leading assignments, it will make you easier, So get
-              the application now !
+             
             </p>
           </div>
           <div class="">
@@ -114,7 +111,7 @@ Déplacer vous  avec Flexibilité </h1> -->
             />
             <img
               class="w-full hidden dark:block"
-              src="assets/assets/Img.png"
+              src="assets/Img.png"
               alt="Data app dark"
             />
           </div>
