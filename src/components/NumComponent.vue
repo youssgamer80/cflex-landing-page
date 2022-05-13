@@ -21,7 +21,7 @@
       <label for="numero" class="text-sm font-medium text-gray-900 block mb-2"></label>
       <input type="text" name="numero" id="text"
          class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-         placeholder="" required>
+         placeholder="entrez votre numero" required>
    </div>
    
    <div class="flex items-start">

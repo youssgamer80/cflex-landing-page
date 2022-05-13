@@ -45,9 +45,7 @@ const routes = [
   {
     path: '/newDemande',
     name: 'newDemande',
-    // route level code-splitting
-    // this generates a separate chunk (features.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+    
     component: () => import(/* webpackChunkName: "features" */ '../views/DemandeView.vue')
   },
   {
@@ -93,6 +91,14 @@ const routes = [
   {
     path: '/numcomponent',
     name: 'numcomponent',
+    // route level code-splitting
+    // this generates a separate chunk (features.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "features" */ '../views/numComponentView.vue')
+  },
+  {
+    path: '/popupannuler',
+    name: 'popupannuler',
     // route level code-splitting
     // this generates a separate chunk (features.[hash].js) for this route
     // which is lazy-loaded when the route is visited.

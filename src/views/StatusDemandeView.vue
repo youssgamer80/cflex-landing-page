@@ -1,17 +1,29 @@
 <template>
-  <div class="py-8 bg-white dark:bg-gray-900 lg:py-24">
+  <div class="StatutDemandeView">
+    <NavBarComponent/>
+
+    
     <StatusDemande/>
+
+
+    <FooterComponent/>
   </div>
 </template>
+
 <script>
 import StatusDemande from "@/components/StatusDemande.vue"
+import NavBarComponent from "@/components/NavBarComponent.vue";
+import FooterComponent from "@/components/FooterComponent.vue";
+
 export default {
   name: 'StatusDemandeView',
   props: {
     msg: String
   },
    components: {
-    StatusDemande
+    StatusDemande,
+    FooterComponent,
+    NavBarComponent,
   }
 }
 </script>

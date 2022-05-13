@@ -42,7 +42,7 @@
 
       <div class="text-sm ml-3 items-center grid grid-flow-col">
        <div class="ml-3 text-sm font-medium text-orange-700 dark:text-orange-800">
-     <router-link to="/" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+     <router-link to="/numcomponent" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
      <div class="text-sm font-medium text-gray-500">
        </div>
     Si tu veux t enregistrer pour la 1 ere fois <a href="#" class="text-orange-600 hover:underline dark:text-orange-500">cliquez ici</a></router-link>
@@ -69,5 +69,7 @@
 
 export default {
   name: "connexionDemande",
+
+
 };
 </script>

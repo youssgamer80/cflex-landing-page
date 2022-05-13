@@ -2571,7 +2571,7 @@
         ></div>
         <div
           id="main-content"
-          class="h-full w-full bg-gray-50 relative overflow-y-auto lg:ml-64"
+          class="h-full w-full bg-white-50 relative overflow-y-auto lg:ml-64"
         >
           <main>
             <div class="px-4 pt-6">
@@ -2582,7 +2582,7 @@
                   mb-6
                   w-full
                   xl:grid-cols-2
-                  2xl:grid-cols-4
+                  2xl:grid-cols-2
                 "
               >
                 <!-- <div class="bg-white shadow-lg shadow-gray-200 rounded-2xl p-4">
@@ -2793,8 +2793,7 @@
                   gap-6
                   mb-6
                   w-full
-                  xl:grid-cols-2
-                  2xl:grid-cols-3
+                  
                 "
                   >
                  <div
@@ -2806,10 +2805,13 @@
                     bg-gradient-to-r
                     from-dark-800
                     to-dark-900
-                    2xl:col-span-2
+                    
                   "
                   style="position: relative"
+
                 >
+                
+                
                   <!-- <div class="flex justify-between items-center mb-4">
                     <div class="flex-shrink-0">
                       <span
@@ -2851,7 +2853,7 @@
                       </svg>
                     </div>
                   </div>  -->
-                  <div id="main-chart" style="min-height: 435px">
+                  <div id="main-chart" >
                     <div
                       id="apexchartsxsrv0ha6"
                       class="
@@ -2859,574 +2861,139 @@
                         apexchartsxsrv0ha6
                         apexcharts-theme-light
                       "
-                      style="width: 530px; height: 420px"
+                     
                     >
-                      <!-- <svg
-                        id="SvgjsSvg1182"
-                        width="530"
-                        height="420"
-                        xmlns="http://www.w3.org/2000/svg"
-                        version="1.1"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        xmlns:svgjs="http://svgjs.dev"
-                        class="apexcharts-svg"
-                        xmlns:data="ApexChartsNS"
-                        transform="translate(0, 0)"
-                        style="background: transparent"
-                       >
-                        <g
-                          id="SvgjsG1184"
-                          class="apexcharts-inner apexcharts-graphical"
-                          transform="translate(12, 30)"
-                        >
-                          <defs id="SvgjsDefs1183">
-                            <linearGradient
-                              id="SvgjsLinearGradient1187"
-                              x1="0"
-                              y1="0"
-                              x2="0"
-                              y2="1"
-                            >
-                              <stop
-                                id="SvgjsStop1188"
-                                stop-opacity="0.4"
-                                stop-color="rgba(216,227,240,0.4)"
-                                offset="0"
-                              ></stop>
-                              <stop
-                                id="SvgjsStop1189"
-                                stop-opacity="0.5"
-                                stop-color="rgba(190,209,230,0.5)"
-                                offset="1"
-                              ></stop>
-                              <stop
-                                id="SvgjsStop1190"
-                                stop-opacity="0.5"
-                                stop-color="rgba(190,209,230,0.5)"
-                                offset="1"
-                              ></stop>
-                            </linearGradient>
-                            <clipPath id="gridRectMaskxsrv0ha6">
-                              <rect
-                                id="SvgjsRect1192"
-                                width="512"
-                                height="385"
-                                x="-2"
-                                y="0"
-                                rx="0"
-                                ry="0"
-                                opacity="1"
-                                stroke-width="0"
-                                stroke="none"
-                                stroke-dasharray="0"
-                                fill="#fff"
-                              ></rect>
-                            </clipPath>
-                            <clipPath id="forecastMaskxsrv0ha6"></clipPath>
-                            <clipPath id="nonForecastMaskxsrv0ha6"></clipPath>
-                            <clipPath id="gridRectMarkerMaskxsrv0ha6">
-                              <rect
-                                id="SvgjsRect1193"
-                                width="512"
-                                height="389"
-                                x="-2"
-                                y="-2"
-                                rx="0"
-                                ry="0"
-                                opacity="1"
-                                stroke-width="0"
-                                stroke="none"
-                                stroke-dasharray="0"
-                                fill="#fff"
-                              ></rect>
-                            </clipPath>
-                          </defs>
-                          <rect
-                            id="SvgjsRect1191"
-                            width="10.885714285714284"
-                            height="385"
-                            x="0"
-                            y="0"
-                            rx="0"
-                            ry="0"
-                            opacity="1"
-                            stroke-width="0"
-                            stroke-dasharray="3"
-                            fill="url(#SvgjsLinearGradient1187)"
-                            class="apexcharts-xcrosshairs"
-                            y2="385"
-                            filter="none"
-                            fill-opacity="0.9"
-                          ></rect>
-                          <g
-                            id="SvgjsG1219"
-                            class="apexcharts-xaxis"
-                            transform="translate(0, 0)"
-                          >
-                            <g
-                              id="SvgjsG1220"
-                              class="apexcharts-xaxis-texts-g"
-                              transform="translate(0, -4)"
-                            ></g>
-                          </g>
-                          <g id="SvgjsG1229" class="apexcharts-grid">
-                            <g
-                              id="SvgjsG1230"
-                              class="apexcharts-gridlines-horizontal"
-                              style="display: none"
-                            >
-                              <line
-                                id="SvgjsLine1232"
-                                x1="0"
-                                y1="0"
-                                x2="508"
-                                y2="0"
-                                stroke="#e0e0e0"
-                                stroke-dasharray="0"
-                                stroke-linecap="butt"
-                                class="apexcharts-gridline"
-                              ></line>
-                              <line
-                                id="SvgjsLine1233"
-                                x1="0"
-                                y1="64.16666666666667"
-                                x2="508"
-                                y2="64.16666666666667"
-                                stroke="#e0e0e0"
-                                stroke-dasharray="0"
-                                stroke-linecap="butt"
-                                class="apexcharts-gridline"
-                              ></line>
-                              <line
-                                id="SvgjsLine1234"
-                                x1="0"
-                                y1="128.33333333333334"
-                                x2="508"
-                                y2="128.33333333333334"
-                                stroke="#e0e0e0"
-                                stroke-dasharray="0"
-                                stroke-linecap="butt"
-                                class="apexcharts-gridline"
-                              ></line>
-                              <line
-                                id="SvgjsLine1235"
-                                x1="0"
-                                y1="192.5"
-                                x2="508"
-                                y2="192.5"
-                                stroke="#e0e0e0"
-                                stroke-dasharray="0"
-                                stroke-linecap="butt"
-                                class="apexcharts-gridline"
-                              ></line>
-                              <line
-                                id="SvgjsLine1236"
-                                x1="0"
-                                y1="256.6666666666667"
-                                x2="508"
-                                y2="256.6666666666667"
-                                stroke="#e0e0e0"
-                                stroke-dasharray="0"
-                                stroke-linecap="butt"
-                                class="apexcharts-gridline"
-                              ></line>
-                              <line
-                                id="SvgjsLine1237"
-                                x1="0"
-                                y1="320.83333333333337"
-                                x2="508"
-                                y2="320.83333333333337"
-                                stroke="#e0e0e0"
-                                stroke-dasharray="0"
-                                stroke-linecap="butt"
-                                class="apexcharts-gridline"
-                              ></line>
-                              <line
-                                id="SvgjsLine1238"
-                                x1="0"
-                                y1="385.00000000000006"
-                                x2="508"
-                                y2="385.00000000000006"
-                                stroke="#e0e0e0"
-                                stroke-dasharray="0"
-                                stroke-linecap="butt"
-                                class="apexcharts-gridline"
-                              ></line>
-                            </g>
-                            <g
-                              id="SvgjsG1231"
-                              class="apexcharts-gridlines-vertical"
-                              style="display: none"
-                            ></g>
-                            <line
-                              id="SvgjsLine1240"
-                              x1="0"
-                              y1="385"
-                              x2="508"
-                              y2="385"
-                              stroke="transparent"
-                              stroke-dasharray="0"
-                              stroke-linecap="butt"
-                            ></line>
-                            <line
-                              id="SvgjsLine1239"
-                              x1="0"
-                              y1="1"
-                              x2="0"
-                              y2="385"
-                              stroke="transparent"
-                              stroke-dasharray="0"
-                              stroke-linecap="butt"
-                            ></line>
-                          </g>
-                          <g
-                            id="SvgjsG1194"
-                            class="apexcharts-bar-series apexcharts-plot-series"
-                          >
-                            <g
-                              id="SvgjsG1195"
-                              class="apexcharts-series"
-                              rel="1"
-                              seriesName="Users"
-                              data:realIndex="0"
-                            >
-                              <rect
-                                id="SvgjsRect1198"
-                                width="10.885714285714284"
-                                height="385"
-                                x="30.84285714285714"
-                                y="0"
-                                rx="6"
-                                ry="6"
-                                opacity="1"
-                                stroke-width="0"
-                                stroke="none"
-                                stroke-dasharray="0"
-                                fill="#4a576d"
-                                class="apexcharts-backgroundBar"
-                              ></rect>
-                              <path
-                                id="SvgjsPath1200"
-                                d="M 30.84285714285714 385L 30.84285714285714 172.83333333333331Q 30.84285714285714 166.83333333333331 36.84285714285714 166.83333333333331L 35.72857142857143 166.83333333333331Q 41.72857142857143 166.83333333333331 41.72857142857143 172.83333333333331L 41.72857142857143 172.83333333333331L 41.72857142857143 385L 41.72857142857143 385z"
-                                fill="rgba(203,12,159,1)"
-                                fill-opacity="1"
-                                stroke-opacity="1"
-                                stroke-linecap="round"
-                                stroke-width="0"
-                                stroke-dasharray="0"
-                                class="apexcharts-bar-area"
-                                index="0"
-                                clip-path="url(#gridRectMaskxsrv0ha6)"
-                                pathTo="M 30.84285714285714 385L 30.84285714285714 172.83333333333331Q 30.84285714285714 166.83333333333331 36.84285714285714 166.83333333333331L 35.72857142857143 166.83333333333331Q 41.72857142857143 166.83333333333331 41.72857142857143 172.83333333333331L 41.72857142857143 172.83333333333331L 41.72857142857143 385L 41.72857142857143 385z"
-                                pathFrom="M 30.84285714285714 385L 30.84285714285714 385L 41.72857142857143 385L 41.72857142857143 385L 41.72857142857143 385L 41.72857142857143 385L 41.72857142857143 385L 30.84285714285714 385"
-                                cy="166.83333333333331"
-                                cx="103.41428571428571"
-                                j="0"
-                                val="34"
-                                barHeight="218.16666666666669"
-                                barWidth="10.885714285714284"
-                              ></path>
-                              <rect
-                                id="SvgjsRect1201"
-                                width="10.885714285714284"
-                                height="385"
-                                x="103.41428571428571"
-                                y="0"
-                                rx="6"
-                                ry="6"
-                                opacity="1"
-                                stroke-width="0"
-                                stroke="none"
-                                stroke-dasharray="0"
-                                fill="#4a576d"
-                                class="apexcharts-backgroundBar"
-                              ></rect>
-                              <path
-                                id="SvgjsPath1203"
-                                d="M 103.41428571428571 385L 103.41428571428571 102.25Q 103.41428571428571 96.25 109.41428571428571 96.25L 108.3 96.25Q 114.3 96.25 114.3 102.25L 114.3 102.25L 114.3 385L 114.3 385z"
-                                fill="rgba(203,12,159,1)"
-                                fill-opacity="1"
-                                stroke-opacity="1"
-                                stroke-linecap="round"
-                                stroke-width="0"
-                                stroke-dasharray="0"
-                                class="apexcharts-bar-area"
-                                index="0"
-                                clip-path="url(#gridRectMaskxsrv0ha6)"
-                                pathTo="M 103.41428571428571 385L 103.41428571428571 102.25Q 103.41428571428571 96.25 109.41428571428571 96.25L 108.3 96.25Q 114.3 96.25 114.3 102.25L 114.3 102.25L 114.3 385L 114.3 385z"
-                                pathFrom="M 103.41428571428571 385L 103.41428571428571 385L 114.3 385L 114.3 385L 114.3 385L 114.3 385L 114.3 385L 103.41428571428571 385"
-                                cy="96.25"
-                                cx="175.98571428571427"
-                                j="1"
-                                val="45"
-                                barHeight="288.75"
-                                barWidth="10.885714285714284"
-                              ></path>
-                              <rect
-                                id="SvgjsRect1204"
-                                width="10.885714285714284"
-                                height="385"
-                                x="175.98571428571427"
-                                y="0"
-                                rx="6"
-                                ry="6"
-                                opacity="1"
-                                stroke-width="0"
-                                stroke="none"
-                                stroke-dasharray="0"
-                                fill="#4a576d"
-                                class="apexcharts-backgroundBar"
-                              ></rect>
-                              <path
-                                id="SvgjsPath1206"
-                                d="M 175.98571428571427 385L 175.98571428571427 50.916666666666686Q 175.98571428571427 44.916666666666686 181.98571428571427 44.916666666666686L 180.87142857142854 44.916666666666686Q 186.87142857142854 44.916666666666686 186.87142857142854 50.916666666666686L 186.87142857142854 50.916666666666686L 186.87142857142854 385L 186.87142857142854 385z"
-                                fill="rgba(203,12,159,1)"
-                                fill-opacity="1"
-                                stroke-opacity="1"
-                                stroke-linecap="round"
-                                stroke-width="0"
-                                stroke-dasharray="0"
-                                class="apexcharts-bar-area"
-                                index="0"
-                                clip-path="url(#gridRectMaskxsrv0ha6)"
-                                pathTo="M 175.98571428571427 385L 175.98571428571427 50.916666666666686Q 175.98571428571427 44.916666666666686 181.98571428571427 44.916666666666686L 180.87142857142854 44.916666666666686Q 186.87142857142854 44.916666666666686 186.87142857142854 50.916666666666686L 186.87142857142854 50.916666666666686L 186.87142857142854 385L 186.87142857142854 385z"
-                                pathFrom="M 175.98571428571427 385L 175.98571428571427 385L 186.87142857142854 385L 186.87142857142854 385L 186.87142857142854 385L 186.87142857142854 385L 186.87142857142854 385L 175.98571428571427 385"
-                                cy="44.916666666666686"
-                                cx="248.55714285714282"
-                                j="2"
-                                val="53"
-                                barHeight="340.0833333333333"
-                                barWidth="10.885714285714284"
-                              ></path>
-                              <rect
-                                id="SvgjsRect1207"
-                                width="10.885714285714284"
-                                height="385"
-                                x="248.55714285714282"
-                                y="0"
-                                rx="6"
-                                ry="6"
-                                opacity="1"
-                                stroke-width="0"
-                                stroke="none"
-                                stroke-dasharray="0"
-                                fill="#4a576d"
-                                class="apexcharts-backgroundBar"
-                              ></rect> 
-                              <path
-                                id="SvgjsPath1209"
-                                d="M 248.55714285714282 385L 248.55714285714282 147.16666666666666Q 248.55714285714282 141.16666666666666 254.55714285714282 141.16666666666666L 253.44285714285712 141.16666666666666Q 259.4428571428571 141.16666666666666 259.4428571428571 147.16666666666666L 259.4428571428571 147.16666666666666L 259.4428571428571 385L 259.4428571428571 385z"
-                                fill="rgba(203,12,159,1)"
-                                fill-opacity="1"
-                                stroke-opacity="1"
-                                stroke-linecap="round"
-                                stroke-width="0"
-                                stroke-dasharray="0"
-                                class="apexcharts-bar-area"
-                                index="0"
-                                clip-path="url(#gridRectMaskxsrv0ha6)"
-                                pathTo="M 248.55714285714282 385L 248.55714285714282 147.16666666666666Q 248.55714285714282 141.16666666666666 254.55714285714282 141.16666666666666L 253.44285714285712 141.16666666666666Q 259.4428571428571 141.16666666666666 259.4428571428571 147.16666666666666L 259.4428571428571 147.16666666666666L 259.4428571428571 385L 259.4428571428571 385z"
-                                pathFrom="M 248.55714285714282 385L 248.55714285714282 385L 259.4428571428571 385L 259.4428571428571 385L 259.4428571428571 385L 259.4428571428571 385L 259.4428571428571 385L 248.55714285714282 385"
-                                cy="141.16666666666666"
-                                cx="321.1285714285714"
-                                j="3"
-                                val="38"
-                                barHeight="243.83333333333334"
-                                barWidth="10.885714285714284"
-                              ></path>
-                              <rect
-                                id="SvgjsRect1210"
-                                width="10.885714285714284"
-                                height="385"
-                                x="321.1285714285714"
-                                y="0"
-                                rx="6"
-                                ry="6"
-                                opacity="1"
-                                stroke-width="0"
-                                stroke="none"
-                                stroke-dasharray="0"
-                                fill="#4a576d"
-                                class="apexcharts-backgroundBar"
-                              ></rect>
-                              <path
-                                id="SvgjsPath1212"
-                                d="M 321.1285714285714 385L 321.1285714285714 38.083333333333314Q 321.1285714285714 32.083333333333314 327.1285714285714 32.083333333333314L 326.0142857142857 32.083333333333314Q 332.0142857142857 32.083333333333314 332.0142857142857 38.083333333333314L 332.0142857142857 38.083333333333314L 332.0142857142857 385L 332.0142857142857 385z"
-                                fill="rgba(203,12,159,1)"
-                                fill-opacity="1"
-                                stroke-opacity="1"
-                                stroke-linecap="round"
-                                stroke-width="0"
-                                stroke-dasharray="0"
-                                class="apexcharts-bar-area"
-                                index="0"
-                                clip-path="url(#gridRectMaskxsrv0ha6)"
-                                pathTo="M 321.1285714285714 385L 321.1285714285714 38.083333333333314Q 321.1285714285714 32.083333333333314 327.1285714285714 32.083333333333314L 326.0142857142857 32.083333333333314Q 332.0142857142857 32.083333333333314 332.0142857142857 38.083333333333314L 332.0142857142857 38.083333333333314L 332.0142857142857 385L 332.0142857142857 385z"
-                                pathFrom="M 321.1285714285714 385L 321.1285714285714 385L 332.0142857142857 385L 332.0142857142857 385L 332.0142857142857 385L 332.0142857142857 385L 332.0142857142857 385L 321.1285714285714 385"
-                                cy="32.083333333333314"
-                                cx="393.69999999999993"
-                                j="4"
-                                val="55"
-                                barHeight="352.9166666666667"
-                                barWidth="10.885714285714284"
-                              ></path>
-                              <rect
-                                id="SvgjsRect1213"
-                                width="10.885714285714284"
-                                height="385"
-                                x="393.69999999999993"
-                                y="0"
-                                rx="6"
-                                ry="6"
-                                opacity="1"
-                                stroke-width="0"
-                                stroke="none"
-                                stroke-dasharray="0"
-                                fill="#4a576d"
-                                class="apexcharts-backgroundBar"
-                              ></rect>
-                              <path
-                                id="SvgjsPath1215"
-                                d="M 393.69999999999993 385L 393.69999999999993 185.66666666666666Q 393.69999999999993 179.66666666666666 399.69999999999993 179.66666666666666L 398.58571428571423 179.66666666666666Q 404.58571428571423 179.66666666666666 404.58571428571423 185.66666666666666L 404.58571428571423 185.66666666666666L 404.58571428571423 385L 404.58571428571423 385z"
-                                fill="rgba(203,12,159,1)"
-                                fill-opacity="1"
-                                stroke-opacity="1"
-                                stroke-linecap="round"
-                                stroke-width="0"
-                                stroke-dasharray="0"
-                                class="apexcharts-bar-area"
-                                index="0"
-                                clip-path="url(#gridRectMaskxsrv0ha6)"
-                                pathTo="M 393.69999999999993 385L 393.69999999999993 185.66666666666666Q 393.69999999999993 179.66666666666666 399.69999999999993 179.66666666666666L 398.58571428571423 179.66666666666666Q 404.58571428571423 179.66666666666666 404.58571428571423 185.66666666666666L 404.58571428571423 185.66666666666666L 404.58571428571423 385L 404.58571428571423 385z"
-                                pathFrom="M 393.69999999999993 385L 393.69999999999993 385L 404.58571428571423 385L 404.58571428571423 385L 404.58571428571423 385L 404.58571428571423 385L 404.58571428571423 385L 393.69999999999993 385"
-                                cy="179.66666666666666"
-                                cx="466.2714285714285"
-                                j="5"
-                                val="32"
-                                barHeight="205.33333333333334"
-                                barWidth="10.885714285714284"
-                              ></path>
-                              <rect
-                                id="SvgjsRect1216"
-                                width="10.885714285714284"
-                                height="385"
-                                x="466.2714285714285"
-                                y="0"
-                                rx="6"
-                                ry="6"
-                                opacity="1"
-                                stroke-width="0"
-                                stroke="none"
-                                stroke-dasharray="0"
-                                fill="#4a576d"
-                                class="apexcharts-backgroundBar"
-                              ></rect>
-                              <path
-                                id="SvgjsPath1218"
-                                d="M 466.2714285714285 385L 466.2714285714285 160Q 466.2714285714285 154 472.2714285714285 154L 471.1571428571428 154Q 477.1571428571428 154 477.1571428571428 160L 477.1571428571428 160L 477.1571428571428 385L 477.1571428571428 385z"
-                                fill="rgba(203,12,159,1)"
-                                fill-opacity="1"
-                                stroke-opacity="1"
-                                stroke-linecap="round"
-                                stroke-width="0"
-                                stroke-dasharray="0"
-                                class="apexcharts-bar-area"
-                                index="0"
-                                clip-path="url(#gridRectMaskxsrv0ha6)"
-                                pathTo="M 466.2714285714285 385L 466.2714285714285 160Q 466.2714285714285 154 472.2714285714285 154L 471.1571428571428 154Q 477.1571428571428 154 477.1571428571428 160L 477.1571428571428 160L 477.1571428571428 385L 477.1571428571428 385z"
-                                pathFrom="M 466.2714285714285 385L 466.2714285714285 385L 477.1571428571428 385L 477.1571428571428 385L 477.1571428571428 385L 477.1571428571428 385L 477.1571428571428 385L 466.2714285714285 385"
-                                cy="154"
-                                cx="538.842857142857"
-                                j="6"
-                                val="36"
-                                barHeight="231"
-                                barWidth="10.885714285714284"
-                              ></path>
-                              <g
-                                id="SvgjsG1197"
-                                class="apexcharts-bar-goals-markers"
-                                style="pointer-events: none"
-                              >
-                                <g
-                                  id="SvgjsG1199"
-                                  className="apexcharts-bar-goals-groups"
-                                ></g>
-                                <g
-                                  id="SvgjsG1202"
-                                  className="apexcharts-bar-goals-groups"
-                                ></g>
-                                <g
-                                  id="SvgjsG1205"
-                                  className="apexcharts-bar-goals-groups"
-                                ></g>
-                                <g
-                                  id="SvgjsG1208"
-                                  className="apexcharts-bar-goals-groups"
-                                ></g>
-                                <g
-                                  id="SvgjsG1211"
-                                  className="apexcharts-bar-goals-groups"
-                                ></g>
-                                <g
-                                  id="SvgjsG1214"
-                                  className="apexcharts-bar-goals-groups"
-                                ></g>
-                                <g
-                                  id="SvgjsG1217"
-                                  className="apexcharts-bar-goals-groups"
-                                ></g>
-                              </g>
-                            </g>
-                            <g
-                              id="SvgjsG1196"
-                              class="apexcharts-datalabels"
-                              data:realIndex="0"
-                            ></g>
-                          </g>
-                          <line
-                            id="SvgjsLine1241"
-                            x1="0"
-                            y1="0"
-                            x2="508"
-                            y2="0"
-                            stroke="#b6b6b6"
-                            stroke-dasharray="0"
-                            stroke-width="1"
-                            stroke-linecap="butt"
-                            class="apexcharts-ycrosshairs"
-                          ></line>
-                          <line
-                            id="SvgjsLine1242"
-                            x1="0"
-                            y1="0"
-                            x2="508"
-                            y2="0"
-                            stroke-dasharray="0"
-                            stroke-width="0"
-                            stroke-linecap="butt"
-                            class="apexcharts-ycrosshairs-hidden"
-                          ></line>
-                          <g
-                            id="SvgjsG1243"
-                            class="apexcharts-yaxis-annotations"
-                          ></g>
-                          <g
-                            id="SvgjsG1244"
-                            class="apexcharts-xaxis-annotations"
-                          ></g>
-                          <g
-                            id="SvgjsG1245"
-                            class="apexcharts-point-annotations"
-                          ></g>
-                        </g>
-                        <g
-                          id="SvgjsG1228"
-                          class="apexcharts-yaxis"
-                          rel="0"
-                          transform="translate(-18, 0)"
-                        ></g>
-                        <g id="SvgjsG1185" class="apexcharts-annotations"></g>
-                      </svg> -->
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg mx-auto">
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    id demande
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    libele
+                </th>
+                <th scope="col" class="px-6 py-3">
+                   immatricule
+                </th>
+                <th scope="col" class="px-6 py-3">
+                   marque
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    model
+                </th>
+                 
+                <th scope="col" class="px-6 py-3">
+                    zone du transport
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Statut
+                </th>
+                <th scope="col" class="px-6 py-3 text-center">
+                action
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <td class="px-6 py-4">
+                   1
+                </td>
+                <td class="px-6 py-4">
+                    Sliver
+                </td>
+                <td class="px-6 py-4">
+                    Laptop
+                </td>
+                <td class="px-6 py-4">
+                    $2999
+                </td>
+                <td class="px-6 py-4">
+                   
+                </td>
+                <td scope="col" class="px-6 py-3 ">
+                   <p class="text-orange-500"> attente </p>
+                    </td>
+                <td colspan="2" class="px-6 py-4 text-right">
+                   
+                   
+              <button type="button" class="text-white bg-gradient-to-r from-green-400  to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-400 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 " data-modal-toggle="popup-modal">suivre</button>
+
+               <!-- <button type="button" class="text-white bg-gradient-to-r from-green-400  to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-400 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 " data-modal-toggle="popup-modal">modifier</button> -->
+
+              <button type="button" class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..." data-modal-toggle="modal">annuler </button>
+   
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+               
+               <td class="px-6 py-4">
+                   2
+                </td>
+                <td class="px-6 py-4">
+                    Wolvagen
+                </td>
+                <td class="px-6 py-4">
+                    Laptop
+                </td>
+                <td class="px-6 py-4">
+                    $2999
+                </td>
+                 <td class="px-6 py-4">
+                   
+                </td>
+                
+               <td scope="col" class="px-6 py-3 ">
+                   <p class="text-orange-500"> attente </p>
+                    </td>
+                <th scope="col" class="px-6 py-3 ">
+                   
+                    </th>
+                <td colspan="2" class="px-6 py-4 text-right">
+                 <button type="button" class="text-white bg-gradient-to-r from-green-400  to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-400 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 " data-modal-toggle="popupmodal">suivre</button>
+
+               <!-- <button type="button" class="text-white bg-gradient-to-r from-green-400  to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-400 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 " data-modal-toggle="popup-modal">modifier</button> -->
+
+              <button type="button" class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..."  data-modal-toggle="pmodal">annuler </button>
+   
+
+
+                </td>
+            </tr>
+           
+
+           <!-- modal component -->
+          
+
+          <div v-if="modal" id="popup-modal" tabindex="-1" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 md:inset-0 h-modal md:h-full">
+    <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-toggle="popup-modal">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
+            </button>
+            <div class="p-6 text-center">
+                <svg class="mx-auto mb-4 w-14 h-14 text-gray-400 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Etre vous sur d annuler votre demande ?</h3>
+                <router-link to="" data-modal-toggle="popup-modal" type="button" class=" text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
+                    Oui
+                </router-link>
+                
+                <button data-modal-toggle="popup-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Non</button>
+            </div>
+        </div>
+    </div>
+    </div>     
+    
+
+           <!-- cree la modal component -->
+        </tbody>
+    </table>
+</div>
+          
+          <!-- 
+            test
+           -->
+                   
                       <div
                         class="apexcharts-legend"
                         style="max-height: 210px"
@@ -3493,203 +3060,7 @@
                       </div>
                     </div>
                   </div>
-
-                  <div
-                    class="
-                      flex
-                      justify-between
-                      items-center
-                      pt-3
-                      mt-5
-                      border-t border-gray-700
-                      sm:pt-6
-                    "
-                    >
-                    <!-- <div>
-                      <button
-                        class="
-                          inline-flex
-                          items-center
-                          p-2
-                          text-sm
-                          font-medium
-                          text-center text-gray-400
-                          rounded-2xl
-                          hover:text-white
-                        "
-                        type="button"
-                        data-dropdown-toggle="weekly-sales-dropdown"
-                      >
-                        Last 7 days
-                        <svg
-                          class="ml-2 w-4 h-4"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M19 9l-7 7-7-7"
-                          ></path>
-                        </svg>
-                      </button>
-
-                      <div
-                        class="
-                          hidden
-                          z-50
-                          my-4
-                          text-base
-                          list-none
-                          bg-white
-                          rounded
-                          divide-y divide-gray-100
-                          shadow-lg shadow-gray-200
-                        "
-                        id="weekly-sales-dropdown"
-                        data-popper-placement="bottom"
-                        style="
-                          position: absolute;
-                          inset: 0px auto auto 0px;
-                          margin: 0px;
-                          transform: translate3d(152px, 919px, 0px);
-                        "
-                      >
-                        <div class="py-3 px-4" role="none">
-                          <p
-                            class="text-sm font-medium text-gray-900 truncate"
-                            role="none"
-                          >
-                            Sep 16, 2021 - Sep 22, 2021
-                          </p>
-                        </div>
-                        <ul class="py-1" role="none">
-                          <li>
-                            <a
-                              href="#"
-                              class="
-                                block
-                                py-2
-                                px-4
-                                text-sm text-gray-700
-                                hover:bg-gray-100
-                              "
-                              role="menuitem"
-                              >Yesterday</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              class="
-                                block
-                                py-2
-                                px-4
-                                text-sm text-gray-700
-                                hover:bg-gray-100
-                              "
-                              role="menuitem"
-                              >Today</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              class="
-                                block
-                                py-2
-                                px-4
-                                text-sm text-gray-700
-                                hover:bg-gray-100
-                              "
-                              role="menuitem"
-                              >Last 7 days</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              class="
-                                block
-                                py-2
-                                px-4
-                                text-sm text-gray-700
-                                hover:bg-gray-100
-                              "
-                              role="menuitem"
-                              >Last 30 days</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              class="
-                                block
-                                py-2
-                                px-4
-                                text-sm text-gray-700
-                                hover:bg-gray-100
-                              "
-                              role="menuitem"
-                              >Last 90 days</a
-                            >
-                          </li>
-                        </ul>
-                        <div class="py-1" role="none">
-                          <a
-                            href="#"
-                            class="
-                              block
-                              py-2
-                              px-4
-                              text-sm text-gray-700
-                              hover:bg-gray-100
-                            "
-                            role="menuitem"
-                            >Custom...</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                     -->
-                   
-                    <!-- <div class="flex-shrink-0">
-                      <a
-                        href="#"
-                        class="
-                          inline-flex
-                          items-center
-                          p-2
-                          text-xs
-                          font-medium
-                          text-white
-                          uppercase
-                          rounded-lg
-                          sm:text-sm
-                          hover:bg-gray-700
-                        "
-                      >
-                        Sales Report
-                        <svg
-                          class="ml-1 w-4 h-4 sm:w-5 sm:h-5"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M9 5l7 7-7 7"
-                          ></path>
-                        </svg>
-                      </a>
-                    </div>  -->
-                  </div>
+                
                   <div class="resize-triggers">
                     <div class="expand-trigger">
                       <div style="width: 563px; height: 633px"></div>
@@ -3697,1238 +3068,7 @@
                     <div class="contract-trigger"></div>
                   </div>
                 </div> 
-             <div class="bg-white shadow-lg shadow-gray-200 rounded-2xl p-4"> 
-
-
-               <!-- aller au bureau  -->
-
-                  <div class="flex justify-between items-center mb-4">
-                    <!-- <div>
-                      <h3 class="mb-2 text-xl font-bold text-gray-900">
-                        Sales by Country
-                      </h3>
-                      <span class="text-base font-normal text-gray-500"
-                        >This is a list of latest country</span
-                      >
-                    </div> -->
-                    <div class="flex-shrink-0">
-                      <a
-                        href="#"
-                        class="
-                          p-2
-                          text-sm
-                          font-medium
-                          text-gray-900
-                          rounded-lg
-                          hover:bg-gray-100
-                        "
-                        >TITRE</a
-                      >
-                    </div>
-                  </div>
-
-                  <div class="flex flex-col mt-8">
-                    <div class="overflow-x-auto rounded-2xl">
-                      <div class="inline-block min-w-full align-middle">
-                        <div
-                          class="
-                            overflow-hidden
-                            shadow-lg shadow-gray-200
-                            sm:rounded-2xl
-                          "
-                        >
-                          <table class="min-w-full divide-y divide-gray-200">
-                            <thead>
-                              <tr>
-                                <th
-                                  scope="col"
-                                  class="
-                                    p-4
-                                    text-xs
-                                    font-medium
-                                    tracking-wider
-                                    text-left text-gray-500
-                                    uppercase
-                                  "
-                                >
-                                  Country
-                                </th>
-                                <th
-                                  scope="col"
-                                  class="
-                                    p-4
-                                    text-xs
-                                    font-medium
-                                    tracking-wider
-                                    text-left text-gray-500
-                                    uppercase
-                                  "
-                                >
-                                  Sales
-                                </th>
-                                <th
-                                  scope="col"
-                                  class="
-                                    p-4
-                                    text-xs
-                                    font-medium
-                                    tracking-wider
-                                    text-left text-gray-500
-                                    uppercase
-                                  "
-                                >
-                                  Value
-                                </th>
-                                <th
-                                  scope="col"
-                                  class="
-                                    p-4
-                                    text-xs
-                                    font-medium
-                                    tracking-wider
-                                    text-left text-gray-500
-                                    uppercase
-                                  "
-                                >
-                                  Bounce
-                                </th>
-                              </tr>
-                            </thead>
-                            <tbody class="divide-y divide-gray-200">
-                              <tr>
-                                <td
-                                  class="
-                                    flex
-                                    items-center
-                                    p-4
-                                    text-sm
-                                    font-normal
-                                    text-gray-900
-                                    whitespace-nowrap
-                                  "
-                                >
-                                  <svg
-                                    class="w-4 h-4"
-                                    viewBox="0 0 26 18"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <rect
-                                      y="0.529053"
-                                      width="25.7522"
-                                      height="17.1429"
-                                      rx="2"
-                                      fill="white"
-                                    ></rect>
-                                    <mask
-                                      id="mask0"
-                                      style="mask-type: alpha"
-                                      maskUnits="userSpaceOnUse"
-                                      x="0"
-                                      y="0"
-                                      width="26"
-                                      height="18"
-                                    >
-                                      <rect
-                                        y="0.529053"
-                                        width="25.7522"
-                                        height="17.1429"
-                                        rx="2"
-                                        fill="white"
-                                      ></rect>
-                                    </mask>
-                                    <g mask="url(#mask0)">
-                                      <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M25.7522 0.529053H0V1.67191H25.7522V0.529053ZM25.7522 2.81477H0V3.95763H25.7522V2.81477ZM0 5.10048H25.7522V6.24333H0V5.10048ZM25.7522 7.3862H0V8.52905H25.7522V7.3862ZM0 9.67192H25.7522V10.8148H0V9.67192ZM25.7522 11.9576H0V13.1005H25.7522V11.9576ZM0 14.2433H25.7522V15.3862H0V14.2433ZM25.7522 16.5291H0V17.6719H25.7522V16.5291Z"
-                                        fill="#D02F44"
-                                      ></path>
-                                      <rect
-                                        y="0.529053"
-                                        width="11.0367"
-                                        height="8"
-                                        fill="#46467F"
-                                      ></rect>
-                                      <g filter="url(#filter0_d)">
-                                        <path
-                                          fill-rule="evenodd"
-                                          clip-rule="evenodd"
-                                          d="M2.45237 2.2433C2.45237 2.5589 2.17786 2.81473 1.83922 2.81473C1.50059 2.81473 1.22607 2.5589 1.22607 2.2433C1.22607 1.92771 1.50059 1.67188 1.83922 1.67188C2.17786 1.67188 2.45237 1.92771 2.45237 2.2433ZM4.90496 2.2433C4.90496 2.5589 4.63045 2.81473 4.29182 2.81473C3.95318 2.81473 3.67867 2.5589 3.67867 2.2433C3.67867 1.92771 3.95318 1.67188 4.29182 1.67188C4.63045 1.67188 4.90496 1.92771 4.90496 2.2433ZM6.74441 2.81473C7.08304 2.81473 7.35756 2.5589 7.35756 2.2433C7.35756 1.92771 7.08304 1.67188 6.74441 1.67188C6.40578 1.67188 6.13126 1.92771 6.13126 2.2433C6.13126 2.5589 6.40578 2.81473 6.74441 2.81473ZM9.81015 2.2433C9.81015 2.5589 9.53564 2.81473 9.197 2.81473C8.85837 2.81473 8.58386 2.5589 8.58386 2.2433C8.58386 1.92771 8.85837 1.67188 9.197 1.67188C9.53564 1.67188 9.81015 1.92771 9.81015 2.2433ZM3.06552 3.95758C3.40415 3.95758 3.67867 3.70175 3.67867 3.38616C3.67867 3.07056 3.40415 2.81473 3.06552 2.81473C2.72689 2.81473 2.45237 3.07056 2.45237 3.38616C2.45237 3.70175 2.72689 3.95758 3.06552 3.95758ZM6.13126 3.38616C6.13126 3.70175 5.85675 3.95758 5.51811 3.95758C5.17948 3.95758 4.90496 3.70175 4.90496 3.38616C4.90496 3.07056 5.17948 2.81473 5.51811 2.81473C5.85675 2.81473 6.13126 3.07056 6.13126 3.38616ZM7.97071 3.95758C8.30934 3.95758 8.58386 3.70175 8.58386 3.38616C8.58386 3.07056 8.30934 2.81473 7.97071 2.81473C7.63207 2.81473 7.35756 3.07056 7.35756 3.38616C7.35756 3.70175 7.63207 3.95758 7.97071 3.95758ZM9.81015 4.52902C9.81015 4.84462 9.53564 5.10045 9.197 5.10045C8.85837 5.10045 8.58386 4.84462 8.58386 4.52902C8.58386 4.21343 8.85837 3.9576 9.197 3.9576C9.53564 3.9576 9.81015 4.21343 9.81015 4.52902ZM6.74441 5.10045C7.08304 5.10045 7.35756 4.84462 7.35756 4.52902C7.35756 4.21343 7.08304 3.9576 6.74441 3.9576C6.40578 3.9576 6.13126 4.21343 6.13126 4.52902C6.13126 4.84462 6.40578 5.10045 6.74441 5.10045ZM4.90496 4.52902C4.90496 4.84462 4.63045 5.10045 4.29182 5.10045C3.95318 5.10045 3.67867 4.84462 3.67867 4.52902C3.67867 4.21343 3.95318 3.9576 4.29182 3.9576C4.63045 3.9576 4.90496 4.21343 4.90496 4.52902ZM1.83922 5.10045C2.17786 5.10045 2.45237 4.84462 2.45237 4.52902C2.45237 4.21343 2.17786 3.9576 1.83922 3.9576C1.50059 3.9576 1.22607 4.21343 1.22607 4.52902C1.22607 4.84462 1.50059 5.10045 1.83922 5.10045ZM3.67867 5.67188C3.67867 5.98747 3.40415 6.2433 3.06552 6.2433C2.72689 6.2433 2.45237 5.98747 2.45237 5.67188C2.45237 5.35628 2.72689 5.10045 3.06552 5.10045C3.40415 5.10045 3.67867 5.35628 3.67867 5.67188ZM5.51811 6.2433C5.85675 6.2433 6.13126 5.98747 6.13126 5.67188C6.13126 5.35628 5.85675 5.10045 5.51811 5.10045C5.17948 5.10045 4.90496 5.35628 4.90496 5.67188C4.90496 5.98747 5.17948 6.2433 5.51811 6.2433ZM8.58386 5.67188C8.58386 5.98747 8.30934 6.2433 7.97071 6.2433C7.63207 6.2433 7.35756 5.98747 7.35756 5.67188C7.35756 5.35628 7.63207 5.10045 7.97071 5.10045C8.30934 5.10045 8.58386 5.35628 8.58386 5.67188ZM9.197 7.38616C9.53564 7.38616 9.81015 7.13032 9.81015 6.81473C9.81015 6.49914 9.53564 6.2433 9.197 6.2433C8.85837 6.2433 8.58386 6.49914 8.58386 6.81473C8.58386 7.13032 8.85837 7.38616 9.197 7.38616ZM7.35756 6.81473C7.35756 7.13032 7.08304 7.38616 6.74441 7.38616C6.40578 7.38616 6.13126 7.13032 6.13126 6.81473C6.13126 6.49914 6.40578 6.2433 6.74441 6.2433C7.08304 6.2433 7.35756 6.49914 7.35756 6.81473ZM4.29182 7.38616C4.63045 7.38616 4.90496 7.13032 4.90496 6.81473C4.90496 6.49914 4.63045 6.2433 4.29182 6.2433C3.95318 6.2433 3.67867 6.49914 3.67867 6.81473C3.67867 7.13032 3.95318 7.38616 4.29182 7.38616ZM2.45237 6.81473C2.45237 7.13032 2.17786 7.38616 1.83922 7.38616C1.50059 7.38616 1.22607 7.13032 1.22607 6.81473C1.22607 6.49914 1.50059 6.2433 1.83922 6.2433C2.17786 6.2433 2.45237 6.49914 2.45237 6.81473Z"
-                                          fill="url(#paint0_linear)"
-                                        ></path>
-                                      </g>
-                                    </g>
-                                    <defs>
-                                      <filter
-                                        id="filter0_d"
-                                        x="1.22607"
-                                        y="1.67188"
-                                        width="8.58408"
-                                        height="6.71428"
-                                        filterUnits="userSpaceOnUse"
-                                        color-interpolation-filters="sRGB"
-                                      >
-                                        <feFlood
-                                          flood-opacity="0"
-                                          result="BackgroundImageFix"
-                                        ></feFlood>
-                                        <feColorMatrix
-                                          in="SourceAlpha"
-                                          type="matrix"
-                                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                          result="hardAlpha"
-                                        ></feColorMatrix>
-                                        <feOffset dy="1"></feOffset>
-                                        <feColorMatrix
-                                          type="matrix"
-                                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"
-                                        ></feColorMatrix>
-                                        <feBlend
-                                          mode="normal"
-                                          in2="BackgroundImageFix"
-                                          result="effect1_dropshadow-lg shadow-gray-200"
-                                        ></feBlend>
-                                        <feBlend
-                                          mode="normal"
-                                          in="SourceGraphic"
-                                          in2="effect1_dropshadow-lg shadow-gray-200"
-                                          result="shape"
-                                        ></feBlend>
-                                      </filter>
-                                      <linearGradient
-                                        id="paint0_linear"
-                                        x1="1.22607"
-                                        y1="1.67188"
-                                        x2="1.22607"
-                                        y2="7.38616"
-                                        gradientUnits="userSpaceOnUse"
-                                      >
-                                        <stop stop-color="white"></stop>
-                                        <stop
-                                          offset="1"
-                                          stop-color="#F0F0F0"
-                                        ></stop>
-                                      </linearGradient>
-                                    </defs>
-                                  </svg>
-                                  <span
-                                    class="
-                                      mx-5
-                                      ml-3
-                                      w-32
-                                      text-base
-                                      font-medium
-                                      text-gray-900
-                                      sm:flex-none
-                                    "
-                                    >United States</span
-                                  >
-                                </td>
-                                <td
-                                  class="
-                                    p-4
-                                    text-sm
-                                    font-semibold
-                                    text-gray-900
-                                    whitespace-nowrap
-                                  "
-                                >
-                                  9600
-                                </td>
-                                <td
-                                  class="
-                                    p-4
-                                    text-sm
-                                    font-semibold
-                                    text-gray-900
-                                    whitespace-nowrap
-                                  "
-                                >
-                                  $756,600
-                                </td>
-                                <td
-                                  class="
-                                    p-4
-                                    text-sm
-                                    font-normal
-                                    text-gray-500
-                                    whitespace-nowrap
-                                  "
-                                >
-                                  29.6%
-                                </td>
-                              </tr>
-                              <tr>
-                                <td
-                                  class="
-                                    flex
-                                    items-center
-                                    p-4
-                                    text-sm
-                                    font-normal
-                                    text-gray-900
-                                    whitespace-nowrap
-                                    rounded-2xl rounded-left
-                                  "
-                                >
-                                  <svg
-                                    class="w-4 h-4"
-                                    viewBox="0 0 26 18"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <rect
-                                      x="0.25"
-                                      y="0.779053"
-                                      width="25.2567"
-                                      height="16.6429"
-                                      rx="1.75"
-                                      fill="white"
-                                      stroke="#F3F4F6"
-                                      stroke-width="0.5"
-                                    ></rect>
-                                    <mask
-                                      id="mask0"
-                                      style="mask-type: alpha"
-                                      maskUnits="userSpaceOnUse"
-                                      x="0"
-                                      y="0"
-                                      width="26"
-                                      height="18"
-                                    >
-                                      <rect
-                                        x="0.25"
-                                        y="0.779053"
-                                        width="25.2567"
-                                        height="16.6429"
-                                        rx="1.75"
-                                        fill="white"
-                                        stroke="white"
-                                        stroke-width="0.5"
-                                      ></rect>
-                                    </mask>
-                                    <g mask="url(#mask0)">
-                                      <rect
-                                        x="18.3975"
-                                        y="0.529053"
-                                        width="7.35907"
-                                        height="17.1429"
-                                        fill="#FF3131"
-                                      ></rect>
-                                      <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M0 17.6719H7.35907V0.529053H0V17.6719Z"
-                                        fill="#FF3131"
-                                      ></path>
-                                      <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M14.8804 8.37761C14.6418 8.59995 14.2588 8.38268 14.3272 8.06378L14.718 6.2432L13.4915 6.81463L12.8782 5.10034L12.265 6.81463L11.0385 6.2432L11.4292 8.06378C11.4977 8.38268 11.1147 8.59995 10.8761 8.37761L10.6525 8.16923C10.5244 8.04994 10.326 8.04994 10.198 8.16923L9.81196 8.52891L8.58545 7.95749L9.1987 9.10034L8.84717 9.4279C8.70571 9.55971 8.70571 9.78383 8.84717 9.91564L10.4252 11.3861H12.265L12.5716 13.1003H13.1849L13.4915 11.3861H15.3313L16.9093 9.91564C17.0508 9.78383 17.0508 9.55971 16.9093 9.4279L16.5578 9.10034L17.171 7.95749L15.9445 8.52891L15.5585 8.16923C15.4305 8.04994 15.232 8.04994 15.104 8.16923L14.8804 8.37761Z"
-                                        fill="#FF3131"
-                                      ></path>
-                                    </g>
-                                  </svg>
-                                  <span
-                                    class="
-                                      flex-none
-                                      mx-5
-                                      ml-3
-                                      w-32
-                                      text-base
-                                      font-medium
-                                      text-gray-900
-                                    "
-                                    >Canada</span
-                                  >
-                                </td>
-                                <td
-                                  class="
-                                    p-4
-                                    text-sm
-                                    font-semibold
-                                    text-gray-900
-                                    whitespace-nowrap
-                                  "
-                                >
-                                  8340
-                                </td>
-                                <td
-                                  class="
-                                    p-4
-                                    text-sm
-                                    font-semibold
-                                    text-gray-900
-                                    whitespace-nowrap
-                                  "
-                                >
-                                  $545,760
-                                </td>
-                                <td
-                                  class="
-                                    p-4
-                                    text-sm
-                                    font-normal
-                                    text-gray-500
-                                    whitespace-nowrap
-                                  "
-                                >
-                                  29.6%
-                                </td>
-                              </tr>
-                              <tr>
-                                <td
-                                  class="
-                                    flex
-                                    items-center
-                                    p-4
-                                    text-sm
-                                    font-normal
-                                    text-gray-900
-                                    whitespace-nowrap
-                                  "
-                                >
-                                  <svg
-                                    class="w-4 h-4"
-                                    viewBox="0 0 26 18"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <rect
-                                      x="0.25"
-                                      y="0.779053"
-                                      width="25.2567"
-                                      height="16.6429"
-                                      rx="1.75"
-                                      fill="white"
-                                      stroke="#F3F4F6"
-                                      stroke-width="0.5"
-                                    ></rect>
-                                    <mask
-                                      id="mask0"
-                                      style="mask-type: alpha"
-                                      maskUnits="userSpaceOnUse"
-                                      x="0"
-                                      y="0"
-                                      width="26"
-                                      height="18"
-                                    >
-                                      <rect
-                                        x="0.25"
-                                        y="0.779053"
-                                        width="25.2567"
-                                        height="16.6429"
-                                        rx="1.75"
-                                        fill="white"
-                                        stroke="white"
-                                        stroke-width="0.5"
-                                      ></rect>
-                                    </mask>
-                                    <g mask="url(#mask0)">
-                                      <rect
-                                        x="17.1714"
-                                        y="0.529053"
-                                        width="8.58558"
-                                        height="17.1429"
-                                        fill="#F44653"
-                                      ></rect>
-                                      <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M0 17.6719H8.58558V0.529053H0V17.6719Z"
-                                        fill="#1035BB"
-                                      ></path>
-                                    </g>
-                                  </svg>
-                                  <span
-                                    class="
-                                      flex-none
-                                      mx-5
-                                      ml-3
-                                      w-32
-                                      text-base
-                                      font-medium
-                                      text-gray-900
-                                    "
-                                    >France</span
-                                  >
-                                </td>
-                                <td
-                                  class="
-                                    p-4
-                                    text-sm
-                                    font-semibold
-                                    text-gray-900
-                                    whitespace-nowrap
-                                  "
-                                >
-                                  6700
-                                </td>
-                                <td
-                                  class="
-                                    p-4
-                                    text-sm
-                                    font-semibold
-                                    text-gray-900
-                                    whitespace-nowrap
-                                  "
-                                >
-                                  $487,560
-                                </td>
-                                <td
-                                  class="
-                                    p-4
-                                    text-sm
-                                    font-normal
-                                    text-gray-500
-                                    whitespace-nowrap
-                                  "
-                                >
-                                  34.5%
-                                </td>
-                              </tr>
-                              <tr>
-                                <td
-                                  class="
-                                    flex
-                                    items-center
-                                    p-4
-                                    text-sm
-                                    font-normal
-                                    text-gray-900
-                                    whitespace-nowrap
-                                    rounded-2xl rounded-left
-                                  "
-                                >
-                                  <svg
-                                    class="w-4 h-4"
-                                    viewBox="0 0 26 18"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <rect
-                                      y="0.529053"
-                                      width="25.7567"
-                                      height="17.1429"
-                                      rx="2"
-                                      fill="white"
-                                    ></rect>
-                                    <mask
-                                      id="mask0"
-                                      style="mask-type: alpha"
-                                      maskUnits="userSpaceOnUse"
-                                      x="0"
-                                      y="0"
-                                      width="26"
-                                      height="18"
-                                    >
-                                      <rect
-                                        y="0.529053"
-                                        width="25.7567"
-                                        height="17.1429"
-                                        rx="2"
-                                        fill="white"
-                                      ></rect>
-                                    </mask>
-                                    <g mask="url(#mask0)">
-                                      <rect
-                                        y="0.529053"
-                                        width="25.7567"
-                                        height="17.1429"
-                                        fill="#0A17A7"
-                                      ></rect>
-                                      <path
-                                        d="M-0.951485 0.195719H0H0.613256H0.714042L0.797945 0.251562L5.00683 3.05286H6.04257L10.8708 0.241006L11.3719 -0.0508112V0.529053V0.921924C11.3719 1.14501 11.2604 1.3533 11.0746 1.4769L10.89 1.19941L11.0746 1.47691L7.07914 4.13618V4.94011L10.8133 7.92254C11.2032 8.23391 10.983 8.86239 10.4841 8.86239C10.3801 8.86239 10.2784 8.83164 10.1918 8.774M-0.951485 0.195719L10.1918 8.774M-0.951485 0.195719L-0.208022 0.78951L3.95946 4.118V4.92192L-0.184689 7.68013L-0.333333 7.77907V7.95763V8.52905V9.10892L0.16775 8.8171L4.99603 6.00524H6.03177L10.1918 8.774M-0.951485 0.195719L10.3764 8.49651L10.1918 8.774"
-                                        fill="#FF2E3B"
-                                        stroke="white"
-                                        stroke-width="0.666667"
-                                      ></path>
-                                      <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M0 3.3862V5.67191H4.29279V8.43382C4.29279 8.80201 4.59127 9.10048 4.95946 9.10048H6.07914C6.44733 9.10048 6.74581 8.80201 6.74581 8.43382V5.67191H10.9852C11.3534 5.67191 11.6519 5.37343 11.6519 5.00524V4.05286C11.6519 3.68467 11.3534 3.3862 10.9852 3.3862H6.74581V0.529053H4.29279V3.3862H0Z"
-                                        fill="url(#paint0_linear)"
-                                      ></path>
-                                      <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M0 3.95762H4.90604V3.3862V0.529053H6.13256V3.3862V3.95762H11.0386V5.10048H6.13256V5.67191V8.52905H4.90604V5.67191V5.10048H0V3.95762Z"
-                                        fill="url(#paint1_linear)"
-                                      ></path>
-                                      <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M5.51945 14.5289L4.43807 15.0587L4.64459 13.9367L3.76973 13.1421L4.97876 12.9784L5.51945 11.9575L6.06015 12.9784L7.26918 13.1421L6.39432 13.9367L6.60084 15.0587L5.51945 14.5289Z"
-                                        fill="white"
-                                      ></path>
-                                      <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M18.3979 15.3862L17.5306 15.6229L17.7846 14.8147L17.5306 14.0066L18.3979 14.2433L19.2652 14.0066L19.0112 14.8147L19.2652 15.6229L18.3979 15.3862Z"
-                                        fill="white"
-                                      ></path>
-                                      <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M18.3979 4.52898L17.5306 4.76568L17.7846 3.95755L17.5306 3.14943L18.3979 3.38613L19.2652 3.14943L19.0112 3.95755L19.2652 4.76568L18.3979 4.52898Z"
-                                        fill="white"
-                                      ></path>
-                                      <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M22.0771 7.95769L21.2098 8.19439L21.4638 7.38627L21.2098 6.57814L22.0771 6.81484L22.9444 6.57814L22.6904 7.38627L22.9444 8.19439L22.0771 7.95769Z"
-                                        fill="white"
-                                      ></path>
-                                      <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M14.7182 9.10052L13.8509 9.33721L14.105 8.52909L13.8509 7.72097L14.7182 7.95766L15.5855 7.72097L15.3315 8.52909L15.5855 9.33721L14.7182 9.10052Z"
-                                        fill="white"
-                                      ></path>
-                                      <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M20.2373 10.529L19.8036 10.6474L19.9307 10.2433L19.8036 9.83924L20.2373 9.95759L20.6709 9.83924L20.5439 10.2433L20.6709 10.6474L20.2373 10.529Z"
-                                        fill="white"
-                                      ></path>
-                                    </g>
-                                    <defs>
-                                      <linearGradient
-                                        id="paint0_linear"
-                                        x1="0"
-                                        y1="0.529053"
-                                        x2="0"
-                                        y2="9.10048"
-                                        gradientUnits="userSpaceOnUse"
-                                      >
-                                        <stop stop-color="white"></stop>
-                                        <stop
-                                          offset="1"
-                                          stop-color="#F0F0F0"
-                                        ></stop>
-                                      </linearGradient>
-                                      <linearGradient
-                                        id="paint1_linear"
-                                        x1="0"
-                                        y1="0.529053"
-                                        x2="0"
-                                        y2="8.52905"
-                                        gradientUnits="userSpaceOnUse"
-                                      >
-                                        <stop stop-color="#FF2E3B"></stop>
-                                        <stop
-                                          offset="1"
-                                          stop-color="#FC0D1B"
-                                        ></stop>
-                                      </linearGradient>
-                                    </defs>
-                                  </svg>
-                                  <span
-                                    class="
-                                      flex-none
-                                      mx-5
-                                      ml-3
-                                      w-32
-                                      text-base
-                                      font-medium
-                                      text-gray-900
-                                    "
-                                    >Australia</span
-                                  >
-                                </td>
-                                <td
-                                  class="
-                                    p-4
-                                    text-sm
-                                    font-semibold
-                                    text-gray-900
-                                    whitespace-nowrap
-                                  "
-                                >
-                                  3900
-                                </td>
-                                <td
-                                  class="
-                                    p-4
-                                    text-sm
-                                    font-semibold
-                                    text-gray-900
-                                    whitespace-nowrap
-                                  "
-                                >
-                                  $380,670
-                                </td>
-                                <td
-                                  class="
-                                    p-4
-                                    text-sm
-                                    font-normal
-                                    text-gray-500
-                                    whitespace-nowrap
-                                  "
-                                >
-                                  40.22%
-                                </td>
-                              </tr>
-                              <tr>
-                                <td
-                                  class="
-                                    flex
-                                    items-center
-                                    p-4
-                                    text-sm
-                                    font-normal
-                                    text-gray-900
-                                    whitespace-nowrap
-                                  "
-                                >
-                                  <svg
-                                    class="w-4 h-4"
-                                    viewBox="0 0 26 18"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <rect
-                                      x="0.25"
-                                      y="0.779297"
-                                      width="25.2522"
-                                      height="16.6429"
-                                      rx="1.75"
-                                      fill="white"
-                                      stroke="#F3F4F6"
-                                      stroke-width="0.5"
-                                    ></rect>
-                                    <mask
-                                      id="mask0"
-                                      style="mask-type: alpha"
-                                      maskUnits="userSpaceOnUse"
-                                      x="0"
-                                      y="0"
-                                      width="26"
-                                      height="18"
-                                    >
-                                      <rect
-                                        x="0.25"
-                                        y="0.779297"
-                                        width="25.2522"
-                                        height="16.6429"
-                                        rx="1.75"
-                                        fill="white"
-                                        stroke="white"
-                                        stroke-width="0.5"
-                                      ></rect>
-                                    </mask>
-                                    <g mask="url(#mask0)">
-                                      <rect
-                                        x="17.168"
-                                        y="0.529297"
-                                        width="8.58408"
-                                        height="17.1429"
-                                        fill="#E43D4C"
-                                      ></rect>
-                                      <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M0 17.6722H8.58408V0.529297H0V17.6722Z"
-                                        fill="#1BB65D"
-                                      ></path>
-                                    </g>
-                                  </svg>
-                                  <span
-                                    class="
-                                      flex-none
-                                      mx-5
-                                      ml-3
-                                      w-32
-                                      text-base
-                                      font-medium
-                                      text-gray-900
-                                    "
-                                    >Italy</span
-                                  >
-                                </td>
-                                <td
-                                  class="
-                                    p-4
-                                    text-sm
-                                    font-semibold
-                                    text-gray-900
-                                    whitespace-nowrap
-                                  "
-                                >
-                                  2470
-                                </td>
-                                <td
-                                  class="
-                                    p-4
-                                    text-sm
-                                    font-semibold
-                                    text-gray-900
-                                    whitespace-nowrap
-                                  "
-                                >
-                                  $230,900
-                                </td>
-                                <td
-                                  class="
-                                    p-4
-                                    text-sm
-                                    font-normal
-                                    text-gray-500
-                                    whitespace-nowrap
-                                  "
-                                >
-                                  30.4%
-                                </td>
-                              </tr>
-                              <tr>
-                                <td
-                                  class="
-                                    flex
-                                    items-center
-                                    p-4
-                                    text-sm
-                                    font-normal
-                                    text-gray-900
-                                    whitespace-nowrap
-                                    rounded-2xl rounded-left
-                                  "
-                                >
-                                  <svg
-                                    class="w-4 h-4"
-                                    viewBox="0 0 26 18"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <rect
-                                      x="0.25"
-                                      y="0.779053"
-                                      width="25.2567"
-                                      height="16.6429"
-                                      rx="1.75"
-                                      fill="white"
-                                      stroke="#F3F4F6"
-                                      stroke-width="0.5"
-                                    ></rect>
-                                    <mask
-                                      id="mask0"
-                                      style="mask-type: alpha"
-                                      maskUnits="userSpaceOnUse"
-                                      x="0"
-                                      y="0"
-                                      width="26"
-                                      height="18"
-                                    >
-                                      <rect
-                                        x="0.25"
-                                        y="0.779053"
-                                        width="25.2567"
-                                        height="16.6429"
-                                        rx="1.75"
-                                        fill="white"
-                                        stroke="white"
-                                        stroke-width="0.5"
-                                      ></rect>
-                                    </mask>
-                                    <g mask="url(#mask0)">
-                                      <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M0 6.24334H25.7567V0.529053H0V6.24334Z"
-                                        fill="#FFA44A"
-                                      ></path>
-                                      <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M0 17.6718H25.7567V11.9575H0V17.6718Z"
-                                        fill="#1A9F0B"
-                                      ></path>
-                                      <path
-                                        d="M12.8783 11.1481C14.0559 11.1481 15.0514 10.2532 15.0514 9.10052C15.0514 7.94786 14.0559 7.0529 12.8783 7.0529C11.7007 7.0529 10.7052 7.94786 10.7052 9.10052C10.7052 10.2532 11.7007 11.1481 12.8783 11.1481Z"
-                                        fill="#181A93"
-                                        fill-opacity="0.15"
-                                        stroke="#181A93"
-                                        stroke-width="0.666667"
-                                      ></path>
-                                      <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M12.8784 9.67191C13.2171 9.67191 13.4916 9.41607 13.4916 9.10048C13.4916 8.78489 13.2171 8.52905 12.8784 8.52905C12.5397 8.52905 12.2651 8.78489 12.2651 9.10048C12.2651 9.41607 12.5397 9.67191 12.8784 9.67191Z"
-                                        fill="#181A93"
-                                      ></path>
-                                    </g>
-                                  </svg>
-                                  <span
-                                    class="
-                                      flex-none
-                                      mx-5
-                                      ml-3
-                                      w-32
-                                      text-base
-                                      font-medium
-                                      text-gray-900
-                                    "
-                                    >India</span
-                                  >
-                                </td>
-                                <td
-                                  class="
-                                    p-4
-                                    text-sm
-                                    font-semibold
-                                    text-gray-900
-                                    whitespace-nowrap
-                                  "
-                                >
-                                  700
-                                </td>
-                                <td
-                                  class="
-                                    p-4
-                                    text-sm
-                                    font-semibold
-                                    text-gray-900
-                                    whitespace-nowrap
-                                  "
-                                >
-                                  $47,480
-                                </td>
-                                <td
-                                  class="
-                                    p-4
-                                    text-sm
-                                    font-normal
-                                    text-gray-500
-                                    whitespace-nowrap
-                                  "
-                                >
-                                  54.5%
-                                </td>
-                              </tr>
-                              <tr>
-                                <td
-                                  class="
-                                    flex
-                                    items-center
-                                    p-4
-                                    text-sm
-                                    font-normal
-                                    text-gray-900
-                                    whitespace-nowrap
-                                  "
-                                >
-                                  <svg
-                                    class="w-4 h-4"
-                                    viewBox="0 0 28 20"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <rect
-                                      x="0.25"
-                                      y="0.25"
-                                      width="27.5"
-                                      height="19.5"
-                                      rx="1.75"
-                                      fill="white"
-                                      stroke="#F5F5F5"
-                                      stroke-width="0.5"
-                                    ></rect>
-                                    <mask
-                                      id="mask0_267_1444"
-                                      style="mask-type: alpha"
-                                      maskUnits="userSpaceOnUse"
-                                      x="0"
-                                      y="0"
-                                      width="28"
-                                      height="20"
-                                    >
-                                      <rect
-                                        x="0.25"
-                                        y="0.25"
-                                        width="27.5"
-                                        height="19.5"
-                                        rx="1.75"
-                                        fill="white"
-                                        stroke="white"
-                                        stroke-width="0.5"
-                                      ></rect>
-                                    </mask>
-                                    <g mask="url(#mask0_267_1444)">
-                                      <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M14 16C17.3137 16 20 13.3137 20 10C20 6.68629 17.3137 4 14 4C10.6863 4 8 6.68629 8 10C8 13.3137 10.6863 16 14 16Z"
-                                        fill="url(#paint0_linear_267_1444)"
-                                      ></path>
-                                    </g>
-                                    <defs>
-                                      <linearGradient
-                                        id="paint0_linear_267_1444"
-                                        x1="8"
-                                        y1="4"
-                                        x2="8"
-                                        y2="16"
-                                        gradientUnits="userSpaceOnUse"
-                                      >
-                                        <stop stop-color="#D81441"></stop>
-                                        <stop
-                                          offset="1"
-                                          stop-color="#BB0831"
-                                        ></stop>
-                                      </linearGradient>
-                                    </defs>
-                                  </svg>
-                                  <span
-                                    class="
-                                      flex-none
-                                      mx-5
-                                      ml-3
-                                      w-32
-                                      text-base
-                                      font-medium
-                                      text-gray-900
-                                    "
-                                    >Japan</span
-                                  >
-                                </td>
-                                <td
-                                  class="
-                                    p-4
-                                    text-sm
-                                    font-semibold
-                                    text-gray-900
-                                    whitespace-nowrap
-                                  "
-                                >
-                                  300
-                                </td>
-                                <td
-                                  class="
-                                    p-4
-                                    text-sm
-                                    font-semibold
-                                    text-gray-900
-                                    whitespace-nowrap
-                                  "
-                                >
-                                  $7,200
-                                </td>
-                                <td
-                                  class="
-                                    p-4
-                                    text-sm
-                                    font-normal
-                                    text-gray-500
-                                    whitespace-nowrap
-                                  "
-                                >
-                                  24.5%
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="
-                      flex
-                      justify-between
-                      items-center
-                      pt-3
-                      border-t
-                      sm:pt-6
-                    "
-                  >
-                    <div>
-                      <button
-                        class="
-                          inline-flex
-                          items-center
-                          p-2
-                          text-sm
-                          font-medium
-                          text-center text-gray-500
-                          rounded-2xl
-                          hover:text-gray-900
-                        "
-                        type="button"
-                        data-dropdown-toggle="transactions-dropdown"
-                      >
-                        Last 7 days
-                        <svg
-                          class="ml-2 w-4 h-4"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M19 9l-7 7-7-7"
-                          ></path>
-                        </svg>
-                      </button>
-
-                      <div
-                        class="
-                          hidden
-                          z-50
-                          my-4
-                          text-base
-                          list-none
-                          bg-white
-                          rounded
-                          divide-y divide-gray-100
-                          shadow-lg shadow-gray-200
-                        "
-                        id="transactions-dropdown"
-                        data-popper-placement="top"
-                        data-popper-reference-hidden=""
-                        data-popper-escaped=""
-                        style="
-                          position: absolute;
-                          inset: auto auto 0px 0px;
-                          margin: 0px;
-                          transform: translate3d(152px, 444px, 0px);
-                        "
-                      >
-                        <div class="py-3 px-4" role="none">
-                          <p
-                            class="text-sm font-medium text-gray-900 truncate"
-                            role="none"
-                          >
-                            Sep 16, 2021 - Sep 22, 2021
-                          </p>
-                        </div>
-                        <ul class="py-1" role="none">
-                          <li>
-                            <a
-                              href="#"
-                              class="
-                                block
-                                py-2
-                                px-4
-                                text-sm text-gray-700
-                                hover:bg-gray-100
-                              "
-                              role="menuitem"
-                              >Yesterday</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              class="
-                                block
-                                py-2
-                                px-4
-                                text-sm text-gray-700
-                                hover:bg-gray-100
-                              "
-                              role="menuitem"
-                              >Today</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              class="
-                                block
-                                py-2
-                                px-4
-                                text-sm text-gray-700
-                                hover:bg-gray-100
-                              "
-                              role="menuitem"
-                              >Last 7 days</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              class="
-                                block
-                                py-2
-                                px-4
-                                text-sm text-gray-700
-                                hover:bg-gray-100
-                              "
-                              role="menuitem"
-                              >Last 30 days</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              class="
-                                block
-                                py-2
-                                px-4
-                                text-sm text-gray-700
-                                hover:bg-gray-100
-                              "
-                              role="menuitem"
-                              >Last 90 days</a
-                            >
-                          </li>
-                        </ul>
-                        <div class="py-1" role="none">
-                          <a
-                            href="#"
-                            class="
-                              block
-                              py-2
-                              px-4
-                              text-sm text-gray-700
-                              hover:bg-gray-100
-                            "
-                            role="menuitem"
-                            >Custom...</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex-shrink-0">
-                      <a
-                        href="#"
-                        class="
-                          inline-flex
-                          items-center
-                          p-2
-                          text-xs
-                          font-medium
-                          text-gray-900
-                          uppercase
-                          rounded-lg
-                          sm:text-sm
-                          hover:bg-gray-100
-                        "
-                      >
-                        Sales Report
-                        <svg
-                          class="ml-1 w-4 h-4 sm:w-5 sm:h-5"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M9 5l7 7-7 7"
-                          ></path>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div> 
+           
               </div>
             
               <!-- <div
@@ -5627,7 +3767,7 @@
               class="hover:underline"
               target="_blank"
               >par CFLEX</a
-            >. .
+            >. 
           </p>
         </div>
       </div>
@@ -5668,6 +3808,13 @@
 
 
 <script>
+
+// var app = new Vue({
+//   el: '#app',
+//   data : {
+//     modal: false
+//   }
+// })
 
 export default {
   name: "PageProfile",

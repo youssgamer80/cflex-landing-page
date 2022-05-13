@@ -86,7 +86,7 @@ Déplacer vous  avec Flexibilité </h1> -->
                 lg:mb-8 lg:text-4xl
               "
             >
-              Recevez les notification de YooBi les plus prioritaire
+              Recevez les notification de YooBi les plus prioritaires
             </h1>
 
             <p
