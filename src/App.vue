@@ -271,6 +271,8 @@
       <router-link to="/about-app">À propos de l'appli</router-link>
     </nav> -->
     <router-view />
+
+    
     <!-- <FooterComponent/> -->
   </div>
 </template>
