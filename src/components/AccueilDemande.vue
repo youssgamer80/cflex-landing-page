@@ -63,12 +63,13 @@
             xl:px-32
           "
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa necessitatibus ad maxime, sequi aperiam dolorem praesentium odit eveniet .
+          
         </p>
    
       </div>
+      <FormComponnentVue/>
     </section>
-    <FormComponnentVue/>
+    
   </div>
 </template>
 

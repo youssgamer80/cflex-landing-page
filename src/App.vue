@@ -289,6 +289,8 @@ nav a.router-link-exact-active {
 
 export default {
   name: 'App',
+  
+  
   components: {
     // FooterComponent
   }

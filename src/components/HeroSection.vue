@@ -3,8 +3,8 @@
   <!-- This example requires Tailwind CSS v2.0+ -->
   <div>
     <div class="bg-white dark:bg-white-900">
-      <section class="py-10 lg:pt-0 pb-36 bg-white dark:bg-gray-900"
-        id="figma" >
+      <section class="py-10 lg:pt-0 pb-36 bg-white dark:bg-gray-900" id="figma" >
+       
         <div class="max-w-screen-xl px-4 lg:px-12 mx-auto">
           <div
             class="grid grid-cols-1 lg:grid-cols-2 gap-6 xl:gap-8 items-center"
@@ -32,9 +32,18 @@
                   type="button"
                   class="text-white bg-gradient-to-br from-orange-400 to-orange-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2" data-modal-toggle="popup-modal">
                   Faire une demande
-                  <ModalComponent/>
+                
                 </button>
-                 
+                
+                <!-- <router-link to="/modale"
+                  class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-orange-400 to-orange-500 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800" 
+                >
+                  <span
+                    class="relative px-5 py-2.5 transition-all ease-in duration-75 dark:bg-gray-900 text-white rounded-md group-hover:bg-opacity-0 hover:text-white-400" data-modal-toggle="popup-modal"
+                  >
+                    Faire une demande
+                  </span>
+                </router-link> -->
                 
 
                 <router-link to="/connexionDemande"
@@ -62,25 +71,24 @@
             </div>
           </div>
         </div>
+       
       </section>
     </div>
-   
+   <ModalComponent/>
   </div>
   
   </template>
 
 
 <script>
+import ModalComponent from "./ModalComponent.vue";
 
-import ModalComponent from '@/components/ModalComponent.vue'
+export default {
 
-export default{
-
-  name: 'HeroSection',
-   components: {
-    
-   ModalComponent,
+  name:"HeroSection",
+  components: {
+    ModalComponent,
    
-  },
-};
+}
+}
 </script>
