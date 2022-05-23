@@ -122,13 +122,18 @@
        
     </div>
                
-            <div class="contact-form-success alert alert-success mt-4" v-if="success">
-                    <strong>Felictation !!</strong> Proprietaire Crée avec succes !!!!!
-                </div>
-                <div class="contact-form-error alert alert-danger mt-4" v-if="error">
-                    <strong>Echec !!</strong> Proprietaire non cree 
-                </div>
+           <div class="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800" role="alert" v-if="success">
+           <span class="font-medium">Felictation !!</span> Proprietaire Crée avec succes !!!!!
+          </div>
+                
+                
 
+          <div class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800" role="alert" v-if="error">
+          <span class="font-medium">Echec !!!</span> Proprietaire non cree !!!!
+          </div>
+           
+           
+  
 
               <div class="text-sm ml-3 items-center grid grid-flow-col">
                 <div
@@ -161,6 +166,7 @@ import axios from 'axios';
 export default {
   name: "FormProprietaire",
 
+  
    data(){
         return{
 
@@ -227,7 +233,7 @@ export default {
             pieceIdentite.append('piece ', this.selecteFile)
             
 
-            axios.post('http://192.168.252.188:8080/proprietaire/save',{
+            axios.post('http://192.168.252.206:4000/proprietaire/save',{
               headers: {
       'Content-type': 'multipart/form-data',
       },
@@ -247,6 +253,7 @@ export default {
                     this.reset();
                     this.success = true;
                     console.log(res);
+                   // this.$router.push('/connexionDemande');
 
                  })
                  .catch((error) => {

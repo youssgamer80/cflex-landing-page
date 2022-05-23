@@ -117,6 +117,30 @@ const routes = [
     // this generates a separate chunk (features.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "features" */ '../views/pageprofileView.vue')
+  },
+  {
+    path: '/formdemanproprietaireint',
+    name: 'formdemanproprietaireint',
+    // route level code-splitting
+    // this generates a separate chunk (features.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "features" */ '../components/FormDemanproprietaireInt.vue')
+  },
+  {
+    path: '/formDemproprietaire',
+    name: 'formDemproprietaire',
+    // route level code-splitting
+    // this generates a separate chunk (features.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "features" */ '../components/FormDemproprietaire.vue')
+  },
+  {
+    path: '/popupannuler',
+    name: 'popupannuler',
+    // route level code-splitting
+    // this generates a separate chunk (features.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "features" */ '../views/numComponentView.vue')
   }
 
 
