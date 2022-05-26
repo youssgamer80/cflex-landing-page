@@ -5,6 +5,7 @@ import HomeView from '../views/HomeView.vue'
 
 Vue.use(VueRouter)
 
+
 const routes = [
   {
     path: '/',
@@ -102,14 +103,14 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "features" */ '../views/numComponentView.vue')
   },
-  {
-    path: '/popupannuler',
-    name: 'popupannuler',
-    // route level code-splitting
-    // this generates a separate chunk (features.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "features" */ '../views/numComponentView.vue')
-  },
+  // {
+  //   path: '/popupannuler',
+  //   name: 'popupannuler',
+  //   // route level code-splitting
+  //   // this generates a separate chunk (features.[hash].js) for this route
+  //   // which is lazy-loaded when the route is visited.
+  //   component: () => import(/* webpackChunkName: "features" */ '../views/numComponentView.vue')
+  // },
   {
     path: '/pageprofile',
     name: 'pageprofile',

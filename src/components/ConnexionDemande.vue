@@ -38,18 +38,21 @@
           <h2 class="text-2xl lg:text-3xl font-bold text-gray-900">
             Allez sur votre profil
           </h2>
-          <form @submit.prevent="connexionDmd" class="mt-8 space-y-6" action="#">
+          <form  class="mt-8 space-y-6" action="#">
 
 
-            <!-- test de connexion au profile -->
+            <!-- test de connexion au profile   @submit.prevent="connexionDmd" -->
               <div class="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800" role="alert" v-if="success">
-           <span class="font-medium">Felictation !!</span> Proprietaire Crée avec succes !!!!!
+           <span class="font-medium">Felictation !!</span> connecte avec succes !!!!!
           </div>
-                
-                
+
+          <!-- <div class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800" role="alert">
+          <span class="font-medium" v-show="errorMsg">{{ this.Msgerreur }}</span> non connecté !!!!
+          </div>   
+                 -->
 
           <div class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800" role="alert" v-if="error">
-          <span class="font-medium">Echec !!!</span> Proprietaire non cree !!!!
+          <span class="font-medium">Echec !!!</span> non connecté !!!!
           </div>
            <!-- fin teste -->
             <div>
@@ -104,7 +107,7 @@
             <div class="flex items-start">
               <div class="text-sm ml-3 items-center">
                 <router-link to="/pageprofile">
-                  <button
+                  <button @click="connexionDm"
                     type="submit"
                     class="
                       text-white
@@ -120,7 +123,7 @@
                       sm:w-auto
                       text-center
                     "
-                  >
+                    >
                     Allez
                   </button>
                 </router-link>
@@ -135,8 +138,8 @@
                     text-orange-700
                     dark:text-orange-800
                   "
-                >
-                  <router-link
+                  >
+                  <!-- <router-link
                     to="/numcomponent"
                     class="
                       ml-2
@@ -145,8 +148,8 @@
                       text-gray-900
                       dark:text-gray-300
                     "
-                  >
-                    <!-- <div class="text-sm font-medium text-gray-500"></div>
+                     >
+                    <div class="text-sm font-medium text-gray-500"></div>
                     Si tu veux t enregistrer pour la 1 ere fois
                     <a
                       href="#"
@@ -156,12 +159,13 @@
                         dark:text-orange-500
                       "
                       >cliquez ici</a
-                    > -->
+                    >
                     
                     </router-link
-                  >
+                  > -->
                 </div>
               </div>
+
             </div>
           </form>
         </div>
@@ -180,30 +184,49 @@ export default {
       numero:"",
       name:"",
       error: null,
-      success: false
-      
+      success: false,
+      Msgerreur:"",
+      errorMsg:"",
     }
   },
   methods:{
 
-    async connexionDmd() {
-        const auth = { username: this.username, password: this.password };
-        // Correct username is 'foo' and password is 'bar'
-        const url = '';
-        this.success = false;
-        this.error = null;
+      async connexionDm(){
 
-        try {
-          const res = await axios.get(url, { auth }).then(res => res.data);
-           console.log(res)
-          this.success = true;
-        } catch (err) {
-          this.error = err.message;
-        }
+      let resul = await axios.get('http://localhost:4000/listeproprietaire?nom=${this.name}&telephone=&{this.numero}')
+
+      if(resul.status == 200 && resul.data.length >0){
+
+       
+        this.$router.push({name: 'pageprofile'})
+      }
+    console.log(resul)
+    }
+
+    // async connexionDmd() {
+      
+    //   //if(this.numero )
+
+    //     const auth = { username: this.username, password: this.password };
+    //     // Correct username is 'foo' and password is 'bar'
+    //     const url = '';
+    //     this.success = false;
+    //     this.error = null;
+
+    //     try {
+    //       const res = await axios.get(url, { auth }).then(res => res.data);
+    //        console.log(res)
+    //       this.success = true;
+    //     } catch (err) {
+    //       this.error = err.message;
+    //     }
      
     
-    }
+    // }
      
+
+
+
   //  async connexionDmd(){
         
 

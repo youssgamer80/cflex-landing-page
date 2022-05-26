@@ -1,5 +1,8 @@
 
 <template>
+<div>
+
+
     <div id="popup-modal" tabindex="-1" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 md:inset-0 h-modal md:h-full">
      <div class="relative p-4 w-full max-w-md h-full md:h-auto">
         <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
@@ -11,7 +14,7 @@
                 <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Être déja proprietaire dans nôtre système ?</h3>
 
                 <router-link  to="/connexionDemande">
-                <bouton data-modal-toggle="popup-modal" type="button" class=" text-white bg-red-500 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2"> Oui, Je le suis</bouton>
+                <bouton data-modal-toggle="popup-modal" type="button" class="text-white bg-red-500 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2"> Oui, Je le suis</bouton>
                 </router-link> 
 
                  <router-link  to="/formproprietaire">
@@ -21,12 +24,14 @@
         </div>
     </div>
   </div>
+
+  </div>
 </template>
 
 <script>
 
-    export default  {
-        name: 'ModalComponent',
+export default{
+    name:'ModalComponent',
         };
 </script>
 

@@ -154,7 +154,7 @@ export default {
              model: this.model,
              nBplace: this.nbPlace,
              immatriculation:this.immatriculation,
-             date: null,
+             date:"",
              idZoneFk:this.idZoneFk,
              statut:this.statut,
 
