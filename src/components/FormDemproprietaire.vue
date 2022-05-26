@@ -16,7 +16,7 @@
       </div>
     </div>
     <div class="mt-5 md:mt-0 md:col-span-2">
-      <form @submit.prevent="submitForm" action="#" >
+      <form @submit.prevent="submitForm"  >
         <div class="shadow overflow-hidden sm:rounded-md">
           <div class="px-4 py-5 bg-white sm:p-6">
             <div class="grid grid-cols-6 gap-6">
@@ -67,13 +67,13 @@
 
 
   <div class="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800" role="alert" v-if="success">
-  <span class="font-medium">Felictation !!</span> Proprietaire Crée avec succes !!!!!
+  <span class="font-medium">Felictation !!</span> Demande Proprietaire Crée avec succes !!!!!
   </div>
                 
                 
 
    <div class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800" role="alert" v-if="error">
-  <span class="font-medium">Echec !!!</span> Proprietaire non cree 
+  <span class="font-medium">Echec !!!</span> Demande Proprietaire non cree 
    </div>
               
           </div>
@@ -111,15 +111,15 @@ export default {
    data(){
         return{
   etat: true,
-  idPropretaire:1,
+  idPropretaire:"",
   marque: "",
   model: "",
-  nbPlace: 10,
-  idTypeTransport:1,
-  idZoneFk: 1,
+  nbPlace: "",
+  idTypeTransport:"",
+  idZoneFk:"",
   statut: false,
-  immatriculation: "",
-  // statut:false,
+  immatriculation:"",
+ 
   
   
 
@@ -147,14 +147,14 @@ export default {
            
             
 
-            axios.post('http://192.168.252.206:4000/api/demandes/addDemande',{
+            axios.post('/demandes/addDemande',{
              
              etat:this.etat,
              marque: this.marque,
              model: this.model,
              nBplace: this.nbPlace,
              immatriculation:this.immatriculation,
-             date:"",
+             
              idZoneFk:this.idZoneFk,
              statut:this.statut,
 
@@ -170,6 +170,7 @@ export default {
         // lieuNaissance: this. lieuNaissance,
         // lieuResidence: this.lieuResidence,
         // pieceIdentite: this.pieceIdentite,
+        //http://192.168.252.206:4000/api/demandes/addDemande
       } )
                  .then((res) => {
                     this.reset();

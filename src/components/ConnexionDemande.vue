@@ -193,12 +193,12 @@ export default {
 
       async connexionDm(){
 
-      let resul = await axios.get('http://localhost:4000/listeproprietaire?nom=${this.name}&telephone=&{this.numero}')
+      let resul = await axios.get('http://localhost:4000/listeproprietaire?nom=${this.name}&telephone=${this.numero}')
 
       if(resul.status == 200 && resul.data.length >0){
 
        
-        this.$router.push({name: 'pageprofile'})
+        this.$route.push({name:'pageprofile'})
       }
     console.log(resul)
     }

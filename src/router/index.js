@@ -93,16 +93,8 @@ const routes = [
     // this generates a separate chunk (features.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "features" */ '../components/ModalComponent.vue')
-  }
-    ,
-  {
-    path: '/numcomponent',
-    name: 'numcomponent',
-    // route level code-splitting
-    // this generates a separate chunk (features.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "features" */ '../views/numComponentView.vue')
   },
+  
   // {
   //   path: '/popupannuler',
   //   name: 'popupannuler',
@@ -134,16 +126,7 @@ const routes = [
     // this generates a separate chunk (features.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "features" */ '../components/FormDemproprietaire.vue')
-  },
-  {
-    path: '/popupannuler',
-    name: 'popupannuler',
-    // route level code-splitting
-    // this generates a separate chunk (features.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "features" */ '../views/numComponentView.vue')
   }
-
 
 
 ]

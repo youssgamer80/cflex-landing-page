@@ -233,12 +233,12 @@ export default {
             pieceIdentite.append('piece ', this.selecteFile)
             
 
-            axios.post('http://192.168.252.206:4000/proprietaire/save',{
+            axios.post('http://192.168.252.92:4000/proprietaire/save',{
               headers: {
       'Content-type': 'multipart/form-data',
       },
         nom: this.nom,
-        prenom: this.name,
+        prenom: this.prenom,
         telephone: this.telephone,
         email: this.email,
         statut: true,

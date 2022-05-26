@@ -151,17 +151,7 @@
                         
                       </div>
                     </div>
-                    <!-- <div class="pl-3 w-full">
-                      <div class="text-gray-500 font-normal text-sm mb-1.5">
-                        New message from
-                        <span class="font-semibold text-gray-900"
-                          >Bonnie Green</span
-                        >: "Hey,  presentation?"
-                      </div>
-                      <div class="text-xs font-medium text-fuchsia-500">
-                        a few moments ago
-                      </div>
-                    </div> -->
+                    
                   </a>
                   <a href="#" class="flex py-3 px-4 border-b hover:bg-gray-100">
                     <div class="flex-shrink-0">
@@ -674,42 +664,6 @@
                   </ul>
                 </div>
               </div>
-              <!-- <a
-                href="https://www.creative-tim.com/product/soft-ui-flowbite-pro"
-                target="_blank"
-                class="
-                  sm:inline-flex
-                  ml-5
-                  text-white
-                  bg-gradient-to-br
-                  from-pink-500
-                  to-voilet-500
-                  font-medium
-                  rounded-lg
-                  text-sm
-                  px-5
-                  py-2.5
-                  text-center
-                  inline-flex
-                  items-center
-                  mr-3
-                  shadow-md shadow-gray-300
-                  hover:scale-[1.02]
-                  transition-transform
-                "
-              >
-                 <svg
-                  class="mr-2 -ml-1 w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
-                  ></path>
-                </svg>
-                
-              </a> -->
             </div>
           </div>
         </div>
@@ -1339,9 +1293,18 @@
                       "
                      
                     >
+                    
                     <div class="w-full mx-auto text-center">
-                    <h1 class="text-dark-800">liste des demandes</h1>
+                    <span class="text-orange-900  text-4xl font-bold">liste des demandes</span>
                     </div>
+<!-- action de la suppression -->
+         <div class="p-4 mb-4 text-sm text-green-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-green-800" role="alert" v-if="statutAn">
+          <span class="font-medium">Demande Annulée !!!</span> avec succes !!!
+          </div>
+              <div class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800" role="alert" v-if="statutech">
+          <span class="font-medium">echec !!!</span> d annulation de la demande
+          </div>
+           
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg mx-auto">
     <router-link to="/FormDemanproprietaireint">
   <button type="button" class="text-white bg-gradient-to-r from-green-400  to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-400 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 " data-modal-toggle="popup-modal">nouvelle demande</button>
@@ -1402,13 +1365,13 @@
                    {{demande.model}}
                 </td>
                 <td class="px-6 py-4">
-                   {{demande.nombreDePlace}}
+                   {{demande.nbPlace }}
                 </td>
                 <td class="px-6 py-4">
-                    {{demande.libelleTypeTransport}}
+                    {{demande.idTypeTransportFk.libelleTypeTransport}}
                 </td>
                 <td class="px-6 py-4">
-                   {{demande.zoneparent}}
+                   {{ demande.idZoneFk.idZoneparentFk.zoneparent }}
                 </td>
                 <td class="px-6 py-4">
                   <span v-if="demande.statut">accepter</span>
@@ -1416,7 +1379,8 @@
                 </td>
                 <td class="px-6 py-4 text-right">
                       
-                      <button type="button" class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..." data-modal-toggle="modal">annuler </button>
+                      <button type="button" id="show-modal" class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..." data-modal-toggle="modal" v-on:click="AnnulerDemande(demande.id)">annuler </button>
+                     
                 </td>
             </tr>
           
@@ -1424,9 +1388,47 @@
         </tbody>
     </table>
 </div>
-
-    <ModalAnldemande/>
+    <!-- <ModalAnldemande/> -->
 </div>
+
+<!-- modal components -->
+
+
+<!-- <div v-if="myModel">
+    <transition name="model">
+     <div class="modal-mask">
+      <div class="modal-wrapper">
+       <div class="modal-dialog">
+        <div class="modal-content">
+         <div class="modal-header">
+          <button type="button" class="close" @click="myModel=false"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">{{ dynamicTitle }}</h4>
+         </div>
+         <div class="modal-body">
+          <div class="form-group">
+           <label>Enter First Name</label>
+           <input type="text" class="form-control" v-model="first_name" />
+          </div>
+          <div class="form-group">
+           <label>Enter Last Name</label>
+           <input type="text" class="form-control" v-model="last_name" />
+          </div>
+          <br />
+          <div align="center">
+           <input type="hidden" v-model="hiddenId" />
+           <input type="button" class="btn btn-success btn-xs" v-model="actionButton" @click="submitData" />
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </transition>
+   </div> -->
+
+
+
+<!--  -->
           
                    
                       <div
@@ -2030,6 +2032,8 @@
 
 
 <script>
+
+
 // import Vue from 'vue';
 
 
@@ -2051,34 +2055,73 @@
 //   } http://192.168.252.188:8080/api/demandes
 // })
 import axios from 'axios';
-import ModalAnldemande from '@/components/ModalAnldemande.vue';
+// import ModalAnldemande from '@/components/ModalAnldemande.vue';
+
+
 export default {
  
 
   name: "PageProfile",
 
    components: {
-    ModalAnldemande,
+    // ModalAnldemande,
    
 },
+
  
   data(){
+    
         return{
              statut: false,
              demandes:[],
              errors: [],
+             myModel:false,
+             id: null,
+             statutAn: false,
+             statutech: false,
+            demandeStatut:false,
+              
         }
+      
     },
 
     methods: {
-          affDetail(){
-            this.$bvModal.show("modalannuler");
-          },
-    },
-    
 
- created(){
-        axios.get(`http://192.168.252.206:4000/api/demandes`)
+     AnnulerDemande(id){
+       const headers = { 
+            'Content-Type': 'application/json'
+        };
+
+        
+        axios.put(`http://192.168.252.92:4000/api/demandes/updateDemande/${id}`,{ headers },this.statut)
+             .then(response => {
+                 console.log(response);
+                  this.statutAn = true;
+                  this.listDemande();
+
+             }).catch (e => {
+              this.statutech = true;
+              console.log('erreur', this.result);
+
+              this.errors.push(e)
+                
+            });
+             
+             
+      },
+
+        /// axios.update("http://192.168.252.92:4000/api/demandes/updateDemande/?id="${this.id}"&statut="${this.statut}").then(()=>{
+          
+       
+          // affDetail(){
+          //   this.$bvModal.show("modalannuler");
+          // },
+    
+    
+      listDemande(){
+
+
+     axios.get(`/demandes`)
             .then((response)=> {
        // JSON responses are automatically parsed.
                 this.demandes = response.data.data
@@ -2092,7 +2135,15 @@ export default {
               this.errors.push(e)
                 
             });
+            },
+
+
+            },
+
+ created(){
+      this.listDemande();
     }, 
+
 
 
 
