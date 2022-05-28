@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-
+import StatutProfileDemande from '../components/StatutProfileDemande.vue'
 
 Vue.use(VueRouter)
 
@@ -18,8 +18,18 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component:() => import(/* webpackChunkName: "features" */ '../components/FormProprietaire.vue')
+    component: () => import(/* webpackChunkName: "features" */ '../components/FormModifDemande.vue')
   },
+  {
+    path: '/formModifDemande',
+    name: 'formModifdemande',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "features" */ '../components/FormProprietaire.vue')
+  },
+  { path: '/demande/:id?', name: 'statut', component: StatutProfileDemande, props: true },
+
   {
     path: '/features',
     name: 'features',
@@ -47,7 +57,7 @@ const routes = [
   {
     path: '/newDemande',
     name: 'newDemande',
-    
+
     component: () => import(/* webpackChunkName: "features" */ '../views/DemandeView.vue')
   },
   {
@@ -84,7 +94,7 @@ const routes = [
   }
 
 
-  
+
   ,
   {
     path: '/modale',
@@ -94,7 +104,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "features" */ '../components/ModalComponent.vue')
   },
-  
+
   // {
   //   path: '/popupannuler',
   //   name: 'popupannuler',

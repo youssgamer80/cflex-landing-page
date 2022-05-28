@@ -23,7 +23,8 @@
     "flowbite-datepicker": "^1.2.1",
     "install": "^0.13.0",
     "vue": "^2.6.14",
-    "vue-router": "^3.5.1"
+    "vue-modaltor": "^1.5.4",
+    "vue-router": "^3.5.4"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

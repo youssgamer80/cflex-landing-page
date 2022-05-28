@@ -21,6 +21,7 @@ nav a.router-link-exact-active {
 
 export default {
   name: 'App',
+  open: false,
   
   
   components: {

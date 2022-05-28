@@ -19,7 +19,7 @@
           </a>
           <p class="text-gray-600 dark:text-gray-400">
             C FLEX est une application tres pratique pour les usagers.
-            <br />Faites de la science des données votre avantage concurrentiel.
+            <br/>Faites de la science des données votre avantage concurrentiel.
           </p>
         </div>
         <div>

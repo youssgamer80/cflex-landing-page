@@ -62,9 +62,9 @@
                 ></label>
                 <input
                 type="text"
-                name="text"
+                
                 id="text"
-                v-model="numero"
+                v-model="nom"
                 class="
                   bg-gray-50
                   border border-gray-300
@@ -76,7 +76,7 @@
                   w-full
                   p-2.5
                 "
-                placeholder="numero"
+                placeholder="nom"
                 required
               />
             </div>
@@ -87,9 +87,9 @@
               ></label>
               <input
                 type="text"
-                v-model="nom"
-                id="mdp"
-                placeholder="mot de passe"
+                v-model="numero"
+               
+                placeholder="numero"
                 class="
                   bg-gray-50
                   border border-gray-300
@@ -106,8 +106,8 @@
             </div>
             <div class="flex items-start">
               <div class="text-sm ml-3 items-center">
-                <router-link to="/pageprofile">
-                  <button @click="connexionDm"
+                <!-- <router-link to="/pageprofile"> -->
+                  <button v-on:@click="connexionDm"
                     type="submit"
                     class="
                       text-white
@@ -126,7 +126,7 @@
                     >
                     Allez
                   </button>
-                </router-link>
+                <!-- </router-link> -->
               </div>
 
               <div class="text-sm ml-3 items-center grid grid-flow-col">
@@ -182,7 +182,7 @@ export default {
   data() {
     return {
       numero:"",
-      name:"",
+      nom:"",
       error: null,
       success: false,
       Msgerreur:"",
@@ -191,17 +191,66 @@ export default {
   },
   methods:{
 
-      async connexionDm(){
+    // async connexionDm(){
 
-      let resul = await axios.get('http://localhost:4000/listeproprietaire?nom=${this.name}&telephone=${this.numero}')
+    //   const response = await axios.post('/demande', {
+    //     numero: this.numero,
+    //     name: this.name,
+    //   })
+    //   console.log(response);
 
-      if(resul.status == 200 && resul.data.length >0){
+    // }
+
+
+    // async connexionDm(){
+    //   try {
+    //     const response = await axios.get('/demandes', {
+    //       numero: this.numero,
+    //       nom: this.nom,
+    //     })
+    //     console.log(response);
+    //     this.success = true;
+    //     this.Msgerreur = response.data.message;
+    //     this.errorMsg = response.data.error;
+    //     console.log(this.Msgerreur);
+    //     console.log(this.errorMsg);
+        
+    //   } catch (error) {
+    //     this.error = error;
+    //     this.Msgerreur = error.response.data.message;
+    //     this.errorMsg = error.response.data.error;
+    //     console.log(this.Msgerreur);
+    //     console.log(this.errorMsg);
+    //   }
+    // }
+
+
+
+ async connexionDm(){
+
+      let resul = axios.post("/proprietaire/save", {
+        
+        nom: this.nom,
+        numero: this.numero,
+      })
+
+      
+    console.log(resul)
+    this.$router.push('/pageprofile')
+    }
+
+  //  async connexionDm(){
+
+  //     let resul = axios.get(`/proprietaire/list?nom=${this.nom}&telephone=${this.numero}`)
+
+  //     if(resul.status == 200 && resul.data.length >0){
+        
 
        
-        this.$route.push({name:'pageprofile'})
-      }
-    console.log(resul)
-    }
+  //       this.$router.push({name:'pageprofile'})
+  //     }
+  //   console.log(resul)
+  //   }
 
     // async connexionDmd() {
       

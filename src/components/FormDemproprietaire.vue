@@ -12,11 +12,21 @@
        
         <p class="mt-1 text-sm text-gray-600">
           
+          
         </p>
       </div>
+      <div class="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800" role="alert" v-if="success">
+  <span class="font-medium">Felictation !!</span> Demande Proprietaire Crée avec succes !!!!!
+  </div>
+                
+                
+
+   <div class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800" role="alert" v-if="error">
+  <span class="font-medium">Echec !!!</span> Demande Proprietaire non cree 
+   </div>
     </div>
     <div class="mt-5 md:mt-0 md:col-span-2">
-      <form @submit.prevent="submitForm"  >
+      <form @submit.prevent="submitForm" >
         <div class="shadow overflow-hidden sm:rounded-md">
           <div class="px-4 py-5 bg-white sm:p-6">
             <div class="grid grid-cols-6 gap-6">
@@ -42,50 +52,56 @@
 
               <div class="col-span-6 sm:col-span-6 lg:col-span-2"> 
                 <label for="state" class="block text-sm font-medium text-gray-700">type de transport</label>
-              <select id="country" name="type" autocomplete="country" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm" v-model="idZoneFk">
-                  <option value="1">warren</option>
-                  <option value="2">Gbaka</option>
-                  <option value="3">Compteur</option>
+              <select id="country" name="type" autocomplete="country" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm" v-model="idTypeTransportFk">
+                  <option value="1">Gbaka</option>
+                  <option value="2">Warren</option>
+                  <option value="3">Taxi communal</option>
+                
 
                 </select>
               </div>
 
               <div class="col-span-6 sm:col-span-3 lg:col-span-2">
                 <label for="country" class="block text-sm font-medium text-gray-700">zone</label>
-                <select id="country" name="" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm" v-model=" idZoneFk">
+                <select id="country" name=""  class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm" v-model="idZoneFk">
                   <option value="1">Abidjan</option>
-                  <option value="4">Yamoussoukro</option>
-                  <option value="4">Bouake</option>
+                  <option value="2">Yamoussoukro</option>
+                  <option value="3">Bouake</option>
+                
                 </select>
                 </div>
 
             
             </div>
 
-            
+             <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+
+             </div>
   
 
 
-  <div class="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800" role="alert" v-if="success">
-  <span class="font-medium">Felictation !!</span> Demande Proprietaire Crée avec succes !!!!!
-  </div>
-                
-                
-
-   <div class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800" role="alert" v-if="error">
-  <span class="font-medium">Echec !!!</span> Demande Proprietaire non cree 
-   </div>
+  
               
           </div>
         
         </div>
-          <div class="px-4 py-3 bg-gray-50 text-right sm:px-6 mx-auto w-full items-center">
+          <div class="px-4 py-3 bg-gray-50 text-right sm:px-6 mx-auto w-full items-center grid grid-cols-3">
+            <router-link to="/pageprofile">
+         <button type="submit" class="inline-flex mx-auto py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+              Annuler
+       </button>
+        </router-link>
             <button type="submit" class="inline-flex mx-auto py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700 focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">
               envoyer
             </button>
             
+           
+
+         
             
           </div>
+
+          
    </form>
       
     </div>
@@ -108,29 +124,91 @@ export default {
   name:'FormDemproprietaire',
 
 
-   data(){
-        return{
-  etat: true,
-  idPropretaire:"",
-  marque: "",
-  model: "",
-  nbPlace: "",
-  idTypeTransport:"",
-  idZoneFk:"",
-  statut: false,
-  immatriculation:"",
- 
-  
-  
+  data(){
+    return{
+      immatriculation:'',
+      idPropretaire:"1",
+      marque:'',
+      model:'',
+      nbPlace:'',
+      idZoneFk:'',
+      idTypeTransportFk:'',
+      success:false,
+      error:false,
+      zone:'',
+      type:'',
+      zoneFk:'',
+      typeFk:'',
+      etat: true,
+     
+    }
 
 
-       }
+  //  data(){
+  //       return{
+
+  // etat: true,
+  // idPropretaire:"1",
+  // marque: "",
+  // model: "",
+  // nbPlace: "",
+  // idTypeTransport:"",
+  // idZoneFk:"",
+  // statut: false,
+  // immatriculation:"",
+  // error: false,
+  // success: false,
+  
+
+  //      }
 
 
    }, 
     
 
     methods:{
+
+   listTypetransport(){
+
+
+     axios.get(`/typetransport`)
+            .then((response)=> {
+       // JSON responses are automatically parsed.
+                this.type = response.data.data
+                console.log(this.type)
+                this.statut=true;
+            })
+            .catch(e => {
+              this.statut = false;
+              console.log('error', this.errors);
+
+              this.errors.push(e);
+                
+            });
+            },
+
+
+        listZone(){
+
+
+     axios.get(`/zones`)
+            .then((response)=> {
+       // JSON responses are automatically parsed.
+                this.zones = response.data.data
+                console.log(this.zones)
+                this.statut=true;
+            })
+            .catch(e => {
+              this.statut = false;
+              console.log('error', this.errors);
+
+              this.errors.push(e);
+                
+            });
+            },
+
+
+      
 
     //   currentDateTime() {
     //   const current = new Date();
@@ -159,18 +237,7 @@ export default {
              statut:this.statut,
 
 
-        // nom: this.nom,
-        // prenom: this.name,
-        // telephone: this.telephone,
-        // email: this.email,
-        // statut: true,
-        // permis: this.permis,
-        // dateNaissance:this.dateNaissance,
-        // genre: this.genre,
-        // lieuNaissance: this. lieuNaissance,
-        // lieuResidence: this.lieuResidence,
-        // pieceIdentite: this.pieceIdentite,
-        //http://192.168.252.206:4000/api/demandes/addDemande
+   
       } )
                  .then((res) => {
                     this.reset();
