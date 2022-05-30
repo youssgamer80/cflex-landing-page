@@ -8,12 +8,14 @@ import router from './router'
 import './assets/tailwind.css'
 import 'flowbite';
 import axios from 'axios';
+import VueRouter from 'vue-router'
 
 
 // importation de axios url
 import './Service/axiosurl'
 // ajout de ca egalement
 Vue.config.productionTip = false;
+Vue.use(VueRouter);
 
 
 
@@ -27,6 +29,6 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
 new Vue({
-  router,
+  router: router,
   render: h => h(App)
 }).$mount('#app')

@@ -205,7 +205,7 @@
                     <div class="flex-shrink-0">
                       <img
                         class="w-11 h-11 rounded-full"
-                        src="https://demos.creative-tim.com/soft-ui-flowbite-pro/images/users/joseph-mcfall.png"
+                        src=""
                         alt="Joseph image"
                       />
                       <div
@@ -294,7 +294,7 @@
                         <span class="font-semibold text-gray-900"
                           >Robert Brown</span
                         >
-                        posted a new video: Glassmorphism - learn how to
+                      learn how to
                         implement the new design trend.
                       </div>
                       <div class="text-xs font-medium text-fuchsia-500">
@@ -579,7 +579,7 @@
                     aria-expanded="false"
                     data-dropdown-toggle="dropdown-2"
                   >
-                    <span class="sr-only">Open user menu</span>
+                   
                     <img
                       class="w-8 h-8 rounded-full"
                       src="https://demos.creative-tim.com/soft-ui-flowbite-pro/images/users/neil-sims.png"
@@ -746,7 +746,7 @@
                       <span
                         class="ml-3 text-dark-500 text-sm font-light"
                         sidebar-toggle-item=""
-                        >formulaire de demande</span
+                        >formulaire de modification de demande</span
                       >
                        </router-link>
                     </a>
@@ -1295,105 +1295,17 @@
                     >
                     
                     <div class="w-full mx-auto text-center">
-                    <span class="text-orange-900  text-4xl font-bold">liste des demandes</span>
+                    <span class="text-orange-900  text-4xl font-bold">modification de la demande</span>
                     </div>
-<!-- action de la suppression -->
-         <div class="p-4 mb-4 text-sm text-green-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-green-800" role="alert" v-if="statutAn">
-          <span class="font-medium">Demande Annulée !!!</span> avec succes !!!
-          </div>
-              <div class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800" role="alert" v-if="statutech">
-          <span class="font-medium">echec !!!</span> d annulation de la demande
-          </div>
+                    <div class="w-full mx-auto text-center"></div>
            
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg mx-auto">
-    <router-link to="/FormDemanproprietaireint">
+    <!-- <router-link to="/FormDemanproprietaireint">
   <button type="button" class="text-white bg-gradient-to-r from-green-400  to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-400 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 " data-modal-toggle="popup-modal">nouvelle demande</button>
-   </router-link>
+   </router-link> -->
    <!-- tableau de donnees -->
   
-     <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-                <th scope="col" class="px-6 py-3">
-                    id demande
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    code demande
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    immatriculation vehicule
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    marque
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    model
-                </th>
-                <th scope="col" class="px-6 py-3">
-                  nombre de place
-                </th>
-                 <th scope="col" class="px-6 py-3">
-                  type de transport
-                </th>
-                <th scope="col" class="px-6 py-3">
-                   zone de transport
-                </th>
-                  <th scope="col" class="px-6 py-3">
-                
-                </th> 
-                <th colspan="2" scope="col" class="px-6 py-3 items-right">
-                 Action
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr  v-for="demande in demandes" :key="demande.id" class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <td class="px-6 py-4">
-                    {{demande.id }}
-                </td>
-                <td class="px-6 py-4">
-                    {{ demande.codeDemande}}
-                </td>
-                <td class="px-6 py-4">
-                   {{demande.immatriculation}}
-                </td>
-                <td class="px-6 py-4">
-                  {{demande.marque}}
-                </td>
-                <td class="px-6 py-4">
-                   {{demande.model}}
-                </td>
-                <td class="px-6 py-4">
-                   {{demande.nbPlace }}
-                </td>
-                <td class="px-6 py-4">
-                    {{demande.idTypeTransportFk.libelleTypeTransport}}
-                </td>
-                <td class="px-6 py-4">
-                   {{ demande.idZoneFk.idZoneparentFk.zoneparent }}
-                </td>
-                <!-- <td class="px-6 py-4">
-                <span v-if="demande.statut">accepter</span>
-             <span v-else>en attente</span>
-                </td> -->
-                <td colspan="3" class="px-6 py-4 text-right">
-                       <router-link :to="{ name: 'statut', params: { demande }}">
-                       <button type="button" id="show-modal" class="text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..." data-modal-toggle="modal"  v-on:click="VoirDemande(demande.id)">voir le statut</button>
-                       </router-link>
-                      <button type="button" id="show-modal" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..." data-modal-toggle="modal" v-on:click="AnnulerDemande(demande.id)">annuler</button>
-                      <router-link :to="{ name: 'modifdemande', params: { demande }}">
-                      <button type="button" id="show-modal" class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..." data-modal-toggle="modal" v-on:click="ModifDemande(demande.id)">modifier</button>
-
-                      </router-link>
-                </td>
-
-            </tr>
-          
-          
-        </tbody>
-    </table>
-</div>
+ <FormModifDemande></FormModifDemande>
     <!-- <ModalAnldemande/> -->
 
  
@@ -1561,7 +1473,7 @@
                       border-b
                     "
                   >
-                    <h3 class="text-xl font-semibold">Edit user</h3>
+                    <h3 class="text-xl font-semibold"></h3>
                     <button
                       type="button"
                       class="
@@ -1990,7 +1902,7 @@
               target="_blank"
               >interface</a
             >
-            and
+            et
             <a
               href="https://flowbite.com"
               class="hover:underline"
@@ -2035,162 +1947,179 @@
 
 
 
-
-
-
-
-
-
-
-
-
 <script>
 
-
-// import Vue from 'vue';
-
-
-
-
-// new Vue({
-
-//  name:"PageProfile",
-//   el: '#app',
-//   data () {
-//     return {
-//      demandes: [],
-//     }
-//   },
-//   mounted () {
-//     axios
-//       .get('http://192.168.252.188:8080/api/demandes')
-//       .then(response => (this.demandes = response.data.data))
-//   } http://192.168.252.188:8080/api/demandes
-// })
-
-
 import axios from 'axios';
-// import ModalAnldemande from '@/components/ModalAnldemande.vue';
+import FormModifDemande from './FormModifDemande.vue';
 
 
 export default {
- 
+  name:'FormDemproprietaire',
 
-  name: "PageProfile",
-  
-  
-
-     props: ['demande'] ,
-
-   components: {
-     
-    // ModalAnldemande,
-   
-},
-
- 
-  data(){
-
-
-    
-    
-        return{
-          
-             statut: false,
-             demandes:[],
-             errors: [],
-             myModel:false,
-             id: null,
-             statutAn: false,
-             statutech: false,
-            demandeStatut:false,
-              
-        }
-        
-      
+    components: {
+        FormModifDemande
     },
 
-    methods: {
-       hideModal() {
-              this.open = false
-          },
 
-   //    
-          
 
-     AnnulerDemande(id){
-
-       let x = window.confirm("voulez vous supprimer cette demande ?");
-
-       if(x){
-       const headers = { 
-            'Content-Type': 'application/json'
-        };
-
+  data(){
+    return{
         
-        axios.put(`api/demandes/updateDemande/${id}`,{ headers },this.statut)
-             .then(response => {
-                 console.log(response);
-                  this.statutAn = true;
-                  this.listDemande();
 
-             }).catch (e => {
-              this.statutech = true;
-              console.log('erreur', this.result);
 
-              this.errors.push(e)
-                
-            });
-             
-            } 
-      },
+      immatriculation:'',
+      idPropretaire:"1",
+      marque:'',
+      model:'',
+      nbPlace:'',
+      idZoneFk:'',
+      idTypeTransportFk:'',
+      success:false,
+      error:false,
+      zone:'',
+      type:'',
+      zoneFk:'',
+      typeFk:'',
+      etat: true,
+     
+    }
 
-        /// axios.update("http://192.168.252.92:4000/api/demandes/updateDemande/?id="${this.id}"&statut="${this.statut}").then(()=>{
-          
-       
-          // affDetail(){
-          //   this.$bvModal.show("modalannuler");
-          // },
+
+  //  data(){
+  //       return{
+
+  // etat: true,
+  // idPropretaire:"1",
+  // marque: "",
+  // model: "",
+  // nbPlace: "",
+  // idTypeTransport:"",
+  // idZoneFk:"",
+  // statut: false,
+  // immatriculation:"",
+  // error: false,
+  // success: false,
+  
+
+  //      }
+
+
+   }, 
     
-    
-      listDemande(){
+
+    methods:{
+
+   listTypetransport(){
 
 
-     axios.get(`/api/demandes`)
+     axios.get(`/typetransport`)
             .then((response)=> {
        // JSON responses are automatically parsed.
-                this.demandes = response.data.data
-                console.log(this.demandes)
+                this.type = response.data.data
+                console.log(this.type)
                 this.statut=true;
             })
             .catch(e => {
               this.statut = false;
               console.log('error', this.errors);
 
-              this.errors.push(e)
+              this.errors.push(e);
                 
             });
             },
 
 
+        listZone(){
+
+
+     axios.get(`/zones`)
+            .then((response)=> {
+       // JSON responses are automatically parsed.
+                this.zones = response.data.data
+                console.log(this.zones)
+                this.statut=true;
+            })
+            .catch(e => {
+              this.statut = false;
+              console.log('error', this.errors);
+
+              this.errors.push(e);
+                
+            });
             },
 
- created(){
-      this.listDemande();
-    }, 
+
+      
+
+    //   currentDateTime() {
+    //   const current = new Date();
+    //   const time = current.getHours() + ":" + current.getMinutes() + ":" + current.getSeconds();
+    //   const dateTime = date +' '+ time;
+
+    //   return dateTime;
+    // },
 
 
-// props: {
-//   demande: {
-//     type: Object,
-//     required: true
-//   },
+updateDemande(){
 
-//     }
- 
 
- };
+ axios.put("api/demandes/updateDemande/"+ this.demande.id, {
+          etat: this.etat,
+          idPropretaireFk: {
+            id:this.idPropretaireFk
+          },
+          marque: this.marque,
+          model: this.model,
+          nBplace: this.nbPlace,
+          idTypeTransportFk: {
+            id:this.idTypeTransportFk
+          },
+          idZoneFk: {
+            id:this.idZoneFk
+          },
+          statut: this.statut,
+          immatriculation: this.immatriculation,
+        })
+        .then((res) => {
+          this.reset();
+          this.success = true;
+          console.log(res);
+        })
+        .catch((error) => {
+          this.error = true;
+          console.log(error);
+        })
+        .finally(() => {
+          //Perform action in always
+          this.loading = false;
+        });
+    },
+    reset() {
+      this.success = false;
+      this.error = false;
+      for (let field in this.formData) {
+        this.formData[field] = null;
+      }
+    },
+       
+        
 
-// http://192.168.252.92:4000/api/demandes
-// http://192.168.252.188:8080/api/swagger-ui/index.html#/
+        
+
+    },
+
+   }
+
 </script>
+
+<style>
+
+</style>
+
+
+
+
+
+
+
+

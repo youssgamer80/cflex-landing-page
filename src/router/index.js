@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import StatutProfileDemande from '../components/StatutProfileDemande.vue'
+import FormModifDemandeInt from '@/components/FormModifDemandeInt.vue'
 
 Vue.use(VueRouter)
 
@@ -15,10 +16,10 @@ const routes = [
   {
     path: '/formProprietaire',
     name: 'formProprietaire',
-    // route level code-splitting
+    // route level code-splitting     redirect: "/contact"
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "features" */ '../components/FormModifDemande.vue')
+    component: () => import(/* webpackChunkName: "features" */ '../components/FormProprietaire.vue')
   },
   {
     path: '/formModifDemande',
@@ -26,9 +27,11 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "features" */ '../components/FormProprietaire.vue')
+    component: () => import(/* webpackChunkName: "features" */ '../components/FormModifDemandeInt.vue')
   },
-  { path: '/demande/:id?', name: 'statut', component: StatutProfileDemande, props: true },
+  { path: '/statut/:id?', name:'statut', component: StatutProfileDemande, props: true },
+
+  { path: '/modifdemande/:id?', name:'modifdemande', component:FormModifDemandeInt , props: true },
 
   {
     path: '/features',

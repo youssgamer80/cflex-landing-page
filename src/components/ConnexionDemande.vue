@@ -82,7 +82,7 @@
             </div>
             <div>
               <label
-                for="password"
+                for="numero"
                 class="text-sm font-medium text-gray-900 block mb-2"
               ></label>
               <input
@@ -106,7 +106,7 @@
             </div>
             <div class="flex items-start">
               <div class="text-sm ml-3 items-center">
-                <!-- <router-link to="/pageprofile"> -->
+                <router-link to="/pageprofile">
                   <button v-on:@click="connexionDm"
                     type="submit"
                     class="
@@ -126,7 +126,7 @@
                     >
                     Allez
                   </button>
-                <!-- </router-link> -->
+                </router-link>
               </div>
 
               <div class="text-sm ml-3 items-center grid grid-flow-col">
@@ -187,6 +187,7 @@ export default {
       success: false,
       Msgerreur:"",
       errorMsg:"",
+      user:"",
     }
   },
   methods:{
@@ -226,31 +227,32 @@ export default {
 
 
 
- async connexionDm(){
+//  async connexionDm(){
 
-      let resul = axios.post("/proprietaire/save", {
+//       let resul = axios.post("/proprietaire/save", {
         
-        nom: this.nom,
-        numero: this.numero,
-      })
+//         nom: this.nom,
+//         numero: this.numero,
+//       })
 
       
-    console.log(resul)
-    this.$router.push('/pageprofile')
-    }
+//     console.log(resul)
+//     this.$router.push('/pageprofile')
+//     }
 
-  //  async connexionDm(){
+   async connexionDm(){
 
-  //     let resul = axios.get(`/proprietaire/list?nom=${this.nom}&telephone=${this.numero}`)
+      let resul = axios.post(`/proprietaire/list?nom=${this.nom}&telephone=${this.numero}`)
+     
 
-  //     if(resul.status == 200 && resul.data.length >0){
+      if(resul.status == 200 && resul.data.length >0){
         
 
-       
-  //       this.$router.push({name:'pageprofile'})
-  //     }
-  //   console.log(resul)
-  //   }
+      //  axios.get("http://192.168.252.206:4000/proprietaire/get/1")
+       this.$router.push({name:'pageprofile'})
+      }
+    console.log(resul)
+    }
 
     // async connexionDmd() {
       

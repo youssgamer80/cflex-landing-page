@@ -123,7 +123,8 @@
     </div>
                
            <div class="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800" role="alert" v-if="success">
-           <span class="font-medium">Felictation !!</span> Proprietaire Crée avec succes !!!!!
+             <!-- <i class="close icon" @click="close"></i> -->
+           <p class="font-medium">Felictation !!</p> Proprietaire Crée avec succes !!!!!
           </div>
                 
                 
@@ -203,6 +204,11 @@ export default {
     },
     methods:{
 
+      // close: function(){
+      //   this.success = false;
+      //   this.error = false;
+      // },
+
      onFileselected(event){
        this.selectedFile = event.target.file[0]
     //  let filePiece = this.selectedFile[0].filename
@@ -233,7 +239,7 @@ export default {
             pieceIdentite.append('piece ', this.selecteFile)
             
 
-            axios.post('http://192.168.252.206:4000/proprietaire/save',{
+            axios.post('/proprietaire/save',{
               headers: {
       'Content-type': 'multipart/form-data',
       },
