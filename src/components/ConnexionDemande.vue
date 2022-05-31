@@ -246,10 +246,12 @@ export default {
      
 
       if(resul.status == 200 && resul.data.length >0){
+
+        alert('connecté avec succes')
         
 
       //  axios.get("http://192.168.252.206:4000/proprietaire/get/1")
-       this.$router.push({name:'pageprofile'})
+       this.$router.push('pageprofile')
       }
     console.log(resul)
     }

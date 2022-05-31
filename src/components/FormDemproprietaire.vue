@@ -134,7 +134,7 @@
                       border-gray-300
                       rounded-md
                     "
-                    v-model="nbPlace"
+                    :v-model="nbPlace"
                   />
                 </div>
 
@@ -164,7 +164,7 @@
                       focus:border-orange-500
                       sm:text-sm
                     "
-                    v-model="idTypeTransportFk"
+                    :v-model="idTypeTransportFk"
                   >
                     <option
                       v-for="listT in typetransport"
@@ -409,7 +409,7 @@ export default {
   mounted() {
     // this.create();
     axios
-      .get(`http://192.168.252.206:4000/api/typetransport`)
+      .get(`/api/typetransport`)
       .then((response) => {
         // JSON responses are automatically parsed.
         this.typetransport = response.data.data;
@@ -423,7 +423,7 @@ export default {
       });
 
     axios
-      .get(`http://192.168.252.206:4000/api/zones`)
+      .get(`/api/zones`)
       .then((response) => {
         // JSON responses are automatically parsed.
         this.zones = response.data.data;

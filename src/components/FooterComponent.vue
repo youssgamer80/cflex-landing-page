@@ -36,20 +36,7 @@
             Resources
           </h3>
           <ul>
-            <!-- <li class="mb-4">
-              <a
-                href="#"
-                target="_blank"
-                rel="noreferrer nofollow"
-                class="
-                  font-normal
-                  text-gray-600
-                  dark:text-gray-400 dark:hover:text-white
-                  hover:underline
-                "
-                >IA &amp; ML</a
-              >
-            </li> -->
+          
             <li class="mb-4">
               <a
                 href="#"
@@ -78,20 +65,7 @@
                 >Blog</a
               >
             </li>
-            <!-- <li class="mb-4">
-              <a
-                href="#"
-                target="_blank"
-                rel="noreferrer nofollow"
-                class="
-                  font-normal
-                  text-gray-600
-                  dark:text-gray-400 dark:hover:text-white
-                  hover:underline
-                "
-                >Programme d'affiliation</a
-              >
-            </li> -->
+          
           </ul>
         </div>
         <div>

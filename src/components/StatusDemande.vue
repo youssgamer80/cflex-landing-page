@@ -37,7 +37,7 @@
                                 <p class="text-lg px-6 py-3">Model :<span class="font-weight-normal ml-2"> {{demande.model}}</span></p>
                                 <p class="text-lg px-6 py-3">Nombre de place:<span class="font-weight-normal ml-2"> {{ demande.nbPlace }}</span></p>
                                 <p class="text-lg px-6 py-3">Type de transport :<span class="font-weight-normal ml-2">{{demande.idTypeTransportFk.libelleTypeTransport}}</span></p>
-                                <p class="text-lg px-6 py-3">Zone de transport :<span class="font-weight-normal ml-2"> {{ demande.idZoneFk.idZoneparentFk.zoneparent }}</span></p>
+                                <p class="text-lg px-6 py-3">Zone de transport :<span class="font-weight-normal ml-2"> {{ demande.idZoneFk.libelle }}</span></p>
                                 <p class="text-lg px-6 py-3"><span class="font-weight-normal ml-2"></span></p>
                             </div>
                         </div>

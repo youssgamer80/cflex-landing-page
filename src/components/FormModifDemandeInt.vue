@@ -1,6 +1,5 @@
 <template>
   <div class="PageProfile">
-  
     <!--  -->
 
     <body class="bg-gray-50 dark:bg-gray-600">
@@ -30,9 +29,7 @@
                   lg:inline
                   hover:text-gray-900 hover:bg-gray-100
                 "
-              >
-           
-              </button>
+              ></button>
               <button
                 id="toggleSidebarMobile"
                 aria-expanded="true"
@@ -48,7 +45,6 @@
                   focus:bg-gray-100 focus:ring-2 focus:ring-gray-100
                 "
               >
-                 
                 <svg
                   id="toggleSidebarMobileClose"
                   class="hidden w-6 h-6"
@@ -67,11 +63,7 @@
                 href=""
                 class="text-md font-semibold flex items-center lg:mr-1.5"
               >
-                <img
-                  src="../assets/logo.png"
-                  class="mr-2 h-8"
-                  alt="C FLEX"
-                />
+                <img src="../assets/logo.png" class="mr-2 h-8" alt="C FLEX" />
                 <span
                   class="
                     hidden
@@ -81,14 +73,10 @@
                     font-bold
                     whitespace-nowrap
                   "
-                  ></span
-                >
+                ></span>
               </a>
-             
             </div>
             <div class="flex items-center">
-
-              
               <div
                 class="
                   hidden
@@ -147,11 +135,8 @@
                           border border-white
                           dark:bg-gray-800
                         "
-                      >
-                        
-                      </div>
+                      ></div>
                     </div>
-                    
                   </a>
                   <a href="#" class="flex py-3 px-4 border-b hover:bg-gray-100">
                     <div class="flex-shrink-0">
@@ -252,8 +237,6 @@
                         44 minutes ago
                       </div>
                     </div>
-                  
-                   
                   </a>
                   <a href="#" class="flex py-3 px-4 hover:bg-gray-100">
                     <div class="flex-shrink-0">
@@ -294,8 +277,7 @@
                         <span class="font-semibold text-gray-900"
                           >Robert Brown</span
                         >
-                      learn how to
-                        implement the new design trend.
+                        learn how to implement the new design trend.
                       </div>
                       <div class="text-xs font-medium text-fuchsia-500">
                         3 hours ago
@@ -579,7 +561,6 @@
                     aria-expanded="false"
                     data-dropdown-toggle="dropdown-2"
                   >
-                   
                     <img
                       class="w-8 h-8 rounded-full"
                       src="https://demos.creative-tim.com/soft-ui-flowbite-pro/images/users/neil-sims.png"
@@ -646,7 +627,7 @@
                         >parametre</a
                       >
                     </li>
-                    
+
                     <li>
                       <a
                         href="#"
@@ -693,7 +674,6 @@
             <div class="flex overflow-y-auto flex-col flex-1 pt-8 pb-4">
               <div class="flex-1 bg-gray-50 px-3" id="sidebar-items">
                 <ul class="pb-2 pt-1">
-                  
                   <li>
                     <a
                       href=""
@@ -712,8 +692,8 @@
                         duration-200
                       "
                       sidebar-toggle-collapse=""
-                       >
-                     <!-- <router-link to="/formdemanproprietaireint">
+                    >
+                      <!-- <router-link to="/formdemanproprietaireint">
                       <span
                         class="ml-3 text-dark-500 text-sm font-light"
                         sidebar-toggle-item=""
@@ -741,23 +721,17 @@
                       "
                       sidebar-toggle-collapse=""
                     >
-                      
                       <router-link to="formdemanproprietaireint">
-                      <span
-                        class="ml-3 text-dark-500 text-sm font-light"
-                        sidebar-toggle-item=""
-                        >formulaire de modification de demande</span
-                      >
-                       </router-link>
+                        <span
+                          class="ml-3 text-dark-500 text-sm font-light"
+                          sidebar-toggle-item=""
+                          >formulaire de modification de demande</span
+                        >
+                      </router-link>
                     </a>
                   </li>
-                  <li>
-                    
-                  </li>
-                  <li>
-                 
-                   
-                  </li>
+                  <li></li>
+                  <li></li>
                   <li>
                     <button
                       type="button"
@@ -780,13 +754,11 @@
                       aria-controls="dropdown-users"
                       data-collapse-toggle="dropdown-users"
                     >
-                    
                       <span
                         class="ml-3 text-dark-500 text-sm font-light"
                         sidebar-toggle-item=""
                         >-</span
                       >
-                  
                     </button>
                     <ul
                       id="dropdown-users"
@@ -856,13 +828,11 @@
                     </ul>
                   </li>
                   <li>
-                    
                     <ul
                       id="dropdown-pages"
                       sidebar-toggle-list=""
                       class="pb-2 pt-1 hidden"
                     >
-                      
                       <li>
                         <a
                           href="https://demos.creative-tim.com/soft-ui-flowbite-pro/pages/maintenance/"
@@ -883,12 +853,9 @@
                           ><span class="hidden">M</span></a
                         >
                       </li>
-
-                     
                     </ul>
                   </li>
                   <li>
-                 
                     <ul
                       id="dropdown-auth"
                       sidebar-toggle-list=""
@@ -934,7 +901,7 @@
                           ><span class="hidden">S</span></a
                         >
                       </li>
-                     
+
                       <li>
                         <a
                           href=""
@@ -988,9 +955,7 @@
                     to-gray-100
                   "
                 />
-                <div class="pt-2">
-     
-                </div>
+                <div class="pt-2"></div>
               </div>
             </div>
             <div
@@ -1008,7 +973,6 @@
               "
               sidebar-bottom-menu=""
             >
-            
               <div
                 id="tooltip-settings"
                 role="tooltip"
@@ -1038,7 +1002,7 @@
                   transform: translate3d(73px, -110px, 0px);
                 "
               >
-               parametre de la page
+                parametre de la page
                 <div
                   class="tooltip-arrow"
                   data-popper-arrow=""
@@ -1049,7 +1013,7 @@
                   "
                 ></div>
               </div>
-            
+
               <div
                 class="
                   hidden
@@ -1132,7 +1096,6 @@
                       "
                       role="menuitem"
                     >
-                     
                     </a>
                   </li>
                   <li>
@@ -1226,7 +1189,6 @@
                             xlink:href="#a"
                           ></use>
                         </svg>
-                    
                       </div>
                     </a>
                   </li>
@@ -1254,19 +1216,9 @@
                   xl:grid-cols-2
                   2xl:grid-cols-2
                 "
-              >
-              
-              </div>
-              <div
-                class="
-                  grid grid-cols-1
-                  gap-6
-                  mb-6
-                  w-full
-                  
-                "
-                  >
-                 <div
+              ></div>
+              <div class="grid grid-cols-1 gap-6 mb-6 w-full">
+                <div
                   class="
                     bg-white
                     shadow-lg shadow-gray-200
@@ -1275,15 +1227,10 @@
                     bg-gradient-to-r
                     from-dark-800
                     to-dark-900
-                    
                   "
                   style="position: relative"
-
                 >
-                
-                
-              
-                  <div id="main-chart" >
+                  <div id="main-chart">
                     <div
                       id="apexchartsxsrv0ha6"
                       class="
@@ -1291,71 +1238,366 @@
                         apexchartsxsrv0ha6
                         apexcharts-theme-light
                       "
-                     
                     >
-                    
-                    <div class="w-full mx-auto text-center">
-                    <span class="text-orange-900  text-4xl font-bold">modification de la demande</span>
-                    </div>
-                    <div class="w-full mx-auto text-center"></div>
-           
-<div class="relative overflow-x-auto shadow-md sm:rounded-lg mx-auto">
-    <!-- <router-link to="/FormDemanproprietaireint">
+                      <div class="w-full mx-auto text-center">
+                        <span class="text-orange-900 text-4xl font-bold"
+                          >modification de la demande</span
+                        >
+                      </div>
+                      <div class="w-full mx-auto text-center"></div>
+
+                      <div
+                        class="
+                          relative
+                          overflow-x-auto
+                          shadow-md
+                          sm:rounded-lg
+                          mx-auto
+                        "
+                      >
+                        <!-- <router-link to="/FormDemanproprietaireint">
   <button type="button" class="text-white bg-gradient-to-r from-green-400  to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-400 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 " data-modal-toggle="popup-modal">nouvelle demande</button>
    </router-link> -->
-   <!-- tableau de donnees -->
-  
- <FormModifDemande></FormModifDemande>
-    <!-- <ModalAnldemande/> -->
+                        <!-- tableau de donnees -->
 
- 
+                        <section>
+                          <div class="md:col-span-1">
+                            <div class="px-4 sm:px-0">
+                              <p class="mt-1 text-sm text-gray-600"></p>
+                            </div>
+                            <div
+                              class="
+                                p-4
+                                mb-4
+                                text-sm text-green-700
+                                bg-green-100
+                                rounded-lg
+                                dark:bg-green-200 dark:text-green-800
+                              "
+                              role="alert"
+                              v-if="success"
+                            >
+                              <span class="font-medium">Felictation !!</span>
+                              Demande Proprietaire Modifiée avec succes !!!!!
+                            </div>
 
+                            <div
+                              class="
+                                p-4
+                                mb-4
+                                text-sm text-red-700
+                                bg-red-100
+                                rounded-lg
+                                dark:bg-red-200 dark:text-red-800
+                              "
+                              role="alert"
+                              v-if="error"
+                            >
+                              <span class="font-medium">Echec !!!</span> Demande
+                              Proprietaire non modifiée
+                            </div>
+                          </div>
 
-  <!-- test -->
+                          <form>
+                            <div class="shadow overflow-hidden sm:rounded-md">
+                              <div class="px-4 py-5 bg-white sm:p-6">
+                                <div class="grid grid-cols-6 gap-6">
+                                  <div class="col-span-6 sm:col-span-3">
+                                    <label
+                                      for="first_name"
+                                      class="
+                                        block
+                                        text-sm
+                                        font-medium
+                                        text-gray-700
+                                      "
+                                      >immatriculation</label
+                                    >
+                                    <input
+                                      type="text"
+                                      name="immatricule"
+                                      id="immatriculation"
+                                      class="
+                                        mt-1
+                                        focus:ring-orange-500
+                                        focus:border-orange-500
+                                        block
+                                        w-full
+                                        shadow-sm
+                                        sm:text-sm
+                                        border-gray-300
+                                        rounded-md
+                                      "
+                                      v-model="demande.immatriculation"
+                                    />
+                                  </div>
 
-</div>
+                                  <div class="col-span-6 sm:col-span-3">
+                                    <label
+                                      for="last_name"
+                                      class="
+                                        block
+                                        text-sm
+                                        font-medium
+                                        text-gray-700
+                                      "
+                                      >marque</label
+                                    >
+                                    <input
+                                      type="text"
+                                      name="marque"
+                                      id="marque"
+                                      class="
+                                        mt-1
+                                        focus:ring-orange-500
+                                        focus:border-orange-500
+                                        block
+                                        w-full
+                                        shadow-sm
+                                        sm:text-sm
+                                        border-gray-300
+                                        rounded-md
+                                      "
+                                      v-model="demande.marque"
+                                    />
+                                  </div>
 
-<!-- modal components -->
+                                  <div class="col-span-6 sm:col-span-4">
+                                    <label
+                                      for="email_address"
+                                      class="
+                                        block
+                                        text-sm
+                                        font-medium
+                                        text-gray-700
+                                      "
+                                      >model</label
+                                    >
+                                    <input
+                                      type="text"
+                                      name="model"
+                                      id="email_address"
+                                      class="
+                                        mt-1
+                                        focus:ring-orange-500
+                                        focus:border-orange-500
+                                        block
+                                        w-full
+                                        shadow-sm
+                                        sm:text-sm
+                                        border-gray-300
+                                        rounded-md
+                                      "
+                                      v-model="demande.model"
+                                    />
+                                  </div>
 
+                                  <div class="col-span-6">
+                                    <label
+                                      for="street_address"
+                                      class="
+                                        block
+                                        text-sm
+                                        font-medium
+                                        text-gray-700
+                                      "
+                                      >nombre de place</label
+                                    >
+                                    <input
+                                      type="text"
+                                      name="zone"
+                                      id="street_address"
+                                      class="
+                                        mt-1
+                                        focus:ring-orange-500
+                                        focus:border-orange-500
+                                        block
+                                        w-full
+                                        shadow-sm
+                                        sm:text-sm
+                                        border-gray-300
+                                        rounded-md
+                                      "
+                                      v-model="demande.nbPlace"
+                                    />
+                                  </div>
 
-  
-<!-- <div v-if="myModel">
-    <transition name="model">
-     <div class="modal-mask">
-      <div class="modal-wrapper">
-       <div class="modal-dialog">
-        <div class="modal-content">
-         <div class="modal-header">
-          <button type="button" class="close" @click="myModel=false"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title">{{ dynamicTitle }}</h4>
-         </div>
-         <div class="modal-body">
-          <div class="form-group">
-           <label>Enter First Name</label>
-           <input type="text" class="form-control" v-model="first_name" />
-          </div>
-          <div class="form-group">
-           <label>Enter Last Name</label>
-           <input type="text" class="form-control" v-model="last_name" />
-          </div>
-          <br />
-          <div align="center">
-           <input type="hidden" v-model="hiddenId" />
-           <input type="button" class="btn btn-success btn-xs" v-model="actionButton" @click="submitData" />
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
-    </transition>
-   </div> -->
+                                  <div
+                                    class="
+                                      col-span-6
+                                      sm:col-span-6
+                                      lg:col-span-2
+                                    "
+                                  >
+                                    <label
+                                      for="state"
+                                      class="
+                                        block
+                                        text-sm
+                                        font-medium
+                                        text-gray-700
+                                      "
+                                      >type de transport</label
+                                    >
 
+                                    <select
+                                      id="country"
+                                      name="type"
+                                      autocomplete="country"
+                                      class="
+                                        mt-1
+                                        block
+                                        w-full
+                                        py-2
+                                        px-3
+                                        border border-gray-300
+                                        bg-white
+                                        rounded-md
+                                        shadow-sm
+                                        focus:outline-none
+                                        focus:ring-orange-500
+                                        focus:border-orange-500
+                                        sm:text-sm
+                                      "
+                                      v-model="demande.idTypeTransportFk.id"
+                                    >
+                                      <option
+                                        v-for="listT in typetransport"
+                                        :key="listT.id"
+                                        :value="listT.id"
+                                      >
+                                        {{ listT.libelleTypeTransport }}
+                                      </option>
+                                    </select>
+                                  </div>
 
+                                  <div
+                                    class="
+                                      col-span-6
+                                      sm:col-span-3
+                                      lg:col-span-2
+                                    "
+                                  >
+                                    <label
+                                      class="
+                                        block
+                                        text-sm
+                                        font-medium
+                                        text-gray-700
+                                      "
+                                      >zone</label
+                                    >
+                                    <select
+                                      class="
+                                        mt-1
+                                        block
+                                        w-full
+                                        py-2
+                                        px-3
+                                        border border-gray-300
+                                        bg-white
+                                        rounded-md
+                                        shadow-sm
+                                        focus:outline-none
+                                        focus:ring-orange-500
+                                        focus:border-orange-500
+                                        sm:text-sm
+                                      "
+                                      v-model="demande.idZoneFk.id"
+                                    >
+                                      <option
+                                        v-for="listz in zones"
+                                        :key="listz.id"
+                                        :value="listz.id"
+                                      >
+                                        {{ listz.libelle }}
+                                      </option>
+                                    </select>
+                                  </div>
+                                </div>
 
-<!--  -->
-          
-                   
+                                <div
+                                  class="col-span-6 sm:col-span-3 lg:col-span-2"
+                                ></div>
+                              </div>
+                            </div>
+                            <div
+                              class="
+                                px-4
+                                py-3
+                                bg-gray-50
+                                text-right
+                                sm:px-6
+                                mx-auto
+                                w-full
+                                items-center
+                                grid grid-cols-3
+                              "
+                            >
+                              <router-link to="/pageprofile">
+                                <button
+                                  type="submit"
+                                  class="
+                                    inline-flex
+                                    mx-auto
+                                    py-2
+                                    px-4
+                                    border border-transparent
+                                    shadow-sm
+                                    text-sm
+                                    font-medium
+                                    rounded-md
+                                    text-white
+                                    bg-red-600
+                                    hover:bg-red-700
+                                    focus:ring-2
+                                    focus:ring-offset-2
+                                    focus:ring-red-500
+                                  "
+                                >
+                                  Annuler
+                                </button>
+                              </router-link>
+                              <button
+                                type="submit"
+                                @click="updateDemande"
+                                class="
+                                  inline-flex
+                                  mx-auto
+                                  py-2
+                                  px-4
+                                  border border-transparent
+                                  shadow-sm
+                                  text-sm
+                                  font-medium
+                                  rounded-md
+                                  text-white
+                                  bg-orange-600
+                                  hover:bg-orange-700
+                                  focus:ring-2
+                                  focus:ring-offset-2
+                                  focus:ring-orange-500
+                                "
+                              >
+                                Modifier
+                              </button>
+                            </div>
+                          </form>
+                        </section>
+
+                        <!-- <ModalAnldemande/> -->
+                        <!-- <pre>{{ idemande }}</pre> -->
+                        <!-- <pre>{{ zones }}</pre> -->
+                        <!-- <pre>{{ typetransport }}</pre>  -->
+                        <!-- <pre>{{ demande.immatriculation }}</pre> -->
+
+                        <!-- test -->
+                      </div>
+
+                      <!-- modal components -->
+
+                      <!--  -->
+
                       <div
                         class="apexcharts-legend"
                         style="max-height: 210px"
@@ -1422,18 +1664,15 @@
                       </div>
                     </div>
                   </div>
-                
+
                   <div class="resize-triggers">
                     <div class="expand-trigger">
                       <div style="width: 563px; height: 633px"></div>
                     </div>
                     <div class="contract-trigger"></div>
                   </div>
-                </div> 
-           
+                </div>
               </div>
-            
-             
             </div>
 
             <div
@@ -1504,245 +1743,9 @@
                     </button>
                   </div>
 
-                  <div class="p-6 space-y-6">
-                    <form action="#">
-                      <div class="grid grid-cols-6 gap-6">
-                        <div class="col-span-6 sm:col-span-3">
-                          <label
-                            for="first-name"
-                            class="block mb-2 text-sm font-medium text-gray-900"
-                            >First Name</label
-                          >
-                          <input
-                            type="text"
-                            name="first-name"
-                            id="first-name"
-                            class="
-                              border border-gray-300
-                              text-gray-900
-                              sm:text-sm
-                              rounded-lg
-                              focus:ring-2
-                              focus:ring-fuchsia-50
-                              focus:border-fuchsia-300
-                              block
-                              w-full
-                              p-2.5
-                            "
-                            placeholder="Bonnie"
-                            required=""
-                          />
-                        </div>
-                        <div class="col-span-6 sm:col-span-3">
-                          <label
-                            for="last-name"
-                            class="block mb-2 text-sm font-medium text-gray-900"
-                            >Last Name</label
-                          >
-                          <input
-                            type="text"
-                            name="last-name"
-                            id="last-name"
-                            class="
-                              border border-gray-300
-                              text-gray-900
-                              sm:text-sm
-                              rounded-lg
-                              focus:ring-2
-                              focus:ring-fuchsia-50
-                              focus:border-fuchsia-300
-                              block
-                              w-full
-                              p-2.5
-                            "
-                            placeholder="Green"
-                            required=""
-                          />
-                        </div>
-                        <div class="col-span-6 sm:col-span-3">
-                          <label
-                            for="email"
-                            class="block mb-2 text-sm font-medium text-gray-900"
-                            >Email</label
-                          >
-                          <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            class="
-                              border border-gray-300
-                              text-gray-900
-                              sm:text-sm
-                              rounded-lg
-                              focus:ring-2
-                              focus:ring-fuchsia-50
-                              focus:border-fuchsia-300
-                              block
-                              w-full
-                              p-2.5
-                            "
-                            placeholder="example@company.com"
-                            required=""
-                          />
-                        </div>
-                        <div class="col-span-6 sm:col-span-3">
-                          <label
-                            for="phone-number"
-                            class="block mb-2 text-sm font-medium text-gray-900"
-                            >Phone Number</label
-                          >
-                          <input
-                            type="number"
-                            name="phone-number"
-                            id="phone-number"
-                            class="
-                              border border-gray-300
-                              text-gray-900
-                              sm:text-sm
-                              rounded-lg
-                              focus:ring-2
-                              focus:ring-fuchsia-50
-                              focus:border-fuchsia-300
-                              block
-                              w-full
-                              p-2.5
-                            "
-                            placeholder="e.g. +(12)3456 789"
-                            required=""
-                          />
-                        </div>
-                        <div class="col-span-6 sm:col-span-3">
-                          <label
-                            for="department"
-                            class="block mb-2 text-sm font-medium text-gray-900"
-                            >Department</label
-                          >
-                          <input
-                            type="text"
-                            name="department"
-                            id="department"
-                            class="
-                              border border-gray-300
-                              text-gray-900
-                              sm:text-sm
-                              rounded-lg
-                              focus:ring-2
-                              focus:ring-fuchsia-50
-                              focus:border-fuchsia-300
-                              block
-                              w-full
-                              p-2.5
-                            "
-                            placeholder="Development"
-                            required=""
-                          />
-                        </div>
-                        <div class="col-span-6 sm:col-span-3">
-                          <label
-                            for="company"
-                            class="block mb-2 text-sm font-medium text-gray-900"
-                            >Company</label
-                          >
-                          <input
-                            type="number"
-                            name="company"
-                            id="company"
-                            class="
-                              border border-gray-300
-                              text-gray-900
-                              sm:text-sm
-                              rounded-lg
-                              focus:ring-2
-                              focus:ring-fuchsia-50
-                              focus:border-fuchsia-300
-                              block
-                              w-full
-                              p-2.5
-                            "
-                            placeholder="123456"
-                            required=""
-                          />
-                        </div>
-                        <div class="col-span-6 sm:col-span-3">
-                          <label
-                            for="current-password"
-                            class="block mb-2 text-sm font-medium text-gray-900"
-                            >Current Password</label
-                          >
-                          <input
-                            type="password"
-                            name="current-password"
-                            id="current-password"
-                            class="
-                              border border-gray-300
-                              text-gray-900
-                              sm:text-sm
-                              rounded-lg
-                              focus:ring-2
-                              focus:ring-fuchsia-50
-                              focus:border-fuchsia-300
-                              block
-                              w-full
-                              p-2.5
-                            "
-                            placeholder="••••••••"
-                            required=""
-                          />
-                        </div>
-                        <div class="col-span-6 sm:col-span-3">
-                          <label
-                            for="new-password"
-                            class="block mb-2 text-sm font-medium text-gray-900"
-                            >New Password</label
-                          >
-                          <input
-                            type="password"
-                            name="new-password"
-                            id="new-password"
-                            class="
-                              border border-gray-300
-                              text-gray-900
-                              sm:text-sm
-                              rounded-lg
-                              focus:ring-2
-                              focus:ring-fuchsia-50
-                              focus:border-fuchsia-300
-                              block
-                              w-full
-                              p-2.5
-                            "
-                            placeholder="••••••••"
-                            required=""
-                          />
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-
                   <div
                     class="items-center p-6 rounded-b border-t border-gray-200"
-                  >
-                    <button
-                      class="
-                        text-white
-                        bg-gradient-to-br
-                        from-dark-600
-                        to-dark-900
-                        font-medium
-                        rounded-lg
-                        text-sm
-                        px-5
-                        py-2.5
-                        text-center
-                        shadow-md shadow-gray-300
-                        hover:scale-[1.02]
-                        transition-transform
-                      "
-                      type="submit"
-                    >
-                      Save all
-                    </button>
-                  </div>
+                  ></div>
                 </div>
               </div>
             </div>
@@ -1908,11 +1911,11 @@
               class="hover:underline"
               target="_blank"
               >par CFLEX</a
-            >. 
+            >.
           </p>
         </div>
       </div>
-      
+
       <div class="svgMap-tooltip">
         <div class="svgMap-tooltip-content-wrapper"></div>
         <div class="svgMap-tooltip-pointer"></div>
@@ -1939,8 +1942,6 @@
         <path id="SvgjsPath1092" d="M0 0 "></path>
       </svg>
     </body>
-
-
   </div>
 </template>
 
@@ -1948,108 +1949,110 @@
 
 
 <script>
-
-import axios from 'axios';
-import FormModifDemande from './FormModifDemande.vue';
-
+import axios from "axios";
 
 export default {
-  name:'FormDemproprietaire',
+  name: "FormDemproprietaire",
 
-    components: {
-        FormModifDemande
+  components: {},
+
+  data() {
+    return {
+      demande: {},
+      idemande: this.$route.params.id,
+      immatriculation: "",
+      idPropretaire: "1",
+      marque: "",
+      model: "",
+      nbPlace: "",
+      idZoneFk: {},
+      idTypeTransportFk: {},
+
+      success: false,
+      error: false,
+      zone: "",
+      type: "",
+      zoneFk: "",
+      typeFk: "",
+      etat: true,
+      typetransport: {},
+      zones: {},
+    };
+
+    //  data(){
+    //       return{
+
+    // etat: true,
+    // idPropretaire:"1",
+    // marque: "",
+    // model: "",
+    // nbPlace: "",
+    // idTypeTransport:"",
+    // idZoneFk:"",
+    // statut: false,
+    // immatriculation:"",
+    // error: false,
+    // success: false,
+
+    //      }
+  },
+
+  async created() {
+    try {
+      this.loading = true;
+
+      await axios.get("/api/demandes/" + this.idemande).then((t) => {
+        this.demande = t.data.data;
+      });
+
+      axios.get("/api/typetransport").then((t) => {
+        this.typetransport = t.data.data;
+      });
+
+      axios.get("/api/zones").then((z) => {
+        this.zones = z.data.data;
+      });
+
+      this.loading = false;
+    } catch (e) {
+      this.loading = false;
+
+      console.log(e);
+    }
+  },
+
+  methods: {
+    listTypetransport() {
+      axios
+        .get(`/typetransport`)
+        .then((response) => {
+          // JSON responses are automatically parsed.
+          this.type = response.data.data;
+          console.log(this.type);
+        })
+        .catch((e) => {
+          this.statut = false;
+          console.log("error", this.errors);
+
+          this.errors.push(e);
+        });
     },
 
+    listZone() {
+      axios
+        .get(`/zones`)
+        .then((response) => {
+          // JSON responses are automatically parsed.
+          this.zones = response.data.data;
+          console.log(this.zones);
+        })
+        .catch((e) => {
+          this.statut = false;
+          console.log("error", this.errors);
 
-
-  data(){
-    return{
-        
-
-
-      immatriculation:'',
-      idPropretaire:"1",
-      marque:'',
-      model:'',
-      nbPlace:'',
-      idZoneFk:'',
-      idTypeTransportFk:'',
-      success:false,
-      error:false,
-      zone:'',
-      type:'',
-      zoneFk:'',
-      typeFk:'',
-      etat: true,
-     
-    }
-
-
-  //  data(){
-  //       return{
-
-  // etat: true,
-  // idPropretaire:"1",
-  // marque: "",
-  // model: "",
-  // nbPlace: "",
-  // idTypeTransport:"",
-  // idZoneFk:"",
-  // statut: false,
-  // immatriculation:"",
-  // error: false,
-  // success: false,
-  
-
-  //      }
-
-
-   }, 
-    
-
-    methods:{
-
-   listTypetransport(){
-
-
-     axios.get(`/typetransport`)
-            .then((response)=> {
-       // JSON responses are automatically parsed.
-                this.type = response.data.data
-                console.log(this.type)
-                this.statut=true;
-            })
-            .catch(e => {
-              this.statut = false;
-              console.log('error', this.errors);
-
-              this.errors.push(e);
-                
-            });
-            },
-
-
-        listZone(){
-
-
-     axios.get(`/zones`)
-            .then((response)=> {
-       // JSON responses are automatically parsed.
-                this.zones = response.data.data
-                console.log(this.zones)
-                this.statut=true;
-            })
-            .catch(e => {
-              this.statut = false;
-              console.log('error', this.errors);
-
-              this.errors.push(e);
-                
-            });
-            },
-
-
-      
+          this.errors.push(e);
+        });
+    },
 
     //   currentDateTime() {
     //   const current = new Date();
@@ -2059,30 +2062,89 @@ export default {
     //   return dateTime;
     // },
 
+    updateDemande() {
+      console.log("testt")
+      console.log({
+        idPropretaireFk: {
+          id: 1,
+        },
+        marque: this.marque,
+        model: this.model,
+        nBplace: this.nbPlace,
+        idTypeTransportFk: {
+          id: this.idTypeTransportFk,
+        },
+        idZoneFk: {
+          id: this.idZoneFk,
+        },
+        statut: this.statut,
+        immatriculation: this.immatriculation,
+      });
+     
+//      {
+//   "etat": true,
+//   "idProprietaireFk": {
+//     "id": 1
+//   },
+//   "date": "2022-05-23T12:37:10.8",
+//   "marque": "sTYGg",
+//   "model": "string",
+//   "nbPlace": 130,
+//   "idTypeTransportFk": {
+//     "id": 1
+//   },
+//   "idZoneFk": {
+//     "id": 1
+//   },
+//   "statut": true,
+//   "immatriculation": "string"
+// }
 
-updateDemande(){
 
 
- axios.put("api/demandes/updateDemande/"+ this.demande.id, {
-          etat: this.etat,
-          idPropretaireFk: {
-            id:this.idPropretaireFk
-          },
-          marque: this.marque,
-          model: this.model,
-          nBplace: this.nbPlace,
-          idTypeTransportFk: {
-            id:this.idTypeTransportFk
-          },
-          idZoneFk: {
-            id:this.idZoneFk
-          },
-          statut: this.statut,
-          immatriculation: this.immatriculation,
+
+
+
+
+      axios.put(`api/demandes/updateDemande/${this.idemande}`, {
+        
+        idProprietaireFk: {
+    id: 1
+  },
+ 
+  marque: "sTYGg",
+  model: "sng",
+  nbPlace: 130,
+  idTypeTransportFk: {
+    id: 1
+  },
+  idZoneFk: {
+    id: 1
+  },
+  
+  immatriculation: "string"
+
+          // idPropretaireFk: {
+          //   id: this.idPropretaireFk,
+          // },
+          // marque: this.marque,
+          // model: this.model,
+          // nBplace: this.nbPlace,
+
+          // idTypeTransportFk: {
+          //   id: this.idTypeTransportFk,
+          // },
+          // idZoneFk: {
+          //   id: this.idZoneFk,
+          // },
+          // statut: this.statut,
+          // immatriculation: this.immatriculation,
         })
         .then((res) => {
           this.reset();
           this.success = true;
+
+          this.route.push("pageprofile");
           console.log(res);
         })
         .catch((error) => {
@@ -2090,7 +2152,7 @@ updateDemande(){
           console.log(error);
         })
         .finally(() => {
-          //Perform action in always
+       //   Perform action in always
           this.loading = false;
         });
     },
@@ -2101,19 +2163,11 @@ updateDemande(){
         this.formData[field] = null;
       }
     },
-       
-        
-
-        
-
-    },
-
-   }
-
+  },
+};
 </script>
 
 <style>
-
 </style>
 
 

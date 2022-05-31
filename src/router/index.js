@@ -21,14 +21,14 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "features" */ '../components/FormProprietaire.vue')
   },
-  {
-    path: '/formModifDemande',
-    name: 'formModifdemande',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "features" */ '../components/FormModifDemandeInt.vue')
-  },
+  // {
+  //   path: '/formModifDemande',
+  //   name: 'formModifdemande',
+  //   // route level code-splitting
+  //   // this generates a separate chunk (about.[hash].js) for this route
+  //   // which is lazy-loaded when the route is visited.
+  //   component: () => import(/* webpackChunkName: "features" */ '../components/FormModifDemandeInt.vue')
+  // },
   { path: '/statut/:id?', name:'statut', component: StatutProfileDemande, props: true },
 
   { path: '/modifdemande/:id?', name:'modifdemande', component:FormModifDemandeInt , props: true },

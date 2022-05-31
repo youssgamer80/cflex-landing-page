@@ -1340,7 +1340,7 @@
                    zone de transport
                 </th>
                   <th scope="col" class="px-6 py-3">
-                
+                Statut profile
                 </th> 
                 <th colspan="2" scope="col" class="px-6 py-3 items-right">
                  Action
@@ -1371,18 +1371,20 @@
                     {{demande.idTypeTransportFk.libelleTypeTransport}}
                 </td>
                 <td class="px-6 py-4">
-                   {{ demande.idZoneFk.idZoneparentFk.zoneparent }}
+                   {{ demande.idZoneFk.libelle }}
                 </td>
-                <!-- <td class="px-6 py-4">
-                <span v-if="demande.statut">accepter</span>
-             <span v-else>en attente</span>
-                </td> -->
+                <td class="px-6 py-4">
+                <span class="text-green-600 font-medium" v-if="demande.statut">accepter</span>
+             <span v-else class="text-orange-400 font-medium">en attente</span>
+                </td>
                 <td colspan="3" class="px-6 py-4 text-right">
+                  
                        <router-link :to="{ name: 'statut', params: { demande }}">
-                       <button type="button" id="show-modal" class="text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..." data-modal-toggle="modal"  v-on:click="VoirDemande(demande.id)">voir le statut</button>
+                       <button type="button"  id="show-modal" class="text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..." data-modal-toggle="modal"  v-on:click="VoirDemande(demande.id)">voir le statut</button>
                        </router-link>
-                      <button type="button" id="show-modal" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..." data-modal-toggle="modal" v-on:click="AnnulerDemande(demande.id)">annuler</button>
-                      <router-link :to="{ name: 'modifdemande', params: { demande }}">
+                
+                      <button type="button"  v-if="!demande.statut" id="show-modal" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..." data-modal-toggle="modal" v-on:click="AnnulerDemande(demande.id)">annuler</button>
+                      <router-link :to='`/modifdemande/${demande.id}`'>
                       <button type="button" id="show-modal" class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..." data-modal-toggle="modal" v-on:click="ModifDemande(demande.id)">modifier</button>
 
                       </router-link>
