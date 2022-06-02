@@ -4,7 +4,16 @@ module.exports = defineConfig({
 
 
 
-}
+},
+module.exports = {
+    devServer: {
+      proxy: 'http://192.168.252.206:4000'
+    }
+  
+},
+
+  
+
 )
 
 

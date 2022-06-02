@@ -38,7 +38,7 @@
         </div>
       </div>
       <div class="mt-5 md:mt-0 md:col-span-2">
-        <form @submit.prevent="submitForm">
+        <form @submit.prevent="submitForm()">
           <div class="shadow overflow-hidden sm:rounded-md">
             <div class="px-4 py-5 bg-white sm:p-6">
               <div class="grid grid-cols-6 gap-6">
@@ -50,8 +50,8 @@
                   >
                   <input
                     type="text"
-                    name="immatricule"
-                    id="immatriculation"
+                  
+              
                     class="
                       mt-1
                       focus:ring-orange-500 focus:border-orange-500
@@ -62,7 +62,7 @@
                       border-gray-300
                       rounded-md
                     "
-                    v-model="immatriculation"
+                    v-model="demande.immatriculation"
                   />
                 </div>
 
@@ -86,7 +86,7 @@
                       border-gray-300
                       rounded-md
                     "
-                    v-model="marque"
+                    v-model="demande.marque"
                   />
                 </div>
 
@@ -110,7 +110,7 @@
                       border-gray-300
                       rounded-md
                     "
-                    v-model="model"
+                    v-model="demande.model"
                   />
                 </div>
 
@@ -121,7 +121,7 @@
                     >nombre de place</label
                   >
                   <input
-                    type="text"
+                    type="number"
                     name="zone"
                     id="street_address"
                     class="
@@ -134,7 +134,7 @@
                       border-gray-300
                       rounded-md
                     "
-                    :v-model="nbPlace"
+                    v-model.number="demande.nbPlace"
                   />
                 </div>
 
@@ -163,9 +163,10 @@
                       focus:ring-orange-500
                       focus:border-orange-500
                       sm:text-sm
-                    "
-                    :v-model="idTypeTransportFk"
+                    " 
+                    v-model="demande.idTypeTransportFk.id"
                   >
+                   
                     <option
                       v-for="listT in typetransport"
                       :key="listT.id"
@@ -190,7 +191,7 @@
                   <label class="block text-sm font-medium text-gray-700"
                     >zone</label
                   >
-                  <select
+                  <select 
                     class="
                       mt-1
                       block
@@ -206,9 +207,10 @@
                       focus:border-orange-500
                       sm:text-sm
                     "
-                    v-model="idZoneFk"
+                    v-model="demande.idZoneFk.id"
                   >
-                    <option
+                 
+                    <option 
                       v-for="listz in zones"
                       :key="listz.id"
                       :value="listz.id"
@@ -279,6 +281,7 @@
             </button>
           </div>
         </form>
+        <!-- <pre>{{demande}}</pre> -->
       </div>
     </section>
   </div>
@@ -286,30 +289,70 @@
 
 <script>
 import axios from "axios";
+import { DemandeService } from "@/Service/DemandeService";
 
 export default {
   name: "FormDemproprietaire",
 
   data() {
     return {
-      immatriculation: "",
-      idPropretaireFk: "",
+
+       success: false,
+       error: false,
+     demande:{
+        etat: false,
+       immatriculation:"",
+       idProprietaireFk: {
+        id: 3,
+      },
       marque: "",
       model: "",
       nbPlace: "",
-      idZoneFk: "",
-      idTypeTransportFk: "",
-      success: false,
-      error: false,
-      zone: "",
-      type: "",
-      zoneFk: "",
-      typeFk: "",
-      etat: true,
+      idZoneFk:{
+        id:"",
+      },
+      // idZoneFk: null,
+      idTypeTransportFk:{
+        id:"",
+      },
+      // idTypeTransportFk: null,
+     
+      
+      
+      statut: false,
+     
+     
+     
+
+     },
+      // zone: "",
       zones: [],
       typetransport: [],
-    };
+      
+     
+    
 
+
+// demande:{
+//    etat: this.etat,
+//           idProprietaireFk: {
+//             id:this.idPropretaireFk
+//           },
+//           // date: this.date,
+//           marque: this.marque,
+//           model: this.model,
+//           nbPlace: this.nbPlace,
+//           idTypeTransportFk: {
+//             id:this.idTypeTransportFk
+//           },
+//           idZoneFk: {
+//             id:this.idZoneFk
+//           },
+//           statut: this.statut,
+//           immatriculation: this.immatriculation,
+// }
+
+};
     //  data(){
     //       return{
 
@@ -329,6 +372,47 @@ export default {
   },
 
   methods: {
+
+    submitForm : async function (){
+
+     try{
+
+       let demandeReponse = await DemandeService.AjoutDemande(this.demande);
+       console.log(demandeReponse);
+
+       if(demandeReponse){
+          this.success = true;
+        //  return this.$router.push("/pageprofile");
+
+       }else{
+
+         
+          
+          this.error = true;
+          this.success = false;
+       }
+
+     }catch(error){
+       console.log(error);
+     }
+
+
+
+    },
+
+// created() {
+//                 this.submitForm()
+
+
+
+//             },
+//      getNow() {
+//                     const today = new Date();
+                  
+//                     this.date = today;
+//                 },
+
+
     //   currentDateTime() {
     //   const current = new Date();
     //   const time = current.getHours() + ":" + current.getMinutes() + ":" + current.getSeconds();
@@ -336,63 +420,67 @@ export default {
 
     //   return dateTime;
     // },
+    
 
-    submitForm() {
-      this.loading = true;
+    // submitForm() {
+    //   this.loading = true;
 
-      /// donnees utiles
-      console.log({
-          etat: this.etat,
-          idPropretaireFk: {
-            id:this.idPropretaireFk
-          },
-          marque: this.marque,
-          model: this.model,
-          nBplace: this.nbPlace,
-          idTypeTransportFk: {
-            id:this.idTypeTransportFk
-          },
-          idZoneFk: {
-            id:this.idZoneFk
-          },
-          statut: this.statut,
-          immatriculation: this.immatriculation,
-        });
+
+
+    
+    //   /// donnees utiles
+    //   console.log({
+    //       etat: this.etat,
+    //       idProprietaireFk: this.idProprietaireFk,
+    //       // date: this.date,
+    //       marque: this.marque,
+    //       model: this.model,
+    //       nbPlace: parseInt(this.nbPlace),
+    //       idTypeTransportFk: {
+    //         id:this.idTypeTransportFk
+    //       },
+    //       idZoneFk: {
+    //         id:this.idZoneFk
+    //       },
+    //       statut: this.statut,
+    //       immatriculation: "dhfjhhn",
+    //     });
         
-      axios
-        .post("api/demandes/addDemande", {
-          etat: this.etat,
-          idPropretaireFk: {
-            id:this.idPropretaireFk
-          },
-          marque: this.marque,
-          model: this.model,
-          nBplace: this.nbPlace,
-          idTypeTransportFk: {
-            id:this.idTypeTransportFk
-          },
-          idZoneFk: {
-            id:this.idZoneFk
-          },
-          statut: this.statut,
-          immatriculation: this.immatriculation,
-        })
-        .then((res) => {
-          this.reset();
+    //   axios.post("/api/demandes/addDemande",{
+    //         "Content-Type": "application/json"
+    //       },{
 
-          this.success = true;
 
-          console.log(res);
-        })
-        .catch((error) => {
-          this.error = true;
-          console.log(error);
-        })
-        .finally(() => {
-          //Perform action in always
-          this.loading = false;
-        });
-    },
+    //       "etat": this.etat,
+    //       "idProprietaireFk":this.idProprietaireFk,
+    //       "marque": this.marque,
+    //       "model": this.model,
+    //       "nbPlace": parseInt(this.nbPlace),
+    //       "idTypeTransportFk": {
+    //         id: this.idTypeTransportFk
+    //         },
+    //       "idZoneFk":{id:this.idZoneFk},
+    //       "statut": this.statut,
+    //       "immatriculation":"dhfjhhn",
+    //     }
+        
+    //     ).then((res) => {
+
+
+    //       this.reset();
+    //       this.success = true;
+          
+    //       console.log(res);
+    //     })
+    //     .catch((error) => {
+    //       this.error = true;
+    //       console.log(error);
+    //     })
+    //     .finally(() => {
+    //       //Perform action in always
+    //       this.loading = false;
+    //     });
+    // },
     reset() {
       this.success = false;
       this.error = false;
@@ -409,7 +497,7 @@ export default {
   mounted() {
     // this.create();
     axios
-      .get(`/api/typetransport`)
+      .get('/api/typetransport')
       .then((response) => {
         // JSON responses are automatically parsed.
         this.typetransport = response.data.data;

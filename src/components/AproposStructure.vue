@@ -1,9 +1,9 @@
 <template>
   <div>
 
-    
+   
 
-   <FooterComponent/>
+   <!-- <FooterComponent/> -->
   </div>
 </template>
 
