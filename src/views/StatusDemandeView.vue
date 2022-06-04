@@ -1,12 +1,12 @@
 <template>
   <div class="StatutDemandeView">
-    <NavBarComponent/>
-
-    
-    <StatusDemande/>
+    <NavBarComponent />
 
 
-    <FooterComponent/>
+    <StatusDemande />
+
+
+    <FooterComponent />
   </div>
 </template>
 
@@ -20,7 +20,7 @@ export default {
   props: {
     msg: String
   },
-   components: {
+  components: {
     StatusDemande,
     FooterComponent,
     NavBarComponent,

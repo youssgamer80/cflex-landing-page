@@ -1,20 +1,16 @@
 <template>
   <div class="PageProfile">
-  
+
     <!--  -->
 
     <body class="bg-gray-50 dark:bg-gray-600">
-      <noscript
-        ><iframe
-          src=""
-          height="0"
-          width="0"
-          style="display: none; visibility: hidden"
-        ></iframe
-      ></noscript>
+      <noscript><iframe src="" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
 
       <!-- navbar -->
 
+
+      <NavbarComponentboard />
+      <!-- 
       <header class="bg-slate-200 sm:flex sm:justify-between sm:items-center sm:py-3 dark:bg-gray-900">
         <div class="flex items-center justify-between px-4 py-3">
           <div>
@@ -41,7 +37,7 @@
 
         <div :class="isOpen ? 'block' : 'hidden'" class="px-2 pt-2 pb-2 sm:flex" >
           <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-semibold text-slate-500 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">profile</a>
-          <!-- <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-semibold text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Team</a> -->
+
           <router-link router-link to="" class="mt-1 block px-3 py-2 rounded-md text-base font-semibold text-slate-500 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Projects</router-link>
 
           <router-link router-link to="" class="mt-1 block px-3 py-2 rounded-md text-base font-semibold text-slate-500 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Deconnexion</router-link>
@@ -50,9 +46,9 @@
 
 
         </div>
-      </header>
+      </header> -->
 
-       <!--  -->
+      <!--  -->
       <!-- <nav class="fixed z-30 w-full bg-gray-50">
         <div class="py-3 px-3 lg:px-5 lg:pl-3">
           <div class="flex justify-between items-center">
@@ -113,6 +109,8 @@
                   class="mr-2 h-8"
                   alt="C FLEX"
                 />
+
+              
                 <span
                   class="
                     hidden
@@ -132,9 +130,10 @@
         </div>
       </nav> -->
       <div class="flex overflow-hidden bg-white pt-16">
-        <aside
-          id="sidebar"
-          class="
+
+        <SidebarComponent />
+
+        <!-- <aside id="sidebar" class="
             flex
             hidden
             fixed
@@ -149,18 +148,14 @@
             lg:flex
             transition-width
             lg:w-64
-          "
-          aria-label="Sidebar"
-        >
+          " aria-label="Sidebar">
           <div class="flex relative flex-col flex-1 pt-0 min-h-0 bg-gray-50">
             <div class="flex overflow-y-auto flex-col flex-1 pt-8 pb-4">
               <div class="flex-1 bg-gray-50 px-3" id="sidebar-items">
                 <ul class="pb-2 pt-1">
-                  
+
                   <li>
-                    <a
-                      href=""
-                      class="
+                    <a href="" class="
                         flex
                         items-center
                         py-2.5
@@ -173,16 +168,12 @@
                         group
                         transition-all
                         duration-200
-                      "
-                      sidebar-toggle-collapse=""
-                       >
-                    
+                      " sidebar-toggle-collapse="">
+
                     </a>
                   </li>
                   <li>
-                    <a
-                      href=""
-                      class="
+                    <a href="" class="
                         flex
                         items-center
                         py-2.5
@@ -195,30 +186,23 @@
                         group
                         transition-all
                         duration-200
-                      "
-                      sidebar-toggle-collapse=""
-                    >
-                      
+                      " sidebar-toggle-collapse="">
+
                       <router-link to="formdemanproprietaireint">
-                      <span
-                        class="ml-3 text-dark-500 text-sm font-light"
-                        sidebar-toggle-item=""
-                        >formulaire de demande</span
-                      >
-                       </router-link>
+                        <span class="ml-3 text-dark-500 text-sm font-light" sidebar-toggle-item="">formulaire de
+                          demande</span>
+                      </router-link>
                     </a>
                   </li>
                   <li>
-                    
+
                   </li>
                   <li>
-                 
-                   
+
+
                   </li>
                   <li>
-                    <button
-                      type="button"
-                      class="
+                    <button type="button" class="
                         w-full
                         flex
                         items-center
@@ -232,28 +216,15 @@
                         group
                         transition-all
                         duration-200
-                      "
-                      sidebar-toggle-collapse=""
-                      aria-controls="dropdown-users"
-                      data-collapse-toggle="dropdown-users"
-                    >
-                    
-                      <span
-                        class="ml-3 text-dark-500 text-sm font-light"
-                        sidebar-toggle-item=""
-                        >-</span
-                      >
-                  
+                      " sidebar-toggle-collapse="" aria-controls="dropdown-users"
+                      data-collapse-toggle="dropdown-users">
+
+                      <span class="ml-3 text-dark-500 text-sm font-light" sidebar-toggle-item="">-</span>
+
                     </button>
-                    <ul
-                      id="dropdown-users"
-                      sidebar-toggle-list=""
-                      class="pb-2 pt-1 hidden"
-                    >
+                    <ul id="dropdown-users" sidebar-toggle-list="" class="pb-2 pt-1 hidden">
                       <li>
-                        <a
-                          href=""
-                          class="
+                        <a href="" class="
                             text-sm text-dark-500
                             font-light
                             rounded-lg
@@ -265,15 +236,10 @@
                             transition
                             duration-75
                             pl-11
-                          "
-                          ><span class="">Users list</span
-                          ><span class="hidden">U</span></a
-                        >
+                          "><span class="">Users list</span><span class="hidden">U</span></a>
                       </li>
                       <li>
-                        <a
-                          href=""
-                          class="
+                        <a href="" class="
                             text-sm text-dark-500
                             font-light
                             rounded-lg
@@ -285,15 +251,10 @@
                             transition
                             duration-75
                             pl-11
-                          "
-                          ><span class="">Profile</span
-                          ><span class="hidden">P</span></a
-                        >
+                          "><span class="">Profile</span><span class="hidden">P</span></a>
                       </li>
                       <li>
-                        <a
-                          href="https://demos.creative-tim.com/soft-ui-flowbite-pro/users/settings/"
-                          class="
+                        <a href="https://demos.creative-tim.com/soft-ui-flowbite-pro/users/settings/" class="
                             text-sm text-dark-500
                             font-light
                             rounded-lg
@@ -305,25 +266,16 @@
                             transition
                             duration-75
                             pl-11
-                          "
-                          ><span class="">S</span
-                          ><span class="hidden">S</span></a
-                        >
+                          "><span class="">S</span><span class="hidden">S</span></a>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    
-                    <ul
-                      id="dropdown-pages"
-                      sidebar-toggle-list=""
-                      class="pb-2 pt-1 hidden"
-                    >
-                      
+
+                    <ul id="dropdown-pages" sidebar-toggle-list="" class="pb-2 pt-1 hidden">
+
                       <li>
-                        <a
-                          href="https://demos.creative-tim.com/soft-ui-flowbite-pro/pages/maintenance/"
-                          class="
+                        <a href="https://demos.creative-tim.com/soft-ui-flowbite-pro/pages/maintenance/" class="
                             text-sm text-dark-500
                             font-light
                             rounded-lg
@@ -335,26 +287,17 @@
                             transition
                             duration-75
                             pl-11
-                          "
-                          ><span class="">Maintenance</span
-                          ><span class="hidden">M</span></a
-                        >
+                          "><span class="">Maintenance</span><span class="hidden">M</span></a>
                       </li>
 
-                     
+
                     </ul>
                   </li>
                   <li>
-                 
-                    <ul
-                      id="dropdown-auth"
-                      sidebar-toggle-list=""
-                      class="pb-2 pt-1 hidden"
-                    >
+
+                    <ul id="dropdown-auth" sidebar-toggle-list="" class="pb-2 pt-1 hidden">
                       <li>
-                        <a
-                          href="https://demos.creative-tim.com/soft-ui-flowbite-pro/authentication/sign-in/"
-                          class="
+                        <a href="https://demos.creative-tim.com/soft-ui-flowbite-pro/authentication/sign-in/" class="
                             text-sm text-dark-500
                             font-light
                             rounded-lg
@@ -366,15 +309,10 @@
                             transition
                             duration-75
                             pl-11
-                          "
-                          ><span class="">Sign in</span
-                          ><span class="hidden">S</span></a
-                        >
+                          "><span class="">Sign in</span><span class="hidden">S</span></a>
                       </li>
                       <li>
-                        <a
-                          href=""
-                          class="
+                        <a href="" class="
                             text-sm text-dark-500
                             font-light
                             rounded-lg
@@ -386,16 +324,11 @@
                             transition
                             duration-75
                             pl-11
-                          "
-                          ><span class="">Sign up</span
-                          ><span class="hidden">S</span></a
-                        >
+                          "><span class="">Sign up</span><span class="hidden">S</span></a>
                       </li>
-                     
+
                       <li>
-                        <a
-                          href=""
-                          class="
+                        <a href="" class="
                             text-sm text-dark-500
                             font-light
                             rounded-lg
@@ -407,15 +340,10 @@
                             transition
                             duration-75
                             pl-11
-                          "
-                          ><span class="">Reset password</span
-                          ><span class="hidden">R</span></a
-                        >
+                          "><span class="">Reset password</span><span class="hidden">R</span></a>
                       </li>
                       <li>
-                        <a
-                          href=""
-                          class="
+                        <a href="" class="
                             text-sm text-dark-500
                             font-light
                             rounded-lg
@@ -427,31 +355,25 @@
                             transition
                             duration-75
                             pl-11
-                          "
-                          ><span class="">Profile lock</span
-                          ><span class="hidden">P</span></a
-                        >
+                          "><span class="">Profile lock</span><span class="hidden">P</span></a>
                       </li>
                     </ul>
                   </li>
                 </ul>
-                <hr
-                  class="
+                <hr class="
                     border-0
                     h-px
                     bg-gradient-to-r
                     from-gray-100
                     via-gray-300
                     to-gray-100
-                  "
-                />
+                  " />
                 <div class="pt-2">
-     
+
                 </div>
               </div>
             </div>
-            <div
-              class="
+            <div class="
                 hidden
                 relative
                 bottom-0
@@ -462,14 +384,9 @@
                 bg-gray-100
                 space-x-4
                 p-4
-              "
-              sidebar-bottom-menu=""
-            >
-            
-              <div
-                id="tooltip-settings"
-                role="tooltip"
-                class="
+              " sidebar-bottom-menu="">
+
+              <div id="tooltip-settings" role="tooltip" class="
                   inline-block
                   absolute
                   invisible
@@ -486,29 +403,21 @@
                   duration-300
                   tooltip
                   shadow-lg-sm
-                "
-                data-popper-placement="top"
-                style="
+                " data-popper-placement="top" style="
                   position: absolute;
                   inset: auto auto 0px 0px;
                   margin: 0px;
                   transform: translate3d(73px, -110px, 0px);
-                "
-              >
-               parametre de la page
-                <div
-                  class="tooltip-arrow"
-                  data-popper-arrow=""
-                  style="
+                ">
+                parametre de la page
+                <div class="tooltip-arrow" data-popper-arrow="" style="
                     position: absolute;
                     left: 0px;
                     transform: translate3d(51px, 0px, 0px);
-                  "
-                ></div>
+                  "></div>
               </div>
-            
-              <div
-                class="
+
+              <div class="
                   hidden
                   z-50
                   my-4
@@ -518,59 +427,37 @@
                   rounded
                   divide-y divide-gray-100
                   shadow-lg
-                "
-                id="language-dropdown"
-                data-popper-placement="top"
-                style="
+                " id="language-dropdown" data-popper-placement="top" style="
                   position: absolute;
                   inset: auto auto 0px 0px;
                   margin: 0px;
                   transform: translate3d(128px, -56px, 0px);
-                "
-              >
+                ">
                 <ul class="py-1" role="none">
                   <li>
-                    <a
-                      href="#"
-                      class="
+                    <a href="#" class="
                         block
                         py-2
                         px-4
                         text-sm text-gray-700
                         hover:bg-gray-200
-                      "
-                      role="menuitem"
-                    >
+                      " role="menuitem">
                       <div class="inline-flex items-center">
-                        <svg
-                          class="h-3.5 w-3.5 rounded-full mr-2"
-                          xmlns="http://www.w3.org/2000/svg"
-                          id="flag-icon-css-us"
-                          viewBox="0 0 512 512"
-                        >
+                        <svg class="h-3.5 w-3.5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg"
+                          id="flag-icon-css-us" viewBox="0 0 512 512">
                           <g fill-rule="evenodd">
                             <g stroke-width="1pt">
-                              <path
-                                fill="#bd3d44"
+                              <path fill="#bd3d44"
                                 d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
-                                transform="scale(3.9385)"
-                              ></path>
-                              <path
-                                fill="#fff"
+                                transform="scale(3.9385)"></path>
+                              <path fill="#fff"
                                 d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
-                                transform="scale(3.9385)"
-                              ></path>
+                                transform="scale(3.9385)"></path>
                             </g>
-                            <path
-                              fill="#192f5d"
-                              d="M0 0h98.8v70H0z"
-                              transform="scale(3.9385)"
-                            ></path>
-                            <path
-                              fill="#fff"
+                            <path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)"></path>
+                            <path fill="#fff"
                               d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z"
-                              transform="scale(3.9385)"
-                            ></path>
+                              transform="scale(3.9385)"></path>
                           </g>
                         </svg>
                         Francais
@@ -578,46 +465,31 @@
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="#"
-                      class="
+                    <a href="#" class="
                         block
                         py-2
                         px-4
                         text-sm text-gray-700
                         hover:bg-gray-200
-                      "
-                      role="menuitem"
-                    >
-                     
+                      " role="menuitem">
+
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="#"
-                      class="
+                    <a href="#" class="
                         block
                         py-2
                         px-4
                         text-sm text-gray-700
                         hover:bg-gray-200
-                      "
-                      role="menuitem"
-                    >
+                      " role="menuitem">
                       <div class="inline-flex items-center">
-                        <svg
-                          class="h-3.5 w-3.5 rounded-full mr-2"
-                          xmlns="http://www.w3.org/2000/svg"
-                          id="flag-icon-css-it"
-                          viewBox="0 0 512 512"
-                        >
+                        <svg class="h-3.5 w-3.5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg"
+                          id="flag-icon-css-it" viewBox="0 0 512 512">
                           <g fill-rule="evenodd" stroke-width="1pt">
                             <path fill="#fff" d="M0 0h512v512H0z"></path>
                             <path fill="#009246" d="M0 0h170.7v512H0z"></path>
-                            <path
-                              fill="#ce2b37"
-                              d="M341.3 0H512v512H341.3z"
-                            ></path>
+                            <path fill="#ce2b37" d="M341.3 0H512v512H341.3z"></path>
                           </g>
                         </svg>
                         italien
@@ -625,65 +497,31 @@
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="#"
-                      class="
+                    <a href="#" class="
                         block
                         py-2
                         px-4
                         text-sm text-gray-700
                         hover:bg-gray-200
-                      "
-                      role="menuitem"
-                    >
+                      " role="menuitem">
                       <div class="inline-flex items-center">
-                        <svg
-                          class="h-3.5 w-3.5 rounded-full mr-2"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
-                          id="flag-icon-css-cn"
-                          viewBox="0 0 512 512"
-                        >
+                        <svg class="h-3.5 w-3.5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-cn" viewBox="0 0 512 512">
                           <defs>
-                            <path
-                              id="a"
-                              fill="#ffde00"
-                              d="M1-.3L-.7.8 0-1 .6.8-1-.3z"
-                            ></path>
+                            <path id="a" fill="#ffde00" d="M1-.3L-.7.8 0-1 .6.8-1-.3z"></path>
                           </defs>
                           <path fill="#de2910" d="M0 0h512v512H0z"></path>
-                          <use
-                            width="30"
-                            height="20"
-                            transform="matrix(76.8 0 0 76.8 128 128)"
-                            xlink:href="#a"
-                          ></use>
-                          <use
-                            width="30"
-                            height="20"
-                            transform="rotate(-121 142.6 -47) scale(25.5827)"
-                            xlink:href="#a"
-                          ></use>
-                          <use
-                            width="30"
-                            height="20"
-                            transform="rotate(-98.1 198 -82) scale(25.6)"
-                            xlink:href="#a"
-                          ></use>
-                          <use
-                            width="30"
-                            height="20"
-                            transform="rotate(-74 272.4 -114) scale(25.6137)"
-                            xlink:href="#a"
-                          ></use>
-                          <use
-                            width="30"
-                            height="20"
-                            transform="matrix(16 -19.968 19.968 16 256 230.4)"
-                            xlink:href="#a"
-                          ></use>
+                          <use width="30" height="20" transform="matrix(76.8 0 0 76.8 128 128)" xlink:href="#a"></use>
+                          <use width="30" height="20" transform="rotate(-121 142.6 -47) scale(25.5827)" xlink:href="#a">
+                          </use>
+                          <use width="30" height="20" transform="rotate(-98.1 198 -82) scale(25.6)" xlink:href="#a">
+                          </use>
+                          <use width="30" height="20" transform="rotate(-74 272.4 -114) scale(25.6137)" xlink:href="#a">
+                          </use>
+                          <use width="30" height="20" transform="matrix(16 -19.968 19.968 16 256 230.4)"
+                            xlink:href="#a"></use>
                         </svg>
-                    
+
                       </div>
                     </a>
                   </li>
@@ -691,40 +529,29 @@
               </div>
             </div>
           </div>
-        </aside>
-        <div
-          class="hidden fixed inset-0 z-10 bg-gray-900 opacity-50"
-          id="sidebarBackdrop"
-        ></div>
-        <div
-          id="main-content"
-          class="h-full w-full bg-white-50 relative overflow-y-auto lg:ml-64"
-        >
+        </aside> -->
+        <div class="hidden fixed inset-0 z-10 bg-gray-900 opacity-50" id="sidebarBackdrop"></div>
+        <div id="main-content" class="h-full w-full bg-white-50 relative overflow-y-auto lg:ml-64">
           <main>
             <div class="px-4 pt-6">
-              <div
-                class="
+              <div class="
                   grid grid-cols-1
                   gap-6
                   mb-6
                   w-full
                   xl:grid-cols-2
                   2xl:grid-cols-2
-                "
-              >
-              
+                ">
+
               </div>
-              <div
-                class="
+              <div class="
                   grid grid-cols-1
                   gap-6
                   mb-6
                   w-full
                   
-                "
-                  >
-                 <div
-                  class="
+                ">
+                <div class="
                     bg-white
                     shadow-lg shadow-gray-200
                     rounded-2xl
@@ -733,140 +560,144 @@
                     from-dark-800
                     to-dark-900
                     
-                  "
-                  style="position: relative"
+                  " style="position: relative">
 
-                >
-                
-                
-              
-                  <div id="main-chart" >
-                    <div
-                      id="apexchartsxsrv0ha6"
-                      class="
+
+
+                  <div id="main-chart">
+                    <div id="apexchartsxsrv0ha6" class="
                         apexcharts-canvas
                         apexchartsxsrv0ha6
                         apexcharts-theme-light
-                      "
-                     
-                    >
-                    
-                    <div class="w-full mx-auto text-center">
-                    <span class="text-orange-900  text-4xl font-bold">liste des demandes</span>
-                    </div>
-<!-- action de la suppression -->
-         <div class="p-4 mb-4 text-sm text-green-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-green-800" role="alert" v-if="statutAn">
-          <span class="font-medium">Demande Annulée !!!</span> avec succes !!!
-          </div>
-              <div class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800" role="alert" v-if="statutech">
-          <span class="font-medium">echec !!!</span> d annulation de la demande
-          </div>
-           
-<div class="relative overflow-x-auto shadow-md sm:rounded-lg mx-auto">
-    <router-link to="/FormDemanproprietaireint">
-  <button type="button" class="text-white bg-gradient-to-r from-green-400  to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-400 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 " data-modal-toggle="popup-modal">nouvelle demande</button>
-   </router-link>
-   <!-- tableau de donnees -->
-  
-     <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-                <th scope="col" class="px-6 py-3">
-                    id demande
-                </th>
-                <!-- <th scope="col" class="px-6 py-3">
+                      ">
+
+                      <div class="w-full mx-auto text-center">
+                        <span class="text-orange-900  text-4xl font-bold">liste des demandes</span>
+                      </div>
+                      <!-- action de la suppression -->
+                      <div
+                        class="p-4 mb-4 text-sm text-green-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-green-800"
+                        role="alert" v-if="statutAn">
+                        <span class="font-medium">Demande Annulée !!!</span> avec succes !!!
+                      </div>
+                      <div class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800"
+                        role="alert" v-if="statutech">
+                        <span class="font-medium">echec !!!</span> d annulation de la demande
+                      </div>
+
+                      <div class="relative overflow-x-auto shadow-md sm:rounded-lg mx-auto">
+                        <router-link to="/FormDemanproprietaireint">
+                          <button type="button"
+                            class="text-white bg-gradient-to-r from-green-400  to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-400 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 "
+                            data-modal-toggle="popup-modal">nouvelle demande</button>
+                        </router-link>
+                        <!-- tableau de donnees -->
+
+                        <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                          <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                            <thead
+                              class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                              <tr>
+                                <th scope="col" class="px-6 py-3">
+                                  id demande
+                                </th>
+                                <!-- <th scope="col" class="px-6 py-3">
                     code demande
                 </th> -->
-                <th scope="col" class="px-6 py-3">
-                    immatriculation vehicule
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    marque
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    model
-                </th>
-                <th scope="col" class="px-6 py-3">
-                  nombre de place
-                </th>
-                 <th scope="col" class="px-6 py-3">
-                  type de transport
-                </th>
-                <th scope="col" class="px-6 py-3">
-                   zone de transport
-                </th>
-                  <th scope="col" class="px-6 py-3">
-                Statut profile
-                </th> 
-                <th colspan="2" scope="col" class="px-6 py-3 items-right">
-                 Action
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr  v-for="demande in demandes" :key="demande.id" class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <td class="px-6 py-4">
-                    {{demande.id }}
-                </td>
-                <!-- <td class="px-6 py-4">
+                                <th scope="col" class="px-6 py-3">
+                                  immatriculation vehicule
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                  marque
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                  model
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                  nombre de place
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                  type de transport
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                  zone de transport
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                  Statut profile
+                                </th>
+                                <th colspan="2" scope="col" class="px-6 py-3 items-right">
+                                  Action
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr v-for="demande in demandes" :key="demande.id"
+                                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td class="px-6 py-4">
+                                  {{ demande.id }}
+                                </td>
+                                <!-- <td class="px-6 py-4">
                     {{ demande.codeDemande}}
                 </td> -->
-                <td class="px-6 py-4">
-                   {{demande.immatriculation}}
-                </td>
-                <td class="px-6 py-4">
-                  {{demande.marque}}
-                </td>
-                <td class="px-6 py-4">
-                   {{demande.model}}
-                </td>
-                <td class="px-6 py-4">
-                   {{demande.nbPlace }}
-                </td>
-                <td class="px-6 py-4">
-                    {{demande.idTypeTransportFk.libelleTypeTransport}}
-                </td>
-                <td class="px-6 py-4">
-                   {{ demande.idZoneFk.libelle }}
-                </td>
-                <td class="px-6 py-4">
-                <span class="text-green-600 font-medium" v-if="demande.statut">accepter</span>
-             <span v-else class="text-orange-400 font-medium">en attente</span>
-                </td>
-                <td colspan="3" class="px-6 py-4 text-right">
-                  
-                       <!-- <router-link :to="{ name: 'statut', params: { demande }}">
+                                <td class="px-6 py-4">
+                                  {{ demande.immatriculation }}
+                                </td>
+                                <td class="px-6 py-4">
+                                  {{ demande.marque }}
+                                </td>
+                                <td class="px-6 py-4">
+                                  {{ demande.model }}
+                                </td>
+                                <td class="px-6 py-4">
+                                  {{ demande.nbPlace }}
+                                </td>
+                                <td class="px-6 py-4">
+                                  {{ demande.idTypeTransportFk.libelleTypeTransport }}
+                                </td>
+                                <td class="px-6 py-4">
+                                  {{ demande.idZoneFk.libelle }}
+                                </td>
+                                <td class="px-6 py-4">
+                                  <span class="text-green-600 font-medium" v-if="demande.statut">accepter</span>
+                                  <span v-else class="text-orange-400 font-medium">en attente</span>
+                                </td>
+                                <td colspan="3" class="px-6 py-4 text-right">
+
+                                  <!-- <router-link :to="{ name: 'statut', params: { demande }}">
                        <button type="button"  id="show-modal" class="text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..." data-modal-toggle="modal"  v-on:click="VoirDemande(demande.id)">voir le statut</button>
                        </router-link> -->
-                
-                      <button type="button"  v-if="!demande.statut" id="show-modal" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..." data-modal-toggle="modal" v-on:click="AnnulerDemande(demande.id)">annuler</button>
-                      <router-link :to='`/modifdemande/${demande.id}`'>
-                      <button type="button" id="show-modal" class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..." data-modal-toggle="modal" v-on:click="ModifDemande(demande.id)">modifier</button>
 
-                      </router-link>
-                </td>
+                                  <button type="button" v-if="!demande.statut" id="show-modal"
+                                    class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..."
+                                    data-modal-toggle="modal" v-on:click="AnnulerDemande(demande.id)">annuler</button>
+                                  <router-link :to='`/modifdemande/${demande.id}`'>
+                                    <button type="button" id="show-modal"
+                                      class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..."
+                                      data-modal-toggle="modal" v-on:click="ModifDemande(demande.id)">modifier</button>
 
-            </tr>
-          
-          
-        </tbody>
-    </table>
-</div>
-    <!-- <ModalAnldemande/> -->
+                                  </router-link>
+                                </td>
 
- 
+                              </tr>
 
 
-  <!-- test -->
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- <ModalAnldemande/> -->
 
-</div>
-
-<!-- modal components -->
 
 
-  
-<!-- <div v-if="myModel">
+
+                        <!-- test -->
+
+                      </div>
+
+                      <!-- modal components -->
+
+
+
+                      <!-- <div v-if="myModel">
     <transition name="model">
      <div class="modal-mask">
       <div class="modal-wrapper">
@@ -900,91 +731,61 @@
 
 
 
-<!--  -->
-          
-                   
-                      <div
-                        class="apexcharts-legend"
-                        style="max-height: 210px"
-                      ></div>
+                      <!--  -->
+
+
+                      <div class="apexcharts-legend" style="max-height: 210px"></div>
                       <div class="apexcharts-tooltip apexcharts-theme-light">
-                        <div
-                          class="apexcharts-tooltip-title"
-                          style="
+                        <div class="apexcharts-tooltip-title" style="
                             font-family: 'Open Sans', sans-serif;
                             font-size: 14px;
-                          "
-                        ></div>
-                        <div
-                          class="apexcharts-tooltip-series-group"
-                          style="order: 1"
-                        >
-                          <span
-                            class="apexcharts-tooltip-marker"
-                            style="background-color: rgb(203, 12, 159)"
-                          ></span>
-                          <div
-                            class="apexcharts-tooltip-text"
-                            style="
+                          "></div>
+                        <div class="apexcharts-tooltip-series-group" style="order: 1">
+                          <span class="apexcharts-tooltip-marker" style="background-color: rgb(203, 12, 159)"></span>
+                          <div class="apexcharts-tooltip-text" style="
                               font-family: 'Open Sans', sans-serif;
                               font-size: 14px;
-                            "
-                          >
+                            ">
                             <div class="apexcharts-tooltip-y-group">
-                              <span
-                                class="apexcharts-tooltip-text-y-label"
-                              ></span
-                              ><span
-                                class="apexcharts-tooltip-text-y-value"
-                              ></span>
+                              <span class="apexcharts-tooltip-text-y-label"></span><span
+                                class="apexcharts-tooltip-text-y-value"></span>
                             </div>
                             <div class="apexcharts-tooltip-goals-group">
-                              <span
-                                class="apexcharts-tooltip-text-goals-label"
-                              ></span
-                              ><span
-                                class="apexcharts-tooltip-text-goals-value"
-                              ></span>
+                              <span class="apexcharts-tooltip-text-goals-label"></span><span
+                                class="apexcharts-tooltip-text-goals-value"></span>
                             </div>
                             <div class="apexcharts-tooltip-z-group">
-                              <span
-                                class="apexcharts-tooltip-text-z-label"
-                              ></span
-                              ><span
-                                class="apexcharts-tooltip-text-z-value"
-                              ></span>
+                              <span class="apexcharts-tooltip-text-z-label"></span><span
+                                class="apexcharts-tooltip-text-z-value"></span>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div
-                        class="
+                      <div class="
                           apexcharts-yaxistooltip
                           apexcharts-yaxistooltip-0
                           apexcharts-yaxistooltip-left
                           apexcharts-theme-light
-                        "
-                      >
+                        ">
                         <div class="apexcharts-yaxistooltip-text"></div>
                       </div>
                     </div>
                   </div>
-                
+
                   <div class="resize-triggers">
                     <div class="expand-trigger">
                       <div style="width: 563px; height: 633px"></div>
                     </div>
                     <div class="contract-trigger"></div>
                   </div>
-                </div> 
-           
+                </div>
+
               </div>
-            
-             
+
+
             </div>
 
-            <div
-              class="
+            <div class="
                 hidden
                 overflow-y-auto overflow-x-hidden
                 fixed
@@ -997,33 +798,24 @@
                 md:inset-0
                 h-modal
                 sm:h-full
-              "
-              id="user-modal"
-              aria-hidden="true"
-            >
+              " id="user-modal" aria-hidden="true">
               <div class="relative px-4 w-full max-w-2xl h-full md:h-auto">
-                <div
-                  class="
+                <div class="
                     relative
                     bg-white
                     rounded-2xl
                     shadow-xl shadow-gray-700
-                  "
-                >
-                  <div
-                    class="
+                  ">
+                  <div class="
                       flex
                       justify-between
                       items-start
                       p-5
                       rounded-t
                       border-b
-                    "
-                  >
+                    ">
                     <h3 class="text-xl font-semibold">Edit user</h3>
-                    <button
-                      type="button"
-                      class="
+                    <button type="button" class="
                         text-gray-400
                         bg-transparent
                         hover:bg-gray-200 hover:text-gray-900
@@ -1033,244 +825,18 @@
                         ml-auto
                         inline-flex
                         items-center
-                      "
-                      data-modal-toggle="user-modal"
-                    >
-                      <svg
-                        class="w-5 h-5"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
+                      " data-modal-toggle="user-modal">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
                           d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                          clip-rule="evenodd"
-                        ></path>
+                          clip-rule="evenodd"></path>
                       </svg>
                     </button>
                   </div>
 
-                  <div class="p-6 space-y-6">
-                    <form action="#">
-                      <div class="grid grid-cols-6 gap-6">
-                        <div class="col-span-6 sm:col-span-3">
-                          <label
-                            for="first-name"
-                            class="block mb-2 text-sm font-medium text-gray-900"
-                            >First Name</label
-                          >
-                          <input
-                            type="text"
-                            name="first-name"
-                            id="first-name"
-                            class="
-                              border border-gray-300
-                              text-gray-900
-                              sm:text-sm
-                              rounded-lg
-                              focus:ring-2
-                              focus:ring-fuchsia-50
-                              focus:border-fuchsia-300
-                              block
-                              w-full
-                              p-2.5
-                            "
-                            placeholder="Bonnie"
-                            required=""
-                          />
-                        </div>
-                        <div class="col-span-6 sm:col-span-3">
-                          <label
-                            for="last-name"
-                            class="block mb-2 text-sm font-medium text-gray-900"
-                            >Last Name</label
-                          >
-                          <input
-                            type="text"
-                            name="last-name"
-                            id="last-name"
-                            class="
-                              border border-gray-300
-                              text-gray-900
-                              sm:text-sm
-                              rounded-lg
-                              focus:ring-2
-                              focus:ring-fuchsia-50
-                              focus:border-fuchsia-300
-                              block
-                              w-full
-                              p-2.5
-                            "
-                            placeholder="Green"
-                            required=""
-                          />
-                        </div>
-                        <div class="col-span-6 sm:col-span-3">
-                          <label
-                            for="email"
-                            class="block mb-2 text-sm font-medium text-gray-900"
-                            >Email</label
-                          >
-                          <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            class="
-                              border border-gray-300
-                              text-gray-900
-                              sm:text-sm
-                              rounded-lg
-                              focus:ring-2
-                              focus:ring-fuchsia-50
-                              focus:border-fuchsia-300
-                              block
-                              w-full
-                              p-2.5
-                            "
-                            placeholder="example@company.com"
-                            required=""
-                          />
-                        </div>
-                        <div class="col-span-6 sm:col-span-3">
-                          <label
-                            for="phone-number"
-                            class="block mb-2 text-sm font-medium text-gray-900"
-                            >Phone Number</label
-                          >
-                          <input
-                            type="number"
-                            name="phone-number"
-                            id="phone-number"
-                            class="
-                              border border-gray-300
-                              text-gray-900
-                              sm:text-sm
-                              rounded-lg
-                              focus:ring-2
-                              focus:ring-fuchsia-50
-                              focus:border-fuchsia-300
-                              block
-                              w-full
-                              p-2.5
-                            "
-                            placeholder="e.g. +(12)3456 789"
-                            required=""
-                          />
-                        </div>
-                        <div class="col-span-6 sm:col-span-3">
-                          <label
-                            for="department"
-                            class="block mb-2 text-sm font-medium text-gray-900"
-                            >Department</label
-                          >
-                          <input
-                            type="text"
-                            name="department"
-                            id="department"
-                            class="
-                              border border-gray-300
-                              text-gray-900
-                              sm:text-sm
-                              rounded-lg
-                              focus:ring-2
-                              focus:ring-fuchsia-50
-                              focus:border-fuchsia-300
-                              block
-                              w-full
-                              p-2.5
-                            "
-                            placeholder="Development"
-                            required=""
-                          />
-                        </div>
-                        <div class="col-span-6 sm:col-span-3">
-                          <label
-                            for="company"
-                            class="block mb-2 text-sm font-medium text-gray-900"
-                            >Company</label
-                          >
-                          <input
-                            type="number"
-                            name="company"
-                            id="company"
-                            class="
-                              border border-gray-300
-                              text-gray-900
-                              sm:text-sm
-                              rounded-lg
-                              focus:ring-2
-                              focus:ring-fuchsia-50
-                              focus:border-fuchsia-300
-                              block
-                              w-full
-                              p-2.5
-                            "
-                            placeholder="123456"
-                            required=""
-                          />
-                        </div>
-                        <div class="col-span-6 sm:col-span-3">
-                          <label
-                            for="current-password"
-                            class="block mb-2 text-sm font-medium text-gray-900"
-                            >Current Password</label
-                          >
-                          <input
-                            type="password"
-                            name="current-password"
-                            id="current-password"
-                            class="
-                              border border-gray-300
-                              text-gray-900
-                              sm:text-sm
-                              rounded-lg
-                              focus:ring-2
-                              focus:ring-fuchsia-50
-                              focus:border-fuchsia-300
-                              block
-                              w-full
-                              p-2.5
-                            "
-                            placeholder="••••••••"
-                            required=""
-                          />
-                        </div>
-                        <div class="col-span-6 sm:col-span-3">
-                          <label
-                            for="new-password"
-                            class="block mb-2 text-sm font-medium text-gray-900"
-                            >New Password</label
-                          >
-                          <input
-                            type="password"
-                            name="new-password"
-                            id="new-password"
-                            class="
-                              border border-gray-300
-                              text-gray-900
-                              sm:text-sm
-                              rounded-lg
-                              focus:ring-2
-                              focus:ring-fuchsia-50
-                              focus:border-fuchsia-300
-                              block
-                              w-full
-                              p-2.5
-                            "
-                            placeholder="••••••••"
-                            required=""
-                          />
-                        </div>
-                      </div>
-                    </form>
-                  </div>
 
-                  <div
-                    class="items-center p-6 rounded-b border-t border-gray-200"
-                  >
-                    <button
-                      class="
+                  <div class="items-center p-6 rounded-b border-t border-gray-200">
+                    <button class="
                         text-white
                         bg-gradient-to-br
                         from-dark-600
@@ -1284,9 +850,7 @@
                         shadow-md shadow-gray-300
                         hover:scale-[1.02]
                         transition-transform
-                      "
-                      type="submit"
-                    >
+                      " type="submit">
                       Save all
                     </button>
                   </div>
@@ -1294,8 +858,7 @@
               </div>
             </div>
           </main>
-          <footer
-            class="
+          <footer class="
               p-6
               my-6
               mx-4
@@ -1303,184 +866,112 @@
               rounded-2xl
               shadow-lg shadow-gray-200
               md:flex md:items-center md:justify-between
-            "
-          >
+            ">
             <ul class="flex flex-wrap items-center mb-6 md:mb-0">
               <li>
-                <a
-                  href="#"
-                  class="
+                <a href="#" class="
                     mr-4
                     text-sm
                     font-normal
                     text-gray-500
                     hover:underline
                     md:mr-6
-                  "
-                  >Terms and conditions</a
-                >
+                  ">Terms and conditions</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  class="
+                <a href="#" class="
                     mr-4
                     text-sm
                     font-normal
                     text-gray-500
                     hover:underline
                     md:mr-6
-                  "
-                  >Privacy Policy</a
-                >
+                  ">Privacy Policy</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  class="
+                <a href="#" class="
                     mr-4
                     text-sm
                     font-normal
                     text-gray-500
                     hover:underline
                     md:mr-6
-                  "
-                  >Licensing</a
-                >
+                  ">Licensing</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  class="
+                <a href="#" class="
                     mr-4
                     text-sm
                     font-normal
                     text-gray-500
                     hover:underline
                     md:mr-6
-                  "
-                  >Cookie Policy</a
-                >
+                  ">Cookie Policy</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  class="text-sm font-normal text-gray-500 hover:underline"
-                  >Contact</a
-                >
+                <a href="#" class="text-sm font-normal text-gray-500 hover:underline">Contact</a>
               </li>
             </ul>
             <div class="flex space-x-6 sm:justify-center">
               <a href="#" class="text-gray-500 hover:text-gray-900">
-                <svg
-                  class="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd"
                     d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                    clip-rule="evenodd"
-                  ></path>
+                    clip-rule="evenodd"></path>
                 </svg>
               </a>
               <a href="#" class="text-gray-500 hover:text-gray-900">
-                <svg
-                  class="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd"
                     d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                    clip-rule="evenodd"
-                  ></path>
+                    clip-rule="evenodd"></path>
                 </svg>
               </a>
               <a href="#" class="text-gray-500 hover:text-gray-900">
-                <svg
-                  class="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path
-                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
-                  ></path>
+                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                  </path>
                 </svg>
               </a>
               <a href="#" class="text-gray-500 hover:text-gray-900">
-                <svg
-                  class="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd"
                     d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                    clip-rule="evenodd"
-                  ></path>
+                    clip-rule="evenodd"></path>
                 </svg>
               </a>
               <a href="#" class="text-gray-500 hover:text-gray-900">
-                <svg
-                  class="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd"
                     d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
-                    clip-rule="evenodd"
-                  ></path>
+                    clip-rule="evenodd"></path>
                 </svg>
               </a>
             </div>
           </footer>
           <p class="my-10 text-sm text-center text-gray-500">
             © 2022 CFLEX
-            <a
-              href="https://creative-tim.com"
-              class="hover:underline"
-              target="_blank"
-              >interface</a
-            >
+            <a href="https://creative-tim.com" class="hover:underline" target="_blank">interface</a>
             and
-            <a
-              href="https://flowbite.com"
-              class="hover:underline"
-              target="_blank"
-              >par CFLEX</a
-            >. 
+            <a href="https://flowbite.com" class="hover:underline" target="_blank">par CFLEX</a>.
           </p>
         </div>
       </div>
-      
+
       <div class="svgMap-tooltip">
         <div class="svgMap-tooltip-content-wrapper"></div>
         <div class="svgMap-tooltip-pointer"></div>
       </div>
 
-      <svg
-        id="SvgjsSvg1089"
-        width="2"
-        height="0"
-        xmlns="http://www.w3.org/2000/svg"
-        version="1.1"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        xmlns:svgjs="http://svgjs.dev"
-        style="
+      <svg id="SvgjsSvg1089" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1"
+        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="
           overflow: hidden;
           top: -100%;
           left: -100%;
           position: absolute;
           opacity: 0;
-        "
-      >
+        ">
         <defs id="SvgjsDefs1090"></defs>
         <polyline id="SvgjsPolyline1091" points="0,0"></polyline>
         <path id="SvgjsPath1092" d="M0 0 "></path>
@@ -1530,126 +1021,126 @@
 
 import axios from 'axios';
 // import ModalAnldemande from '@/components/ModalAnldemande.vue';
-
-
+import NavbarComponentboard from './pageprofileComponent/NavbarComponentboard.vue';
+import SidebarComponent from './pageprofileComponent/SidebarComponent.vue';
 export default {
- 
+
 
   name: "PageProfile",
-  
-  
 
-     props: ['demande'] ,
 
-   components: {
-     
+
+  props: ['demande'],
+
+  components: {
+    NavbarComponentboard,
+    SidebarComponent
+
     // ModalAnldemande,
-   
-},
 
- 
-  data(){
+  },
 
 
-    
-    
-        return{
-          isOpen: false,
-          
-             statut: false,
-             demandes:[],
-             errors: [],
-             myModel:false,
-             id: null,
-             statutAn: false,
-             statutech: false,
-            demandeStatut:false,
-              
-        }
-        
-      
-    },
+  data() {
 
-    methods: {
-       hideModal() {
-              this.open = false
-          },
 
-   //    
-          
 
-     AnnulerDemande(id){
 
-       let x = window.confirm("voulez vous supprimer cette demande ?");
+    return {
+      isOpen: false,
 
-       if(x){
-       const headers = { 
-            'Content-Type': 'application/json'
+      statut: false,
+      demandes: [],
+      errors: [],
+      myModel: false,
+      id: null,
+      statutAn: false,
+      statutech: false,
+      demandeStatut: false,
+
+    }
+
+
+  },
+
+  methods: {
+
+
+    //    
+
+
+    AnnulerDemande(id) {
+
+      let x = window.confirm("voulez vous supprimer cette demande ?");
+
+      if (x) {
+        const headers = {
+          'Content-Type': 'application/json'
         };
 
-        
-        axios.put(`api/demandes/updateDemande/${id}`,{ headers },this.statut)
-             .then(response => {
-                 console.log(response);
-                  this.statutAn = true;
-                  this.listDemande();
 
-             }).catch (e => {
-              this.statutech = true;
-              console.log('erreur', this.result);
+        axios.put(`api/demandes/updateDemande/${id}`, { headers }, this.statut)
+          .then(response => {
+            console.log(response);
+            this.statutAn = true;
+            this.listDemande();
 
-              this.errors.push(e)
-                
-            });
-             
-            } 
-      },
+          }).catch(e => {
+            this.statutech = true;
+            console.log('erreur', this.result);
 
-        /// axios.update("http://192.168.252.92:4000/api/demandes/updateDemande/?id="${this.id}"&statut="${this.statut}").then(()=>{
-          
-       
-          // affDetail(){
-          //   this.$bvModal.show("modalannuler");
-          // },
-    
-    
-      listDemande(){
+            this.errors.push(e)
+
+          });
+
+      }
+    },
+
+    /// axios.update("http://192.168.252.92:4000/api/demandes/updateDemande/?id="${this.id}"&statut="${this.statut}").then(()=>{
 
 
-     axios.get(`/api/demandes`)
-            .then((response)=> {
-       // JSON responses are automatically parsed.
-                this.demandes = response.data.data
-                console.log(this.demandes)
-                this.statut=true;
-            })
-            .catch(e => {
-              this.statut = false;
-              console.log('error', this.errors);
-
-              this.errors.push(e)
-                
-            });
-            },
+    // affDetail(){
+    //   this.$bvModal.show("modalannuler");
+    // },
 
 
-            },
-
- created(){
-      this.listDemande();
-    }, 
+    listDemande() {
 
 
-// props: {
-//   demande: {
-//     type: Object,
-//     required: true
-//   },
+      axios.get(`/api/demandes`)
+        .then((response) => {
+          // JSON responses are automatically parsed.
+          this.demandes = response.data.data
+          console.log(this.demandes)
+          this.statut = true;
+        })
+        .catch(e => {
+          this.statut = false;
+          console.log('error', this.errors);
 
-//     }
- 
+          this.errors.push(e)
 
- };
+        });
+    },
+
+
+  },
+
+  created() {
+    this.listDemande();
+  },
+
+
+  // props: {
+  //   demande: {
+  //     type: Object,
+  //     required: true
+  //   },
+
+  //     }
+
+
+};
 
 // http://192.168.252.92:4000/api/demandes
 // http://192.168.252.188:8080/api/swagger-ui/index.html#/

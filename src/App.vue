@@ -11,10 +11,10 @@
 
 
 <style>
-
 nav a.router-link-exact-active {
   color: #fb5a00;
 }
+
 </style>
 <script>
 // import FooterComponent from '@/components/FooterComponent.vue'
