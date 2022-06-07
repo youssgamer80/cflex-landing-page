@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import StatutProfileDemande from '../components/StatutProfileDemande.vue'
 import FormModifDemandeInt from '@/components/FormModifDemandeInt.vue'
+import Infoprofile from '@/components/page/infoproprietaireprofile/InfoProfileInt.vue'
 
 Vue.use(VueRouter)
 
@@ -12,6 +13,12 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView
+  }, 
+  {
+    path: '/infoprofile/:id?',
+    name: 'infoprofile',
+    component: Infoprofile,
+    props: true
   },
   {
     path: '/formProprietaire',

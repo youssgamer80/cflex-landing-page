@@ -131,9 +131,10 @@
       </nav> -->
       <div class="flex overflow-hidden bg-white pt-16">
 
-        <SidebarComponent />
+        <!-- <SidebarComponent /> -->
 
-        <!-- <aside id="sidebar" class="
+        <aside id="sidebar" class="
+
             flex
             hidden
             fixed
@@ -529,7 +530,7 @@
               </div>
             </div>
           </div>
-        </aside> -->
+        </aside> 
         <div class="hidden fixed inset-0 z-10 bg-gray-900 opacity-50" id="sidebarBackdrop"></div>
         <div id="main-content" class="h-full w-full bg-white-50 relative overflow-y-auto lg:ml-64">
           <main>
@@ -660,6 +661,7 @@
                                 <td class="px-6 py-4">
                                   <span class="text-green-600 font-medium" v-if="demande.statut">accepter</span>
                                   <span v-else class="text-orange-400 font-medium">en attente</span>
+                                   <!-- <span v-else class="text-orange-400 font-medium">refuse</span> -->
                                 </td>
                                 <td colspan="3" class="px-6 py-4 text-right">
 
@@ -673,7 +675,7 @@
                                   <router-link :to='`/modifdemande/${demande.id}`'>
                                     <button type="button" id="show-modal"
                                       class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..."
-                                      data-modal-toggle="modal" v-on:click="ModifDemande(demande.id)">modifier</button>
+                                      data-modal-toggle="modal">modifier</button>
 
                                   </router-link>
                                 </td>
@@ -1022,7 +1024,7 @@
 import axios from 'axios';
 // import ModalAnldemande from '@/components/ModalAnldemande.vue';
 import NavbarComponentboard from './pageprofileComponent/NavbarComponentboard.vue';
-import SidebarComponent from './pageprofileComponent/SidebarComponent.vue';
+/* import SidebarComponent from './pageprofileComponent/SidebarComponent.vue'; */
 export default {
 
 
@@ -1034,7 +1036,7 @@ export default {
 
   components: {
     NavbarComponentboard,
-    SidebarComponent
+   
 
     // ModalAnldemande,
 

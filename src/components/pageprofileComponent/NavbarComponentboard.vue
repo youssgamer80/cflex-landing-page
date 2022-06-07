@@ -3,10 +3,10 @@
 
   <div>
 
-    <header class="dark:bg-gray-900 bg-slate-200 sm:flex sm:justify-between sm:items-center sm:py-3">
+    <header class="dark:bg-gray-900 bg-slate-300 sm:flex sm:justify-between sm:items-center sm:py-3">
       <div class="flex items-center justify-between px-4 py-3">
-        <div>
-          <img class="h-8 w-auto sm:h-10" src="../../assets/logo.png" alt="Workflow">
+        <div class="items-center mx-auto">
+          <img class="h-8 w-auto sm:h-10 mx-auto" src="../../assets/logo.png" alt="Workflow">
         </div>
         <div class="sm:hidden">
           <button @click="isOpen = !isOpen" type="button"
@@ -26,16 +26,17 @@
       </div>
 
       <div :class="isOpen ? 'block' : 'hidden'" class="px-2 pt-2 pb-2 sm:flex">
-        <router-link to="/"
-          class="mt-1 block px-3 py-2 rounded-md text-base font-semibold text-slate-500 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">
+        <!-- <router-link :to='`/infoprofile/${proprietaire.id}`' -->
+        <router-link to='/infoprofile'
+          class="mt-1 block px-3 py-2 rounded-md text-base font-semibold text-slate-500 hover:text-white focus:outline-none focus:text-white ">
           profile</router-link>
 
-        <router-link to=""
+       <!--  <router-link to=""
           class="mt-1 block px-3 py-2 rounded-md text-base font-semibold text-slate-500 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">
           Projects</router-link>
-
-        <router-link to=""
-          class="mt-1 block px-3 py-2 rounded-md text-base font-semibold text-slate-500 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">
+ -->
+        <router-link to="/"
+          class="mt-1 block px-3 py-2 rounded-md text-base font-semibold text-slate-500 hover:text-white focus:outline-none focus:text-white ">
           Deconnexion</router-link>
 
 
