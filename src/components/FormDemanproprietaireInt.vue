@@ -190,7 +190,7 @@
 
                     <ul id="dropdown-auth" sidebar-toggle-list="" class="pb-2 pt-1 hidden">
                       <li>
-                        <a href="sign-in/" class="
+                        <a href="sin/" class="
                             text-sm text-dark-500
                             font-light
                             rounded-lg
@@ -205,7 +205,7 @@
                           "><span class="">Sign in</span><span class="hidden">S</span></a>
                       </li>
                       <li>
-                        <a href="https://demos.creative-tim.com/soft-ui-flowbite-pro/authentication/sign-up/" class="
+                        <a href="gn-up/" class="
                             text-sm text-dark-500
                             font-light
                             rounded-lg
@@ -221,8 +221,7 @@
                       </li>
 
                       <li>
-                        <a href="https://demos.creative-tim.com/soft-ui-flowbite-pro/authentication/reset-password/"
-                          class="
+                        <a href="h-password/" class="
                             text-sm text-dark-500
                             font-light
                             rounded-lg
@@ -237,8 +236,7 @@
                           "><span class="">Reset password</span><span class="hidden">R</span></a>
                       </li>
                       <li>
-                        <a href="https://demos.creative-tim.com/soft-ui-flowbite-pro/authentication/profile-lock/"
-                          class="
+                        <a href="hofile-lock/" class="
                             text-sm text-dark-500
                             font-light
                             rounded-lg

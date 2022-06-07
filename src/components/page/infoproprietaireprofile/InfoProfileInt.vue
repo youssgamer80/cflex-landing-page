@@ -8,96 +8,25 @@
 
       <!-- navbar -->
 
+      <!-- tester -->
+
+
 
       <NavbarComponentboard />
-    
+
+
+
+
+
 
       <!--  -->
-      <!-- <nav class="fixed z-30 w-full bg-gray-50">
-        <div class="py-3 px-3 lg:px-5 lg:pl-3">
-          <div class="flex justify-between items-center">
-            <div class="flex justify-start items-center">
-              <button
-                id="toggleSidebar"
-                aria-expanded="true"
-                aria-controls="sidebar"
-                class="
-                  hidden
-                  p-2
-                  mr-4
-                  text-gray-600
-                  rounded
-                  cursor-pointer
-                  lg:inline
-                  hover:text-gray-900 hover:bg-gray-100
-                "
-              >
-           
-              </button>
-              <button
-                id="toggleSidebarMobile"
-                aria-expanded="true"
-                aria-controls="sidebar"
-                class="
-                  p-2
-                  mr-2
-                  text-gray-600
-                  rounded
-                  cursor-pointer
-                  lg:hidden
-                  hover:text-gray-900 hover:bg-gray-100
-                  focus:bg-gray-100 focus:ring-2 focus:ring-gray-100
-                "
-              >
-                 
-                <svg
-                  id="toggleSidebarMobileClose"
-                  class="hidden w-6 h-6"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-              <a
-                href=""
-                class="text-md font-semibold flex items-center lg:mr-1.5"
-              >
-                <img
-                  src="../assets/logo.png"
-                  class="mr-2 h-8"
-                  alt="C FLEX"
-                />
 
-              
-                <span
-                  class="
-                    hidden
-                    md:inline-block
-                    self-center
-                    text-xl
-                    font-bold
-                    whitespace-nowrap
-                  "
-                  ></span
-                >
-              </a>
-             
-            </div>
-           
-          </div>
-        </div>
-      </nav> -->
       <div class="flex overflow-hidden bg-white pt-16">
 
-      <!--   <SidebarComponent /> -->
+        <!--   <SidebarComponent /> -->
 
-         <aside id="sidebar" class="
+
+        <aside id="sidebar" class="
             flex
             hidden
             fixed
@@ -117,6 +46,8 @@
             <div class="flex overflow-y-auto flex-col flex-1 pt-8 pb-4">
               <div class="flex-1 bg-gray-50 px-3" id="sidebar-items">
                 <ul class="pb-2 pt-1">
+
+
 
                   <li>
                     <a href="" class="
@@ -236,7 +167,15 @@
                   </li>
                   <li>
 
-                    <ul id="dropdown-pages" sidebar-toggle-list="" class="pb-2 pt-1 hidden">
+
+
+                    <!-- tester -->
+
+
+
+                    <!-- tester -->
+
+                    <ul id=" dropdown-pages" sidebar-toggle-list="" class="pb-2 pt-1 hidden">
 
                       <li>
                         <a href="https://demos.creative-tim.com/soft-ui-flowbite-pro/pages/maintenance/" class="
@@ -493,7 +432,7 @@
               </div>
             </div>
           </div>
-        </aside> 
+        </aside>
         <div class="hidden fixed inset-0 z-10 bg-gray-900 opacity-50" id="sidebarBackdrop"></div>
         <div id="main-content" class="h-full w-full bg-white-50 relative overflow-y-auto lg:ml-64">
           <main>
@@ -515,6 +454,9 @@
                   w-full
                   
                 ">
+                <div class="w-full mx-auto text-center">
+                  <span class="text-orange-900  text-4xl font-bold">Info profile proprietaire</span>
+                </div>
                 <div class="
                     bg-white
                     shadow-lg shadow-gray-200
@@ -522,110 +464,154 @@
                     p-4
                     bg-gradient-to-r
                     from-dark-800
-                    to-dark-900
+                    to-dark-900 
                     
                   " style="position: relative">
 
 
 
+
                   <div id="main-chart">
+
+
+
                     <div id="apexchartsxsrv0ha6" class="
                         apexcharts-canvas
                         apexchartsxsrv0ha6
                         apexcharts-theme-light
                       ">
 
-                      <div class="w-full mx-auto text-center">
-                        <span class="text-orange-900  text-4xl font-bold">Info profile proprietaire</span>
-                      </div>
 
-                       
                       <!-- action de la suppression -->
-                     
-                     
+
+
 
                       <div class="relative overflow-x-auto shadow-md sm:rounded-lg mx-auto">
-                        
+
                         <!-- tableau de donnees -->
-                        
-                          <section>
-        <div class="flex items-center space-x-2 font-semibold text-gray-900 leading-8">
-            <span clas="text-green-500">
-              <!--   <svg class="h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+
+                        <section>
+                          <div class="flex items-center space-x-2 font-semibold text-gray-900 leading-8">
+                            <span clas="text-green-500">
+                              <!--   <svg class="h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg> -->
-            </span>
-        
-        </div>
-        <div class="text-gray-700">
-            <div class="grid md:grid-cols-2 text-sm">
-                <div class="grid grid-cols-2">
-                    <div class="px-4 py-2 font-semibold">nom</div>
-                    <div class="px-4 py-2">{{ proprietaire.nom }}</div>
-                </div>
-                <div class="grid grid-cols-2">
-                    <div class="px-4 py-2 font-semibold">prenom</div>
-                    <div class="px-4 py-2">{{ proprietaire.prenom }}</div>
-                </div>
-                  <div class="grid grid-cols-2">
-                    <div class="px-4 py-2 font-semibold">telephone</div>
-                    <div class="px-4 py-2">{{ proprietaire.telephone }}</div>
-                </div>
-                <div class="grid grid-cols-2">
-                    <div class="px-4 py-2 font-semibold">genre</div>
-                    <div class="px-4 py-2">{{ proprietaire.genre }}</div>
-                </div>
-               <!--  <div class="grid grid-cols-2">
+                            </span>
+
+                          </div>
+                          <div class="text-gray-700">
+                            <div class="grid md:grid-cols-2 text-sm">
+                              <div class="grid grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">nom</div>
+                                <div class="px-4 py-2">{{ proprietaire.nom }}</div>
+                              </div>
+                              <div class="grid grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">prenom</div>
+                                <div class="px-4 py-2">{{ proprietaire.prenom }}</div>
+                              </div>
+                              <div class="grid grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">telephone</div>
+                                <div class="px-4 py-2">{{ proprietaire.telephone }}</div>
+                              </div>
+                              <div class="grid grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">genre</div>
+                                <div class="px-4 py-2">{{ proprietaire.genre }}</div>
+                              </div>
+                              <!--  <div class="grid grid-cols-2">
                     <div class="px-4 py-2 font-semibold">Date de naissance</div>
                     <div class="px-4 py-2">+11 998001001</div>
                 </div> -->
-                  <div class="grid grid-cols-2">
-                    <div class="px-4 py-2 font-semibold">lieu de residence</div>
-                    <div class="px-4 py-2">{{ proprietaire.lieuResidence }}</div>
-                </div>
-                <!-- <div class="grid grid-cols-2">
+                              <div class="grid grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">lieu de residence</div>
+                                <div class="px-4 py-2">{{
+                                    proprietaire.lieuResidence
+                                }}</div>
+                              </div>
+                              <!-- <div class="grid grid-cols-2">
                     <div class="px-4 py-2 font-semibold">Current Address</div>
                     <div class="px-4 py-2">Beech Creek, PA, Pennsylvania</div>
                 </div> -->
-                <div class="grid grid-cols-2">
-                    <div class="px-4 py-2 font-semibold">lieu de naissance</div>
-                    <div class="px-4 py-2">{{ proprietaire.lieuNaissance }}</div>
-                </div>
-                <div class="grid grid-cols-2">
-                    <div class="px-4 py-2 font-semibold">Email</div>
-                    <div class="px-4 py-2">
-                        <a class="text-blue-800" >{{ proprietaire.email }}</a>
-                    </div>
-                </div>
-                <div class="grid grid-cols-2">
-                    <div class="px-4 py-2 font-semibold">Date de naissance</div>
-                    <div class="px-4 py-2">{{ proprietaire.dateNaissance }}</div>
-                </div>
-            </div>
-        </div>
-       <!--  <button
+                              <div class="grid grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">lieu de naissance</div>
+                                <div class="px-4 py-2">{{ proprietaire.lieuNaissance }}</div>
+                              </div>
+                              <div class="grid grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">Email</div>
+                                <div class="px-4 py-2">
+                                  <a class="text-blue-800">{{ proprietaire.email }}</a>
+                                </div>
+                              </div>
+                              <div class="grid grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">Date de naissance</div>
+                                <div class="px-4 py-2">{{ proprietaire.dateNaissance }}</div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--  <button
             class="block w-full text-blue-800 text-sm font-semibold rounded-lg hover:bg-gray-100 focus:outline-none focus:shadow-outline focus:bg-gray-100 hover:shadow-xs p-3 my-4">Show
             Full Information</button> -->
-        </section>
-<!-- test -->
+                        </section>
+                        <!-- test -->
 
-                        <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-                         <pre>{{ proprietaire.id }}</pre>
+                        <div class="relative overflow-x-auto shadow-md sm:rounded-lg ">
+
+
 
 
                         </div>
                         <!-- <ModalAnldemande/> -->
-
-
-
+                        <router-link to="/modifInfoProfile">
+                          <button type="button"
+                            class="px-5 py-3 w-/4 mx-auto block rounded-md text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium text-sm text-center mr-2 mb-2 dark:focus:ring-yellow-900">Modifier</button>
+                        </router-link>
+                        <!-- <button type="button"
+                          class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900"
+                          v-on:click="toggleModal()">modale</button> -->
 
                         <!-- test -->
 
                       </div>
 
                       <!-- modal components -->
+                      <div v-if="showModal" id="popup-modal" tabindex="-1"
+                        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 md:inset-0 h-modal md:h-full">
+                        <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+                          <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                            <button type="button"
+                              class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
+                              data-modal-toggle="popup-modal">
+                              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                  clip-rule="evenodd"></path>
+                              </svg>
+                            </button>
+                            <div class="p-6 text-center">
+                              <svg class="mx-auto mb-4 w-14 h-14 text-gray-400 dark:text-gray-200" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                              </svg>
+                              <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Etre vous sure
+                                ?</h3>
+                              <button data-modal-toggle="popup-modal" type="button" v-on:click="toggleModal()"
+                                class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
+                                oui,Je le suis
+                              </button>
+                              <button data-modal-toggle="popup-modal" type="button"
+                                class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600"
+                                v-on:click="toggleModal()">No,
+                                retour</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div v-if="showModal" class="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                      </div>
+
+                      <!-- test -->
 
 
 
@@ -634,32 +620,7 @@
 
 
                       <div class="apexcharts-legend" style="max-height: 210px"></div>
-                      <div class="apexcharts-tooltip apexcharts-theme-light">
-                        <div class="apexcharts-tooltip-title" style="
-                            font-family: 'Open Sans', sans-serif;
-                            font-size: 14px;
-                          "></div>
-                        <div class="apexcharts-tooltip-series-group" style="order: 1">
-                          <span class="apexcharts-tooltip-marker" style="background-color: rgb(203, 12, 159)"></span>
-                          <div class="apexcharts-tooltip-text" style="
-                              font-family: 'Open Sans', sans-serif;
-                              font-size: 14px;
-                            ">
-                            <div class="apexcharts-tooltip-y-group">
-                              <span class="apexcharts-tooltip-text-y-label"></span><span
-                                class="apexcharts-tooltip-text-y-value"></span>
-                            </div>
-                            <div class="apexcharts-tooltip-goals-group">
-                              <span class="apexcharts-tooltip-text-goals-label"></span><span
-                                class="apexcharts-tooltip-text-goals-value"></span>
-                            </div>
-                            <div class="apexcharts-tooltip-z-group">
-                              <span class="apexcharts-tooltip-text-z-label"></span><span
-                                class="apexcharts-tooltip-text-z-value"></span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+
                       <div class="
                           apexcharts-yaxistooltip
                           apexcharts-yaxistooltip-0
@@ -684,78 +645,7 @@
 
             </div>
 
-            <div class="
-                hidden
-                overflow-y-auto overflow-x-hidden
-                fixed
-                right-0
-                left-0
-                top-4
-                z-50
-                justify-center
-                items-center
-                md:inset-0
-                h-modal
-                sm:h-full
-              " id="user-modal" aria-hidden="true">
-              <div class="relative px-4 w-full max-w-2xl h-full md:h-auto">
-                <div class="
-                    relative
-                    bg-white
-                    rounded-2xl
-                    shadow-xl shadow-gray-700
-                  ">
-                  <div class="
-                      flex
-                      justify-between
-                      items-start
-                      p-5
-                      rounded-t
-                      border-b
-                    ">
-                    <h3 class="text-xl font-semibold">Edit user</h3>
-                    <button type="button" class="
-                        text-gray-400
-                        bg-transparent
-                        hover:bg-gray-200 hover:text-gray-900
-                        rounded-2xl
-                        text-sm
-                        p-1.5
-                        ml-auto
-                        inline-flex
-                        items-center
-                      " data-modal-toggle="user-modal">
-                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                          clip-rule="evenodd"></path>
-                      </svg>
-                    </button>
-                  </div>
 
-
-                  <div class="items-center p-6 rounded-b border-t border-gray-200">
-                    <button class="
-                        text-white
-                        bg-gradient-to-br
-                        from-dark-600
-                        to-dark-900
-                        font-medium
-                        rounded-lg
-                        text-sm
-                        px-5
-                        py-2.5
-                        text-center
-                        shadow-md shadow-gray-300
-                        hover:scale-[1.02]
-                        transition-transform
-                      " type="submit">
-                      Save all
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
           </main>
           <footer class="
               p-6
@@ -851,9 +741,9 @@
           </footer>
           <p class="my-10 text-sm text-center text-gray-500">
             © 2022 CFLEX
-            <a href="https://creative-tim.com" class="hover:underline" target="_blank">interface</a>
+            <a href="https" class="hover:underline" target="_blank">interface</a>
             and
-            <a href="https://flowbite.com" class="hover:underline" target="_blank">par CFLEX</a>.
+            <a href="httm" class="hover:underline" target="_blank">par CFLEX</a>.
           </p>
         </div>
       </div>
@@ -864,7 +754,7 @@
       </div>
 
       <svg id="SvgjsSvg1089" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1"
-        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="
+        xmlns:svgjs="http://svgjs.dev" style="
           overflow: hidden;
           top: -100%;
           left: -100%;
@@ -886,7 +776,7 @@
 
 <style>
 .modal-bg {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: -9999;
 }
 </style>
@@ -924,7 +814,7 @@
 
 
 import axios from 'axios';
-// import ModalAnldemande from '@/components/ModalAnldemande.vue';
+
 import NavbarComponentboard from '../../pageprofileComponent/NavbarComponentboard.vue';
 /* import SidebarComponent from '../../pageprofileComponent/SidebarComponent.vue'; */
 
@@ -941,60 +831,60 @@ export default {
 
   components: {
     NavbarComponentboard,
-   /*  SidebarComponent, */
-    
+    /*  SidebarComponent, */
+
 
     // ModalAnldemande,
 
   },
 
-
- data() {
+  data() {
     return {
-  
+      showModal: false,
 
       proprietaire: {},
-            idproprietaire: 1,
+      idproprietaire: 3,
 
-     
 
-      
-    
+
+
+
     };
 
   },
 
-   mounted() {
-   
-    try {
-    
+  created() {
 
-      axios.get("http://192.168.252.206:4000/proprietaire/get/" + this.idproprietaire).then((t) => {
-        this.proprietaire = t.data.proprietaire;
+    try {
+
+      const headers = {
+        'Content-Type': 'application/json',
+        'Accept': '*',
+      };
+
+
+      axios.get(`http://192.168.252.206:4000/proprietaire/get/${this.idproprietaire}`, { headers }).then((response) => {
+        this.proprietaire = response.data.data.proprietaire;
+        console.log(this.proprietaire);
       });
 
-     
+
     } catch (e) {
 
       console.log(e);
     }
 
-   },
+  },
 
   methods: {
 
 
-    //    
 
-
-
-
-    
 
 
   },
 
- 
+
 
 
 
