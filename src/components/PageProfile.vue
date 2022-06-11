@@ -156,22 +156,7 @@
                 <ul class="pb-2 pt-1">
 
                   <li>
-                    <a href="" class="
-                        flex
-                        items-center
-                        py-2.5
-                        px-4
-                        text-base
-                        font-normal
-                        text-dark-500
-                        rounded-lg
-                        hover:bg-gray-200
-                        group
-                        transition-all
-                        duration-200
-                      " sidebar-toggle-collapse="">
 
-                    </a>
                   </li>
                   <li>
                     <a href="" class="
@@ -194,16 +179,18 @@
                           demande</span>
                       </router-link>
                     </a>
-                  </li>
-                  <li>
 
                   </li>
                   <li>
 
+                  </li>
+                  <li>
+
 
                   </li>
                   <li>
-                    <button type="button" class="
+                    <router-link to="/infoprofile">
+                      <button type="button" class="
                         w-full
                         flex
                         items-center
@@ -218,60 +205,15 @@
                         transition-all
                         duration-200
                       " sidebar-toggle-collapse="" aria-controls="dropdown-users"
-                      data-collapse-toggle="dropdown-users">
+                        data-collapse-toggle="dropdown-users">
 
-                      <span class="ml-3 text-dark-500 text-sm font-light" sidebar-toggle-item="">-</span>
+                        <span class="ml-3 text-dark-500 text-sm font-light" sidebar-toggle-item="">info profile</span>
 
-                    </button>
-                    <ul id="dropdown-users" sidebar-toggle-list="" class="pb-2 pt-1 hidden">
-                      <li>
-                        <a href="" class="
-                            text-sm text-dark-500
-                            font-light
-                            rounded-lg
-                            flex
-                            items-center
-                            p-2
-                            group
-                            hover:bg-gray-200
-                            transition
-                            duration-75
-                            pl-11
-                          "><span class="">Users list</span><span class="hidden">U</span></a>
-                      </li>
-                      <li>
-                        <a href="" class="
-                            text-sm text-dark-500
-                            font-light
-                            rounded-lg
-                            flex
-                            items-center
-                            p-2
-                            group
-                            hover:bg-gray-200
-                            transition
-                            duration-75
-                            pl-11
-                          "><span class="">Profile</span><span class="hidden">P</span></a>
-                      </li>
-                      <li>
-                        <a href="https://demos.creative-tim.com/soft-ui-flowbite-pro/users/settings/" class="
-                            text-sm text-dark-500
-                            font-light
-                            rounded-lg
-                            flex
-                            items-center
-                            p-2
-                            group
-                            hover:bg-gray-200
-                            transition
-                            duration-75
-                            pl-11
-                          "><span class="">S</span><span class="hidden">S</span></a>
-                      </li>
-                    </ul>
+                      </button>
+                    </router-link>
+
                   </li>
-                  <li>
+                  <!-- <li>
 
                     <ul id="dropdown-pages" sidebar-toggle-list="" class="pb-2 pt-1 hidden">
 
@@ -293,10 +235,10 @@
 
 
                     </ul>
-                  </li>
+                  </li> -->
                   <li>
 
-                    <ul id="dropdown-auth" sidebar-toggle-list="" class="pb-2 pt-1 hidden">
+                    <!-- <ul id="dropdown-auth" sidebar-toggle-list="" class="pb-2 pt-1 hidden">
                       <li>
                         <a href="https://demos.creative-tim.com/soft-ui-flowbite-pro/authentication/sign-in/" class="
                             text-sm text-dark-500
@@ -358,7 +300,7 @@
                             pl-11
                           "><span class="">Profile lock</span><span class="hidden">P</span></a>
                       </li>
-                    </ul>
+                    </ul> -->
                   </li>
                 </ul>
                 <hr class="
@@ -374,7 +316,7 @@
                 </div>
               </div>
             </div>
-            <div class="
+            <!-- <div class="
                 hidden
                 relative
                 bottom-0
@@ -528,9 +470,9 @@
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> -->
           </div>
-        </aside> 
+        </aside>
         <div class="hidden fixed inset-0 z-10 bg-gray-900 opacity-50" id="sidebarBackdrop"></div>
         <div id="main-content" class="h-full w-full bg-white-50 relative overflow-y-auto lg:ml-64">
           <main>
@@ -659,9 +601,9 @@
                                   {{ demande.idZoneFk.libelle }}
                                 </td>
                                 <td class="px-6 py-4">
-                                  <span class="text-green-600 font-medium" v-if="demande.statut">accepter</span>
+                                  <span class="text-green-600 font-medium" v-if="demande.etat">accepter</span>
                                   <span v-else class="text-orange-400 font-medium">en attente</span>
-                                   <!-- <span v-else class="text-orange-400 font-medium">refuse</span> -->
+                                  <!-- <span v-else class="text-orange-400 font-medium">refuse</span> -->
                                 </td>
                                 <td colspan="3" class="px-6 py-4 text-right">
 
@@ -669,7 +611,7 @@
                        <button type="button"  id="show-modal" class="text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..." data-modal-toggle="modal"  v-on:click="VoirDemande(demande.id)">voir le statut</button>
                        </router-link> -->
 
-                                  <button type="button" v-if="!demande.statut" id="show-modal"
+                                  <button type="button" v-if="!(demande.etat)"
                                     class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..."
                                     data-modal-toggle="modal" v-on:click="AnnulerDemande(demande.id)">annuler</button>
                                   <router-link :to='`/modifdemande/${demande.id}`'>
@@ -695,45 +637,7 @@
 
                       </div>
 
-                      <!-- modal components -->
 
-
-
-                      <!-- <div v-if="myModel">
-    <transition name="model">
-     <div class="modal-mask">
-      <div class="modal-wrapper">
-       <div class="modal-dialog">
-        <div class="modal-content">
-         <div class="modal-header">
-          <button type="button" class="close" @click="myModel=false"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title">{{ dynamicTitle }}</h4>
-         </div>
-         <div class="modal-body">
-          <div class="form-group">
-           <label>Enter First Name</label>
-           <input type="text" class="form-control" v-model="first_name" />
-          </div>
-          <div class="form-group">
-           <label>Enter Last Name</label>
-           <input type="text" class="form-control" v-model="last_name" />
-          </div>
-          <br />
-          <div align="center">
-           <input type="hidden" v-model="hiddenId" />
-           <input type="button" class="btn btn-success btn-xs" v-model="actionButton" @click="submitData" />
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
-    </transition>
-   </div> -->
-
-
-
-                      <!--  -->
 
 
                       <div class="apexcharts-legend" style="max-height: 210px"></div>
@@ -878,7 +782,7 @@
                     text-gray-500
                     hover:underline
                     md:mr-6
-                  ">Terms and conditions</a>
+                  ">Termes et conditions</a>
               </li>
               <li>
                 <a href="#" class="
@@ -888,7 +792,7 @@
                     text-gray-500
                     hover:underline
                     md:mr-6
-                  ">Privacy Policy</a>
+                  ">droit auteur</a>
               </li>
               <li>
                 <a href="#" class="
@@ -953,10 +857,8 @@
             </div>
           </footer>
           <p class="my-10 text-sm text-center text-gray-500">
-            © 2022 CFLEX
-            <a href="https://creative-tim.com" class="hover:underline" target="_blank">interface</a>
-            and
-            <a href="https://flowbite.com" class="hover:underline" target="_blank">par CFLEX</a>.
+            © 2022 CFLEX interface par CFLEX
+
           </p>
         </div>
       </div>
@@ -1036,7 +938,7 @@ export default {
 
   components: {
     NavbarComponentboard,
-   
+
 
     // ModalAnldemande,
 
@@ -1050,15 +952,15 @@ export default {
 
     return {
       isOpen: false,
-
+      demandeStbtn: false,
       statut: false,
       demandes: [],
       errors: [],
-      myModel: false,
       id: null,
       statutAn: false,
       statutech: false,
       demandeStatut: false,
+
 
     }
 
@@ -1109,16 +1011,20 @@ export default {
     listDemande() {
 
 
+
+
       axios.get(`/api/demandes`)
         .then((response) => {
           // JSON responses are automatically parsed.
           this.demandes = response.data.data
           console.log(this.demandes)
           this.statut = true;
+
+
         })
         .catch(e => {
           this.statut = false;
-          console.log('error', this.errors);
+          console.log('erreur', this.errors);
 
           this.errors.push(e)
 
@@ -1131,7 +1037,10 @@ export default {
   created() {
     this.listDemande();
   },
+  mounted() {
 
+
+  },
 
   // props: {
   //   demande: {

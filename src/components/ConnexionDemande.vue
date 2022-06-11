@@ -1,6 +1,5 @@
 <template>
-  <div
-    class="
+  <div class="
       mx-auto
       md:h-screen
       flex flex-col
@@ -8,11 +7,9 @@
       items-center
       px-6
       pt-8 pt:mt-0
-    "
-  >
+    ">
     <!-- content will go here -->
-    <div
-      class="
+    <div class="
         bg-white
         shadow
         rounded-lg
@@ -24,48 +21,37 @@
         lg:max-w-screen-lg
         2xl:max:max-w-screen-lg
         xl:p-0
-      "
-    >
+      ">
       <div class="hidden lg:flex w-2/3">
-        <img
-          class="rounded-l-lg bg-slate-100"
-          src="../assets/logo.png"
-          alt="login image"
-        />
-        </div>
+        <img class="rounded-l-lg bg-slate-100" src="../assets/logo.png" alt="login image" />
+      </div>
       <div class="w-full p-6 sm:p-8 lg:p-16 lg:py-0 space-y-8">
         <div class="ConnexionDemande">
-          <h2 class="text-2xl lg:text-3xl font-bold text-gray-900">
-            Allez sur votre profil
+          <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 flex justify-center ">
+            Allez sur votre profile
           </h2>
-          <form  class="mt-8 space-y-6" action="#">
+          <form class="mt-8 space-y-6" action="#">
 
 
             <!-- test de connexion au profile   @submit.prevent="connexionDmd" -->
-              <div class="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800" role="alert" v-if="success">
-           <span class="font-medium">Felictation !!</span> connecte avec succes !!!!!
-          </div>
+            <div class="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800"
+              role="alert" v-if="success">
+              <span class="font-medium">Felictation !!</span> connecte avec succes !!!!!
+            </div>
 
-          <!-- <div class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800" role="alert">
+            <!-- <div class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800" role="alert">
           <span class="font-medium" v-show="errorMsg">{{ this.Msgerreur }}</span> non connecté !!!!
           </div>   
                  -->
 
-          <div class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800" role="alert" v-if="error">
-          <span class="font-medium">Echec !!!</span> non connecté !!!!
-          </div>
-           <!-- fin teste -->
+            <div class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800"
+              role="alert" v-if="error">
+              <span class="font-medium">Echec !!!</span> non connecté !!!!
+            </div>
+            <!-- fin teste -->
             <div>
-              <label
-                for="numero"
-                class="text-sm font-medium text-gray-900 block mb-2"
-                ></label>
-                <input
-                type="text"
-                
-                id="text"
-                v-model="nom"
-                class="
+              <label for="numero" class="text-sm font-medium text-gray-900 block mb-2"></label>
+              <input type="text" id="text" v-model="nom" class="
                   bg-gray-50
                   border border-gray-300
                   text-gray-900
@@ -75,22 +61,11 @@
                   block
                   w-full
                   p-2.5
-                "
-                placeholder="nom"
-                required
-              />
+                " placeholder="nom" required />
             </div>
             <div>
-              <label
-                for="numero"
-                class="text-sm font-medium text-gray-900 block mb-2"
-              ></label>
-              <input
-                type="text"
-                v-model="numero"
-               
-                placeholder="numero"
-                class="
+              <label for="numero" class="text-sm font-medium text-gray-900 block mb-2"></label>
+              <input type="text" v-model="numero" placeholder="numero" class="
                   bg-gray-50
                   border border-gray-300
                   text-gray-900
@@ -100,16 +75,33 @@
                   block
                   w-full
                   p-2.5
-                "
-                required
-              />
+                " required />
             </div>
-            <div class="flex items-start">
-              <div class="text-sm ml-3 items-center">
+            <div class="">
+              <div class="flex justify-center w-full mx-auto py-2.5  space-x-5">
+
+                <router-link to="/">
+                  <button type="submit" class="
+                      text-white
+                      bg-orange-700
+                      hover:bg-orange-800
+                      focus:ring-4 focus:ring-orange-300
+                      font-medium
+                      rounded-lg
+                      text-base
+                      px-5
+                      py-3
+                      w-full
+                      xl:w-auto
+                      text-center  
+                      space-x-5                 
+                    ">
+                    retour
+                  </button>
+                </router-link>
+
                 <router-link to="/pageprofile">
-                  <button v-on:@click="connexionDm"
-                    type="submit"
-                    class="
+                  <button v-on:@click="connexionDm" type="submit" class="
                       text-white
                       bg-orange-700
                       hover:bg-orange-800
@@ -122,23 +114,22 @@
                       w-full
                       sm:w-auto
                       text-center
-                    "
-                    >
+                      space-x-5 
+                      
+                    ">
                     Allez
                   </button>
                 </router-link>
               </div>
 
               <div class="text-sm ml-3 items-center grid grid-flow-col">
-                <div
-                  class="
+                <div class="
                     ml-3
                     text-sm
                     font-medium
                     text-orange-700
                     dark:text-orange-800
-                  "
-                  >
+                  ">
                   <!-- <router-link
                     to="/numcomponent"
                     class="
@@ -181,16 +172,16 @@ export default {
 
   data() {
     return {
-      numero:"",
-      nom:"",
+      numero: "",
+      nom: "",
       error: null,
       success: false,
-      Msgerreur:"",
-      errorMsg:"",
-      user:"",
+      Msgerreur: "",
+      errorMsg: "",
+      user: "",
     }
   },
-  methods:{
+  methods: {
 
     // async connexionDm(){
 
@@ -215,7 +206,7 @@ export default {
     //     this.errorMsg = response.data.error;
     //     console.log(this.Msgerreur);
     //     console.log(this.errorMsg);
-        
+
     //   } catch (error) {
     //     this.error = error;
     //     this.Msgerreur = error.response.data.message;
@@ -227,37 +218,38 @@ export default {
 
 
 
-//  async connexionDm(){
+    //  async connexionDm(){
 
-//       let resul = axios.post("/proprietaire/save", {
-        
-//         nom: this.nom,
-//         numero: this.numero,
-//       })
+    //       let resul = axios.post("/proprietaire/save", {
 
-      
-//     console.log(resul)
-//     this.$router.push('/pageprofile')
-//     }
+    //         nom: this.nom,
+    //         numero: this.numero,
+    //       })
 
-   async connexionDm(){
 
-      let resul = axios.post(`/proprietaire/list?nom=${this.nom}&telephone=${this.numero}`)
-     
+    //     console.log(resul)
+    //     this.$router.push('/pageprofile')
+    //     }
 
-      if(resul.status == 200 && resul.data.length >0){
+    async connexionDm() {
 
-        alert('connecté avec succes')
-        
+      let resul = axios.get(`/proprietaire/list?nom=${this.nom}&telephone=${this.numero}`)
 
-      //  axios.get("http://192.168.252.206:4000/proprietaire/get/1")
-       this.$router.push('pageprofile')
+
+      if (resul.data.status == 200 && resul.data.length > 0) {
+
+        alert('connecté avec succes');
+        console.log(resul);
+
+
+        //  axios.get("http://192.168.252.206:4000/proprietaire/get/1")
+        this.$router.push('pageprofile');
       }
-    console.log(resul)
+
     }
 
     // async connexionDmd() {
-      
+
     //   //if(this.numero )
 
     //     const auth = { username: this.username, password: this.password };
@@ -273,24 +265,24 @@ export default {
     //     } catch (err) {
     //       this.error = err.message;
     //     }
-     
-    
+
+
     // }
-     
 
 
 
-  //  async connexionDmd(){
-        
 
-        
-  //       const reponse = await axios.post('login',{
-  //       numero: this.numero,
-  //       name:this.name,
+    //  async connexionDmd(){
 
-  //       })
 
-  //    }
+
+    //       const reponse = await axios.post('login',{
+    //       numero: this.numero,
+    //       name:this.name,
+
+    //       })
+
+    //    }
 
   }
 };

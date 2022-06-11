@@ -4,7 +4,7 @@ import HomeView from '../views/HomeView.vue'
 import StatutProfileDemande from '../components/StatutProfileDemande.vue'
 import FormModifDemandeInt from '@/components/FormModifDemandeInt.vue'
 import Infoprofile from '@/components/page/infoproprietaireprofile/InfoProfileInt.vue'
-import Modifinfoprofile from '@/components/page/ModifprofileProp/ModifInfoProfileInt.vue'
+import modifinfoprofile from '@/components/page/ModifprofileProp/ModifInfoProfileInt.vue'
 
 
 
@@ -18,9 +18,9 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/',
+    path: '/modifinfoProfile',
     name: 'modifinfoProfile',
-    component: Modifinfoprofile,
+    component: modifinfoprofile,
     props: true
   },
   {

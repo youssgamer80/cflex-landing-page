@@ -131,7 +131,7 @@
                             transition
                             duration-75
                             pl-11
-                          "><span class="">Users list</span><span class="hidden">U</span></a>
+                          "><span class="">Use</span><span class="hidden">U</span></a>
                       </li>
                       <li>
                         <a href="" class="
@@ -146,10 +146,10 @@
                             transition
                             duration-75
                             pl-11
-                          "><span class="">Profile</span><span class="hidden">P</span></a>
+                          "><span class="">Pro</span><span class="hidden">P</span></a>
                       </li>
                       <li>
-                        <a href="https://demos.creative-tim.com/soft-ui-flowbite-pro/users/settings/" class="
+                        <a href="htt" class="
                             text-sm text-dark-500
                             font-light
                             rounded-lg
@@ -178,7 +178,7 @@
                     <ul id=" dropdown-pages" sidebar-toggle-list="" class="pb-2 pt-1 hidden">
 
                       <li>
-                        <a href="https://demos.creative-tim.com/soft-ui-flowbite-pro/pages/maintenance/" class="
+                        <a href="https" class="
                             text-sm text-dark-500
                             font-light
                             rounded-lg
@@ -190,7 +190,7 @@
                             transition
                             duration-75
                             pl-11
-                          "><span class="">Maintenance</span><span class="hidden">M</span></a>
+                          "><span class="">Main</span><span class="hidden">M</span></a>
                       </li>
 
 
@@ -200,7 +200,7 @@
 
                     <ul id="dropdown-auth" sidebar-toggle-list="" class="pb-2 pt-1 hidden">
                       <li>
-                        <a href="https://demos.creative-tim.com/soft-ui-flowbite-pro/authentication/sign-in/" class="
+                        <a href="https://" class="
                             text-sm text-dark-500
                             font-light
                             rounded-lg
@@ -243,7 +243,7 @@
                             transition
                             duration-75
                             pl-11
-                          "><span class="">Reset password</span><span class="hidden">R</span></a>
+                          "><span class="">password</span><span class="hidden">R</span></a>
                       </li>
                       <li>
                         <a href="" class="
@@ -258,7 +258,7 @@
                             transition
                             duration-75
                             pl-11
-                          "><span class="">Profile lock</span><span class="hidden">P</span></a>
+                          "><span class="">Profil</span><span class="hidden">P</span></a>
                       </li>
                     </ul>
                   </li>
@@ -455,8 +455,29 @@
                   
                 ">
                 <div class="w-full mx-auto text-center">
-                  <span class="text-orange-900  text-4xl font-bold">Info profile proprietaire</span>
+                  <span class="text-orange-600  text-4xl font-bold">Info profile proprietaire</span>
                 </div>
+                <!-- test -->
+
+                <div
+                  class="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800"
+                  role="alert" v-if="showAlertError">
+                  <!-- <i class="close icon" @click="close"></i> -->
+                  <p class="font-medium">Felictation !! {{ alertMessageError }} </p>
+                </div>
+
+
+
+                <div class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800"
+                  role="alert" v-if="showAlertSuccess">
+                  <p class="font-medium">Felictation !! {{ alertMessageSuccess }}</p>
+                </div>
+
+
+
+
+
+                <!-- test -->
                 <div class="
                     bg-white
                     shadow-lg shadow-gray-200
@@ -562,10 +583,16 @@
 
                         </div>
                         <!-- <ModalAnldemande/> -->
-                        <router-link to="/modifInfoProfile">
-                          <button type="button"
-                            class="px-5 py-3 w-/4 mx-auto block rounded-md text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium text-sm text-center mr-2 mb-2 dark:focus:ring-yellow-900">Modifier</button>
-                        </router-link>
+
+
+                        <!-- <router-link to="/modifInfoProfile"> -->
+                        <button type="button" @click="stoggleModal = !stoggleModal"
+                          class="px-5 py-3 w-1/4 mx-auto block rounded-md text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium text-sm text-center mr-2 mb-2 dark:focus:ring-yellow-900">Modifier</button>
+                        <!-- </router-link> -->
+
+
+
+
                         <!-- <button type="button"
                           class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900"
                           v-on:click="toggleModal()">modale</button> -->
@@ -575,42 +602,217 @@
                       </div>
 
                       <!-- modal components -->
-                      <div v-if="showModal" id="popup-modal" tabindex="-1"
-                        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 md:inset-0 h-modal md:h-full">
-                        <div class="relative p-4 w-full max-w-md h-full md:h-auto">
-                          <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <button type="button"
-                              class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
-                              data-modal-toggle="popup-modal">
-                              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                  clip-rule="evenodd"></path>
-                              </svg>
-                            </button>
-                            <div class="p-6 text-center">
-                              <svg class="mx-auto mb-4 w-14 h-14 text-gray-400 dark:text-gray-200" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                  d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                              </svg>
-                              <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Etre vous sure
-                                ?</h3>
-                              <button data-modal-toggle="popup-modal" type="button" v-on:click="toggleModal()"
-                                class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
-                                oui,Je le suis
-                              </button>
-                              <button data-modal-toggle="popup-modal" type="button"
-                                class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600"
-                                v-on:click="toggleModal()">No,
-                                retour</button>
+                      <div class="fixed overflow-x-hidden overflow-y-auto inset-0 flex justify-center items-center z-50"
+                        v-if="stoggleModal">
+                        <div class="relative mx-auto w-auto max-w-2xl">
+                          <div class="bg-white w-full rounded shadow-2xl">
+
+                            <!-- <span>
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                            Saepe,
+                                                            aperiam qui nulla recusandae voluptatem id et dolor nemo
+                                                            tenetur
+                                                            aliquid non excepturi. Possimus perferendis deserunt aperiam
+                                                            dolor, ullam ipsa explicabo.</span> -->
+
+                            <!-- tester -->
+
+                            <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col my-2">
+
+                              <div class="mx-auto items-center py-9 pt-4">
+                                <p class="text-orange-600  text-2xl font-bold">MODIFICATION DES INFORMATIONS
+                                  PROPRIETAIRE
+                                </p>
+
+                              </div>
+
+
+                              <div class="-mx-3 md:flex mb-6">
+
+                                <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                                  <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                    for="name">
+                                    Nom
+                                  </label>
+                                  <input v-model="proprietaire.nom"
+                                    class="appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-red rounded py-3 px-4 mb-3"
+                                    type="text">
+
+                                </div>
+
+
+                                <div class="md:w-1/2 px-3">
+                                  <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                    for="prenom">
+                                    prenom
+                                  </label>
+                                  <input v-model="proprietaire.prenom"
+                                    class="appearance-none block w-full bg-grey-lighter text-grey-darker focus:ring-orange-500 focus:border-orange-500 border border-grey-lighter rounded py-3 px-4"
+                                    type="text">
+                                </div>
+                              </div>
+
+
+
+
+                              <div class="-mx-3 md:flex mb-6">
+                                <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                                  <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                    for="grid-first-name">
+                                    telephone
+                                  </label>
+                                  <input v-model="proprietaire.telephone"
+                                    class="appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3"
+                                    type="text" pattern="^((\\+)|(00)|(\\*)|())[0-9]{3,14}((\\#)|())$">
+
+                                </div>
+
+
+                                <div class="md:w-1/2 px-3">
+                                  <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                    for="grid-last-name">
+                                    email
+                                  </label>
+                                  <input v-model="proprietaire.email"
+                                    class="appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-grey-lighter rounded py-3 px-4"
+                                    type="email">
+                                </div>
+                              </div>
+
+
+
+                              <div class="-mx-3 md:flex mb-6">
+                                <div class="md:w-1/8 px-3 mb-6 md:mb-0">
+                                  <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                    for="name">
+                                    Lieu de naissance
+                                  </label>
+
+                                  <input v-model="proprietaire.lieuNaissance"
+                                    class="appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-red rounded py-3 px-4 mb-3"
+                                    type="text">
+
+                                </div>
+                              </div>
+
+
+
+                              <!-- <div class="-mx-3 md:flex mb-6">
+                                                                <div class="md:w-full px-3">
+                                                                    <label
+                                                                        class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                                                        for="grid-password">
+                                                                        
+                                                                    </label>
+                                                                    <input
+                                                                        class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3"
+                                                                        id="grid-password" type="password"
+                                                                        placeholder="******************">
+                                                                    <p class="text-grey-dark text-xs italic">Make it as
+                                                                        long and as crazy as you'd like</p>
+                                                                </div>
+                                                            </div> -->
+                              <div class="-mx-3 md:flex mb-2">
+                                <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                                  <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                    for="grid-city">
+                                    lieu de residence
+                                  </label>
+                                  <input v-model="proprietaire.lieuResidence"
+                                    class="appearance-none block w-full focus:ring-orange-500 focus:border-orange-500 bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4"
+                                    type="text">
+                                </div>
+                                <div class="md:w-1/2 px-3">
+                                  <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                    for="g">
+                                    Genre
+                                  </label>
+                                  <div class="relative">
+                                    <select v-model="proprietaire.genre"
+                                      class="block appearance-none w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 border border-grey-lighter text-grey-darker py-3 px-4 pr-8 rounded"
+                                      id="gr">
+                                      <option value="H">Homme</option>
+                                      <option value="F">Femme</option>
+                                    </select>
+                                    <div
+                                      class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
+
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="md:w-1/2 px-3">
+                                  <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                    for="g">
+
+                                    date de naisssance
+                                  </label>
+                                  <input v-model="proprietaire.dateNaissance"
+                                    class="appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker rounded py-2 px-3"
+                                    type="date">
+                                </div>
+
+
+                              </div>
+
+
+
+                              <div class=" w-full mx-aut items-center flex flex-center">
+
+
+                                <button
+                                  class="bg-red-500 mx-auto m-8 items-center hover:bg-red-700 focus:outline-none focus:ring-4 focus:ring-orange-300 font-medium block rounded-md text-sm px-6 py-2 text-center"
+                                  @click="stoggleModal = false">
+                                  <span class="">
+                                    <p class="fas fa-check items-center w-full text-white">
+                                      Fermer
+                                    </p>
+                                  </span>
+
+
+                                </button>
+
+                                <button
+                                  class="bg-orange-500 mx-auto m-10 items-center hover:bg-orange-400 focus:outline-none focus:ring-4 focus:ring-orange-300 font-medium block rounded-md text-sm px-6 py-2 text-center"
+                                  @click="updateProprietaire">
+                                  <span class="">
+                                    <p class="fas fa-check items-center w-full text-white">
+                                      Modifier
+                                    </p>
+                                  </span>
+
+
+                                </button>
+                              </div>
+
+
+
                             </div>
+
+
+
+
+
+
+
+
+
+                            <!-- tester -->
+
+
+
                           </div>
+
+
+
                         </div>
-                        <div v-if="showModal" class="opacity-25 fixed inset-0 z-40 bg-black"></div>
+
+
+
+                      </div>
+                      <div v-if="stoggleModal" class="absolute inset-0 z-40">
                       </div>
 
+                      <div />
                       <!-- test -->
 
 
@@ -665,7 +867,7 @@
                     text-gray-500
                     hover:underline
                     md:mr-6
-                  ">Terms and conditions</a>
+                  ">term et conditions</a>
               </li>
               <li>
                 <a href="#" class="
@@ -685,7 +887,7 @@
                     text-gray-500
                     hover:underline
                     md:mr-6
-                  ">Licensing</a>
+                  ">Licence</a>
               </li>
               <li>
                 <a href="#" class="
@@ -698,7 +900,7 @@
                   ">Cookie Policy</a>
               </li>
               <li>
-                <a href="#" class="text-sm font-normal text-gray-500 hover:underline">Contact</a>
+                <a href="#" class="text-sm font-normal text-gray-500 hover:underline">Contacte</a>
               </li>
             </ul>
             <div class="flex space-x-6 sm:justify-center">
@@ -841,10 +1043,13 @@ export default {
   data() {
     return {
       showModal: false,
-
+      stoggleModal: false,
       proprietaire: {},
       idproprietaire: 3,
-
+      showAlertSuccess: false,
+      showAlertError: false,
+      alertMessageSuccess: 'Proprietaire Modifié avec succes !!!!!',
+      alertMessageError: 'Proprietaire non Modifié  !!!'
 
 
 
@@ -877,6 +1082,73 @@ export default {
   },
 
   methods: {
+
+
+    updateProprietaire() {
+
+
+
+
+      /* const headers = {
+        'Content-Type': 'application/json'
+      }; */
+
+      // console.log("Test");
+
+      axios.put(`http://192.168.252.206:4000/proprietaire/updateProprio/${this.idproprietaire}`,
+
+        {
+          proprietaire: {
+
+
+            "nom": this.proprietaire.nom,
+            "prenom": this.proprietaire.prenom,
+            "telephone": this.proprietaire.telephone,
+            "email": this.proprietaire.email,
+            "statut": true,
+
+            "genre": this.proprietaire.genre,
+            "lieuNaissance": this.proprietaire.lieuNaissance,
+            "lieuResidence": this.proprietaire.lieuResidence,
+
+
+
+          }
+        })
+
+        .then((response) => {
+          this.statut = true;
+          this.delayedAlertSucces();
+
+          console.log(response);
+          this.stoggleModal = false;
+
+        }).catch(e => {
+          this.delayedAlertError();
+          console.log('erreur', this.result);
+
+          this.errors.push(e)
+          this.stoggleModal = false;
+
+        });
+
+
+    },
+
+    delayedAlertSucces() {
+      this.showAlertSuccess = true;
+      setTimeout(() => {
+        this.showAlertSuccess = false;
+
+      }, 2300);
+    },
+    delayedAlertError() {
+      this.showAlertError = true;
+      setTimeout(() => {
+        this.showAlertError = false;
+      }, 2300);
+    }
+
 
 
 

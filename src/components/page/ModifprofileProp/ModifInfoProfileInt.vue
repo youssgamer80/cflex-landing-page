@@ -80,8 +80,7 @@
                         hover:bg-gray-200
                         group
                         transition-all
-                        duration-200
-                      " sidebar-toggle-collapse="">
+                        duration-200" sidebar-toggle-collapse="">
 
                                             <router-link to="formdemanproprietaireint">
                                                 <span class="ml-3 text-dark-500 text-sm font-light"
@@ -135,37 +134,8 @@
                             pl-11
                           "><span class="">Users list</span><span class="hidden">U</span></a>
                                             </li>
-                                            <li>
-                                                <a href="" class="
-                            text-sm text-dark-500
-                            font-light
-                            rounded-lg
-                            flex
-                            items-center
-                            p-2
-                            group
-                            hover:bg-gray-200
-                            transition
-                            duration-75
-                            pl-11
-                          "><span class="">Profile</span><span class="hidden">P</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="https://demos.creative-tim.com/soft-ui-flowbite-pro/users/settings/"
-                                                    class="
-                            text-sm text-dark-500
-                            font-light
-                            rounded-lg
-                            flex
-                            items-center
-                            p-2
-                            group
-                            hover:bg-gray-200
-                            transition
-                            duration-75
-                            pl-11
-                          "><span class="">S</span><span class="hidden">S</span></a>
-                                            </li>
+
+
                                         </ul>
                                     </li>
                                     <li>
@@ -204,8 +174,7 @@
 
                                         <ul id="dropdown-auth" sidebar-toggle-list="" class="pb-2 pt-1 hidden">
                                             <li>
-                                                <a href="https://demos.creative-tim.com/soft-ui-flowbite-pro/authentication/sign-in/"
-                                                    class="
+                                                <a href="httin/" class="
                             text-sm text-dark-500
                             font-light
                             rounded-lg
@@ -350,28 +319,7 @@
                         text-sm text-gray-700
                         hover:bg-gray-200
                       " role="menuitem">
-                                            <div class="inline-flex items-center">
-                                                <svg class="h-3.5 w-3.5 rounded-full mr-2"
-                                                    xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us"
-                                                    viewBox="0 0 512 512">
-                                                    <g fill-rule="evenodd">
-                                                        <g stroke-width="1pt">
-                                                            <path fill="#bd3d44"
-                                                                d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
-                                                                transform="scale(3.9385)"></path>
-                                                            <path fill="#fff"
-                                                                d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
-                                                                transform="scale(3.9385)"></path>
-                                                        </g>
-                                                        <path fill="#192f5d" d="M0 0h98.8v70H0z"
-                                                            transform="scale(3.9385)"></path>
-                                                        <path fill="#fff"
-                                                            d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z"
-                                                            transform="scale(3.9385)"></path>
-                                                    </g>
-                                                </svg>
-                                                Francais
-                                            </div>
+
                                         </a>
                                     </li>
                                     <li>
@@ -473,7 +421,8 @@
                   
                 ">
                                 <div class="w-full mx-auto text-center">
-                                    <span class="text-orange-900  text-4xl font-bold">Info profile proprietaire</span>
+                                    <span class="text-orange-900  text-4xl font-bold">modifier profile
+                                        proprietaire</span>
                                 </div>
                                 <div class="
                     bg-white
@@ -500,149 +449,264 @@
                       ">
 
 
+
+
+                                            <button type="button"
+                                                class="btn text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium text-sm text-center mr-2 mb-2 dark:focus:ring-yellow-900"
+                                                @click="showModal">
+                                                Open Modal!
+                                            </button>
+
+                                            <ModaleC v-show="isModalVisible" @close="closeModal" />
+
                                             <!-- action de la suppression -->
 
 
+                                            <!-- <router-link to="/pageprofile"> -->
+                                            <button type="button" @click="delayedAlert"
+                                                class="px-5 py-3 w-/4 mx-auto block rounded-md text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium text-sm text-center mr-2 mb-2 dark:focus:ring-yellow-900">Modifier</button>
+                                            <!-- </router-link> -->
 
-                                            <div class="relative overflow-x-auto shadow-md sm:rounded-lg mx-auto">
 
-                                                <!-- tableau de donnees -->
+                                            <b-alert id="targetElement" v-if="showAlert"
+                                                class="p-4 mb-4 text-sm text-green-700 bg-blue-100 rounded-lg dark:bg-blue-200 dark:text-green-800"
+                                                role="alert">
+                                                <span class="font-medium">{{ alertMessage }}</span>
 
-                                                <section>
-                                                    <div
-                                                        class="flex items-center space-x-2 font-semibold text-gray-900 leading-8">
-                                                        <span clas="text-green-500">
-                                                            <!--   <svg class="h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg> -->
-                                                        </span>
+                                            </b-alert>
 
-                                                    </div>
-                                                    <div class="text-gray-700">
-                                                        <div class="grid md:grid-cols-2 text-sm">
-                                                            <div class="grid grid-cols-2">
-                                                                <div class="px-4 py-2 font-semibold">nom</div>
-                                                                <div class="px-4 py-2">{{ proprietaire.nom }}</div>
+
+
+
+                                            <button type="button"
+                                                class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900"
+                                                @click="stoggleModal = !stoggleModal">modale</button>
+
+
+                                            <div class="fixed overflow-x-hidden overflow-y-auto inset-0 flex justify-center items-center z-50"
+                                                v-if="stoggleModal">
+                                                <div class="relative mx-auto w-auto max-w-2xl">
+                                                    <div class="bg-white w-full rounded shadow-2xl">
+
+                                                        <!-- <span>
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                            Saepe,
+                                                            aperiam qui nulla recusandae voluptatem id et dolor nemo
+                                                            tenetur
+                                                            aliquid non excepturi. Possimus perferendis deserunt aperiam
+                                                            dolor, ullam ipsa explicabo.</span> -->
+
+                                                        <!-- tester -->
+
+                                                        <div
+                                                            class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col my-2">
+
+                                                            <div class="mx-auto items-center py-9 pt-4">
+                                                                <p class="text-orange-500 font-bold">MODIFICATION INFO
+                                                                    PROPRIETAIRE
+                                                                </p>
+
                                                             </div>
-                                                            <div class="grid grid-cols-2">
-                                                                <div class="px-4 py-2 font-semibold">prenom</div>
-                                                                <div class="px-4 py-2">{{ proprietaire.prenom }}</div>
-                                                            </div>
-                                                            <div class="grid grid-cols-2">
-                                                                <div class="px-4 py-2 font-semibold">telephone</div>
-                                                                <div class="px-4 py-2">{{ proprietaire.telephone }}
+
+
+                                                            <div class="-mx-3 md:flex mb-6">
+
+                                                                <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                                                                    <label
+                                                                        class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                                                        for="name">
+                                                                        Nom
+                                                                    </label>
+                                                                    <input
+                                                                        class="appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-red rounded py-3 px-4 mb-3"
+                                                                        type="text">
+
+                                                                </div>
+
+
+                                                                <div class="md:w-1/2 px-3">
+                                                                    <label
+                                                                        class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                                                        for="prenom">
+                                                                        prenom
+                                                                    </label>
+                                                                    <input
+                                                                        class="appearance-none block w-full bg-grey-lighter text-grey-darker focus:ring-orange-500 focus:border-orange-500 border border-grey-lighter rounded py-3 px-4"
+                                                                        type="text">
                                                                 </div>
                                                             </div>
-                                                            <div class="grid grid-cols-2">
-                                                                <div class="px-4 py-2 font-semibold">genre</div>
-                                                                <div class="px-4 py-2">{{ proprietaire.genre }}</div>
-                                                            </div>
-                                                            <!--  <div class="grid grid-cols-2">
-                    <div class="px-4 py-2 font-semibold">Date de naissance</div>
-                    <div class="px-4 py-2">+11 998001001</div>
-                </div> -->
-                                                            <div class="grid grid-cols-2">
-                                                                <div class="px-4 py-2 font-semibold">lieu de residence
+
+
+
+
+                                                            <div class="-mx-3 md:flex mb-6">
+                                                                <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                                                                    <label
+                                                                        class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                                                        for="grid-first-name">
+                                                                        telephone
+                                                                    </label>
+                                                                    <input
+                                                                        class="appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3"
+                                                                        type="text">
+
                                                                 </div>
-                                                                <div class="px-4 py-2">{{
-                                                                        proprietaire.lieuResidence
-                                                                }}</div>
-                                                            </div>
-                                                            <!-- <div class="grid grid-cols-2">
-                    <div class="px-4 py-2 font-semibold">Current Address</div>
-                    <div class="px-4 py-2">Beech Creek, PA, Pennsylvania</div>
-                </div> -->
-                                                            <div class="grid grid-cols-2">
-                                                                <div class="px-4 py-2 font-semibold">lieu de naissance
-                                                                </div>
-                                                                <div class="px-4 py-2">{{ proprietaire.lieuNaissance }}
-                                                                </div>
-                                                            </div>
-                                                            <div class="grid grid-cols-2">
-                                                                <div class="px-4 py-2 font-semibold">Email</div>
-                                                                <div class="px-4 py-2">
-                                                                    <a class="text-blue-800">{{ proprietaire.email
-                                                                    }}</a>
+
+
+                                                                <div class="md:w-1/2 px-3">
+                                                                    <label
+                                                                        class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                                                        for="grid-last-name">
+                                                                        email
+                                                                    </label>
+                                                                    <input
+                                                                        class="appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-grey-lighter rounded py-3 px-4"
+                                                                        type="text">
                                                                 </div>
                                                             </div>
-                                                            <div class="grid grid-cols-2">
-                                                                <div class="px-4 py-2 font-semibold">Date de naissance
-                                                                </div>
-                                                                <div class="px-4 py-2">{{ proprietaire.dateNaissance }}
+
+
+
+                                                            <div class="-mx-3 md:flex mb-6">
+                                                                <div class="md:w-1/8 px-3 mb-6 md:mb-0">
+                                                                    <label
+                                                                        class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                                                        for="name">
+                                                                        Lieu de naissance
+                                                                    </label>
+
+                                                                    <input
+                                                                        class="appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-red rounded py-3 px-4 mb-3"
+                                                                        type="text">
+
                                                                 </div>
                                                             </div>
+
+                                                            <button id="triggerElement" type="button"
+                                                                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Hide
+                                                                alert</button>
+
+
+
+
+                                                            <!-- <div class="-mx-3 md:flex mb-6">
+                                                                <div class="md:w-full px-3">
+                                                                    <label
+                                                                        class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                                                        for="grid-password">
+                                                                        
+                                                                    </label>
+                                                                    <input
+                                                                        class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3"
+                                                                        id="grid-password" type="password"
+                                                                        placeholder="******************">
+                                                                    <p class="text-grey-dark text-xs italic">Make it as
+                                                                        long and as crazy as you'd like</p>
+                                                                </div>
+                                                            </div> -->
+                                                            <div class="-mx-3 md:flex mb-2">
+                                                                <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                                                                    <label
+                                                                        class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                                                        for="grid-city">
+                                                                        lieu de residence
+                                                                    </label>
+                                                                    <input
+                                                                        class="appearance-none block w-full focus:ring-orange-500 focus:border-orange-500 bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4"
+                                                                        type="text">
+                                                                </div>
+                                                                <div class="md:w-1/2 px-3">
+                                                                    <label
+                                                                        class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                                                        for="g">
+                                                                        Genre
+                                                                    </label>
+                                                                    <div class="relative">
+                                                                        <select
+                                                                            class="block appearance-none w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 border border-grey-lighter text-grey-darker py-3 px-4 pr-8 rounded"
+                                                                            id="gr">
+                                                                            <option>Male</option>
+                                                                            <option>Femelle</option>
+                                                                        </select>
+                                                                        <div
+                                                                            class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
+                                                                            <!-- <svg class="h-4 w-4"
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                viewBox="0 0 20 20">
+                                                                                <path
+                                                                                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                                                            </svg> -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="md:w-1/2 px-3">
+                                                                    <label
+                                                                        class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                                                        for="g">
+
+                                                                        date de naisssance
+                                                                    </label>
+                                                                    <input
+                                                                        class="appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker rounded py-2 px-3"
+                                                                        type="date">
+                                                                </div>
+
+
+                                                            </div>
+
+
+
+                                                            <div class=" w-full mx-aut items-center flex flex-center">
+
+
+                                                                <button
+                                                                    class="bg-orange-400 mx-auto m-8 items-center hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-orange-300 font-medium rounded-full text-sm px-5 py-2.5 text-center"
+                                                                    @click="stoggleModal = false">
+                                                                    <span class="">
+                                                                        <p
+                                                                            class="fas fa-check items-center w-full text-white">
+                                                                            Fermer
+                                                                        </p>
+                                                                    </span>
+
+
+                                                                </button>
+                                                            </div>
+
+
+
                                                         </div>
+
+
+
+
+
+
+
+
+                                                        <!-- tester -->
+
+
+
                                                     </div>
-                                                    <!--  <button
-            class="block w-full text-blue-800 text-sm font-semibold rounded-lg hover:bg-gray-100 focus:outline-none focus:shadow-outline focus:bg-gray-100 hover:shadow-xs p-3 my-4">Show
-            Full Information</button> -->
-                                                </section>
-                                                <!-- test -->
-
-                                                <div class="relative overflow-x-auto shadow-md sm:rounded-lg ">
-
 
 
 
                                                 </div>
-                                                <!-- <ModalAnldemande/> -->
-                                                <router-link to="/modifInfoProfile">
-                                                    <button type="button"
-                                                        class="px-5 py-3 w-/4 mx-auto block rounded-md text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium text-sm text-center mr-2 mb-2 dark:focus:ring-yellow-900">Modifier</button>
-                                                </router-link>
-                                                <!-- <button type="button"
-                          class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900"
-                          v-on:click="toggleModal()">modale</button> -->
 
-                                                <!-- test -->
+
 
                                             </div>
+                                            <div v-if="stoggleModal" class="absolute inset-0 z-40">
+                                            </div>
+
+                                            <div />
+
+
+
 
                                             <!-- modal components -->
-                                            <div v-if="showModal" id="popup-modal" tabindex="-1"
-                                                class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 md:inset-0 h-modal md:h-full">
-                                                <div class="relative p-4 w-full max-w-md h-full md:h-auto">
-                                                    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                                                        <button type="button"
-                                                            class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
-                                                            data-modal-toggle="popup-modal">
-                                                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path fill-rule="evenodd"
-                                                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                                                    clip-rule="evenodd"></path>
-                                                            </svg>
-                                                        </button>
-                                                        <div class="p-6 text-center">
-                                                            <svg class="mx-auto mb-4 w-14 h-14 text-gray-400 dark:text-gray-200"
-                                                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                                    stroke-width="2"
-                                                                    d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
-                                                                </path>
-                                                            </svg>
-                                                            <h3
-                                                                class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">
-                                                                Etre vous sure
-                                                                ?</h3>
-                                                            <button data-modal-toggle="popup-modal" type="button"
-                                                                v-on:click="toggleModal()"
-                                                                class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
-                                                                oui,Je le suis
-                                                            </button>
-                                                            <button data-modal-toggle="popup-modal" type="button"
-                                                                class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600"
-                                                                v-on:click="toggleModal()">No,
-                                                                retour</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div v-if="showModal" class="opacity-25 fixed inset-0 z-40 bg-black">
-                                                </div>
-                                            </div>
+
 
                                             <!-- test -->
 
@@ -824,6 +888,32 @@
 <script>
 
 
+
+// const targetEl = document.getElementById('targetElement');
+
+// // options object
+// const options = {
+//     triggerEl: document.getElementById('triggerElement'),
+//     transition: 'transition-opacity',
+//     duration: 1000,
+//     timing: 'ease-out',
+
+
+//     onHide: (context, targetEl) => {
+//         console.log('element has been dismissed')
+//         console.log(targetEl)
+//     }
+// };
+/*
+* targetEl: required
+* options: optional
+*/
+
+// const dismiss = new Dismiss(targetEl, options);
+
+// dismiss.hide();
+
+
 // import Vue from 'vue';
 
 
@@ -850,7 +940,7 @@ import axios from 'axios';
 
 import NavbarComponentboard from '../../pageprofileComponent/NavbarComponentboard.vue';
 /* import SidebarComponent from '../../pageprofileComponent/SidebarComponent.vue'; */
-
+import ModaleC from '../../pageprofileComponent/ModaleC.vue';
 
 /* import ProfileProp from './ProfileProp.vue'; */
 
@@ -864,6 +954,8 @@ export default {
 
     components: {
         NavbarComponentboard,
+        ModaleC
+
         /*  SidebarComponent, */
 
 
@@ -871,12 +963,19 @@ export default {
 
     },
 
+
+
+
+
     data() {
         return {
-            showModal: false,
+            stoggleModal: false,
+            isModalVisible: false,
 
             proprietaire: {},
             idproprietaire: 3,
+            showAlert: false,
+            alertMessage: 'This is the alert message'
 
 
 
@@ -910,6 +1009,33 @@ export default {
     },
 
     methods: {
+        showModal() {
+            this.isModalVisible = true;
+        },
+        closeModal() {
+            this.isModalVisible = false;
+        },
+
+        toggleModal() {
+
+            this.showModal = !this.showModal;
+            console.log(this.showModal)
+        },
+
+        delayedAlert() {
+
+            this.showAlert = true;
+            setTimeout(() => {
+                this.showAlert = false;
+
+            }, 2000);
+
+            setTimeout(() => {
+
+                this.$router.push('/pageprofile');
+            }, 2400);
+        }
+
 
 
 
