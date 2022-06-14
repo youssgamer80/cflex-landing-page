@@ -9,6 +9,8 @@
 
 
 
+
+
       <div class="flex overflow-hidden bg-white pt-16">
         <aside id="sidebar" class="
             flex
@@ -159,7 +161,7 @@
                             transition
                             duration-75
                             pl-11
-                          "><span class="">Maintenance</span><span class="hidden">M</span></a>
+                          "><span class="">teste</span><span class="hidden">M</span></a>
                       </li>
                     </ul>
                   </li>
@@ -468,19 +470,40 @@
                             <div class="px-4 sm:px-0">
                               <p class="mt-1 text-sm text-gray-600"></p>
                             </div>
-                            <div class="
+
+                            <!--  -->
+
+
+                            <b-alert id="targetElement" v-if="showAlertS"
+                              class="p-4 mb-4 text-sm text-green-700 bg-blue-100 rounded-lg dark:bg-blue-200 dark:text-green-800"
+                              role="alert">
+                              <span class="font-medium">{{ alertMessageSuccess }}</span>
+
+                            </b-alert>
+
+
+                            <b-alert id="targetElement" v-if="showAlertE"
+                              class="p-4 mb-4 text-sm text-green-700 bg-blue-100 rounded-lg dark:bg-blue-200 dark:text-green-800"
+                              role="alert">
+                              <span class="font-medium">{{ alertMessageError }}</span>
+
+                            </b-alert>
+
+
+                            <!--  -->
+                            <!-- <div class="
                                 p-4
                                 mb-4
                                 text-sm text-green-700
                                 bg-green-100
                                 rounded-lg
                                 dark:bg-green-200 dark:text-green-800
-                              " role="alert" v-if="success">
+                              " role="alert" >
                               <span class="font-medium">Felictation !!</span>
                               Demande Proprietaire Modifiée avec succes !!!!!
-                            </div>
+                            </div> -->
 
-                            <div class="
+                            <!-- <div class="
                                 p-4
                                 mb-4
                                 text-sm text-red-700
@@ -490,7 +513,7 @@
                               " role="alert" v-if="error">
                               <span class="font-medium">Echec !!!</span> Demande
                               Proprietaire non modifiée
-                            </div>
+                            </div> -->
                           </div>
 
                           <form class="">
@@ -513,8 +536,7 @@
                                         shadow-sm
                                         sm:text-sm
                                         border-gray-300
-                                        rounded-md
-                                      " v-model="demande.immatriculation" />
+                                        rounded-md" v-model="demande.immatriculation" />
                                   </div>
 
                                   <div class="col-span-6 sm:col-span-3">
@@ -678,7 +700,9 @@
                                   Annuler
                                 </button>
                               </router-link>
-                              <button type="submit" @click="updateDemande" class="
+
+                              <!-- bouton modifier -->
+                              <button type="submit" v-on:click="updateDemande" class="
                                   inline-flex
                                   mx-auto
                                   py-2
@@ -967,8 +991,12 @@ export default {
       typetransport: [],
       zones: [],
       statut: false,
-      success: false,
+
       error: false,
+      showAlertS: false,
+      showAlertE: false,
+      alertMessageSuccess: ' le demande a été modifié avec succès',
+      alertMessageError: ' echec de la modification de la demande',
     };
 
     //  data(){
@@ -1000,27 +1028,23 @@ export default {
     // }
 
     // // API pour le test des demandes de transport et zones
-    try {
-      //   this.loading = true;
 
-      axios.get("/api/demandes/" + this.idemande).then((t) => {
-        this.demande = t.data.data;
-      });
+    //   this.loading = true;
 
-      // axios.get("/api/typetransport").then((t) => {
-      //   this.typetransport = t.data.data;
-      // });
+    axios.get("/api/demandes/" + this.idemande).then((t) => {
+      this.demande = t.data.data;
+    });
 
-      // axios.get("/api/zones").then((z) => {
-      //   this.zones = z.data.data;
-      // });
+    // axios.get("/api/typetransport").then((t) => {
+    //   this.typetransport = t.data.data;
+    // });
 
-      this.loading = false;
-    } catch (e) {
-      this.loading = false;
+    // axios.get("/api/zones").then((z) => {
+    //   this.zones = z.data.data;
+    // });
 
-      console.log(e);
-    }
+    this.loading = false;
+
   },
 
   methods: {
@@ -1035,7 +1059,7 @@ export default {
 
       // console.log("Test");
 
-      axios.put(`/api/demandes/updateDemande/${this.idemande}`,
+      axios.put(`http://192.168.252.206:4000/api/demandes/updateDemande/${this.idemande}`,
 
         {
           demande: {
@@ -1058,7 +1082,8 @@ export default {
         })
 
         .then((response) => {
-          this.statut = true;
+
+          this.delaiAlertS();
 
           console.log(response);
 
@@ -1068,9 +1093,38 @@ export default {
           console.log('erreur', this.result);
 
           this.errors.push(e)
+          this.delaiAlertE();
 
         });
     },
+
+    delaiAlertS() {
+
+      this.showAlertS = true;
+      setTimeout(() => {
+        this.showAlertS = false;
+
+      }, 2000);
+
+      setTimeout(() => {
+
+        this.$router.push('/pageprofile');
+      }, 2400);
+    },
+    delaiAlertE() {
+
+      this.showAlertE = true;
+      setTimeout(() => {
+        this.showAlertE = false;
+
+      }, 2000);
+
+      setTimeout(() => {
+
+        this.$router.push('/pageprofile');
+      }, 2400);
+    }
+
 
   },
 

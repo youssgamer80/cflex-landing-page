@@ -566,6 +566,9 @@
                                   zone de transport
                                 </th>
                                 <th scope="col" class="px-6 py-3">
+                                  date demande
+                                </th>
+                                <th scope="col" class="px-6 py-3">
                                   Statut profile
                                 </th>
                                 <th colspan="2" scope="col" class="px-6 py-3 items-right">
@@ -601,6 +604,9 @@
                                   {{ demande.idZoneFk.libelle }}
                                 </td>
                                 <td class="px-6 py-4">
+                                  {{ format_demande_date(demande.date) }}
+                                </td>
+                                <td class="px-6 py-4">
                                   <span class="text-green-600 font-medium" v-if="demande.etat">accepter</span>
                                   <span v-else class="text-orange-400 font-medium">en attente</span>
                                   <!-- <span v-else class="text-orange-400 font-medium">refuse</span> -->
@@ -614,8 +620,9 @@
                                   <button type="button" v-if="!(demande.etat)"
                                     class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..."
                                     data-modal-toggle="modal" v-on:click="AnnulerDemande(demande.id)">annuler</button>
+
                                   <router-link :to='`/modifdemande/${demande.id}`'>
-                                    <button type="button" id="show-modal"
+                                    <button type="button" id="show-modal" v-if="!(demande.etat)"
                                       class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..."
                                       data-modal-toggle="modal">modifier</button>
 
@@ -926,6 +933,7 @@
 import axios from 'axios';
 // import ModalAnldemande from '@/components/ModalAnldemande.vue';
 import NavbarComponentboard from './pageprofileComponent/NavbarComponentboard.vue';
+import moment from 'moment';
 /* import SidebarComponent from './pageprofileComponent/SidebarComponent.vue'; */
 export default {
 
@@ -968,9 +976,19 @@ export default {
   },
 
   methods: {
+    // getHumanDate: function (date) {
+    //   return moment(date, 'YYYY-MM-DD').format('DD/MM/YYYY');
+    // },
 
 
     //    
+
+    format_demande_date(value) {
+      if (value) {
+        moment.locale('fr');
+        return moment(String(value)).format('ll');
+      }
+    },
 
 
     AnnulerDemande(id) {
