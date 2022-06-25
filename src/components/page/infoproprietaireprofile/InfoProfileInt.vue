@@ -993,35 +993,11 @@
 <script>
 
 
-// import Vue from 'vue';
-
-
-
-
-// new Vue({
-
-//  name:"PageProfile",
-//   el: '#app',
-//   data () {
-//     return {
-//      demandes: [],
-//     }
-//   },
-//   mounted () {
-//     axios
-//       .get('http://192.168.252.188:8080/api/demandes')
-//       .then(response => (this.demandes = response.data.data))
-//   } http://192.168.252.188:8080/api/demandes
-// })
 
 
 import axios from 'axios';
 
 import NavbarComponentboard from '../../pageprofileComponent/NavbarComponentboard.vue';
-/* import SidebarComponent from '../../pageprofileComponent/SidebarComponent.vue'; */
-
-
-/* import ProfileProp from './ProfileProp.vue'; */
 
 export default {
 
@@ -1036,7 +1012,6 @@ export default {
     /*  SidebarComponent, */
 
 
-    // ModalAnldemande,
 
   },
 

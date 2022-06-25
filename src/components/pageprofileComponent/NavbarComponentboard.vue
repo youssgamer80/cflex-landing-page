@@ -3,7 +3,7 @@
 
   <div>
 
-    <header class="dark:bg-gray-900 bg-slate-300 sm:flex sm:justify-between sm:items-center sm:py-3">
+    <header class="dark:bg-gray-900 bg-slate-400 sm:flex sm:justify-between sm:items-center sm:py-3">
       <div class="flex items-center justify-between px-4 py-3">
         <div class="items-center mx-auto">
           <img class="h-8 w-auto sm:h-10 mx-auto" src="../../assets/logo.png" alt="Workflow">

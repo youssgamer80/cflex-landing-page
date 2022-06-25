@@ -131,7 +131,7 @@
       </nav> -->
       <div class="flex overflow-hidden bg-white pt-16">
 
-        <!-- <SidebarComponent /> -->
+        <!--  -->
 
         <aside id="sidebar" class="
 
@@ -213,29 +213,7 @@
                     </router-link>
 
                   </li>
-                  <!-- <li>
 
-                    <ul id="dropdown-pages" sidebar-toggle-list="" class="pb-2 pt-1 hidden">
-
-                      <li>
-                        <a href="https://demos.creative-tim.com/soft-ui-flowbite-pro/pages/maintenance/" class="
-                            text-sm text-dark-500
-                            font-light
-                            rounded-lg
-                            flex
-                            items-center
-                            p-2
-                            group
-                            hover:bg-gray-200
-                            transition
-                            duration-75
-                            pl-11
-                          "><span class="">Maintenance</span><span class="hidden">M</span></a>
-                      </li>
-
-
-                    </ul>
-                  </li> -->
                   <li>
 
                     <!-- <ul id="dropdown-auth" sidebar-toggle-list="" class="pb-2 pt-1 hidden">
@@ -544,9 +522,7 @@
                                 <th scope="col" class="px-6 py-3">
                                   id demande
                                 </th>
-                                <!-- <th scope="col" class="px-6 py-3">
-                    code demande
-                </th> -->
+
                                 <th scope="col" class="px-6 py-3">
                                   immatriculation vehicule
                                 </th>
@@ -607,8 +583,11 @@
                                   {{ format_demande_date(demande.date) }}
                                 </td>
                                 <td class="px-6 py-4">
-                                  <span class="text-green-600 font-medium" v-if="demande.etat">accepter</span>
-                                  <span v-else class="text-orange-400 font-medium">en attente</span>
+                                  <span class="text-rose-900 font-medium" v-if="demande.etat == 1">Non traité</span>
+                                  <span class="text-cyan-500 font-medium" v-else-if="demande.etat == 2">en cour de
+                                    traitement</span>
+                                  <span class="text-rose-700 font-medium" v-else-if="demande.etat == 3">Rejetée</span>
+                                  <span class="text-teal-600 font-medium" v-else-if="demande.etat == 4"> Validée</span>
                                   <!-- <span v-else class="text-orange-400 font-medium">refuse</span> -->
                                 </td>
                                 <td colspan="3" class="px-6 py-4 text-right">
@@ -617,23 +596,218 @@
                        <button type="button"  id="show-modal" class="text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..." data-modal-toggle="modal"  v-on:click="VoirDemande(demande.id)">voir le statut</button>
                        </router-link> -->
 
-                                  <button type="button" v-if="!(demande.etat)"
+                                  <button type="button" v-if="(demande.etat == 2) || (demande.etat == 1)"
                                     class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..."
-                                    data-modal-toggle="modal" v-on:click="AnnulerDemande(demande.id)">annuler</button>
+                                    v-on:click="AnnulerDemande(demande.id)">annuler</button>
 
-                                  <router-link :to='`/modifdemande/${demande.id}`'>
-                                    <button type="button" id="show-modal" v-if="!(demande.etat)"
-                                      class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..."
-                                      data-modal-toggle="modal">modifier</button>
+                                  <!-- <router-link :to='`/modifdemande/${demande.id}`'> -->
+                                  <button type="button" id="show-modal"
+                                    v-if="(demande.etat == 2) || (demande.etat == 1)"
+                                    class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..."
+                                    @click="stoggleModal = !stoggleModal">modifier</button>
 
-                                  </router-link>
+
+
+
+
+                                  <!-- </router-link> -->
                                 </td>
+
+
+                                <!-- modale -->
+
+                                <div
+                                  class="fixed overflow-x-hidden overflow-y-auto inset-0 flex justify-center items-center z-50 "
+                                  v-if="stoggleModal">
+                                  <div class="relative mx-auto w-auto max-w-2xl">
+                                    <div class="bg-white w-full rounded shadow-2xl">
+
+
+
+                                      <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col my-2">
+
+                                        <div class="mx-auto items-center py-9 pt-4">
+                                          <p class="text-orange-600  text-2xl font-bold">MODIFICATION DEMANDE
+
+                                          </p>
+                                        </div>
+
+
+                                        <div class="-mx-3 md:flex mb-6">
+
+
+
+                                          <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                                            <label
+                                              class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                              for="immatriculation">
+                                              immatriculation
+                                            </label>
+                                            <input
+                                              class="appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-red rounded py-3 px-4 mb-3"
+                                              type="text"  placeholder="entrez l immatriculation">
+
+                                          </div>
+
+
+
+                                          <div class="md:w-1/2 px-3">
+                                            <label
+                                              class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                              for="marque">
+                                              marque
+                                            </label>
+                                            <input
+                                              class="appearance-none block w-full bg-grey-lighter text-grey-darker focus:ring-orange-500 focus:border-orange-500 border border-grey-lighter rounded py-3 px-4"
+                                              type="text" placeholder="entrez la marque">
+                                          </div>
+                                        </div>
+
+
+                                        <div class="form-group mb-6">
+                                          <label
+                                            class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                            for="grid-first-name">
+                                            model
+                                          </label>
+                                          <input type="text"
+                                            class="form-control block  w-full text-base font-normal text-gray-700 bg-white bg-clip-padding transition ease-in-out  m-0 appearance-none bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3"
+                                            id="exampleInput7" placeholder="entrez le model ">
+                                        </div>
+
+                                        <!-- <div class="-mx-3 md:flex mb-6">
+                                          <div class="px-3 mb-6">
+                                            <label
+                                              class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                              for="grid-first-name">
+                                              model
+                                            </label>
+                                            <input
+                                              class="appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3"
+                                              type="text">
+
+                                              </div>
+                                          </div> -->
+
+
+                                        <div class="-mx-3 md:flex mb-6">
+                                          <div class="md:w-1/2 px-3 mb-6">
+                                            <label
+                                              class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                              for="grid-last-name">
+                                              nombre de place
+                                            </label>
+                                            <input type="text" placeholder="le nombre de place"
+                                              class="appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-grey-lighter rounded py-3 px-4">
+                                          </div>
+                                        </div>
+
+
+
+
+                                        <div class="-mx-3 md:flex mb-6">
+                                          <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                                            <label
+                                              class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                              for="name">
+                                              type de transport
+                                            </label>
+
+                                          
+                                        <select class="appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-red rounded py-3 px-4 mb-3" >
+                                            <option v-for="listT in typetransport" :key="listT.id" :value="listT.id">
+                                           {{ listT.libelleTypeTransport }}
+                                          </option>
+                                         </select>
+
+                                          </div>
+                                        
+                                        
+                                          <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                                            <label
+                                              class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                              for="immatriculation">
+                                              zone
+                                            </label>
+                                            
+
+                                                <select class="
+                                        appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-red rounded py-3 px-4 mb-3
+                                      " v-model="demande.idZoneFk.id">
+                                      <option v-for="listz in zones" :key="listz.id" :value="listz.id" >
+                                        {{ listz.libelle }}
+                                      </option>
+                                       </select>
+
+                                          </div>
+                                       
+                                        </div>
+
+
+
+
+
+
+
+                                        <div class=" w-full mx-aut items-center flex flex-center">
+
+
+                                          <button
+                                            class="bg-red-500 mx-auto m-8 items-center hover:bg-red-700 focus:outline-none focus:ring-4 focus:ring-orange-300 font-medium block rounded-md text-sm px-6 py-2 text-center"
+                                            @click="stoggleModal = false">
+                                            <span class="">
+                                              <p class="fas fa-check items-center w-full text-white">
+                                                Fermer
+                                              </p>
+                                            </span>
+
+
+                                          </button>
+
+                                          <button
+                                            class="bg-orange-500 mx-auto m-10 items-center hover:bg-orange-400 focus:outline-none focus:ring-4 focus:ring-orange-300 font-medium block rounded-md text-sm px-6 py-2 text-center">
+                                            <span class="">
+                                              <p class="fas fa-check items-center w-full text-white">
+                                                Modifier
+                                              </p>
+                                            </span>
+
+
+                                          </button>
+                                        </div>
+
+
+
+                                      </div>
+
+
+
+                                    </div>
+
+
+
+                                  </div>
+
+
+
+                                </div>
+                                <div v-if="stoggleModal" class="absolute inset-0 z-40">
+                                </div>
+
+
+                                <!--modale  -->
+
 
                               </tr>
 
 
                             </tbody>
                           </table>
+
+
+
+
+                          <!-- tester -->
                         </div>
                         <!-- <ModalAnldemande/> -->
 
@@ -908,26 +1082,7 @@
 <script>
 
 
-// import Vue from 'vue';
 
-
-
-
-// new Vue({
-
-//  name:"PageProfile",
-//   el: '#app',
-//   data () {
-//     return {
-//      demandes: [],
-//     }
-//   },
-//   mounted () {
-//     axios
-//       .get('http://192.168.252.188:8080/api/demandes')
-//       .then(response => (this.demandes = response.data.data))
-//   } http://192.168.252.188:8080/api/demandes
-// })
 
 
 import axios from 'axios';
@@ -959,6 +1114,8 @@ export default {
 
 
     return {
+       showModal: false,
+      stoggleModal: false,
       isOpen: false,
       demandeStbtn: false,
       statut: false,
@@ -969,6 +1126,15 @@ export default {
       statutech: false,
       demandeStatut: false,
 
+      // variable de message
+
+       showAlertS: false,
+      showAlertE: false,
+      alertMessageSuccess: ' le demande a été modifié avec succès',
+      alertMessageError: ' echec de la modification de la demande',
+
+      // reccuperationn des données de
+
 
     }
 
@@ -976,12 +1142,92 @@ export default {
   },
 
   methods: {
-    // getHumanDate: function (date) {
-    //   return moment(date, 'YYYY-MM-DD').format('DD/MM/YYYY');
-    // },
+
+    // methode de modification 
 
 
-    //    
+     updateDemande() {
+
+
+
+
+      /* const headers = {
+        'Content-Type': 'application/json'
+      }; */
+
+      // console.log("Test");
+
+      axios.put(`http://192.168.252.206:4000/api/demandes/updateDemande/${this.idemande}`,
+
+        {
+          demande: {
+
+            "immatriculation": this.demande.immatriculation,
+            "idProprietaireFk": {
+              "id": 3
+            },
+            "marque": this.demande.marque,
+            "model": this.demande.model,
+            "nbPlace": this.demande.nbPlace,
+            "idZoneFk": {
+              "id": this.demande.idZoneFk.id
+            },
+            // idZoneFk: null,
+            "idTypeTransportFk": {
+              "id": this.demande.idTypeTransportFk.id
+            }
+          }
+        })
+
+        .then((response) => {
+
+          this.delaiAlertS();
+
+          console.log(response);
+
+
+        }).catch(e => {
+          this.error = true;
+          console.log('erreur', this.result);
+
+          this.errors.push(e)
+          this.delaiAlertE();
+
+        });
+    },
+
+    delaiAlertS() {
+
+      this.showAlertS = true;
+      setTimeout(() => {
+        this.showAlertS = false;
+
+      }, 2000);
+
+      setTimeout(() => {
+
+        this.$router.push('/pageprofile');
+      }, 2400);
+    },
+    delaiAlertE() {
+
+      this.showAlertE = true;
+      setTimeout(() => {
+        this.showAlertE = false;
+
+      }, 2000);
+
+      setTimeout(() => {
+
+        this.$router.push('/pageprofile');
+      }, 2400);
+    },
+
+
+
+
+
+// fin methode
 
     format_demande_date(value) {
       if (value) {
@@ -1018,12 +1264,7 @@ export default {
       }
     },
 
-    /// axios.update("http://192.168.252.92:4000/api/demandes/updateDemande/?id="${this.id}"&statut="${this.statut}").then(()=>{
-
-
-    // affDetail(){
-    //   this.$bvModal.show("modalannuler");
-    // },
+    
 
 
     listDemande() {
@@ -1054,19 +1295,55 @@ export default {
 
   created() {
     this.listDemande();
+
+
+   
+
+
+    axios.get("/api/demandes/" + this.idemande).then((t) => {
+      this.demandes = t.data.data;
+    });
+
+    
+
+    this.loading = false;
+
+  
   },
   mounted() {
 
 
+     axios
+      .get("/api/typetransport")
+      .then((response) => {
+        // JSON responses are automatically parsed.
+        this.typetransport = response.data.data;
+        console.log(this.typetransport);
+      })
+      .catch((e) => {
+        console.log("error", this.errors);
+
+        this.errors.push(e);
+      });
+
+    axios
+      .get(`/api/zones`)
+      .then((response) => {
+        // JSON responses are automatically parsed.
+        this.zones = response.data.data;
+        console.log(this.zones);
+      })
+      .catch((e) => {
+        this.statut = false;
+        console.log("error", this.errors);
+
+        this.errors.push(e);
+      });
+
+
   },
 
-  // props: {
-  //   demande: {
-  //     type: Object,
-  //     required: true
-  //   },
-
-  //     }
+ 
 
 
 };

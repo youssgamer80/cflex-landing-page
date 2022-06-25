@@ -1066,17 +1066,17 @@ export default {
 
             "immatriculation": this.demande.immatriculation,
             "idProprietaireFk": {
-              "id": 3,
+              "id": 3
             },
             "marque": this.demande.marque,
             "model": this.demande.model,
             "nbPlace": this.demande.nbPlace,
             "idZoneFk": {
-              "id": this.demande.idZoneFk.id,
+              "id": this.demande.idZoneFk.id
             },
             // idZoneFk: null,
             "idTypeTransportFk": {
-              "id": this.demande.idTypeTransportFk.id,
+              "id": this.demande.idTypeTransportFk.id
             }
           }
         })

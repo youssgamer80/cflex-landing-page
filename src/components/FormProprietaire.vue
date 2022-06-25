@@ -7,6 +7,7 @@
       items-center
       px-6
       pt-8 pt:mt-0
+  
     ">
 
     <!-- content will go here -->
@@ -23,10 +24,11 @@
         2xl:max:max-w-screen-lg
         xl:p-0
         grid grid-cols-2 gap-4
+     
       ">
 
       <div class="p-6 sm:p-8 lg:p-16 lg:py-0 hidden lg:max-w-screen-lg
-        2xl:max:max-w-screen-lg
+        2xl:max:max-w-screen-lg 
         xl:p-0 lg:flex justify-center w-1/2 bg-slate-100">
         <!-- <div class="">
           <button type="submit"
@@ -52,45 +54,45 @@
               <div class="grid gap-6 mb-6 lg:grid-cols-2">
                 <div>
                   <label for="first_name"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">nom</label>
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800">nom</label>
                   <input type="text" id="nom"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500"
                     placeholder="" v-model="nom" required>
                 </div>
                 <div>
                   <label for="last_name"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">prenom</label>
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800 ">prenom</label>
                   <input type="text" id="prenom"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500"
                     placeholder="" v-model="prenom" required>
                 </div>
                 <div>
                   <label for="company"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">email</label>
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800">email</label>
                   <input type="email" id="email"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500"
-                    placeholder="" v-model="email" required>
+                    placeholder="" v-model="email">
                 </div>
                 <div>
                   <label for="phone"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">telephone</label>
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800">telephone</label>
                   <input type="text" id="phone"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500"
                     placeholder="+225 0778127138" pattern="^((\\+)|(00)|(\\*)|())[0-9]{3,14}((\\#)|())$"
                     v-model="telephone" required>
                 </div>
                 <div>
-                  <label for="website" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">lieu de
+                  <label for="website" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800">lieu de
                     residence</label>
                   <input type="text" id="lieu"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-800 dark:focus:ring-orange-500 dark:focus:border-orange-500"
                     placeholder="" v-model="lieuResidence" required>
                 </div>
                 <div>
 
 
                   <label for="genre"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">genre</label>
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800">genre</label>
                   <select id="genre"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500"
                     v-model="genre">
@@ -103,14 +105,14 @@
 
               </div>
               <div class="mb-6">
-                <label for="" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">lieu de
+                <label for="" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800">lieu de
                   naissance</label>
                 <input type="text" id="lieuNaissance"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500"
                   placeholder="" v-model="lieuNaissance" required>
               </div>
               <div class="mb-6">
-                <label for="" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">date de
+                <label for="" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800">date de
                   naissance</label>
                 <input type="date" id="dateN"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500"
@@ -126,19 +128,19 @@
 
 
               <div class="mb-6">
-                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800"
                   for="small_size">permis</label>
                 <input
-                  class="block mb-5 w-full text-xs text-gray-900 bg-orange-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-orange-700 dark:border-gray-600 dark:placeholder-gray-400"
+                  class="block mb-5 w-full text-xs text-gray-900 bg-orange-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
                   id="small_size" type="file" @change="onFileselect">
               </div>
 
 
               <div class="mb-6">
-                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300" for="small_size">piece
+                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800" for="small_size">piece
                   identite</label>
                 <input
-                  class="block mb-5 w-full text-xs text-gray-900 bg-orange-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-orange-700 dark:border-gray-600 dark:placeholder-gray-400"
+                  class="block mb-5 w-full text-xs text-gray-900 bg-orange-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
                   id="small_size" type="file" @change="onFileselected">
               </div>
               <div class="relative">
