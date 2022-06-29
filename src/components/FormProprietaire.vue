@@ -45,7 +45,7 @@
 
         <div class="ConnexionDemande">
           <h2 class="text-2xl lg:text-3xl font-bold text-gray-900">
-            enregistrement proprietaire
+            Enregistrement proprietaire
           </h2>
           <form @submit.prevent="submitForm" enctype="multipart/form-data" class="mt-8 space-y-6" method="POST"
             action="#">
@@ -54,35 +54,35 @@
               <div class="grid gap-6 mb-6 lg:grid-cols-2">
                 <div>
                   <label for="first_name"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800">nom</label>
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800">Nom</label>
                   <input type="text" id="nom"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500"
                     placeholder="" v-model="nom" required>
                 </div>
                 <div>
                   <label for="last_name"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800 ">prenom</label>
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800 ">Prénom(s)</label>
                   <input type="text" id="prenom"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500"
                     placeholder="" v-model="prenom" required>
                 </div>
                 <div>
                   <label for="company"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800">email</label>
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800">Email</label>
                   <input type="email" id="email"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500"
                     placeholder="" v-model="email">
                 </div>
                 <div>
                   <label for="phone"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800">telephone</label>
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800">Téléphone</label>
                   <input type="text" id="phone"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500"
                     placeholder="+225 0778127138" pattern="^((\\+)|(00)|(\\*)|())[0-9]{3,14}((\\#)|())$"
                     v-model="telephone" required>
                 </div>
                 <div>
-                  <label for="website" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800">lieu de
+                  <label for="website" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800">Lieu de
                     residence</label>
                   <input type="text" id="lieu"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-800 dark:focus:ring-orange-500 dark:focus:border-orange-500"
@@ -92,7 +92,7 @@
 
 
                   <label for="genre"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800">genre</label>
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800">Genre</label>
                   <select id="genre"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500"
                     v-model="genre">
@@ -101,18 +101,26 @@
                   </select>
                 </div>
 
+                <div class="mb-6">
+                <label for="" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800">entrez un mot de passe
+                  </label>
+                <input type="text" id="mdp"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500"
+                  placeholder="" v-model="password" required>
+              </div>
+
 
 
               </div>
               <div class="mb-6">
-                <label for="" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800">lieu de
+                <label for="" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800">Lieu de
                   naissance</label>
                 <input type="text" id="lieuNaissance"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500"
                   placeholder="" v-model="lieuNaissance" required>
               </div>
               <div class="mb-6">
-                <label for="" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800">date de
+                <label for="" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800">Date de
                   naissance</label>
                 <input type="date" id="dateN"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500"
@@ -129,15 +137,17 @@
 
               <div class="mb-6">
                 <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800"
-                  for="small_size">permis</label>
+                  for="small_size">Permis</label>
                 <input
                   class="block mb-5 w-full text-xs text-gray-900 bg-orange-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
                   id="small_size" type="file" @change="onFileselect">
               </div>
 
+            
+
 
               <div class="mb-6">
-                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800" for="small_size">piece
+                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800" for="small_size">Piece
                   identite</label>
                 <input
                   class="block mb-5 w-full text-xs text-gray-900 bg-orange-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
@@ -152,25 +162,31 @@
 
 
               <div class="flex items-start mb-6">
-                <div class="flex mx-auto items-center h-5">
+                <div class="flex mx-auto items-center h-5 px-10 py-10">
                   <button type="submit"
                     class="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800">Envoyer</button>
 
                 </div>
+                <router-link to="/">
+                <div class="flex mx-auto items-center h-5 px-10 py-10">
+                  <button type="submit"
+                   class="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800">Retour</button>
+                </div>
+                </router-link>
 
               </div>
 
-              <div class="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800"
-                role="alert" v-if="success">
-                <!-- <i class="close icon" @click="close"></i> -->
-                <p class="font-medium">Felictation !!</p> Proprietaire Crée avec succes !!!!!
+              <div class="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800 items-center"
+                role="alert" v-if="showAlertSuccess">
+                <span class="font-medium px-20"> Felictation !!   Proprietaire Crée avec succes !!!!!</span>
               </div>
 
 
 
-              <div class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800"
-                role="alert" v-if="error">
-                <span class="font-medium">Echec !!!</span> Proprietaire non cree !!!!
+              <div class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 items-center"
+                role="alert" v-if="showAlertError">
+                <span class="font-medium px-20"> Echec !!!!   Proprietaire non cree !!</span>
+                 
               </div>
 
 
@@ -202,6 +218,10 @@
 import axios from 'axios';
 
 
+
+
+
+
 export default {
   name: "FormProprietaire",
 
@@ -215,9 +235,14 @@ export default {
       selecteFile: null,
 
 
-      success: false,
+     
       error: false,
       loading: false,
+
+      showAlertSuccess: false,
+      showAlertError: false,
+      alertMessageSuccess: 'Proprietaire Modifié avec succes !!!!!',
+      alertMessageError: 'Proprietaire non Modifié  !!!',
 
 
 
@@ -232,6 +257,10 @@ export default {
       lieuNaissance: "",
       lieuResidence: "",
       pieceIdentite: "",
+      password:"",
+
+      proprietaire:"",
+      config :""
 
 
 
@@ -276,11 +305,11 @@ export default {
       const pieceIdentite = new FormData();
       pieceIdentite.append('piece ', this.selecteFile)
 
+      this.proprietaire="proprietaire"
+      console.log("test",this.proprietaire),
 
-      axios.post('http://192.168.252.206:4000/proprietaire/save', {
-        headers: {
-          'Content-type': 'multipart/form-data',
-        },
+      axios.post('http://192.168.252.143:4001/api/proprietaire/save', {
+      
         nom: this.nom,
         prenom: this.prenom,
         telephone: this.telephone,
@@ -292,17 +321,27 @@ export default {
         lieuNaissance: this.lieuNaissance,
         lieuResidence: this.lieuResidence,
         pieceIdentite: this.pieceIdentite,
+        password: this.password,
+        
+        role:[
+            this.proprietaire ]
+      },{
+          headers: {
+          'Content-Type': 'application/json',
+           'Authorization':'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwNzk0NDMxMzIiLCJpYXQiOjE2NTY1MzQyNTYsImV4cCI6MTY1NjUzNzg1Nn0._6jGwdl82H-76lfzV1i4Wkh_uQtqXWKbQVVPMD9CeoXVyf3r_0zAL_9cMEaqL7MtkS4PvgYTiMxSrnEIOlpdUA'
+          
+        },
       })
         .then((res) => {
           this.reset();
-          this.success = true;
+          this.$toast.success("proprietaire cree avec succes");
           console.log(res);
-          // this.$router.push('/connexionDemande');
+           this.$router.push('/connexionDemande');
 
         })
         .catch((error) => {
 
-          this.error = true;
+          this.$toast.error("echec enregistrement proprietaire");
           console.log(error)
         }).finally(() => {
           //Perform action in always
@@ -315,6 +354,21 @@ export default {
       for (let field in this.formData) {
         this.formData[field] = null;
       }
+    },
+
+
+      delayedAlertSucces() {
+      this.showAlertSuccess = true;
+      setTimeout(() => {
+        this.showAlertSuccess = false;
+
+      }, 2300);
+    },
+    delayedAlertError() {
+      this.showAlertError = true;
+      setTimeout(() => {
+        this.showAlertError = false;
+      }, 2300);
     }
   }
 

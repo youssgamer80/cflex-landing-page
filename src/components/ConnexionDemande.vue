@@ -30,7 +30,7 @@
           <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 flex justify-center ">
             Allez sur votre profile
           </h2>
-          <form class="mt-8 space-y-6" action="#">
+          <form class="mt-8 space-y-6" @submit.prevent="connexionDmd" action="#">
 
 
             <!-- test de connexion au profile   @submit.prevent="connexionDmd" -->
@@ -39,10 +39,6 @@
               <span class="font-medium">Felictation !!</span> connecte avec succes !!!!!
             </div>
 
-            <!-- <div class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800" role="alert">
-          <span class="font-medium" v-show="errorMsg">{{ this.Msgerreur }}</span> non connecté !!!!
-          </div>   
-                 -->
 
             <div class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800"
               role="alert" v-if="error">
@@ -51,7 +47,7 @@
             <!-- fin teste -->
             <div>
               <label for="numero" class="text-sm font-medium text-gray-900 block mb-2"></label>
-              <input type="text" id="text" v-model="nom" class="
+              <input type="text" id="text" v-model="form.numero" class="
                   bg-gray-50
                   border border-gray-300
                   text-gray-900
@@ -61,11 +57,11 @@
                   block
                   w-full
                   p-2.5
-                " placeholder="nom" required />
+                " placeholder="numero" required />
             </div>
             <div>
-              <label for="numero" class="text-sm font-medium text-gray-900 block mb-2"></label>
-              <input type="text" v-model="numero" placeholder="numero" class="
+              <label for="" class="text-sm font-medium text-gray-900 block mb-2"></label>
+              <input type="text"  placeholder="mot de passe" v-model="form.password" class="
                   bg-gray-50
                   border border-gray-300
                   text-gray-900
@@ -100,8 +96,8 @@
                   </button>
                 </router-link>
 
-                <router-link to="/pageprofile">
-                  <button v-on:@click="connexionDm" type="submit" class="
+                <!-- <router-link to="/pageprofile"> -->
+                  <button type="submit"  class="
                       text-white
                       bg-orange-700
                       hover:bg-orange-800
@@ -119,7 +115,7 @@
                     ">
                     Allez
                   </button>
-                </router-link>
+                <!-- </router-link> -->
               </div>
 
               <div class="text-sm ml-3 items-center grid grid-flow-col">
@@ -166,28 +162,125 @@
 </template>
 
 <script>
-import axios from 'axios'
+   import axios from 'axios'
+  // import { mapState, mapActions } from 'vuex'
 export default {
   name: "connexionDemande",
 
   data() {
     return {
-      numero: "",
-      nom: "",
-      error: null,
+     
+      error: false,
       success: false,
       Msgerreur: "",
       errorMsg: "",
       user: "",
+
+      // submitted: false
+    form:{
+      numero:'',
+      password:'', 
+     
+      
+
+    }  
+      
+
+
+      
+      
+
     }
   },
+
+computed: {
+        // ...mapState('account', ['status'])
+    },
+
+  setup(){
+
+  //  const connexionDm = async e => {
+  //     const form = new FormData(e.target);
+  //     // const inputs = Object.fromEntries(form.entries());
+  //    await axios.post('http://192.168.252.143:4001/api//auth/signin',  form, {
+  //       withCredentials: true
+  //     });
+  //     // axios.defaults.headers.common['Authorization'] = `Bearer `;
+  //      this.$toast.success("authentifier avec succes");
+  //     await this.$router.push('/pageprofile');
+  //   }
+  //   return {
+  //     connexionDm
+  //   }
+
+  },
+
+  
   methods: {
+
+      //  ...mapActions('account', ['login', 'logout']),
+      //  handleSubmit () {
+            
+      
+      //       this.submitted = true;
+      //       const { username, password } = this;
+      //       if ( username &&  password) {
+      //           this.login({ username, password })
+      //       }
+      //   },
+
+    async connexionDmd(){
+
+ console.log(this.form.numero);
+  console.log(this.form.password);
+      
+
+      let response = axios.post("http://192.168.252.143:4001/api/auth/signin",{
+
+     form: {
+      numero: this.form.numero,
+      password: this.form.password
+           } 
+
+
+      }).then((res) => {
+          
+         
+           console.log(res);
+           this.$toast.error("authentifier avec success");
+           this.$router.push('/pageprofile');
+
+
+        })
+        .catch((error) => {
+
+          this.$toast.error("erreur de connexion ");
+          console.log(error)
+        }).finally(() => {
+          //Perform action in always
+          // this.loading = false
+        });
+      console.log(response.data.data);
+    },
+    created () {
+        // reset login status
+        this.logout();
+    },
+
+
+ 
+
+   
+   
+  
+
+    
 
     // async connexionDm(){
 
     //   const response = await axios.post('/demande', {
     //     numero: this.numero,
-    //     name: this.name,
+    //    password: this.name,
     //   })
     //   console.log(response);
 
@@ -196,9 +289,9 @@ export default {
 
     // async connexionDm(){
     //   try {
-    //     const response = await axios.get('/demandes', {
+    //     const response = await axios.post('/demandes', {
     //       numero: this.numero,
-    //       nom: this.nom,
+    //       password: this.password,
     //     })
     //     console.log(response);
     //     this.success = true;
@@ -214,39 +307,12 @@ export default {
     //     console.log(this.Msgerreur);
     //     console.log(this.errorMsg);
     //   }
-    // }
+    // },
 
 
 
-    //  async connexionDm(){
+  
 
-    //       let resul = axios.post("/proprietaire/save", {
-
-    //         nom: this.nom,
-    //         numero: this.numero,
-    //       })
-
-
-    //     console.log(resul)
-    //     this.$router.push('/pageprofile')
-    //     }
-
-    async connexionDm() {
-
-      let resul = axios.get(`/proprietaire/list?nom=${this.nom}&telephone=${this.numero}`)
-
-
-      if (resul.data.status == 200 && resul.data.length > 0) {
-
-        alert('connecté avec succes');
-        console.log(resul);
-
-
-        //  axios.get("http://192.168.252.206:4000/proprietaire/get/1")
-        this.$router.push('pageprofile');
-      }
-
-    }
 
     // async connexionDmd() {
 

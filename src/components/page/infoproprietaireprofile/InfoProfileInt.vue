@@ -461,16 +461,16 @@
 
                 <div
                   class="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800"
-                  role="alert" v-if="showAlertError">
+                  role="alert" v-if="showAlertSuccess">
                   <!-- <i class="close icon" @click="close"></i> -->
-                  <p class="font-medium">Felictation !! {{ alertMessageError }} </p>
+                  <span class="font-medium px-20">Felictation !! {{ alertMessageSuccess }}</span>
                 </div>
 
 
 
                 <div class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800"
-                  role="alert" v-if="showAlertSuccess">
-                  <p class="font-medium">Felictation !! {{ alertMessageSuccess }}</p>
+                  role="alert" v-if="showAlertError">
+                  <span class="font-medium px-20">Echec !! {{ alertMessageError }}</span>
                 </div>
 
 
@@ -1021,9 +1021,10 @@ export default {
       stoggleModal: false,
       proprietaire: {},
       idproprietaire: 3,
+
       showAlertSuccess: false,
       showAlertError: false,
-      alertMessageSuccess: 'Proprietaire Modifié avec succes !!!!!',
+      alertMessageSuccess: 'Proprietaire avec succes !!!!!',
       alertMessageError: 'Proprietaire non Modifié  !!!'
 
 

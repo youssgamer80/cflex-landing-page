@@ -473,9 +473,6 @@
 
                       </div>
 
-                      <!-- 
-            test
-           -->
 
                       <div class="apexcharts-legend" style="max-height: 210px"></div>
                       <div class="apexcharts-tooltip apexcharts-theme-light">

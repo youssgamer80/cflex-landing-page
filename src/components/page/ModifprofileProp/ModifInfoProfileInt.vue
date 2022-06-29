@@ -528,7 +528,7 @@
                                                                     <label
                                                                         class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
                                                                         for="prenom">
-                                                                        prenom
+                                                                        Prenom
                                                                     </label>
                                                                     <input
                                                                         class="appearance-none block w-full bg-grey-lighter text-grey-darker focus:ring-orange-500 focus:border-orange-500 border border-grey-lighter rounded py-3 px-4"
@@ -544,7 +544,7 @@
                                                                     <label
                                                                         class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
                                                                         for="grid-first-name">
-                                                                        telephone
+                                                                        Téléphone
                                                                     </label>
                                                                     <input
                                                                         class="appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3"
@@ -557,7 +557,7 @@
                                                                     <label
                                                                         class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
                                                                         for="grid-last-name">
-                                                                        email
+                                                                        Email
                                                                     </label>
                                                                     <input
                                                                         class="appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-grey-lighter rounded py-3 px-4"

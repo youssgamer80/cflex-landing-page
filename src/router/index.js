@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import StatutProfileDemande from '../components/StatutProfileDemande.vue'
-import FormModifDemandeInt from '@/components/FormModifDemandeInt.vue'
+// import FormModifDemandeInt from '@/components/FormModifDemandeInt.vue'
 import Infoprofile from '@/components/page/infoproprietaireprofile/InfoProfileInt.vue'
 import modifinfoprofile from '@/components/page/ModifprofileProp/ModifInfoProfileInt.vue'
 
@@ -46,8 +46,6 @@ const routes = [
   //   component: () => import(/* webpackChunkName: "features" */ '../components/FormModifDemandeInt.vue')
   // },
   { path: '/statut/:id?', name: 'statut', component: StatutProfileDemande, props: true },
-
-  { path: '/modifdemande/:id?', name: 'modifdemande', component: FormModifDemandeInt, props: true },
 
   {
     path: '/features',

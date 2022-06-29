@@ -10,133 +10,15 @@
 
 
       <NavbarComponentboard />
-      <!-- 
-      <header class="bg-slate-200 sm:flex sm:justify-between sm:items-center sm:py-3 dark:bg-gray-900">
-        <div class="flex items-center justify-between px-4 py-3">
-          <div>
-            <img class="h-20 w-auto sm:h-10" src="../assets/logo.png" alt="Workflow">
-          </div>
-          <div class="sm:hidden">
-            <button @click="isOpen = !isOpen" type="button" classe="block text-gray-500 focus:outline-none focus:text-gray-600">
-              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" >
-                <path v-if="isOpen"
-                  fill-rule="evenodd"
-                   d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                   clip-rule="evenodd"
-                ></path>
-                <path v-if="!isOpen"
-                  fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd" ></path>
-
-              </svg>
-              </button>
-
-          </div>
-        </div>
-
-        <div :class="isOpen ? 'block' : 'hidden'" class="px-2 pt-2 pb-2 sm:flex" >
-          <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-semibold text-slate-500 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">profile</a>
-
-          <router-link router-link to="" class="mt-1 block px-3 py-2 rounded-md text-base font-semibold text-slate-500 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Projects</router-link>
-
-          <router-link router-link to="" class="mt-1 block px-3 py-2 rounded-md text-base font-semibold text-slate-500 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Deconnexion</router-link>
-
-
-
-
-        </div>
-      </header> -->
-
-      <!--  -->
-      <!-- <nav class="fixed z-30 w-full bg-gray-50">
-        <div class="py-3 px-3 lg:px-5 lg:pl-3">
-          <div class="flex justify-between items-center">
-            <div class="flex justify-start items-center">
-              <button
-                id="toggleSidebar"
-                aria-expanded="true"
-                aria-controls="sidebar"
-                class="
-                  hidden
-                  p-2
-                  mr-4
-                  text-gray-600
-                  rounded
-                  cursor-pointer
-                  lg:inline
-                  hover:text-gray-900 hover:bg-gray-100
-                "
-              >
-           
-              </button>
-              <button
-                id="toggleSidebarMobile"
-                aria-expanded="true"
-                aria-controls="sidebar"
-                class="
-                  p-2
-                  mr-2
-                  text-gray-600
-                  rounded
-                  cursor-pointer
-                  lg:hidden
-                  hover:text-gray-900 hover:bg-gray-100
-                  focus:bg-gray-100 focus:ring-2 focus:ring-gray-100
-                "
-              >
-                 
-                <svg
-                  id="toggleSidebarMobileClose"
-                  class="hidden w-6 h-6"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-              <a
-                href=""
-                class="text-md font-semibold flex items-center lg:mr-1.5"
-              >
-                <img
-                  src="../assets/logo.png"
-                  class="mr-2 h-8"
-                  alt="C FLEX"
-                />
-
-              
-                <span
-                  class="
-                    hidden
-                    md:inline-block
-                    self-center
-                    text-xl
-                    font-bold
-                    whitespace-nowrap
-                  "
-                  ></span
-                >
-              </a>
-             
-            </div>
-           
-          </div>
-        </div>
-      </nav> -->
+    
+     
       <div class="flex overflow-hidden bg-white pt-16">
 
         <!--  -->
 
         <aside id="sidebar" class="
 
-            flex
-            hidden
+           
             fixed
             top-0
             left-0
@@ -216,69 +98,7 @@
 
                   <li>
 
-                    <!-- <ul id="dropdown-auth" sidebar-toggle-list="" class="pb-2 pt-1 hidden">
-                      <li>
-                        <a href="https://demos.creative-tim.com/soft-ui-flowbite-pro/authentication/sign-in/" class="
-                            text-sm text-dark-500
-                            font-light
-                            rounded-lg
-                            flex
-                            items-center
-                            p-2
-                            group
-                            hover:bg-gray-200
-                            transition
-                            duration-75
-                            pl-11
-                          "><span class="">Sign in</span><span class="hidden">S</span></a>
-                      </li>
-                      <li>
-                        <a href="" class="
-                            text-sm text-dark-500
-                            font-light
-                            rounded-lg
-                            flex
-                            items-center
-                            p-2
-                            group
-                            hover:bg-gray-200
-                            transition
-                            duration-75
-                            pl-11
-                          "><span class="">Sign up</span><span class="hidden">S</span></a>
-                      </li>
-
-                      <li>
-                        <a href="" class="
-                            text-sm text-dark-500
-                            font-light
-                            rounded-lg
-                            flex
-                            items-center
-                            p-2
-                            group
-                            hover:bg-gray-200
-                            transition
-                            duration-75
-                            pl-11
-                          "><span class="">Reset password</span><span class="hidden">R</span></a>
-                      </li>
-                      <li>
-                        <a href="" class="
-                            text-sm text-dark-500
-                            font-light
-                            rounded-lg
-                            flex
-                            items-center
-                            p-2
-                            group
-                            hover:bg-gray-200
-                            transition
-                            duration-75
-                            pl-11
-                          "><span class="">Profile lock</span><span class="hidden">P</span></a>
-                      </li>
-                    </ul> -->
+                
                   </li>
                 </ul>
                 <hr class="
@@ -294,161 +114,7 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="
-                hidden
-                relative
-                bottom-0
-                left-0
-                justify-center
-                w-full
-                lg:flex
-                bg-gray-100
-                space-x-4
-                p-4
-              " sidebar-bottom-menu="">
-
-              <div id="tooltip-settings" role="tooltip" class="
-                  inline-block
-                  absolute
-                  invisible
-                  z-10
-                  py-2
-                  px-3
-                  text-sm
-                  font-medium
-                  text-white
-                  bg-gray-900
-                  rounded-lg
-                  opacity-0
-                  transition-opacity
-                  duration-300
-                  tooltip
-                  shadow-lg-sm
-                " data-popper-placement="top" style="
-                  position: absolute;
-                  inset: auto auto 0px 0px;
-                  margin: 0px;
-                  transform: translate3d(73px, -110px, 0px);
-                ">
-                parametre de la page
-                <div class="tooltip-arrow" data-popper-arrow="" style="
-                    position: absolute;
-                    left: 0px;
-                    transform: translate3d(51px, 0px, 0px);
-                  "></div>
-              </div>
-
-              <div class="
-                  hidden
-                  z-50
-                  my-4
-                  text-base
-                  list-none
-                  bg-white
-                  rounded
-                  divide-y divide-gray-100
-                  shadow-lg
-                " id="language-dropdown" data-popper-placement="top" style="
-                  position: absolute;
-                  inset: auto auto 0px 0px;
-                  margin: 0px;
-                  transform: translate3d(128px, -56px, 0px);
-                ">
-                <ul class="py-1" role="none">
-                  <li>
-                    <a href="#" class="
-                        block
-                        py-2
-                        px-4
-                        text-sm text-gray-700
-                        hover:bg-gray-200
-                      " role="menuitem">
-                      <div class="inline-flex items-center">
-                        <svg class="h-3.5 w-3.5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg"
-                          id="flag-icon-css-us" viewBox="0 0 512 512">
-                          <g fill-rule="evenodd">
-                            <g stroke-width="1pt">
-                              <path fill="#bd3d44"
-                                d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
-                                transform="scale(3.9385)"></path>
-                              <path fill="#fff"
-                                d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
-                                transform="scale(3.9385)"></path>
-                            </g>
-                            <path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)"></path>
-                            <path fill="#fff"
-                              d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z"
-                              transform="scale(3.9385)"></path>
-                          </g>
-                        </svg>
-                        Francais
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="
-                        block
-                        py-2
-                        px-4
-                        text-sm text-gray-700
-                        hover:bg-gray-200
-                      " role="menuitem">
-
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="
-                        block
-                        py-2
-                        px-4
-                        text-sm text-gray-700
-                        hover:bg-gray-200
-                      " role="menuitem">
-                      <div class="inline-flex items-center">
-                        <svg class="h-3.5 w-3.5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg"
-                          id="flag-icon-css-it" viewBox="0 0 512 512">
-                          <g fill-rule="evenodd" stroke-width="1pt">
-                            <path fill="#fff" d="M0 0h512v512H0z"></path>
-                            <path fill="#009246" d="M0 0h170.7v512H0z"></path>
-                            <path fill="#ce2b37" d="M341.3 0H512v512H341.3z"></path>
-                          </g>
-                        </svg>
-                        italien
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="
-                        block
-                        py-2
-                        px-4
-                        text-sm text-gray-700
-                        hover:bg-gray-200
-                      " role="menuitem">
-                      <div class="inline-flex items-center">
-                        <svg class="h-3.5 w-3.5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-cn" viewBox="0 0 512 512">
-                          <defs>
-                            <path id="a" fill="#ffde00" d="M1-.3L-.7.8 0-1 .6.8-1-.3z"></path>
-                          </defs>
-                          <path fill="#de2910" d="M0 0h512v512H0z"></path>
-                          <use width="30" height="20" transform="matrix(76.8 0 0 76.8 128 128)" xlink:href="#a"></use>
-                          <use width="30" height="20" transform="rotate(-121 142.6 -47) scale(25.5827)" xlink:href="#a">
-                          </use>
-                          <use width="30" height="20" transform="rotate(-98.1 198 -82) scale(25.6)" xlink:href="#a">
-                          </use>
-                          <use width="30" height="20" transform="rotate(-74 272.4 -114) scale(25.6137)" xlink:href="#a">
-                          </use>
-                          <use width="30" height="20" transform="matrix(16 -19.968 19.968 16 256 230.4)"
-                            xlink:href="#a"></use>
-                        </svg>
-
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div> -->
+    
           </div>
         </aside>
         <div class="hidden fixed inset-0 z-10 bg-gray-900 opacity-50" id="sidebarBackdrop"></div>
@@ -507,11 +173,11 @@
                       </div>
 
                       <div class="relative overflow-x-auto shadow-md sm:rounded-lg mx-auto">
-                        <router-link to="/FormDemanproprietaireint">
+                        <!-- <router-link to="/FormDemanproprietaireint"> -->
                           <button type="button"
                             class="text-white bg-gradient-to-r from-green-400  to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-400 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 "
-                            data-modal-toggle="popup-modal">nouvelle demande</button>
-                        </router-link>
+                             @click="stoggleModalA = !stoggleModalA">nouvelle demande</button>
+                        <!-- </router-link> -->
                         <!-- tableau de donnees -->
 
                         <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
@@ -547,19 +213,19 @@
                                 <th scope="col" class="px-6 py-3">
                                   Statut profile
                                 </th>
-                                <th colspan="2" scope="col" class="px-6 py-3 items-right">
-                                  Action
+                                <th colspan="3" scope="col" class="px-6 py-3 items-center">
+                                 <p class="items-center"> Action</p>
                                 </th>
                               </tr>
                             </thead>
                             <tbody>
-                              <tr v-for="demande in demandes" :key="demande.id"
+                              <tr v-for="(demande, index) in demandes" :key="index"
                                 class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                                 <td class="px-6 py-4">
                                   {{ demande.id }}
                                 </td>
                                 <!-- <td class="px-6 py-4">
-                    {{ demande.codeDemande}}
+                    {{ demande.codeDemande}}demande.id
                 </td> -->
                                 <td class="px-6 py-4">
                                   {{ demande.immatriculation }}
@@ -583,18 +249,16 @@
                                   {{ format_demande_date(demande.date) }}
                                 </td>
                                 <td class="px-6 py-4">
-                                  <span class="text-rose-900 font-medium" v-if="demande.etat == 1">Non traité</span>
+                                  <span class="text-yellow-500 font-medium" v-if="demande.etat == 1">Non traité</span>
                                   <span class="text-cyan-500 font-medium" v-else-if="demande.etat == 2">en cour de
                                     traitement</span>
                                   <span class="text-rose-700 font-medium" v-else-if="demande.etat == 3">Rejetée</span>
-                                  <span class="text-teal-600 font-medium" v-else-if="demande.etat == 4"> Validée</span>
+                                  <span class="text-teal-600 font-medium" v-else-if="demande.etat == 4">Validée</span>
                                   <!-- <span v-else class="text-orange-400 font-medium">refuse</span> -->
                                 </td>
-                                <td colspan="3" class="px-6 py-4 text-right">
+                                <td colspan="3" class="px-6 py-4 text-right mx-auto ">
 
-                                  <!-- <router-link :to="{ name: 'statut', params: { demande }}">
-                       <button type="button"  id="show-modal" class="text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..." data-modal-toggle="modal"  v-on:click="VoirDemande(demande.id)">voir le statut</button>
-                       </router-link> -->
+                           
 
                                   <button type="button" v-if="(demande.etat == 2) || (demande.etat == 1)"
                                     class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..."
@@ -604,7 +268,7 @@
                                   <button type="button" id="show-modal"
                                     v-if="(demande.etat == 2) || (demande.etat == 1)"
                                     class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..."
-                                    @click="stoggleModal = !stoggleModal">modifier</button>
+                                    @click="updatetDemande(demande)">modifier</button>
 
 
 
@@ -612,44 +276,42 @@
 
                                   <!-- </router-link> -->
                                 </td>
+                                 <!--  -->
+                                <!-- modale Ajouter deb -->
 
+                                
+                                <!-- modale  modifier -->
 
-                                <!-- modale -->
-
-                                <div
+                                <div 
                                   class="fixed overflow-x-hidden overflow-y-auto inset-0 flex justify-center items-center z-50 "
-                                  v-if="stoggleModal">
+                                  v-if="stoggleModalA">
                                   <div class="relative mx-auto w-auto max-w-2xl">
                                     <div class="bg-white w-full rounded shadow-2xl">
 
-
+                                      
 
                                       <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col my-2">
 
                                         <div class="mx-auto items-center py-9 pt-4">
-                                          <p class="text-orange-600  text-2xl font-bold">MODIFICATION DEMANDE
+                                          <p class="text-orange-900  text-2xl font-bold">AJOUT DE DEMANDE
 
                                           </p>
                                         </div>
 
-
+                                           
                                         <div class="-mx-3 md:flex mb-6">
-
-
-
+    
                                           <div class="md:w-1/2 px-3 mb-6 md:mb-0">
                                             <label
                                               class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
                                               for="immatriculation">
                                               immatriculation
                                             </label>
-                                            <input
-                                              class="appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-red rounded py-3 px-4 mb-3"
+                                            <input  v-model="demandeAjt.immatriculation"
+                                              class="appearance-none block w-full  focus:ring-orange-500 text-gray-700 focus:border-orange-500  border border-red rounded-10 py-3 px-4 mb-3"
                                               type="text"  placeholder="entrez l immatriculation">
 
                                           </div>
-
-
 
                                           <div class="md:w-1/2 px-3">
                                             <label
@@ -657,12 +319,11 @@
                                               for="marque">
                                               marque
                                             </label>
-                                            <input
-                                              class="appearance-none block w-full bg-grey-lighter text-grey-darker focus:ring-orange-500 focus:border-orange-500 border border-grey-lighter rounded py-3 px-4"
+                                            <input v-model="demandeAjt.marque"
+                                              class="appearance-none block w-full bg-grey-lighter text-gray-800 focus:ring-orange-500 focus:border-orange-500 border border-grey-lighter rounded py-3 px-4"
                                               type="text" placeholder="entrez la marque">
                                           </div>
                                         </div>
-
 
                                         <div class="form-group mb-6">
                                           <label
@@ -670,25 +331,10 @@
                                             for="grid-first-name">
                                             model
                                           </label>
-                                          <input type="text"
-                                            class="form-control block  w-full text-base font-normal text-gray-700 bg-white bg-clip-padding transition ease-in-out  m-0 appearance-none bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3"
+                                          <input type="text" v-model="demandeAjt.model"
+                                            class="form-control block  w-full text-base font-normal text-gray-800 bg-white bg-clip-padding transition ease-in-out  m-0 appearance-none bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3"
                                             id="exampleInput7" placeholder="entrez le model ">
                                         </div>
-
-                                        <!-- <div class="-mx-3 md:flex mb-6">
-                                          <div class="px-3 mb-6">
-                                            <label
-                                              class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
-                                              for="grid-first-name">
-                                              model
-                                            </label>
-                                            <input
-                                              class="appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3"
-                                              type="text">
-
-                                              </div>
-                                          </div> -->
-
 
                                         <div class="-mx-3 md:flex mb-6">
                                           <div class="md:w-1/2 px-3 mb-6">
@@ -697,13 +343,10 @@
                                               for="grid-last-name">
                                               nombre de place
                                             </label>
-                                            <input type="text" placeholder="le nombre de place"
-                                              class="appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-grey-lighter rounded py-3 px-4">
+                                            <input type="text" placeholder="le nombre de place" v-model.number="demandeAjt.nbPlace"
+                                              class="appearance-none block w-full bg-grey-lighter text-gray-800 focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-grey-lighter rounded py-3 px-4">
                                           </div>
                                         </div>
-
-
-
 
                                         <div class="-mx-3 md:flex mb-6">
                                           <div class="md:w-1/2 px-3 mb-6 md:mb-0">
@@ -714,7 +357,7 @@
                                             </label>
 
                                           
-                                        <select class="appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-red rounded py-3 px-4 mb-3" >
+                                        <select class="appearance-none block w-full bg-grey-lighter text-gray-800  focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-gray-700 rounded py-3 px-4 mb-3"  v-model="demandeAjt.idTypeTransportFk.id">
                                             <option v-for="listT in typetransport" :key="listT.id" :value="listT.id">
                                            {{ listT.libelleTypeTransport }}
                                           </option>
@@ -732,8 +375,8 @@
                                             
 
                                                 <select class="
-                                        appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-red rounded py-3 px-4 mb-3
-                                      " v-model="demande.idZoneFk.id">
+                                        appearance-none block w-full bg-grey-lighter focus:ring-orange-500 text-gray-800  focus:border-orange-500 text-grey-darker rounded py-3 px-4 mb-3 border border-gray-700
+                                      " v-model="demandeAjt.idZoneFk.id">
                                       <option v-for="listz in zones" :key="listz.id" :value="listz.id" >
                                         {{ listz.libelle }}
                                       </option>
@@ -743,6 +386,185 @@
                                        
                                         </div>
 
+                                 
+
+
+
+
+
+
+                                        <div class=" w-full mx-aut items-center flex flex-center">
+
+
+                                          <button
+                                            class="bg-red-500 mx-auto m-8 items-center hover:bg-red-700 focus:outline-none focus:ring-4 focus:ring-orange-300 font-medium block rounded-md text-sm px-6 py-2 text-center"
+                                            @click="stoggleModalA = false">
+                                            <span class="">
+                                              <p class="fas fa-check items-center w-full text-white">
+                                                Fermer
+                                              </p>
+                                            </span>
+
+
+                                          </button>
+
+                                          <button @click="fonctionAjouter"
+                                            class="bg-orange-500 mx-auto m-10 items-center hover:bg-orange-400 focus:outline-none focus:ring-4 focus:ring-orange-300 font-medium block rounded-md text-sm px-6 py-2 text-center">  
+                                          
+                                              <p class="fas fa-check items-center w-full text-white">
+                                              Ajouter
+                                              </p>
+                                      
+
+                                          </button>
+                                        </div>
+
+
+
+                                      </div>
+
+
+
+                                    </div>
+                     
+
+
+
+                                  </div>
+
+
+
+                                </div>
+                                <div v-if="stoggleModalA" class="absolute inset-0 z-40 ">
+                                </div>
+                             
+
+
+                         
+
+
+
+
+
+
+                                <!-- modale Ajouter fin -->
+
+
+
+
+
+
+
+
+
+                                <!--  -->
+
+
+                                <!-- modale  modifier -->
+
+                                <div 
+                                  class="fixed overflow-x-hidden overflow-y-auto inset-0 flex justify-center items-center z-50 "
+                                  v-if="stoggleModal">
+                                  <div class="relative mx-auto w-auto max-w-2xl">
+                                    <div class="bg-white w-full rounded shadow-2xl">
+
+                                      
+
+                                      <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col my-2">
+
+                                        <div class="mx-auto items-center py-9 pt-4">
+                                          <p class="text-orange-900  text-2xl font-bold">MODIFICATION DEMANDE
+
+                                          </p>
+                                        </div>
+
+                                           
+                                        <div class="-mx-3 md:flex mb-6">
+    
+                                          <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                                            <label
+                                              class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                              for="immatriculation">
+                                              immatriculation
+                                            </label>
+                                            <input   v-model="Modifdemande.immatriculation" 
+                                              class="appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-gray-700 border border-red rounded py-3 px-4 mb-3"
+                                              type="text"  placeholder="entrez l immatriculation">
+
+                                          </div>
+
+                                          <div class="md:w-1/2 px-3">
+                                            <label
+                                              class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                              for="marque">
+                                              marque
+                                            </label>
+                                            <input v-model=" Modifdemande.marque"
+                                              class="appearance-none block w-full bg-grey-lighter text-gray-700 focus:ring-orange-500 focus:border-orange-500 border border-grey-lighter rounded py-3 px-4"
+                                              type="text" placeholder="entrez la marque">
+                                          </div>
+                                        </div>
+
+                                        <div class="form-group mb-6">
+                                          <label
+                                            class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                            for="grid-first-name">
+                                            model
+                                          </label>
+                                          <input type="text" v-model="Modifdemande.model"
+                                            class="form-control block  w-full text-base font-normal text-gray-700 bg-white bg-clip-padding transition ease-in-out  m-0 appearance-none bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3"
+                                            id="exampleInput7" placeholder="entrez le model ">
+                                        </div>
+
+                                        <div class="-mx-3 md:flex mb-6">
+                                          <div class="md:w-1/2 px-3 mb-6">
+                                            <label
+                                              class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                              for="grid-last-name">
+                                              nombre de place
+                                            </label>
+                                            <input type="text" placeholder="le nombre de place" v-model.number ="Modifdemande.nbPlace"
+                                              class="appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-grey-lighter text-gray-700 rounded py-3 px-4">
+                                          </div>
+                                        </div>
+
+                                        <div class="-mx-3 md:flex mb-6">
+                                          <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                                            <label
+                                              class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                              for="name">
+                                              type de transport
+                                            </label>
+
+                                          
+                                        <select class="appearance-none block w-full bg-grey-lighter text-gray-700 focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-gray-700 rounded py-3 px-4 mb-3"  v-model="demande.idTypeTransportFk.id">
+                                            <option v-for="listT in typetransport" :key="listT.id" :value="listT.id" >
+                                           {{ listT.libelleTypeTransport }}
+                                          </option>
+                                         </select>
+
+                                          </div>
+                                        
+                                        
+                                          <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                                            <label
+                                              class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                              for="immatriculation">
+                                              zone
+                                            </label>
+                                            
+
+                                                <select class="appearance-none block w-full bg-grey-lighter text-gray-700 border border-gray-700 focus:ring-orange-500 focus:border-orange-500 text-grey-darker  rounded py-3 px-4 mb-3" v-model="demande.idZoneFk.id">
+                                      <option v-for="listz in zones" :key="listz.id" :value="listz.id" >
+                                        {{ listz.libelle }}
+                                      </option>
+                                       </select>
+
+                                          </div>
+                                       
+                                        </div>
+
+                                 
 
 
 
@@ -764,14 +586,13 @@
 
                                           </button>
 
-                                          <button
-                                            class="bg-orange-500 mx-auto m-10 items-center hover:bg-orange-400 focus:outline-none focus:ring-4 focus:ring-orange-300 font-medium block rounded-md text-sm px-6 py-2 text-center">
-                                            <span class="">
+                                          <button @click="onSubmitUpdate"
+                                            class="bg-orange-500 mx-auto m-10 items-center hover:bg-orange-400 focus:outline-none focus:ring-4 focus:ring-orange-300 font-medium block rounded-md text-sm px-6 py-2 text-center">  
+                                          
                                               <p class="fas fa-check items-center w-full text-white">
-                                                Modifier
+                                              Modifier
                                               </p>
-                                            </span>
-
+                                      
 
                                           </button>
                                         </div>
@@ -783,6 +604,7 @@
 
 
                                     </div>
+                     
 
 
 
@@ -791,11 +613,12 @@
 
 
                                 </div>
-                                <div v-if="stoggleModal" class="absolute inset-0 z-40">
+                                <div v-if="stoggleModal" class="absolute inset-0 z-40 rounded-none">
                                 </div>
+                             
 
 
-                                <!--modale  -->
+                                <!--modale  modifier -->
 
 
                               </tr>
@@ -809,12 +632,7 @@
 
                           <!-- tester -->
                         </div>
-                        <!-- <ModalAnldemande/> -->
-
-
-
-
-                        <!-- test -->
+                      
 
                       </div>
 
@@ -1049,8 +867,8 @@
         <div class="svgMap-tooltip-pointer"></div>
       </div>
 
-      <svg id="SvgjsSvg1089" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1"
-        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="
+      <svg id="SvgjsSvg1089" width="2" height="0" version="1.1"
+        style="
           overflow: hidden;
           top: -100%;
           left: -100%;
@@ -1089,15 +907,17 @@ import axios from 'axios';
 // import ModalAnldemande from '@/components/ModalAnldemande.vue';
 import NavbarComponentboard from './pageprofileComponent/NavbarComponentboard.vue';
 import moment from 'moment';
+import { DemandeService } from "@/Service/DemandeService";
+//  import { Swal } from 'sweetalert2/dist/sweetalert2';
+
 /* import SidebarComponent from './pageprofileComponent/SidebarComponent.vue'; */
+
 export default {
 
 
   name: "PageProfile",
 
 
-
-  props: ['demande'],
 
   components: {
     NavbarComponentboard,
@@ -1114,26 +934,84 @@ export default {
 
 
     return {
-       showModal: false,
+      showModal: false,
       stoggleModal: false,
+
+
+       stoggleModalA: false,
+
+
       isOpen: false,
       demandeStbtn: false,
       statut: false,
       demandes: [],
+      demande:{},
+    
       errors: [],
       id: null,
+  
       statutAn: false,
       statutech: false,
       demandeStatut: false,
 
       // variable de message
 
-       showAlertS: false,
+      showAlertS: false,
       showAlertE: false,
-      alertMessageSuccess: ' le demande a été modifié avec succès',
+      alertMessageSuccess: 'le demande a été modifié avec succès',
       alertMessageError: ' echec de la modification de la demande',
 
-      // reccuperationn des données de
+
+       demandeAjt: {
+        etat: 1,
+        immatriculation: "",
+        idProprietaireFk: {
+          id: 3,
+        },
+        marque: "",
+        model: "",
+        nbPlace: "",
+        idZoneFk: {
+          id: "",
+        },
+       
+        idTypeTransportFk: {
+          id: "",
+        },
+        statut: true,
+
+      },
+
+      // reccuperation des données 
+
+
+
+      
+       Modifdemande: {
+        id:"",
+        etat: 1,
+        immatriculation: "",
+        idProprietaireFk: {
+          id: 3
+         
+        },
+        marque: "",
+        model: "",
+        nbPlace: "",
+        idZoneFk: {
+          id: ""
+         
+
+        },
+       
+        idTypeTransportFk: {
+          id: ""
+        },
+     
+      zones: [],
+      typetransport: [],
+      
+      },
 
 
     }
@@ -1143,52 +1021,114 @@ export default {
 
   methods: {
 
-    // methode de modification 
+    // Ajout des demandes 
+    //  //  //  //  //  //  //  //  // 
+
+    fonctionAjouter: async function () {
+
+       this.stoggleModalA = false;
+
+      try {
+
+        let demandeReponse = await DemandeService.AjoutDemande(this.demandeAjt);
+        console.log(demandeReponse);
+
+        if (demandeReponse) {
+
+          
+
+           this.$toast.success("demande enregistrée avec succes");
+           this.listDemande();
+           this.reset();
+     
+          // return this.$router.push("/pageprofile");
+
+        } else {
+            this.$toast.error("echec d ajout de la demande d' un proprietaire");
+            this.reset();
 
 
-     updateDemande() {
+
+          // this.error = true;
+          // this.success = false;
+        }
+
+      } catch (error) {
+        console.log(error);
+      }
+
+
+
+    },
+ //  fin d utilisation de axios 
+
+ reset(){
+
+  for (let field in this.demandeAjt) {
+        this.demandeAjt[field] = null;
+      }
+
+ },
 
 
 
 
-      /* const headers = {
-        'Content-Type': 'application/json'
-      }; */
+// modification d' une demande 
+      onSubmitUpdate() {
+    // e.preventDefault();
+    this.stoggleModal=false;
 
-      // console.log("Test");
-
-      axios.put(`http://192.168.252.206:4000/api/demandes/updateDemande/${this.idemande}`,
-
-        {
-          demande: {
-
-            "immatriculation": this.demande.immatriculation,
-            "idProprietaireFk": {
-              "id": 3
+    
+    
+    const Modifdemande = {
+      
+            
+            immatriculation: this.Modifdemande.immatriculation,
+            idProprietaireFk: {
+              id: 3
+              
             },
-            "marque": this.demande.marque,
-            "model": this.demande.model,
-            "nbPlace": this.demande.nbPlace,
-            "idZoneFk": {
-              "id": this.demande.idZoneFk.id
+            marque: this.Modifdemande.marque,
+            model: this.Modifdemande.model,
+            nbPlace: this.Modifdemande.nbPlace,
+            idZoneFk: {
+              id: this.Modifdemande.idZoneFk.id
+             
+              
             },
-            // idZoneFk: null,
-            "idTypeTransportFk": {
-              "id": this.demande.idTypeTransportFk.id
-            }
-          }
-        })
+            statut: true,
+           
+            idTypeTransportFk: {
+              id: this.Modifdemande.idTypeTransportFk.id
+              
+        }
+    }
+    this. updateDemande(Modifdemande, this.Modifdemande.id);
+  },
+  
+
+
+     updateDemande(Modifdemande,id) {
+
+     
+      console.log(Modifdemande.marque)
+      axios.put(`http://192.168.252.206:4000/api/demandes/updateDemande/${id}`, Modifdemande )
 
         .then((response) => {
 
+          
           this.delaiAlertS();
 
           console.log(response);
+            this.$toast.success("demande modifiée avec succes ");
+            this.listDemande();
 
 
         }).catch(e => {
           this.error = true;
           console.log('erreur', this.result);
+
+          // this.$toast.error("echec de la modification de la demande");
 
           this.errors.push(e)
           this.delaiAlertE();
@@ -1206,7 +1146,6 @@ export default {
 
       setTimeout(() => {
 
-        this.$router.push('/pageprofile');
       }, 2400);
     },
     delaiAlertE() {
@@ -1219,7 +1158,7 @@ export default {
 
       setTimeout(() => {
 
-        this.$router.push('/pageprofile');
+      
       }, 2400);
     },
 
@@ -1239,29 +1178,52 @@ export default {
 
     AnnulerDemande(id) {
 
-      let x = window.confirm("voulez vous supprimer cette demande ?");
+     
+//  this.$toast.success("demande modifiée avec succes ");
 
-      if (x) {
+
+  this.$swal.fire({
+  title: 'Annulation des demandes ?',
+  text: "Etes vous sure de vouloir Annuler votre demande !!?",
+  icon: 'warning',
+  showCancelButton: true,
+  confirmButtonColor: '#429723',
+  cancelButtonColor: '#ED4845',
+  confirmButtonText: 'Oui, Annuler'
+}).then((result) => {
+  if (result.isConfirmed) {
+
+    
         const headers = {
           'Content-Type': 'application/json'
         };
 
 
-        axios.put(`api/demandes/updateDemande/${id}`, { headers }, this.statut)
+        axios.put(`http://192.168.252.206:4000/api/demandes/updateDemande/${id}`, { headers }, this.statut)
           .then(response => {
             console.log(response);
-            this.statutAn = true;
+
+             this.$toast.success("demande annulée avec success");
+          //  this.$swal('Demande',"ajout Annulée avec succces", 'success');
             this.listDemande();
 
           }).catch(e => {
-            this.statutech = true;
+            // this.statutech = true;
             console.log('erreur', this.result);
+            this.listDemande();
+
+             this.$toast.error("echec  de l annulation de la demande ");
 
             this.errors.push(e)
 
           });
 
-      }
+  }
+})
+
+     
+
+     
     },
 
     
@@ -1269,12 +1231,9 @@ export default {
 
     listDemande() {
 
-
-
-
-      axios.get(`/api/demandes`)
+      axios.get(`http://192.168.252.206:4000/api/demandes`)
         .then((response) => {
-          // JSON responses are automatically parsed.
+          
           this.demandes = response.data.data
           console.log(this.demandes)
           this.statut = true;
@@ -1290,23 +1249,19 @@ export default {
         });
     },
 
+    // modification 
+    updatetDemande(demandes) {
+    this.Modifdemande = demandes;
+    this.stoggleModal = !this.stoggleModal;
+    console.log(demandes)
+
+},
+
 
   },
 
   created() {
     this.listDemande();
-
-
-   
-
-
-    axios.get("/api/demandes/" + this.idemande).then((t) => {
-      this.demandes = t.data.data;
-    });
-
-    
-
-    this.loading = false;
 
   
   },
@@ -1314,9 +1269,9 @@ export default {
 
 
      axios
-      .get("/api/typetransport")
+      .get("http://192.168.252.206:4000/api/typetransport")
       .then((response) => {
-        // JSON responses are automatically parsed.
+    
         this.typetransport = response.data.data;
         console.log(this.typetransport);
       })
@@ -1327,9 +1282,9 @@ export default {
       });
 
     axios
-      .get(`/api/zones`)
+      .get(`http://192.168.252.206:4000/api/zones`)
       .then((response) => {
-        // JSON responses are automatically parsed.
+   
         this.zones = response.data.data;
         console.log(this.zones);
       })

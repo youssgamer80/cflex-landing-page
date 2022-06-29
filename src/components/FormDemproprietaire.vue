@@ -114,15 +114,7 @@
                     </option>
                   </select>
 
-                  <!-- <option value="3">Warren</option>
-                  <option value="4">Taxi communal</option> -->
-
-                  <!-- <select v-model="oc_id" multiple class="form-control">
-    <option v-for="(oclist , index) in oclists" :key="oclist.id" :value="oclist.id">{{ oclist.name }}</option>
-</select>
-                
-
-                </select> -->
+            
                 </div>
 
                 <div class="col-span-6 sm:col-span-3 lg:col-span-2">
@@ -221,7 +213,7 @@ export default {
       success: false,
       error: false,
       demande: {
-        etat: false,
+        etat: 1,
         immatriculation: "",
         idProprietaireFk: {
           id: 3,
@@ -232,23 +224,14 @@ export default {
         idZoneFk: {
           id: "",
         },
-        // idZoneFk: null,
+       
         idTypeTransportFk: {
           id: "",
         },
-        // idTypeTransportFk: null,
-
-
-
         statut: true,
 
-
-
-
       },
-      // zone: "",
-      zones: [],
-      typetransport: [],
+
 
 
 
@@ -302,15 +285,18 @@ export default {
         console.log(demandeReponse);
 
         if (demandeReponse) {
-          this.success = true;
-          //  return this.$router.push("/pageprofile");
+
+           this.$toast.success("demande enregistrée avec succes");
+     
+          return this.$router.push("/pageprofile");
 
         } else {
+            this.$toast.error("echec d ajout de la demande d' un proprietaire");
 
 
 
-          this.error = true;
-          this.success = false;
+          // this.error = true;
+          // this.success = false;
         }
 
       } catch (error) {
@@ -349,7 +335,7 @@ export default {
 
 
 
-    //   /// donnees utiles
+    
     //   console.log({
     //       etat: this.etat,
     //       idProprietaireFk: this.idProprietaireFk,
