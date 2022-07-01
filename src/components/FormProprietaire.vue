@@ -308,7 +308,7 @@ export default {
       this.proprietaire="proprietaire"
       console.log("test",this.proprietaire),
 
-      axios.post('http://192.168.252.143:4001/api/proprietaire/save', {
+      axios.post('http://192.168.252.206:4001/api/proprietaire/save', {
       
         nom: this.nom,
         prenom: this.prenom,
@@ -328,11 +328,16 @@ export default {
       },{
           headers: {
           'Content-Type': 'application/json',
-           'Authorization':'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwNzk0NDMxMzIiLCJpYXQiOjE2NTY1MzQyNTYsImV4cCI6MTY1NjUzNzg1Nn0._6jGwdl82H-76lfzV1i4Wkh_uQtqXWKbQVVPMD9CeoXVyf3r_0zAL_9cMEaqL7MtkS4PvgYTiMxSrnEIOlpdUA'
+           'Authorization':'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbmNmbGV4IiwiaWF0IjoxNjU2Njc5MTc3LCJleHAiOjE2NTY2ODI3Nzd9.ue8QvC6XeFa0QwA8P-ZV5zPLbk6FvtLmV78meEMm7yJDuTHbGwc41bEZX4CLBHADrDRoWdYRrlO7Ms-kLXSNvQ'
           
         },
       })
         .then((res) => {
+          // inserer le token
+          // let Token = res.data.user.api_token;
+          // localStorage.setItem('token', Token);
+
+
           this.reset();
           this.$toast.success("proprietaire cree avec succes");
           console.log(res);

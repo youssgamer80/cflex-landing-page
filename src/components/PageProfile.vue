@@ -249,18 +249,22 @@
                                   {{ format_demande_date(demande.date) }}
                                 </td>
                                 <td class="px-6 py-4">
-                                  <span class="text-yellow-500 font-medium" v-if="demande.etat == 1">Non traité</span>
-                                  <span class="text-cyan-500 font-medium" v-else-if="demande.etat == 2">en cour de
+                                  <span class="text-yellow-500 font-medium" v-if="demande.etat === 1">Non traité</span>
+                                  <span class="text-cyan-500 font-medium" v-else-if="demande.etat === 2">en cour de
                                     traitement</span>
-                                  <span class="text-rose-700 font-medium" v-else-if="demande.etat == 3">Rejetée</span>
-                                  <span class="text-teal-600 font-medium" v-else-if="demande.etat == 4">Validée</span>
+                                  <span class="text-rose-700 font-medium" v-else-if="demande.etat === 3">Rejetée</span>
+                                  <span class="text-teal-600 font-medium" v-else-if="demande.etat === 4">Validée</span>
                                   <!-- <span v-else class="text-orange-400 font-medium">refuse</span> -->
                                 </td>
                                 <td colspan="3" class="px-6 py-4 text-right mx-auto ">
 
+                                   <button type="button" v-if="(demande.etat === 4)"
+                                    class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..."
+                                   >Generer le token</button>
+
                            
 
-                                  <button type="button" v-if="(demande.etat == 2) || (demande.etat == 1)"
+                                  <button type="button" v-if="(demande.etat === 2) || (demande.etat === 1)"
                                     class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..."
                                     v-on:click="AnnulerDemande(demande.id)">annuler</button>
 
@@ -450,19 +454,11 @@
                                 <!-- modale Ajouter fin -->
 
 
+                                <!-- modale du token -->
 
 
 
-
-
-
-
-                                <!--  -->
-
-
-                                <!-- modale  modifier -->
-
-                                <div 
+                                  <div 
                                   class="fixed overflow-x-hidden overflow-y-auto inset-0 flex justify-center items-center z-50 "
                                   v-if="stoggleModal">
                                   <div class="relative mx-auto w-auto max-w-2xl">
@@ -473,7 +469,7 @@
                                       <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col my-2">
 
                                         <div class="mx-auto items-center py-9 pt-4">
-                                          <p class="text-orange-900  text-2xl font-bold">MODIFICATION DEMANDE
+                                          <p class="text-orange-900  text-2xl font-bold">Token
 
                                           </p>
                                         </div>
@@ -485,7 +481,7 @@
                                             <label
                                               class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
                                               for="immatriculation">
-                                              immatriculation
+                                            immatriculation Vehicule
                                             </label>
                                             <input   v-model="Modifdemande.immatriculation" 
                                               class="appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-gray-700 border border-red rounded py-3 px-4 mb-3"
@@ -591,6 +587,139 @@
                                           
                                               <p class="fas fa-check items-center w-full text-white">
                                               Modifier
+                                              </p>
+                                      
+
+                                          </button>
+                                        </div>
+
+
+
+                                      </div>
+
+
+
+                                    </div>
+                     
+
+
+
+                                  </div>
+
+
+
+                                </div>
+                                <div v-if="stoggleModal" class="absolute inset-0 z-40 rounded-none">
+                                </div>
+                             
+
+
+
+
+
+
+
+
+
+
+                                <!-- fin modale token -->
+
+
+
+
+
+
+
+
+
+                                <!--  -->
+
+
+                                <!-- modale  modifier -->
+
+                                <div 
+                                  class="fixed overflow-x-hidden overflow-y-auto inset-0 flex justify-center items-center z-50 "
+                                  v-if="stoggleModal">
+                                  <div class="relative mx-auto w-auto max-w-2xl">
+                                    <div class="bg-white w-full rounded shadow-2xl">
+
+                                      
+
+                                      <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col my-2">
+
+                                        <div class="mx-auto items-center py-9 pt-4">
+                                          <p class="text-orange-900  text-2xl font-bold">MODIFICATION DEMANDE
+
+                                          </p>
+                                        </div>
+
+                                           
+                                        <div class="-mx-3 md:flex mb-6">
+    
+                                          <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                                            <label
+                                              class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                              for="immatriculation">
+                                              immatriculation
+                                            </label>
+                                            <input   v-model="Modifdemande.immatriculation" 
+                                              class="appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-gray-700 border border-red rounded py-3 px-4 mb-3"
+                                              type="text"  placeholder="entrez l immatriculation">
+
+                                          </div>
+
+                                          <div class="md:w-1/2 px-3">
+                                            <label
+                                              class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                              for="marque">
+                                              marque
+                                            </label>
+                                            <input v-model=" Modifdemande.marque"
+                                              class="appearance-none block w-full bg-grey-lighter text-gray-700 focus:ring-orange-500 focus:border-orange-500 border border-grey-lighter rounded py-3 px-4"
+                                              type="text" placeholder="entrez la marque">
+                                          </div>
+                                        </div>
+
+                                       
+                                        <div class="-mx-3 md:flex mb-6">
+                                          <div class="md:w-1/2 px-3 mb-6">
+                                            <label
+                                              class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                                              for="grid-last-name">
+                                             Token
+                                            </label>
+                                           
+                                          </div>
+                                        </div>
+
+                                      
+                                 
+
+
+
+
+
+
+                                        <div class=" w-full mx-aut items-center flex flex-center">
+
+
+                                          <button
+                                            class="bg-red-500 mx-auto m-8 items-center hover:bg-red-700 focus:outline-none focus:ring-4 focus:ring-orange-300 font-medium block rounded-md text-sm px-6 py-2 text-center"
+                                            @click="stoggleModal = false">
+                                            <span class="">
+                                              <p class="fas fa-check items-center w-full text-white">
+                                                Fermer
+                                              </p>
+                                            </span>
+
+
+                                          </button>
+
+                                          <button 
+                                            class="bg-orange-500 mx-auto m-10 items-center hover:bg-orange-400 focus:outline-none focus:ring-4 focus:ring-orange-300 font-medium block rounded-md text-sm px-6 py-2 text-center">  
+                                          
+                                              <p class="fas fa-check items-center w-full text-white">
+                                         Generer
                                               </p>
                                       
 
@@ -930,9 +1059,6 @@ export default {
 
   data() {
 
-
-
-
     return {
       showModal: false,
       stoggleModal: false,
@@ -963,7 +1089,7 @@ export default {
 
 
        demandeAjt: {
-        etat: 1,
+        etat: 4,
         immatriculation: "",
         idProprietaireFk: {
           id: 3,
@@ -989,7 +1115,7 @@ export default {
       
        Modifdemande: {
         id:"",
-        etat: 1,
+        etat: 4,
         immatriculation: "",
         idProprietaireFk: {
           id: 3
@@ -1096,7 +1222,7 @@ export default {
              
               
             },
-            statut: true,
+            statut: false,
            
             idTypeTransportFk: {
               id: this.Modifdemande.idTypeTransportFk.id
@@ -1200,7 +1326,7 @@ export default {
 
 
         axios.put(`http://192.168.252.206:4000/api/demandes/updateDemande/${id}`, { headers }, this.statut)
-          .then(response => {
+          .then((response) => {
             console.log(response);
 
              this.$toast.success("demande annulée avec success");

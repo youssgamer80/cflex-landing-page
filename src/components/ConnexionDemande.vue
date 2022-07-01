@@ -30,20 +30,13 @@
           <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 flex justify-center ">
             Allez sur votre profile
           </h2>
-          <form class="mt-8 space-y-6" @submit.prevent="connexionDmd" action="#">
+          <form class="mt-8 space-y-6" action="#">
 
 
             <!-- test de connexion au profile   @submit.prevent="connexionDmd" -->
-            <div class="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800"
-              role="alert" v-if="success">
-              <span class="font-medium">Felictation !!</span> connecte avec succes !!!!!
-            </div>
+           
 
 
-            <div class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800"
-              role="alert" v-if="error">
-              <span class="font-medium">Echec !!!</span> non connecté !!!!
-            </div>
             <!-- fin teste -->
             <div>
               <label for="numero" class="text-sm font-medium text-gray-900 block mb-2"></label>
@@ -97,7 +90,7 @@
                 </router-link>
 
                 <!-- <router-link to="/pageprofile"> -->
-                  <button type="submit"  class="
+                  <button type="submit" @click="connexionDmd()"  class="
                       text-white
                       bg-orange-700
                       hover:bg-orange-800
@@ -152,17 +145,21 @@
                   > -->
                 </div>
               </div>
-
+            
             </div>
+            
           </form>
         </div>
-      </div>
-    </div>
+         </div>
+          </div>
+    
+   
   </div>
 </template>
 
 <script>
    import axios from 'axios'
+ 
   // import { mapState, mapActions } from 'vuex'
 export default {
   name: "connexionDemande",
@@ -172,18 +169,15 @@ export default {
      
       error: false,
       success: false,
-      Msgerreur: "",
-      errorMsg: "",
-      user: "",
+    
 
-      // submitted: false
+      // submitted: false username ( password )
     form:{
-      numero:'',
-      password:'', 
-     
+      numero:"",
+      password:""
+    }
       
-
-    }  
+  
       
 
 
@@ -194,26 +188,9 @@ export default {
   },
 
 computed: {
+ 
         // ...mapState('account', ['status'])
     },
-
-  setup(){
-
-  //  const connexionDm = async e => {
-  //     const form = new FormData(e.target);
-  //     // const inputs = Object.fromEntries(form.entries());
-  //    await axios.post('http://192.168.252.143:4001/api//auth/signin',  form, {
-  //       withCredentials: true
-  //     });
-  //     // axios.defaults.headers.common['Authorization'] = `Bearer `;
-  //      this.$toast.success("authentifier avec succes");
-  //     await this.$router.push('/pageprofile');
-  //   }
-  //   return {
-  //     connexionDm
-  //   }
-
-  },
 
   
   methods: {
@@ -229,32 +206,46 @@ computed: {
       //       }
       //   },
 
+
+      
+
     async connexionDmd(){
 
- console.log(this.form.numero);
+
+  
+
+  console.log(this.form.numero);
   console.log(this.form.password);
       
 
-      let response = axios.post("http://192.168.252.143:4001/api/auth/signin",{
+      let response = axios.post("http://192.168.252.206:4001/api/auth/signin",
+      {
+        username: this.form.numero,
+        password: this.form.password
+      }
 
-     form: {
-      numero: this.form.numero,
-      password: this.form.password
-           } 
 
+      
 
-      }).then((res) => {
+      ).then((res) => {
+
+        let token = res.data.accessToken;
+
+        console.log(token)
+        // let Token = localstorage
           
          
            console.log(res);
-           this.$toast.error("authentifier avec success");
+
+
+           this.$toast.success("authentifier avec success");
            this.$router.push('/pageprofile');
 
 
         })
         .catch((error) => {
 
-          this.$toast.error("erreur de connexion ");
+          this.$toast.error("erreur de connexion");
           console.log(error)
         }).finally(() => {
           //Perform action in always
@@ -262,10 +253,10 @@ computed: {
         });
       console.log(response.data.data);
     },
-    created () {
+    // created () {
         // reset login status
-        this.logout();
-    },
+    //     this.logout();
+    // },
 
 
  

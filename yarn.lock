@@ -2639,8 +2639,8 @@ csso@^4.2.0:
 
 datepicker@^0.0.0:
   version "0.0.0"
-  resolved "https://registry.npmjs.org/datepicker/-/datepicker-0.0.0.tgz"
-  integrity sha1-nCAB+8sZOKvBgNQvwIK2LToGE2k=
+  resolved "https://registry.yarnpkg.com/datepicker/-/datepicker-0.0.0.tgz#9c2001fbcb1938abc180d42fc082b62d3a061369"
+  integrity sha512-fLU1tFECIBtQOWOyPVtDZU7y9Cha89ay8WfoZRVhiifPW5AHvxfLQHWnwwxtUi2TVYYI5GrpfI1C2P5Ei0bDdw==
 
 dayjs@^1.11.2:
   version "1.11.2"
