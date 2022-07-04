@@ -34,7 +34,7 @@
             2xl:px-30
             lg:mb-8
           ">
-          Inscrivez vous et faite vos demandes d'enregidtrement pour vos véhicules
+          Inscrivez-vous et faites vos demandes d'enregistrement pour vos véhicules
         </h1>
         <p class="
             mb-10

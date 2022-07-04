@@ -23,24 +23,8 @@
         </div>
     </div>
 </section>
- <section class="py-24 bg-white dark:bg-slate-800 dark:text-white">
-    <div class="px-8 mx-auto max-w-7xl lg:px-16">
-        <div class="grid grid-cols-1 gap-0 text-gray-600 md:grid-cols-2 md:gap-16">
-             <h3 class="mb-4 text-xl font-bold md:text-3xl">CFLEX CHAUFFEUR</h3>
-             <!-- <div class="px-8 mx-auto max-w-7xl lg:px-16">
-                 <h3 class="mb-4 text-xl font-bold md:text-3xl">CFLEX</h3>
-                    <div class="grid grid-cols-1 gap-0 text-gray-600 md:grid-cols-2 md:gap-16"> -->
-            <div>
-                <h5 class="mt-10 mb-3 font-semibold text-gray-900">utilité de CFLEX chauffeur</h5>
-                <p>Permettre à un chauffeur à travers une application mobile(iOS & Android) :.</p>
-                <p>rechercher des clients en ayant les zones d affluences:.</p>
-              
-            </div>
-            
-        </div>
-       
-    </div>
-</section>
+
+
   <FooterComponent/>
   </div>
 

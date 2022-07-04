@@ -42,8 +42,8 @@
                 text-center
                 ml-3
               ">
-              <span class="hidden lg:inline text-white">À propos de l'appli</span>
-              <span class="hidden:lg text-white">Appli</span>
+              <span class="hidden lg:inline text-white">À propos de l'Application</span>
+              <!-- <span class="hidden:lg text-white">Appli</span> -->
             </router-link>
             <button @click="isOpen = !isOpen" data-collapse-toggle="mobile-menu-4" type="button" class="
                 inline-flex
@@ -93,7 +93,7 @@
                     rounded
                     md:bg-transparent md:text-orange-800 md:p-0
                     dark:text-white
-                  " aria-current="page">Acceuil</router-link>
+                  " aria-current="page">Accueil</router-link>
               </li>
               <li>
                 <router-link to="/features" class="

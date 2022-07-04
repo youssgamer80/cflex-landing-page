@@ -23,8 +23,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg> -->
-                    <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">etes vous proprietaire
-                        ?</h3>
+                    <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Êtes-vous propriétaire ?</h3>
 
                     <router-link to="/connexionDemande">
                         <button data-modal-toggle="popup-modal" type="button"

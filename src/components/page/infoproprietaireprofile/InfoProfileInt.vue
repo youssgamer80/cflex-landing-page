@@ -671,7 +671,7 @@
                                 <div class="md:w-1/2 px-3">
                                   <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
                                     for="grid-last-name">
-                                    email
+                                    Adresse mail
                                   </label>
                                   <input v-model="proprietaire.email"
                                     class="appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker border border-grey-lighter rounded py-3 px-4"
@@ -744,7 +744,7 @@
                                   <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
                                     for="g">
 
-                                    date de naisssance
+                                    Date de naisssance
                                   </label>
                                   <input v-model="proprietaire.dateNaissance"
                                     class="appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-grey-darker rounded py-2 px-3"
