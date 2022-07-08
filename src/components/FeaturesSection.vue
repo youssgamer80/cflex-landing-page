@@ -5,18 +5,18 @@
       <section class="md:flex">
         <CardItem
           iconvalue="calendar-days"
-          title="Set a better deadline tasks"
-          subtitle="You can make you duty deadline better and more orderly"
+          title="rapide et efficace"
+          subtitle="vous ne perdez pas le temps dans vos activités"
         />
         <CardItem
           iconvalue="layer-group"
-          title="Manage the task so easiluy"
-          subtitle="You can make you duty deadline better and more orderly"
+          title="peu couteux"
+          subtitle="economisez rapidement sur vos deplacement"
         />
         <CardItem
           iconvalue="bell"
-          title="Wouldn't miss notifications"
-          subtitle="Of course you will always get the task and schedule notifications"
+          title="informez-vous sur la disponibilité des places disponibles "
+          subtitle="vous recevrez toujours les notifications de tâche et de planification"
         />
       </section>
 

@@ -1345,10 +1345,10 @@
             
                         <div class="card grid lg:grid-cols-2">
                             <div class="card-body text-left">
-                                <p class="text-lg px-6 py-3">Immatriculation vehicule:<span class="font-weight-normal ml-2"> {{demande.immatriculation}}</span></p>
+                                <p class="text-lg px-6 py-3">Immatriculation vehicule :<span class="font-weight-normal ml-2"> {{demande.immatriculation}}</span></p>
                                 <p class="text-lg px-6 py-3">Marque :<span class="font-weight-normal ml-2"> {{demande.marque}}</span></p>
                                 <p class="text-lg px-6 py-3">Model :<span class="font-weight-normal ml-2"> {{demande.model}}</span></p>
-                                <p class="text-lg px-6 py-3">Nombre de place:<span class="font-weight-normal ml-2"> {{demande.nbPlace }}</span></p>
+                                <p class="text-lg px-6 py-3">Nombre de place :<span class="font-weight-normal ml-2"> {{demande.nbPlace }}</span></p>
                                 <p class="text-lg px-6 py-3">Type de transport :<span class="font-weight-normal ml-2">{{demande.idTypeTransportFk.libelleTypeTransport}}</span></p>
                                 <p class="text-lg px-6 py-3">Zone de transport :<span class="font-weight-normal ml-2"> {{ demande.idZoneFk.idZoneparentFk.zoneparent }}</span></p>
                                 <p class="text-lg px-6 py-3"><span class="font-weight-normal ml-2"></span></p>

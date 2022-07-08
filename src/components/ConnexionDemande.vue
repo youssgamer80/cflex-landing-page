@@ -207,9 +207,18 @@ computed: {
       //   },
 
 
-      
+       
 
     async connexionDmd(){
+
+
+      // if(this.form.numero === "" && this.form.numero === ""){
+
+
+
+      // }else{
+
+      // }
 
 
   
@@ -231,8 +240,8 @@ computed: {
 
         let token = res.data.accessToken;
 
-        console.log(token)
-        // let Token = localstorage
+         console.log(token)
+     
           
          
            console.log(res);

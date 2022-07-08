@@ -37,7 +37,7 @@
               "
             >
               Bénéficiez d’un interface agréable avec des fonctionnalités
-              dévélopper pour votre mobilé
+              dévéloppées pour votre mobilé
               <span class="text-orange-500">Flex</span>ibilité
             </h1>
             <!-- <h1
@@ -54,12 +54,12 @@ Déplacer vous  avec Flexibilité </h1> -->
                 lg:mb-8
               "
             >
-              The best feature makes you better, with the latest technology to
+              <!-- The best feature makes you better, with the latest technology to
               meet your needs. Of course, with such features as organizing
               schedules and leading assignments, it will make you easier, So get
-              the application now !
+              the application now ! -->
             </p>
-            <div class="items-center lg:flex"></div>
+            <div class="items-center flex   lg:flex"></div>
           </div>
         </div>
       </div>
