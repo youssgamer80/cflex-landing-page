@@ -270,7 +270,7 @@
 
                                   <!-- <router-link :to='`/modifdemande/${demande.id}`'> -->
                                   <button type="button" id="show-modal"
-                                    v-if="(demande.etat == 2) || (demande.etat == 1)"
+                                    v-if="(demande.etat === 2) || (demande.etat === 1)"
                                     class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 select-none ..."
                                     @click="updatetDemande(demande)">Modifier</button>
 
@@ -422,22 +422,9 @@
 
                                           </button>
                                         </div>
-
-
-
                                       </div>
-
-
-
                                     </div>
-                     
-
-
-
                                   </div>
-
-
-
                                 </div>
                                 <div v-if="stoggleModalA" class="absolute inset-0 z-40 ">
                                 </div>
@@ -454,7 +441,7 @@
                                 <!-- modale Ajouter fin -->
 
 
-                                <!-- modale du token -->
+                                
 
 
 
@@ -469,7 +456,7 @@
                                       <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col my-2">
 
                                         <div class="mx-auto items-center py-9 pt-4">
-                                          <p class="text-orange-900  text-2xl font-bold">Token
+                                          <p class="text-orange-900  text-2xl font-bold">MODIFICATION DES DEMANDES
 
                                           </p>
                                         </div>
@@ -648,38 +635,13 @@
                                       <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col my-2">
 
                                         <div class="mx-auto items-center py-9 pt-4">
-                                          <p class="text-orange-900  text-2xl font-bold">MODIFICATION DEMANDE
+                                          <p class="text-orange-900  text-2xl font-bold">TOKEN CHAUFFEUR
 
                                           </p>
                                         </div>
 
                                            
-                                        <div class="-mx-3 md:flex mb-6">
-    
-                                          <div class="md:w-1/2 px-3 mb-6 md:mb-0">
-                                            <label
-                                              class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
-                                              for="immatriculation">
-                                              immatriculation
-                                            </label>
-                                            <input   v-model="Modifdemande.immatriculation" 
-                                              class="appearance-none block w-full bg-grey-lighter focus:ring-orange-500 focus:border-orange-500 text-gray-700 border border-red rounded py-3 px-4 mb-3"
-                                              type="text"  placeholder="entrez l immatriculation">
-
-                                          </div>
-
-                                          <div class="md:w-1/2 px-3">
-                                            <label
-                                              class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
-                                              for="marque">
-                                              marque
-                                            </label>
-                                            <input v-model=" Modifdemande.marque"
-                                              class="appearance-none block w-full bg-grey-lighter text-gray-700 focus:ring-orange-500 focus:border-orange-500 border border-grey-lighter rounded py-3 px-4"
-                                              type="text" placeholder="entrez la marque">
-                                          </div>
-                                        </div>
-
+                                       
                                        
                                         <div class="-mx-3 md:flex mb-6">
                                           <div class="md:w-1/2 px-3 mb-6">
@@ -691,6 +653,44 @@
                                            
                                           </div>
                                         </div>
+                                          <div>
+
+
+            <a
+              href="#"
+              class="
+                block
+                p-6
+                max-w-xl
+                bg-white
+                rounded-lg
+                border border-gray-200
+                shadow-md
+                hover:bg-gray-100
+                dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700
+              "
+            >
+              <h5
+                class="
+                  mb-2
+                  text-2xl
+                  font-bold
+                  tracking-tight
+                  text-gray-900
+                  dark:text-white
+                "
+              >
+              véhicules matricule
+              </h5>
+              <p class="font-normal text-gray-700 dark:text-gray-400">
+                Mr test 
+                
+               
+              </p>
+            </a>
+          </div>
+
+
 
                                       
                                  
@@ -1065,6 +1065,8 @@ export default {
 
 
        stoggleModalA: false,
+
+        stoggleModalToken: false,
 
 
       isOpen: false,

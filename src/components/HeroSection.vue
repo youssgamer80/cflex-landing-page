@@ -21,7 +21,7 @@
                 Bus, Gbaka...) entre entres votre position et votre destination
                 ainsi que les coûts respectifs.
               </p>
-              <div class="items-center flex flex-row-reverse h-full mx-auto lg:flex ">
+              <div class="items-center flex  h-full mx-auto lg:flex ">
 
                 <button type="button" @click="showModal"
                   class="text-white bg-gradient-to-br from-orange-400 to-orange-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"

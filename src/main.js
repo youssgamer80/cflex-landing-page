@@ -27,6 +27,7 @@ import VueToast from 'vue-toast-notification';
 import 'vue-toast-notification/dist/theme-sugar.css';
 
 
+
 const options = {
   confirmButtonColor: '#41b882',
   cancelButtonColor: '#ED4845',

@@ -582,7 +582,7 @@
                     <span class="sr-only">Open user menu</span>
                     <img
                       class="w-8 h-8 rounded-full"
-                      src="https://demos.creative-tim.com/soft-ui-flowbite-pro/images/users/neil-sims.png"
+                      src="https://users/neil-sims.png"
                       alt="user photo"
                     />
                   </button>

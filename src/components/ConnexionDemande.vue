@@ -54,7 +54,7 @@
             </div>
             <div>
               <label for="" class="text-sm font-medium text-gray-900 block mb-2"></label>
-              <input type="text"  placeholder="mot de passe" v-model="form.password" class="
+              <input type="password"  placeholder="mot de passe" v-model="form.password" class="
                   bg-gray-50
                   border border-gray-300
                   text-gray-900
