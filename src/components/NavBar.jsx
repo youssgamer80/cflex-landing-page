@@ -9,7 +9,7 @@ const NavBar = () => {
         <nav className="flex justify-between items-center px-3 mx-auto w-full max-w-8xl lg:px-4">
             <div className="container flex flex-wrap justify-between items-center mx-auto">
                 <a href="/" className="flex">
-                    <img src={logo} className="mr-3 h-14 sm:h-14" alt="Cflex Logo" />
+                    <img src={logo} className="mr-1 h-10 sm:h-10" alt="Cflex Logo" />
                     <span className="self-center text-lg font-semibold whitespace-nowrap dark:text-white">CFlex</span>
                 </a>
                 <div className="flex md:order-2">
