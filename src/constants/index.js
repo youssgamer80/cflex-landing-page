@@ -23,23 +23,30 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Rewards",
+    title: "Point d'arrèt",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "Vous avez avec C'Flex tout les points d'arrèt disponible pour votre trajet.",
   },
   {
     id: "feature-2",
     icon: shield,
-    title: "100% Secured",
+    title: "Choix de l'itinéraire",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "Pour votre sécurité, vous avez le choix de l'itinéraire que vous voulez prendre.",
   },
   {
     id: "feature-3",
     icon: send,
-    title: "Balance Transfer",
+    title: "Nombre de passagers",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "Vous pouvez choisir le nombre de passagers que vous voulez prendre (pour les chauffeurs).",
+  },
+  {
+    id: "feature-3",
+    icon: send,
+    title: "L'affluence",
+    content:
+      "Vous avez la possibilité de voir l'affluence des points d'arrèts.",
   },
 ];
 
@@ -73,49 +80,75 @@ export const feedback = [
 export const stats = [
   {
     id: "stats-1",
-    title: "User Active",
+    title: "Points d'arrèt",
     value: "3800+",
+   subTitle: "En etat d'utilisation",
   },
   {
     id: "stats-2",
-    title: "Trusted by Company",
+    title: "Véhicules enregistrés",
     value: "230+",
+    subTitle: "En circulation",
   },
   {
     id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
+    title: "Personnes l'utilises",
+    value: "230M+",
+    subTitle: "Et vous ?",
+  },
+  {
+    id: "stats-4",
+    title: "Commune l'utilises",
+    value: "30M+",
+    subTitle: "Bientôt partout",
+  },
+];
+export const partner = [
+  {
+    id: "partener-1",
+    title: "Maire de cocody",
+    logo: "3800+",
+  },
+  {
+    id: "partener-2",
+    title: "Ministere du transport",
+    logo: "230+",
+  },
+  {
+    id: "partener-3",
+    title: "District d'Abidjan",
+    logo: "$230M+",
   },
 ];
 
 export const footerLinks = [
   {
-    title: "Useful Links",
+    title: "Liens utiles",
     links: [
       {
-        name: "Content",
+        name: "Contenu",
         link: "https://www.hoobank.com/content/",
       },
       {
-        name: "How it Works",
+        name: "Comment ça marche",
         link: "https://www.hoobank.com/how-it-works/",
       },
       {
-        name: "Create",
+        name: "Création",
         link: "https://www.hoobank.com/create/",
       },
       {
-        name: "Explore",
+        name: "Découvrir",
         link: "https://www.hoobank.com/explore/",
       },
       {
-        name: "Terms & Services",
+        name: "Conditions et services",
         link: "https://www.hoobank.com/terms-and-services/",
       },
     ],
   },
   {
-    title: "Community",
+    title: "Communauté",
     links: [
       {
         name: "Help Center",
@@ -140,7 +173,7 @@ export const footerLinks = [
     ],
   },
   {
-    title: "Partner",
+    title: "Partenaire",
     links: [
       {
         name: "Our Partner",

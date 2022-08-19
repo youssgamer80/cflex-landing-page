@@ -1,4 +1,5 @@
-import React from "react";
+import styles from "../style";
+import { phoneMockup01 } from "../assets";
 
 const Hero = () => (
     <section className="bg-white dark:bg-gray-900" id="home">
@@ -15,7 +16,7 @@ const Hero = () => (
                 <div className="flex flex-col mb-8 md:flex-row lg:justify-start">
                     <a
                         href="/"
-                        className="text-white bg-cflex-200 hover:bg-cflex-100 focus:ring-4 focus:ring-cflex-300 dark:focus:ring-cflex-100 font-medium rounded-lg text-base px-6 py-2.5 text-center md:mr-5 mb-3 md:mb-0 inline-flex items-center justify-center">
+                        className="text-white bg-cflex-100 hover:bg-primary-700 focus:ring-4 focus:ring-cflex-300 dark:focus:ring-cflex-100 font-medium rounded-lg text-base px-6 py-2.5 text-center md:mr-5 mb-3 md:mb-0 inline-flex items-center justify-center">
                         J'ai un véhicule
                     </a>
                     <a

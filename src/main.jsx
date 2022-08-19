@@ -2,8 +2,16 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
-import 'flowbite';
 
+const importFlowbiteFunc = function(flowbitePathStr)
+{
+    const flowbiteScriptEl = document.createElement('script')
+    flowbiteScriptEl.setAttribute(
+        'src', flowbitePathStr
+    )
+    document.body.appendChild(flowbiteScriptEl)
+}
+importFlowbiteFunc('node_modules/flowbite/dist/flowbite.js') // here goes your path to a local flowbite.js you want to import
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
