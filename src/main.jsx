@@ -11,7 +11,7 @@ const importFlowbiteFunc = function(flowbitePathStr)
     )
     document.body.appendChild(flowbiteScriptEl)
 }
-importFlowbiteFunc('node_modules/flowbite/dist/flowbite.js') // here goes your path to a local flowbite.js you want to import
+importFlowbiteFunc('https://unpkg.com/flowbite@1.5.2/dist/flowbite.js') // here goes your path to a local flowbite.js you want to import
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
