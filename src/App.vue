@@ -10,6 +10,7 @@
   <router-view></router-view>
   <router-view name="NavBar"></router-view>
   <router-view name="Hero"></router-view>
+  <router-view name="HomeContent"></router-view>
   <router-view name="NotFoundPage"></router-view>
   <router-view name="Footer"></router-view>
   

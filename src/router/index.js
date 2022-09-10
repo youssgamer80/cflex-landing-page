@@ -5,6 +5,7 @@ import Maintenance from '../pages/Maintenance.vue'
 import NavBar from '../components/NavBar.vue'
 import Hero from '../components/Hero.vue'
 import Footer from '../components/Footer.vue'
+import HomeContent from '../components/HomeContent.vue'
 import NotFoundPage from '../pages/NotFoundPage.vue'
 
 
@@ -29,6 +30,7 @@ const routes=[
             default: Home,
             NavBar : NavBar,
             Hero : Hero,
+            HomeContent : HomeContent,
             Footer : Footer
         }
     },

@@ -38,7 +38,7 @@
                         class="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">
                         Nous nous soucions de la protection de vos données. <a href="#"
                             class="font-medium text-primary-600 dark:text-primary-500 hover:underline">Lisez notre
-                            politique de confidentialité.</a>.</div>
+                            politique de confidentialité</a>.</div>
                 </form>
             </div>
             <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
@@ -47,7 +47,7 @@
         </div>
 
         <div
-            class="p-4 max-w-screen-lg px-4 py-8 mx-auto text-center bg-gray-600 rounded-lg border shadow-md sm:p-8 dark:bg-gray-300 dark:border-gray-700">
+            class="p-4 max-w-screen-lg px-4 py-8 mx-auto text-center bg-gray-600 rounded-lg border shadow-md sm:p-8 dark:bg-gray-600 dark:border-gray-700">
             <div class="justify-center items-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
                 <label for="input-group-1"
                     class="hidden block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your Email</label>
@@ -66,7 +66,7 @@
                 </div>
 
 
-                <div class="flex items-center">
+                <div class="mx-auto flex items-center">
                     <div class="relative">
 
                         <input name="start" type="time"
@@ -81,13 +81,20 @@
                             placeholder="Select time end">
                     </div>
                 </div>
-                <label for="nbp" class="hidden block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nobre de
+                <label for="nbp" class="hidden block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nombre
+                    de
                     personne</label>
-                <div class="relative mb-6 w-40">
-                    <input type="number" id="nbp" min="1" max="10"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                        placeholder="Nombre de passagers">
+                <div class="relative mb-6">
+                    <select id="nbp" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option selected >1</option>
+                        <option value="US">2</option>
+                        <option value="CA">3</option>
+                        <option value="FR">4</option>
+                        <option value="DE">5</option>
+                      </select>
                 </div>
+
+
                 <button type="button"
                     class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-primary-700 dark:focus:ring-primary-900 mr-2 mb-2 logo">
                     <svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -100,8 +107,14 @@
 
             </div>
         </div>
-
-        <div class="p-6 px-4 mx-auto md:max-w-screen-md lg:max-w-screen-lg lg:px-1">
+        <div class="pt-7 inline-flex justify-center items-center w-full">
+            <hr class="my-8 w-64 h-px bg-gray-200 border-0 dark:bg-gray-700">
+            <span
+                class="absolute left-1/2 px-3 font-medium text-gray-900 bg-white -translate-x-1/2 dark:text-white dark:bg-gray-900"><a
+                    href="#" class="text-primary-900 dark:text-primary-500 hover:underline">C'Flex</a> vous
+                offres</span>
+        </div>
+        <div class="px-4 mx-auto md:max-w-screen-md lg:max-w-screen-lg lg:px-1">
             <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-12 md:space-y-0">
                 <div>
                     <div class="md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-12">
@@ -172,7 +185,6 @@
                             </svg>
                         </div>
                         <h3 class="mb-2 text-xl font-bold dark:text-white">Récommandation</h3>
-
                     </div>
                     <p class="text-gray-500 dark:text-gray-400">Application mobile qui recommande les meilleurs
                         itinéraires et davantage.</p>
@@ -180,6 +192,8 @@
             </div>
         </div>
     </section>
+    <hr class="my-8 h-px bg-gray-200 border-0 dark:bg-gray-700">
+
 </template>
 <style scoped>
 .logo {
