@@ -124,7 +124,7 @@
                     with ease.</p>
                 <a href="#"
                     class="inline-flex items-center font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
-                    Learn more
+                    Plus
                     <svg class="ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
