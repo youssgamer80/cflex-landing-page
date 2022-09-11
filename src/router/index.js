@@ -7,6 +7,8 @@ import Hero from '../components/Hero.vue'
 import Footer from '../components/Footer.vue'
 import HomeContent from '../components/HomeContent.vue'
 import NotFoundPage from '../pages/NotFoundPage.vue'
+import Demande from '../pages/Demande.vue'
+import DemandeForm from '../components/DemandeForm.vue'
 
 
 const routes=[
@@ -39,6 +41,15 @@ const routes=[
         name: 'About',
         components: {
             default:About,
+            Footer : Footer
+        }
+    },
+    {
+        path: '/demande',
+        name: 'Demande',
+        components: {
+            default:Demande,
+            DemandeForm : DemandeForm,
             Footer : Footer
         }
     }

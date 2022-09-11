@@ -12,6 +12,8 @@
   <router-view name="Hero"></router-view>
   <router-view name="HomeContent"></router-view>
   <router-view name="NotFoundPage"></router-view>
+  <router-view name="Demande"></router-view>
+  <router-view name="DemandeForm"></router-view>
   <router-view name="Footer"></router-view>
   
 </template>
