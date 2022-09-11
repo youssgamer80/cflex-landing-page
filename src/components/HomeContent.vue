@@ -2,14 +2,13 @@
     <section class="bg-white dark:bg-gray-900">
         <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
             <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">We didn't reinvent
-                    the wheel</h2>
-                <p class="mb-4">We are strategists, designers and developers. Innovators and problem solvers. Small
-                    enough to be simple and quick, but big enough to deliver the scope you want at the pace you need.
-                    Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you
-                    need.</p>
-                <p>We are strategists, designers and developers. Innovators and problem solvers. Small enough to be
-                    simple and quick.</p>
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Nous n'avons pas réinventé la roue</h2>
+                <p class="mb-4">Nous sommes des stratèges, des designers et des développeurs. Innovateurs et résolveurs de problèmes. Petit
+                    assez pour être simple et rapide, mais assez grand pour fournir la portée que vous voulez au rythme dont vous avez besoin.
+                    Assez petit pour être simple et rapide, mais assez grand pour fournir la portée que vous voulez au rythme que vous
+                    besoin.</p>
+                <p>Nous sommes des stratèges, des designers et des développeurs. Innovateurs et résolveurs de problèmes. Assez petit pour être
+                    simple et rapide.</p>
             </div>
             <div class="grid grid-cols-2 gap-4 mt-8">
                 <img class="w-full rounded-lg"
@@ -37,11 +36,9 @@
                 <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
             </div>
             <div class="mt-3 sm:pr-8">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.0.0</h3>
-                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on
-                    December 2, 2021</time>
-                <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web
-                    components and interactive elements.</p>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Etape 1</h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Vous avez un véhicule</time>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-400">Présentez une demande au moyen du site Web de C'Flex et suivez le reste du processus.</p>
             </div>
         </li>
         <li class="relative mb-6 sm:mb-0">
@@ -58,11 +55,9 @@
                 <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
             </div>
             <div class="mt-3 sm:pr-8">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.0.0</h3>
-                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on
-                    December 2, 2021</time>
-                <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web
-                    components and interactive elements.</p>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Etape 2</h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Une fois la demande volidée</time>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-400">Prenez rendez-vous et un agent communiquera avec vous pour équiper votre véhicule.</p>
             </div>
         </li>
         <li class="relative mb-6 sm:mb-0">
@@ -79,11 +74,9 @@
                 <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
             </div>
             <div class="mt-3 sm:pr-8">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.2.0</h3>
-                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on
-                    December 23, 2021</time>
-                <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web
-                    components and interactive elements.</p>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Etape 3</h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Télécharger l'application</time>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-400">L'application C'Flex est disponible sur le Play Store et l'App Store, téléchargez et ouvrez une session à l'aide de vos identifiants.</p>
             </div>
         </li>
         <li class="relative mb-6 sm:mb-0">
@@ -100,11 +93,9 @@
                 <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
             </div>
             <div class="mt-3 sm:pr-8">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.3.0</h3>
-                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on
-                    January 5, 2022</time>
-                <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web
-                    components and interactive elements.</p>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Etape 4</h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Donner les acces aux chauffeurs</time>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-400">Finalement donner accès à vos chauffeurs afin qu'ils puissent travailler pour vous en conformité avec les règles.</p>
             </div>
         </li>
 
@@ -114,14 +105,9 @@
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
             <div class="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
                 <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Powering innovation at
-                    <span class="font-extrabold">200,000+</span> companies worldwide</h2>
-                <p class="mb-4 font-light">Track work across the enterprise through an open, collaborative platform.
-                    Link issues across Jira and ingest data from other software development tools, so your IT support
-                    and operations teams have richer contextual information to rapidly respond to requests, incidents,
-                    and changes.</p>
-                <p class="mb-4 font-medium">Deliver great service experiences fast - without the complexity of
-                    traditional ITSM solutions.Accelerate critical development work, eliminate toil, and deploy changes
-                    with ease.</p>
+                    <span class="font-extrabold">800,000+</span> personnes visées</h2>
+                <p class="mb-4 font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque voluptates tempore maiores nesciunt nihil repellat quaerat, quam aspernatur! Voluptate quidem quis, vel inventore neque alias ut illum doloribus culpa numquam.</p>
+                <p class="mb-4 font-medium">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis voluptate amet adipisci commodi illo odit sed, eos iusto quia ullam a sit ducimus mollitia in fugit ipsum obcaecati, necessitatibus eius.</p>
                 <a href="#"
                     class="inline-flex items-center font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
                     Plus

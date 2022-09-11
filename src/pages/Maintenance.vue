@@ -76,7 +76,7 @@
                   <a href="#" class="flex w-full items-center justify-center rounded-md border border-transparent bg-primary-600 px-8 py-3 text-base font-medium text-white hover:bg-primary-700 md:py-4 md:px-10 md:text-lg" id="counter"></a>
                 </div>
                 <div class="mt-3 sm:mt-0 sm:ml-3">
-                  <router-link to="/home" class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-100 px-8 py-3 text-base font-medium text-primary-700 hover:bg-indigo-200 md:py-4 md:px-10 md:text-lg">Merci et à très vite.</router-link>
+                  <a href="/home" class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-100 px-8 py-3 text-base font-medium text-primary-700 hover:bg-indigo-200 md:py-4 md:px-10 md:text-lg">Merci et à très vite.</a>
                 </div>
               </div>
             </div>
